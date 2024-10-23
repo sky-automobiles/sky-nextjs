@@ -9,7 +9,7 @@ const Home = () => {
       window.location.href = "/admin/login";
     } else window.location.href = "/admin/arena";
   }, []);
-  return <div>Loading...</div>;
+  return <div>Loading... </div>;
 };
 
 export default Home;
