@@ -1,0 +1,18 @@
+import VehicleDetailTemplate from "@/components/others/VehicleDetailTemplate";
+import { Metadata } from "next";
+import React from "react";
+
+export const metadata: Metadata = {
+  title: "Maruti Suzuki Spresso On-Road Price Raipur | 7-Seater MPV",
+  description:
+    "Find the spacious Maruti Suzuki Spresso MPV in Raipur. Discover its on-road price, features, and special offers for family trips and more.",
+};
+const Spresso: React.FC = () => {
+  return (
+    <div>
+      <VehicleDetailTemplate index={4} />
+    </div>
+  );
+};
+
+export default Spresso;

@@ -2,26 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+*::-webkit-scrollbar-track {
+  /* background: var(--primary); Adjust background color */
+  border-radius: 1px;
+  /* background-color: rgb(235,235,235); */
+
+  /* background: transparent; */
+}
+
+*::-webkit-scrollbar-thumb {
+  /* background-color: rgb(234, 58, 81); */
+  background-color: rgb(174, 174, 174);
+  /* border-radius: 100%; */
+  border-radius: 6px;
+  border: 2px solid white;
+}
+
+
+
+
+
+.carSlider .swiper-slide img {
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transition-duration: 0.5s;
+  padding-top: 10px;
+}
+
+.carSlider .swiper-slide-active img {
+  transition-duration: 1s;
+  transform: scale(1);
+}
+
+.carSlider .swiper-wrapper {
+  transition-duration: 0.8s ease !important;
+}
+
+/* .clip-wave {
+  clip-path: ellipse(30px 140px at 99% 50%);
+}
+.clip-wave2 {
+  clip-path: ellipse(30px 150px at 1% 50%);
+} */
