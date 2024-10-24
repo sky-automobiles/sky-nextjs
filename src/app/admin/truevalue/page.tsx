@@ -15,7 +15,7 @@ const TrueValue = () => {
     setSellACarData,
     setBuyACarData,
   } = useDataContext();
-  const [showSell, setShowSell] = React.useState(false);
+  const [showSell, setShowSell] = React.useState(true);
   const [rangeValue, setRangeValue] = React.useState("");
   const [dateRange, setDateRange] = React.useState({
     startDate: "",
@@ -66,9 +66,10 @@ const TrueValue = () => {
         if (result.length === 0) {
           toast.error("No data found");
         } else
-          toast.success(
-            `${showSell ? "Sell A Car" : "Buy A Car"} Data fetched successfully`
-          );
+          // toast.success(
+          //   `${showSell ? "Sell A Car" : "Buy A Car"} Data fetched successfully`
+          // );
+          toast.success("True Value Data fetched successfully");
       } catch (error) {
         console.error("Fetch error:", error);
       }
@@ -213,10 +214,10 @@ const TrueValue = () => {
           <h5 className="text-xl my-4 text-primaryBlue uppercase">
             Truevalue Enquiries - {showSell ? "Sell A Car" : "Buy A Car"}
           </h5>
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <button
               onClick={() => setShowSell(false)}
-              className={`  px-4 py-1.5 rounded text-sm border ${
+              className={`  px-4 py-1.5 rounded text-sm border min-w-36 ${
                 showSell ? "border-primaryBlue" : "bg-primaryBlue text-white"
               }`}
             >
@@ -224,13 +225,13 @@ const TrueValue = () => {
             </button>{" "}
             <button
               onClick={() => setShowSell(true)}
-              className={`  px-4 py-1.5 rounded text-sm border ${
+              className={`  px-4 py-1.5 rounded text-sm border min-w-36 ${
                 !showSell ? " border-primaryBlue" : "bg-primaryBlue text-white"
               }`}
             >
               Sell A Car
             </button>
-          </div>
+          </div> */}
         </div>
 
         <EnqTable

@@ -234,7 +234,7 @@ const EnqHome: React.FC = () => {
             </button>
           </div>
           <p className="mt-4 text-[10px] text-gray-400">
-            *Disclaimer: I agree that by clicking the &apos;Apply Now&apos;
+            *Disclaimer: I agree that by clicking the &apos;Enquire Now&apos;
             button below, I am explicitly soliciting a call and message via
             whatsapp or any other medium from us.
           </p>
