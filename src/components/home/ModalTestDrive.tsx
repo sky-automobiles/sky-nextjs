@@ -144,7 +144,7 @@ const ModalTestDrive: React.FC<ModalTestDriveProps> = ({
               name="name"
               placeholder="Name*"
               required
-              pattern="^[a-zA-Z]+$"
+              pattern="^[a-zA-Z. ]+$"
               minLength={3}
               maxLength={50}
               title="Only alphabets are allowed with minimum 3 and maximum 50 characters"

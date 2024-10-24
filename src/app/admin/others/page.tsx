@@ -7,7 +7,6 @@ import EnqTable from "../arena/EnquiryTable";
 import toast from "react-hot-toast";
 import Cookies from "js-cookie";
 
-
 const Others = () => {
   const {
     contactUsData,
@@ -16,16 +15,17 @@ const Others = () => {
     setTestDriveData,
     setContactUsData,
     setCareerData,
+    homeEnqData,
+    setHomeEnqData,
     setLoading,
     refreshing,
   } = useDataContext();
-  const [selectedTable, setSelectedTable] = React.useState("Test Drive");
+  const [selectedTable, setSelectedTable] = React.useState("Home");
   const [rangeValue, setRangeValue] = React.useState("");
- const [dateRange, setDateRange] = React.useState({
-   startDate: "",
-   endDate: "",
- });
-
+  const [dateRange, setDateRange] = React.useState({
+    startDate: "",
+    endDate: "",
+  });
 
   const columnHelper = createMRTColumnHelper<any>();
 
@@ -40,14 +40,16 @@ const Others = () => {
       try {
         let response = null;
         let endPoint = "";
-        if (selectedTable === "Contact") {
+        if (selectedTable === "Home") {
+          endPoint = "home";
+        } else if (selectedTable === "Contact") {
           endPoint = "contactUs";
         } else if (selectedTable === "Career") {
           endPoint = "career";
         } else {
           endPoint = "test-drive";
         }
-        if (rangeValue === "" ) {
+        if (rangeValue === "") {
           response = await fetch(`/api/${endPoint}?rangeValue=allData`);
         } else if (
           rangeValue === "Between" &&
@@ -67,9 +69,13 @@ const Others = () => {
         const result = await response.json();
         if (selectedTable === "Contact") {
           setContactUsData(result);
+        } else if (selectedTable === "Home") {
+          setHomeEnqData(result);
+        
         } else if (selectedTable === "Career") {
           setCareerData(result);
-        } else {
+        }
+         else {
           setTestDriveData(result);
         }
         // Update state with the fetched data
@@ -216,6 +222,7 @@ const Others = () => {
     }),
     columnHelper.accessor("channel", {
       header: "Channel",
+      size: 80,
     }),
     columnHelper.accessor("outlet", {
       header: "Outlet",
@@ -224,12 +231,39 @@ const Others = () => {
     columnHelper.accessor("state", {
       header: "State",
     }),
-
-    // columnHelper.accessor("country", {
-    //   header: "Country",
-    //   size: 220,
-    // }),
   ];
+  //Home
+  const columns4 = [
+    columnHelper.accessor("date", {
+      header: "Date",
+      size: 40,
+    }),
+    columnHelper.accessor("time", {
+      header: "Time",
+      size: 120,
+    }),
+    columnHelper.accessor("name", {
+      header: "Name",
+      size: 120,
+    }),
+    columnHelper.accessor("phone", {
+      header: "Phone Number",
+      size: 120,
+    }),
+    columnHelper.accessor("email", {
+      header: "Email",
+      size: 120,
+    }),
+    columnHelper.accessor("lookingFor", {
+      header: "Loogking For",
+      size: 120,
+    }),
+
+    columnHelper.accessor("state", {
+      header: "State",
+    }),
+  ];
+
   return (
     <div className="bg-white min-h-[calc(100vh-25px)] p-2  rounded-lg mr-2 mt-1">
       <div className="min-h-40 px-4">
@@ -240,8 +274,18 @@ const Others = () => {
           </h5>
           <div className="flex gap-2">
             <button
+              onClick={() => setSelectedTable("Home")}
+              className={`  px-4 py-1.5 rounded text-sm min-w-28 ${
+                selectedTable === "Home"
+                  ? "bg-primaryBlue text-white"
+                  : "border border-primaryBlue"
+              }`}
+            >
+              Homepage
+            </button>{" "}
+            <button
               onClick={() => setSelectedTable("Test Drive")}
-              className={`  px-4 py-1.5 rounded text-sm min-w-36 ${
+              className={`  px-4 py-1.5 rounded text-sm min-w-28 ${
                 selectedTable === "Test Drive"
                   ? "bg-primaryBlue text-white"
                   : "border border-primaryBlue"
@@ -251,7 +295,7 @@ const Others = () => {
             </button>{" "}
             <button
               onClick={() => setSelectedTable("Contact")}
-              className={`  px-4 py-1.5 rounded text-sm min-w-36 ${
+              className={`  px-4 py-1.5 rounded text-sm min-w-28 ${
                 selectedTable === "Contact"
                   ? "bg-primaryBlue text-white"
                   : "border border-primaryBlue"
@@ -261,7 +305,7 @@ const Others = () => {
             </button>{" "}
             <button
               onClick={() => setSelectedTable("Career")}
-              className={`  px-4 py-1.5 rounded text-sm min-w-36 ${
+              className={`  px-4 py-1.5 rounded text-sm min-w-28 ${
                 selectedTable === "Career"
                   ? "bg-primaryBlue text-white"
                   : "border border-primaryBlue"
@@ -277,21 +321,26 @@ const Others = () => {
               ? contactUsData
               : selectedTable === "Career"
               ? careerData
-              : testDriveData
+              : selectedTable === "Test Drive"?
+              testDriveData: homeEnqData
           }
           columns={
             selectedTable === "Contact"
               ? columns
               : selectedTable === "Career"
-              ? columns2
-              : columns3
+              ? columns2 
+              : selectedTable === 'Home'?
+              columns4:
+              columns3
           }
           fileName={
             selectedTable === "Contact"
               ? "Contact-us Enquiries"
               : selectedTable === "Career"
               ? "Career Enquiries"
-              : "Test-Drive Enquiries"
+
+              : selectedTable === "Test Drive"?
+               "Test-Drive Enquiries":" Homepage Enquiries"
           }
           rangeValue={rangeValue}
           setRangeValue={setRangeValue}

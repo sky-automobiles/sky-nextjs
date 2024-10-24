@@ -98,7 +98,7 @@ const EnqHome: React.FC = () => {
               name="name"
               placeholder="Name*"
               required
-              pattern="^[a-zA-Z]+$"
+              pattern="^[a-zA-Z. ]+$"
               minLength={3}
               maxLength={50}
               title="Only alphabets are allowed with minimum 3 and maximum 50 characters"
@@ -185,6 +185,15 @@ const EnqHome: React.FC = () => {
                 <option value="I want to buy">I want to buy</option>
                 <option value="I want to sell">I want to sell</option>
               </optgroup>
+              <optgroup label="More" className="text-sm text-primaryGray">
+                <option value="Book a service">Book a service</option>
+                <option value="Finance">Finance</option>
+                <option value="Insurance">Insurance</option>
+                <option value="Test Drive">Test Drive</option>
+                <option value="Contact us">Contact us</option>
+                <option value="Complain">Complain</option>
+                <option value="Other">Other</option>
+              </optgroup>
             </select>
 
             <button
@@ -224,6 +233,11 @@ const EnqHome: React.FC = () => {
               )}
             </button>
           </div>
+          <p className="mt-4 text-[10px] text-gray-400">
+            *Disclaimer: I agree that by clicking the &apos;Apply Now&apos;
+            button below, I am explicitly soliciting a call and message via
+            whatsapp or any other medium from us.
+          </p>
         </form>
       </div>
     </div>

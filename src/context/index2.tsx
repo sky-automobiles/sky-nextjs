@@ -56,6 +56,8 @@ interface DataContextType {
   setNexaData: (data: MongoDBData[]) => void;
   bookAServiceData: MongoDBData[];
   setBookAServiceData: (data: MongoDBData[]) => void;
+  homeEnqData: MongoDBData[];
+  setHomeEnqData: (data: MongoDBData[]) => void;
   recentData: MongoDBData[];
   // setRecentData: (data: MongoDBData[]) => void;
   refreshing: boolean;
@@ -83,6 +85,7 @@ export function DataWrapper({ children }: DataWrapperProps) {
   const [nexaData, setNexaData] = useState<MongoDBData[]>([]);
   const [bookAServiceData, setBookAServiceData] = useState<MongoDBData[]>([]);
   const [recentData, setRecentData] = useState<MongoDBData[]>([]);
+  const [homeEnqData, setHomeEnqData] = useState<MongoDBData[]>([]);
   const [loading, setLoading] = useState(true);
   // const [error, setError] = useState<string | null>(null);
   const [refreshing, setRefreshing] = useState<boolean>(false);
@@ -298,6 +301,8 @@ export function DataWrapper({ children }: DataWrapperProps) {
     setRefreshing,
     loading,
     setLoading,
+    homeEnqData,
+    setHomeEnqData,
   };
 
   return (
