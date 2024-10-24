@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
                 identifiable information that Sky Automobiles Maruti Suzuki collects
                 when you are on Sky Automobiles Maruti Suzuki site and when you use
                 our services. This policy also covers Sky Automobiles Maruti Suzuki
-                treatment of any Personally identifiable information that Sky Automobile Maruti Suzuki shares with you.
+                treatment of any Personally identifiable information that Sky Automobiles Maruti Suzuki shares with you.
               </p>
             </div>
             <p className="flex items-center text-sm font-light">

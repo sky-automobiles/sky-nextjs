@@ -64,7 +64,7 @@ const ReviewsAndRecom = () => {
     },
     {
       review:
-        "All staff are copretive and All process are very good and all staff's person behaviour is very polite I'm happy to buying my car from sky automobile 👍,,,,Sales executive masuk soni sir are very supportive they are very helpful and I'm buying I 'm ertiga showroom Dilevery process is excellent",
+        "All staff are copretive and All process are very good and all staff's person behaviour is very polite I'm happy to buying my car from Sky Automobiles 👍,,,,Sales executive masuk soni sir are very supportive they are very helpful and I'm buying I 'm ertiga showroom Dilevery process is excellent",
       name: "Mr. Pankaj Pradhan",
       rating: "5",
     },

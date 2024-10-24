@@ -143,14 +143,14 @@ const SellCar: React.FC = () => {
             height={1080}
             width={1920}
             src="/images/other/sell_car.webp"
-            alt="Sky Automobile Career Banner"
+            alt="Sky Automobiles Career Banner"
             className="object-cover w-full h-full  max-h-[50vh] hidden sm:block border-b"
           />
           <Image
             height={1920}
             width={500}
             src="/images/other/sell_car_mobile.webp"
-            alt="Sky Automobile Career Banner"
+            alt="Sky Automobiles Career Banner"
             className="object-cover w-full h-full  min-h-[50vh]  sm:hidden border-b"
           />
         </div>

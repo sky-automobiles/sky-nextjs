@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
             Your given details submitted successfully.
           </p>
           <p className="texsm text-primaryGray text-center mb-20">
-            Someone from Sky Automobile will get in touch with you soon.
+            Someone from Sky Automobiles will get in touch with you soon.
           </p>
         </div>
           <QuickActions isHeading={false} />

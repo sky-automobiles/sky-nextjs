@@ -33,14 +33,14 @@ const Offers = () => {
             height={1080}
             width={1920}
             src="/images/other/offers_banner.webp"
-            alt="Sky Automobile Career Banner"
+            alt="Sky Automobiles Offers Banner"
             className="object-cover w-full h-full  max-h-[50vh] hidden sm:block"
           />
           <Image
             height={1920}
             width={500}
             src="/images/other/offer_mobile.webp"
-            alt="Sky Automobile Career Banner"
+            alt="Sky Automobiles Offers Banner"
             className="object-cover w-full h-full  min-h-[50vh]  sm:hidden"
           />
         </div>

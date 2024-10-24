@@ -7,7 +7,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title:
-    "Automobile Insights, Car Reviews & Latest Updates | Sky Automobiles Blog",
+    "Automobiles Insights, Car Reviews & Latest Updates | Sky Automobiles Blog",
   description:
     "Discover expert reviews, automotive tips, and the latest updates on new car launches at Sky Automobiles Blog. Stay informed with in-depth articles on car maintenance, driving tips, and the latest trends in the auto industry.",
 };
@@ -137,7 +137,7 @@ const Blogs = () => {
       <div className="container min-h-[50vh] py-16 mx-auto xl:max-w-7xl lg:py-24 px-2">
         <h1 className="text-3xl font-bold mb-8">
           {" "}
-          Check the Latest Blog Posts on Automobile News
+          Check the Latest Blog Posts on Automobiles News
         </h1>
         <div className="grid lg:grid-cols-3 gap-4 md:grid-cols-2 lg:gap-y-6 ">
           {blogPosts.map((post) => (
