@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { AppWrapper } from "@/context";
 import ModalSelectState from "@/components/others/ModalSelectState";
+import Confetti from "react-confetti";
 
 const inter = Inter({ subsets: ["latin"] });
 

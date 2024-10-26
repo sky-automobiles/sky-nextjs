@@ -18,7 +18,9 @@ const ModalSidePannel = ({ setShowSidePanel, showSidePanel }: ModalSidePannelPro
     <div
       className={`fixed top-16  right-0 w-full h-full bg-white  z-50 min-h-[calc(100vh-50px)] lg:hidden max-w-md px-2 overflow-scroll border-l  max-h-[200vh] ${
         selectedState === "Odisha" ? "text-primaryBlue" : "text-primaryRed"
-      } ${showSidePanel ? "translate-x-0 " : "translate-x-full"} duration-500 py-6`}
+      } ${
+        showSidePanel ? "translate-x-0 " : "translate-x-full"
+      } duration-500 py-6`}
     >
       <div>
         {/* <input
@@ -89,7 +91,9 @@ const ModalSidePannel = ({ setShowSidePanel, showSidePanel }: ModalSidePannelPro
                   // onClick={() => setIsVehicle(false)}
                   onClick={() => setShowSidePanel(false)}
                   key={index}
-                  href={slide.link}
+                  href={
+                    selectedState === "Odisha" ? slide.linkOD : slide.linkCG
+                  }
                 >
                   <div
                     className={`rounded-xl hover:shadow-lg   cursor-pointer  p-2 flex flex-col gap-1 ${
@@ -138,7 +142,9 @@ const ModalSidePannel = ({ setShowSidePanel, showSidePanel }: ModalSidePannelPro
                 <Link
                   onClick={() => setShowSidePanel(false)}
                   key={index}
-                  href={slide.link}
+                  href={
+                    selectedState === "Odisha" ? slide.linkOD : slide.linkCG
+                  }
                 >
                   <div
                     className={`rounded-xl hover:shadow-lg   cursor-pointer  p-2 flex flex-col gap-1 ${
