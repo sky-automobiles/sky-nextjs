@@ -6,7 +6,7 @@ import { useAppContext } from "@/context";
 
 const ModalSelectState: React.FC = () => {
   const [isAnimate, setIsAnimate] = useState(false);
-  const { setSelectedState, openSelectState, setOpenSelectState } =
+  const { setSelectedState, openSelectState, setOpenSelectState, selectedState } =
     useAppContext();
 
   const handleOnClose = (e: any) => {
@@ -76,7 +76,11 @@ const ModalSelectState: React.FC = () => {
               height={300}
               className="rounded-lg"
             />
-            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-lg flex justify-center items-center text-3xl text-white cursor-pointer hover:bg-blue-900 duration-200 hover:bg-opacity-30">
+            <div
+              className={`absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-lg flex justify-center items-center text-3xl text-white cursor-pointer hover:bg-blue-900 duration-200 hover:bg-opacity-30 ${
+                selectedState === "Odisha" ? "bg-blue-900" : ""
+              } `}
+            >
               Odisa
             </div>
           </div>
@@ -89,7 +93,13 @@ const ModalSelectState: React.FC = () => {
               className="rounded-lg"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-lg flex justify-center items-center text-3xl text-white cursor-pointer duration-200 hover:bg-opacity-30 hover:shadow-2xl  group overflow-hidden">
-              <div className="group-hover:h-[500px] group-hover:w-[500px] bg-red-900 duration-1000 h-0 w-0 rounded-full transition-all bg-opacity-30"></div>
+              <div
+                className={` bg-red-900 duration-1000  rounded-full transition-all bg-opacity-30 ${
+                  selectedState === "Chhattisgarh"
+                    ? "bg-red-900 h-[500px] w-[500px]"
+                    : "h-0 w-0 group-hover:h-[500px] group-hover:w-[500px]"
+                }`}
+              ></div>
               <p className="absolute">Chhattisgarh</p>
             </div>
           </div>

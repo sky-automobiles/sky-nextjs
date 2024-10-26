@@ -198,8 +198,9 @@ const BookAService: React.FC = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder="Email*"
                 minLength={3}
+                required
                 title="Please enter a valid email address"
                 pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
                 className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${

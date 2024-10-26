@@ -176,7 +176,9 @@ const ModalTestDrive: React.FC<ModalTestDriveProps> = ({
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Email*"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              title="Enter a valid email address"
               // title="Only 10 digit Indian numbers are allowed"
               // pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none   lg:col-span-2 ${

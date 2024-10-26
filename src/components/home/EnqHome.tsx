@@ -15,7 +15,7 @@ const EnqHome: React.FC = () => {
   }
 
   const { selectedState } = useAppContext();
-  const router = useRouter()
+  const router = useRouter();
   // Initialize form state
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -83,8 +83,7 @@ const EnqHome: React.FC = () => {
       name: "",
       phone: "",
       email: "",
-     lookingFor: "",
-    
+      lookingFor: "",
     });
   };
 
@@ -130,15 +129,16 @@ const EnqHome: React.FC = () => {
             <input
               type="email"
               name="email"
-              placeholder="Email"
-              // title="Only 10 digit Indian numbers are allowed"
-              // pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              placeholder="Email*"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              title="Enter a valid email address"
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none placeholder:text-white lg:col-span-2 ${
                 selectedState === "Odisha"
                   ? "border-b-white"
                   : "border-b-primaryRed"
               }`}
               value={formData.email}
+              required
               onChange={handleChange}
             />
             <select
@@ -218,7 +218,7 @@ const EnqHome: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:text-base md:px-4 hover:shadow-lg  ${
+              className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:text-base md:px-4 hover:shadow-lg w-full ${
                 selectedState === "Odisha"
                   ? " hover:bg-primaryBlue"
                   : "hover:border-primaryRed hover:bg-primaryRed"

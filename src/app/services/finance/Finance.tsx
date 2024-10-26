@@ -151,7 +151,6 @@ const Finance: React.FC = () => {
     <div className="min-h-screen">
       <Header />
       <div className=" min-h-40 bg-primaryGray   ">
-      
         <Image
           height={1080}
           width={1920}
@@ -442,6 +441,8 @@ const Finance: React.FC = () => {
               type="email"
               placeholder="Email*"
               name="email"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              title="Enter a valid email address"
               value={formData.email}
               onChange={handleChange}
               required

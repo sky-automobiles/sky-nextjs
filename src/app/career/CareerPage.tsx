@@ -106,7 +106,7 @@ const CareerPage: React.FC = () => {
             className="object-cover w-full h-full  max-h-[50vh] hidden sm:block"
           />
           <Image
-           height={1920}
+            height={1920}
             width={500}
             src="/images/other/sky-career-mobile.webp"
             alt="Sky Automobiles Career Banner"
@@ -173,6 +173,8 @@ const CareerPage: React.FC = () => {
                 name="email"
                 placeholder="Email*"
                 required
+                pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+                title="Enter a valid email address"
                 className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
                   selectedState === "Odisha"
                     ? "border-b-primaryBlue"

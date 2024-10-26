@@ -183,7 +183,10 @@ const ModalBuyACar: React.FC<ModalBuyACarProps> = ({
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Email*"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              title="Enter a valid email address"
+              required
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none  ${
                 selectedState === "Odisha"
                   ? "border-b-primaryBlue"

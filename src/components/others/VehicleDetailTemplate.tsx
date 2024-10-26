@@ -289,6 +289,8 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
                 name="email"
                 placeholder="Email*"
                 required
+                pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+                title="Enter a valid email address"
                 className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
                   selectedState === "Odisha"
                     ? "border-b-primaryBlue"
@@ -550,10 +552,10 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
                   className={`border rounded-lg px-4 py-6 hover:shadow-2xl  hover:text-white group flex justify-between flex-col ${
                     selectedState === "Odisha"
                       ? "hover:bg-primaryBlue "
-                      : "hover:bg-primaryRed "}`}
+                      : "hover:bg-primaryRed "
+                  }`}
                 >
                   <div className="">
-                   
                     <h4
                       title={post.title}
                       className="font-medium text-xl min-h-4 mb-2 "
@@ -573,7 +575,6 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
                     >
                       {post.desc}
                     </h5>
-                   
                     <Link
                       href={post.link}
                       className=" underline group-hover:text-white "
