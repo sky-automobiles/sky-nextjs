@@ -26,7 +26,7 @@ const ModalConf = () => {
       const timer = setTimeout(() => {
         setShowConfetti(false);
         // document.body.style.overflow = ""; // Re-enable scrolling
-      }, 10000);
+      }, 6000);
 
       return () => {
         clearTimeout(timer);
