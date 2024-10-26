@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import { AppWrapper } from "@/context";
 import ModalSelectState from "@/components/others/ModalSelectState";
 import Confetti from "react-confetti";
+import ModalConf from "@/components/others/ModalConf";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <AppWrapper>
           {children}
           <ModalSelectState />
+          <ModalConf />
         </AppWrapper>
         <Toaster />
       </body>

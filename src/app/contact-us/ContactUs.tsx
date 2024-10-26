@@ -241,7 +241,7 @@ const ContactUs: React.FC = () => {
               </p>
             </form>
             <div className="lg:p-4 rounded-lg flex flex-col gap-2 lg:gap-4">
-              <div className="flex items-center px-4 bg-secondaryGray4 rounded-lg gap-4 py-3 hover:shadow-xl duration-200 border">
+              {/* <div className="flex items-center px-4 bg-secondaryGray4 rounded-lg gap-4 py-3 hover:shadow-xl duration-200 border">
                 <FaPhoneAlt
                   className={`text-5xl  p-3 ${
                     selectedState === "Odisha"
@@ -267,7 +267,7 @@ const ContactUs: React.FC = () => {
                     +91 1234567890
                   </a>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-center px-4 bg-secondaryGray4 rounded-lg gap-4 py-3 hover:shadow-xl duration-200 border">
                 <FaPhoneAlt
                   className={`text-5xl  p-3 ${
@@ -284,14 +284,14 @@ const ContactUs: React.FC = () => {
                         : "text-primaryRed"
                     }`}
                   >
-                    Service:
+                    Call:
                   </p>
                   <a
-                    href="tel:+91 1234567890"
+                    href="tel:+91 6262325001"
                     className="text-lg"
                     aria-label="Call"
                   >
-                    +91 1234567890
+                    +91 6262325001
                   </a>
                 </div>
               </div>
@@ -314,11 +314,11 @@ const ContactUs: React.FC = () => {
                     Email:
                   </p>
                   <a
-                    href="mailto:xyz@xyz.xyz"
+                    href="mailto:hi@skyautomobiles.in"
                     className="text-lg "
                     aria-label="Email"
                   >
-                    xyz@xyz.xyz
+                    hi@skyautomobiles.in
                   </a>
                 </div>
               </div>
@@ -347,8 +347,7 @@ const ContactUs: React.FC = () => {
                     className="text-base"
                     aria-label="Email"
                   >
-                    NH-16, Jagannathpur-Gopalpur Jn, Dist, Brahmapur, Odisha
-                    760010
+                    Sky Automobiles, Mohoba Bazar, GE Road, Raipur CG 492001
                   </a>
                 </div>
               </div>
