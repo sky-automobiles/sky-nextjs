@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     const time = moment().format("HH:mm:ss");
 
     // Create a new Finance document
-    const newFinance = new Home({
+    const newHome = new Home({
       name,
       phone,
       email,
@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
     });
 
     // Save the document to the database
-    await newFinance.save();
+    await newHome.save();
 
          const sendEMail = await sendEmail({
            subject: `${lookingFor} Enquiry Request from ${name}`,
@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
     // Return a success response
     return new NextResponse(
       JSON.stringify({
-        message: "Finance details submitted successfully",
+        message: "Home enquiry details submitted successfully",
         status: true,
       }),
       { status: 201 }

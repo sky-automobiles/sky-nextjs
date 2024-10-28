@@ -1,12 +1,11 @@
 import nodemailer from "nodemailer";
 
-export const sendEmail = async ({  subject, to, text, phone }: any) => {
+export const sendEmail = async ({ subject, to, text, phone }: any) => {
   try {
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      service: "gmail",
+      port: 587,
+      secure: false, // Use STARTTLS
       auth: {
         user: process.env.GMAIL_USER,
         pass: process.env.GMAIL_PASS,
