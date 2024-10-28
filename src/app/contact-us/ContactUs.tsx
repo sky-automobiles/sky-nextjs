@@ -27,7 +27,7 @@ const ContactUs: React.FC = () => {
     subject: "",
   });
   const { selectedState } = useAppContext();
-    const router = useRouter();
+  const router = useRouter();
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -38,7 +38,7 @@ const ContactUs: React.FC = () => {
       [name]: value,
     });
   };
-    const [loading,setLoading]= useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     setLoading(true);
@@ -68,15 +68,14 @@ const ContactUs: React.FC = () => {
         toast.success(
           "Thank you for contacting us. We will get back to you soon!"
         );
-      router.push("/thank-you");
-         
+        router.push("/thank-you");
       } else {
         toast.error("Failed to send request. Please try again later.");
       }
     } catch (error) {
       toast.error("Failed to send request. Please try again later.");
       console.error("Error sending request:", error);
-    }finally{
+    } finally {
       setLoading(false);
     }
     // Uncomment if you want to reset the form after submission
@@ -137,7 +136,7 @@ const ContactUs: React.FC = () => {
                   name="name"
                   placeholder="Name*"
                   required
-                  pattern="[A-Za-z ]{3,32}"
+                  pattern="[A-Za-z0-9-._, ]{3,50}"
                   minLength={3}
                   maxLength={50}
                   title="Only alphabets are allowed with minimum 3 and maximum 50 characters"

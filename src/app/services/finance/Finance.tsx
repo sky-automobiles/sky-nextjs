@@ -412,7 +412,7 @@ const Finance: React.FC = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              pattern="[A-Za-z ]{3,32}"
+              pattern="[A-Za-z0-9-._, ]{3,50}"
               minLength={3}
               maxLength={50}
               title="Only alphabets are allowed with minimum 3 and maximum 50 characters"

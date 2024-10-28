@@ -42,7 +42,7 @@ const BookAService: React.FC = () => {
   const dateInputRef = useRef<HTMLInputElement>(null);
 
   const { selectedState } = useAppContext();
-    const router = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     // Get today's date in YYYY-MM-DD format
@@ -62,7 +62,7 @@ const BookAService: React.FC = () => {
       [e.target.name]: e.target.value,
     });
   };
-    const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     setLoading(true);
@@ -92,14 +92,14 @@ const BookAService: React.FC = () => {
           "Thank you for contacting us. We will get back to you soon!"
         );
         //  window.location.href = "/thank-you";
-         router.push("/thank-you");
+        router.push("/thank-you");
       } else {
         toast.error("Failed to send request. Please try again later.");
       }
     } catch (error) {
       toast.error("Failed to send request. Please try again later.");
       console.error("Error sending request:", error);
-    }finally{
+    } finally {
       setLoading(false);
     }
 
@@ -144,7 +144,7 @@ const BookAService: React.FC = () => {
             className="object-cover w-full h-full  min-h-[50vh]  sm:hidden"
           />
         </div>
-     
+
         <div className="container min-h-[50vh] py-16 mx-auto xl:max-w-7xl lg:py-20 px-2">
           <h4 className="text-3xl font-bold text-primaryGray lg:mb-6">
             Book a{" "}
@@ -166,7 +166,7 @@ const BookAService: React.FC = () => {
                 name="name"
                 placeholder="Name*"
                 required
-                pattern="[A-Za-z ]{3,32}"
+                pattern="[A-Za-z0-9-._, ]{3,50}"
                 minLength={3}
                 maxLength={50}
                 title="Only alphabets, spaces, hyphens, and apostrophes are allowed"
@@ -232,7 +232,7 @@ const BookAService: React.FC = () => {
                 name="city"
                 placeholder="City*"
                 required
-                pattern="[A-Za-z ]{3,32}"
+                pattern="[A-Za-z0-9-._, ]{3,50}"
                 minLength={3}
                 maxLength={50}
                 title="Only alphabets are allowed with minimum 3 and maximum 50 characters"
