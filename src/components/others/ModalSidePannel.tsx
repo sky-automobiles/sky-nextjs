@@ -10,9 +10,23 @@ interface ModalSidePannelProps {
   setShowSidePanel: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ModalSidePannel = ({ setShowSidePanel, showSidePanel }: ModalSidePannelProps) => {
+const ModalSidePannel = ({
+  setShowSidePanel,
+  showSidePanel,
+}: ModalSidePannelProps) => {
   const { selectedState } = useAppContext();
   const [openShowVehicle, setOpenShowVehicle] = React.useState(0);
+
+  React.useEffect(() => {
+    if (showSidePanel) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    if (!showSidePanel) {
+      setOpenShowVehicle(0);
+    }
+  }, [showSidePanel]);
 
   return (
     <div
@@ -232,50 +246,46 @@ const ModalSidePannel = ({ setShowSidePanel, showSidePanel }: ModalSidePannelPro
           </div>
           {openShowVehicle > 4 && openShowVehicle < 6 && (
             <div className="bg-gray-100 rounded-b-lg mb-1">
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className="  min-h-8 pl-12 py-2 border-b   "
-              >
-                <Link href={"/services/book-a-service"}>Book A Service</Link>
-              </div>
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className="  min-h-8 pl-12 py-2 border-b "
-              >
-                <Link href={"/services/finance"}>Finance</Link>
-              </div>
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className="  min-h-8 pl-12 py-2 "
-              >
-                <Link href={"/services/insurance"}>Insurance</Link>
-              </div>
+              <Link href={"/services/book-a-service"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className="  min-h-8 pl-12 py-2 border-b   "
+                >
+                  Book A Service
+                </div>
+              </Link>
+              <Link href={"/services/finance"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className="  min-h-8 pl-12 py-2 border-b "
+                >
+                  Finance
+                </div>
+              </Link>
+              <Link href={"/services/insurance"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className="  min-h-8 pl-12 py-2 "
+                >
+                  Insurance
+                </div>
+              </Link>
             </div>
           )}
-          <div
-            onClick={() =>
-              openShowVehicle !== 6
-                ? setOpenShowVehicle(6)
-                : setOpenShowVehicle(0)
-            }
-            className={`min-h-12 flex items-center border-b  px-4 justify-between  ${
-              openShowVehicle === 6 ? "rounded-t-lg mt-1" : "hover:rounded-lg"
-            } ${
-              selectedState === "Odisha" && openShowVehicle === 6
-                ? "bg-primaryBlue text-white "
-                : selectedState !== "Odisha" && openShowVehicle === 6
-                ? "bg-primaryRed text-white "
-                : "bg-white "
-            }    `}
+          <Link
+            href={`${
+              selectedState === "Odisha"
+                ? "/outlets/odisa-outlets"
+                : "/outlets/chhattisgarh-outlets"
+            }`}
+            className={`min-h-12 flex items-center border-b  px-4 justify-between     `}
           >
             Outlets{" "}
-            <FaCaretRight
-              className={`duration-500 ${
-                openShowVehicle === 6 ? "-rotate-90" : "rotate-90"
-              }`}
-            />
-          </div>
-          {openShowVehicle > 5 && openShowVehicle < 7 && (
+          </Link>
+          {/* {openShowVehicle > 5 && openShowVehicle < 7 && (
             <div className="bg-gray-100 rounded-b-lg mb-1">
               <div
                 onClick={() => setShowSidePanel(false)}
@@ -283,14 +293,17 @@ const ModalSidePannel = ({ setShowSidePanel, showSidePanel }: ModalSidePannelPro
               >
                 <Link href={"/outlets/chhattisgarh-outlets"}>Chhattisgarh</Link>
               </div>
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className="  min-h-8 pl-12 py-2    "
-              >
-                <Link href={"/outlets/odisa-outlets"}>Odisha</Link>
-              </div>
+              <Link href={"/outlets/odisa-outlets"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className="  min-h-8 pl-12 py-2    "
+                >
+                  Odisha
+                </div>
+              </Link>
             </div>
-          )}
+          )} */}
           <div
             onClick={() =>
               openShowVehicle !== 7
@@ -316,31 +329,42 @@ const ModalSidePannel = ({ setShowSidePanel, showSidePanel }: ModalSidePannelPro
           </div>
           {openShowVehicle > 6 && openShowVehicle < 8 && (
             <div className="bg-gray-100 rounded-b-lg mb-1">
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className="  min-h-8 pl-12 py-2 border-b   "
-              >
-                <Link href={"/about-us"}>About Us</Link>
-              </div>
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className="  min-h-8 pl-12 py-2 border-b "
-              >
-                <Link href={"/contact-us"}>Contact Us</Link>
-              </div>
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className=" min-h-8 pl-12 py-2 border-b    "
-              >
-                <Link href={"/blogs"}> Blogs</Link>
-              </div>
-              <div
-                onClick={() => setShowSidePanel(false)}
-                className="  min-h-8 pl-12 py-2    "
-              >
-                <Link href={"/career"}> Career</Link>
-              </div>
-              {/* <div className="  min-h-8 pl-12 py-2    ">Blogs</div> */}
+              <Link href={"/about-us"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className="  min-h-8 pl-12 py-2 border-b   "
+                >
+                  About Us
+                </div>
+              </Link>
+              <Link href={"/contact-us"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className="  min-h-8 pl-12 py-2 border-b "
+                >
+                  Contact Us
+                </div>
+              </Link>
+              <Link href={"/blogs"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className=" min-h-8 pl-12 py-2 border-b   "
+                >
+                  Blogs
+                </div>
+              </Link>
+              <Link href={"/career"}>
+                {" "}
+                <div
+                  onClick={() => setShowSidePanel(false)}
+                  className="  min-h-8 pl-12 py-2    "
+                >
+                  Career
+                </div>
+              </Link>
             </div>
           )}
         </div>
