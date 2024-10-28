@@ -16,6 +16,7 @@
     "@mui/material": "^6.1.1",
     "@mui/x-charts": "^7.18.0",
     "@mui/x-date-pickers": "^7.17.0",
+    "@next/third-parties": "^15.0.1",
     "@types/jsonwebtoken": "^9.0.7",
     "bcryptjs": "^2.4.3",
     "export-to-csv": "^1.4.0",
