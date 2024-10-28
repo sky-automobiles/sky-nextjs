@@ -47,9 +47,9 @@ export async function POST(req: NextRequest) {
     // Save the document to the database
     await newHome.save();
 
-         const sendEMail = await sendEmail({
-           subject: `${lookingFor} Enquiry Request from ${name}`,
-           text: `<p>${lookingFor} Enquiry Request,</p>
+    const sendEMail = await sendEmail({
+      subject: `${lookingFor} Enquiry Request from ${name}`,
+      text: `<p>${lookingFor} Enquiry Request,</p>
 <p>You received an enquiry from:</p>
 <ul>
   <li>Name: ${name}</li>
@@ -62,11 +62,20 @@ export async function POST(req: NextRequest) {
   <li>Time: ${time}</li>
 
 </ul>`,
-           to: state && state === "Odisha" ? "" : "",
-           name,
-           phone,
-         });
+      to: state && state === "Odisha" ? "" : "",
+      name,
+      phone,
+    });
 
+    if (!sendEMail) {
+      return new NextResponse(
+        JSON.stringify({
+          message: "Home enquiry details submitted successfully but email not sent",
+          status: true,
+        }),
+        { status: 201 }
+      );
+    }
 
     // Return a success response
     return new NextResponse(
