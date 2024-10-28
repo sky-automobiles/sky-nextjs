@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { sendEmail } from "@/helpers/mailer";
 import Career from "@/models/careerModel";
 
 import moment from "moment";
@@ -15,10 +16,8 @@ export async function POST(req: NextRequest) {
       name,
       email,
       designation,
-
       phone,
       experience,
-
       state,
     } = await req.json();
 
@@ -39,10 +38,8 @@ export async function POST(req: NextRequest) {
       name,
       email,
       designation,
-
       phone,
       experience,
-
       state,
       date, // Ensure these fields are in the schema
       time,
@@ -50,6 +47,26 @@ export async function POST(req: NextRequest) {
 
     // Save the document to the database
     await career.save();
+
+         const sendEMail = await sendEmail({
+           subject: `Career ${designation}  Request from ${name}`,
+           text: `<p>Insurance Enquiry Request,</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+  <li>Designation: ${designation}</li>
+  <li>Experience: ${experience}</li>
+
+  <li>State: ${state}</li>
+
+
+</ul>`,
+           to: state && state === "Odisha" ? "" : "",
+           name,
+           phone,
+         });
 
     // Return a success response
     return new NextResponse(

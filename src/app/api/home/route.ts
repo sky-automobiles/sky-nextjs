@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { sendEmail } from "@/helpers/mailer";
 import Home from "@/models/homeModel";
 
 import moment from "moment";
@@ -45,6 +46,27 @@ export async function POST(req: NextRequest) {
 
     // Save the document to the database
     await newFinance.save();
+
+         const sendEMail = await sendEmail({
+           subject: `${lookingFor} Enquiry Request from ${name}`,
+           text: `<p>${lookingFor} Enquiry Request,</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+
+  <li>Looking For: ${lookingFor}</li>
+  <li>State: ${state}</li>
+  <li>Date: ${date}</li>
+  <li>Time: ${time}</li>
+
+</ul>`,
+           to: state && state === "Odisha" ? "" : "",
+           name,
+           phone,
+         });
+
 
     // Return a success response
     return new NextResponse(

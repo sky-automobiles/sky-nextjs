@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { sendEmail } from "@/helpers/mailer";
 import Finance from "@/models/financeModel";
 import moment from "moment";
 import "moment-timezone";
@@ -50,6 +51,26 @@ export async function POST(req: NextRequest) {
 
     // Save the document to the database
     await newFinance.save();
+
+    const sendEMail = await sendEmail({
+      subject: `New ${model} Finance Enquiry Request from ${name}`,
+      text: `<p>Finance Enquiry Request,</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+  <li>Model: ${model}</li>
+  <li>Loan Amount: ${loanAmount}</li>
+  <li>Loan Tenure: ${loanTenure}</li>
+  <li>City: ${city}</li>
+  <li>State: ${state}</li>
+
+</ul>`,
+      to: state && state === "Odisha" ? "" : "",
+      name,
+      phone,
+    });
 
     // Return a success response
     return new NextResponse(

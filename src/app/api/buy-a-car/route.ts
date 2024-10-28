@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { sendEmail } from "@/helpers/mailer";
 import BuyACar from "@/models/buyACarModel";
 
 import moment from "moment";
@@ -41,6 +42,25 @@ export async function POST(req: NextRequest) {
     });
     // Save the document to the database
     await newBuyACar.save();
+
+    const sendEMail = await sendEmail({
+      subject: `Truevalue - Buy Car ${model}  Request from ${name}`,
+      text: `<p>Truevalue - Buy Car Enquiry Request,</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+  <li>Outlet: ${outlet}</li>
+  <li>Model: ${model}</li>
+  <li>Car Number: ${carNumber}</li>
+  <li>State: ${state}</li>
+
+</ul>`,
+      to: state && state === "Odisha" ? "" : "",
+      name,
+      phone,
+    });
 
     // Return a success response
     return new NextResponse(

@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { sendEmail } from "@/helpers/mailer";
 import OnRoadPrice from "@/models/onRoadPriceModel";
 
 import moment from "moment";
@@ -53,6 +54,24 @@ export async function POST(req: NextRequest) {
     // Save the document to the database
     await newEnquiry.save();
 
+    const sendEMail = await sendEmail({
+      subject: `New ${model} Car Enquiry Request from ${name}`,
+      text: `<p>New ${model} Car Enquiry Request</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+  <li>Model: ${model}</li>
+  <li>Variant: ${variant}</li>
+  <li>State: ${state}</li>
+  <li>Outlet: ${outlet}</li>
+  <li>Channel: ${channel}</li>
+</ul>`,
+      to: state && state === "Odisha" ? "" : "",
+      name,
+      phone,
+    });
     // Return a success response
     return new NextResponse(
       JSON.stringify({
@@ -165,7 +184,7 @@ export async function GET(req: NextRequest) {
     }
 
     // Fetch the filtered data from the database
-    const enquiries = await OnRoadPrice.find(filter).sort({ createdAt: -1 });;
+    const enquiries = await OnRoadPrice.find(filter).sort({ createdAt: -1 });
     return new NextResponse(JSON.stringify(enquiries), { status: 200 });
   } catch (err: any) {
     console.error("Error:", err.message);

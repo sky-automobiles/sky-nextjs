@@ -4,6 +4,8 @@ import Service from "@/models/serviceModel";
 import moment from "moment";
 import "moment-timezone";
 import { NextResponse, NextRequest } from "next/server";
+import Mailgen from "mailgen";
+import { sendEmail } from "@/helpers/mailer";
 
 moment.tz.setDefault("Asia/Kolkata");
 connectDB();
@@ -65,6 +67,32 @@ export async function POST(req: NextRequest) {
 
     // Save the document to the database
     await newService.save();
+
+    const sendEMail = await sendEmail({
+
+      subject: `New Service Request from ${name}`,
+      text: `<p>Service Request from ,</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+  <li>Model: ${model}</li>
+  <li>City: ${city}</li>
+  <li>State: ${state}</li>
+  <li>Address: ${address}</li>
+  <li>Service Type: ${serviceType}</li>
+  <li>Is Pickup: ${isPickup}</li>
+  <li>Service Date: ${serviceDate}</li>
+
+</ul>`,
+      to:
+        state && state === "Odisha"
+          ? ""
+          : "skycuttack@gmail.com",
+      name,
+      phone,
+    });
 
     // Return a success response
     return new NextResponse(
