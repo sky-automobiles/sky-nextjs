@@ -68,8 +68,8 @@ export async function POST(req: NextRequest) {
 </ul>`,
          to:
            state && state === "Odisha"
-             ? "salman.broaddcast@gmail.com"
-             : "skycuttack@gmail.com",
+             ? "skycuttack@gmail.com"
+             : "marketing@skyautomobiles.in",
          name,
          phone,
        });
