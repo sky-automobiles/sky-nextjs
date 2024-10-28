@@ -278,7 +278,7 @@ const ModalSidePannel = ({
           <Link
             href={`${
               selectedState === "Odisha"
-                ? "/outlets/odisa-outlets"
+                ? "/outlets/odisha-outlets"
                 : "/outlets/chhattisgarh-outlets"
             }`}
             className={`min-h-12 flex items-center border-b  px-4 justify-between     `}
@@ -293,7 +293,7 @@ const ModalSidePannel = ({
               >
                 <Link href={"/outlets/chhattisgarh-outlets"}>Chhattisgarh</Link>
               </div>
-              <Link href={"/outlets/odisa-outlets"}>
+              <Link href={"/outlets/odisha-outlets"}>
                 {" "}
                 <div
                   onClick={() => setShowSidePanel(false)}

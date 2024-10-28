@@ -117,7 +117,7 @@ const Header = () => {
               onMouseEnter={() => setIsVehicle(false)}
               href={`${
                 selectedState === "Odisha"
-                  ? "/outlets/odisa-outlets"
+                  ? "/outlets/odisha-outlets"
                   : "/outlets/chhattisgarh-outlets"
               }`}
               className={`font-medium  ${

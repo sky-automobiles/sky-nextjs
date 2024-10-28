@@ -70,18 +70,16 @@ const ModalSelectState: React.FC = () => {
         <div className="w-full h-full flex justify-center items-center gap-4 flex-col md:flex-row mb-4 lg:gap-8">
           <div onClick={() => handleClick("Odisha")} className="relative">
             <Image
-              src="/images/other/Odisa-Konarka_Temple.jpg"
-              alt="Odisa-Konarka_Temple"
+              src="/images/other/Odisha-Konarka_Temple.jpg"
+              alt="Odisha-Konarka_Temple"
               width={300}
               height={300}
               className="rounded-lg"
             />
             <div
-              className={`absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-lg flex justify-center items-center text-3xl text-white cursor-pointer hover:bg-blue-900 duration-200 hover:bg-opacity-30 ${
-                selectedState === "Odisha" ? "bg-blue-900" : ""
-              } `}
+              className={`absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-lg flex justify-center items-center text-3xl text-white cursor-pointer hover:bg-blue-900 duration-200 hover:bg-opacity-30  `}
             >
-              Odisa
+              Odisha
             </div>
           </div>
           <div onClick={() => handleClick("Chhattisgarh")} className="relative">
@@ -94,11 +92,7 @@ const ModalSelectState: React.FC = () => {
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-lg flex justify-center items-center text-3xl text-white cursor-pointer duration-200 hover:bg-opacity-30 hover:shadow-2xl  group overflow-hidden">
               <div
-                className={` bg-red-900 duration-1000  rounded-full transition-all bg-opacity-30 ${
-                  selectedState === "Chhattisgarh"
-                    ? "bg-red-900 h-[500px] w-[500px]"
-                    : "h-0 w-0 group-hover:h-[500px] group-hover:w-[500px]"
-                }`}
+                className={` bg-red-900 duration-1000  rounded-full transition-all bg-opacity-30 h-0 w-0 group-hover:h-[500px] group-hover:w-[500px] `}
               ></div>
               <p className="absolute">Chhattisgarh</p>
             </div>

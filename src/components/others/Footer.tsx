@@ -197,7 +197,7 @@ const Footer: React.FC = () => {
                     label: "Chhattisgarh Outlets",
                     href: "/outlets/chhattisgarh-outlets",
                   },
-                  { label: "Odisha Outlets", href: "/outlets/odisa-outlets" },
+                  { label: "Odisha Outlets", href: "/outlets/odisha-outlets" },
                 ]}
               />{" "}
               <NavigationLinks
