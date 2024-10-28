@@ -57,6 +57,34 @@ export async function POST(req: NextRequest) {
     // Get current date and time
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
+    const sendEMail = await sendEmail({
+      subject: `Truevalue - Sell Your Car ${carModel}  Request from ${name}`,
+      text: `<p>Truevalue - Sell Your Car Enquiry Request,</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+
+  <li>Address: ${address}</li>
+  <li>City: ${city}</li>
+  <li>Model: ${carModel}</li>
+  <li>Brand: ${brandName}</li>
+  <li>Year: ${makeYear}</li>
+  <li>Fuel: ${fuelType}</li>
+  <li>Ownership: ${ownerShip}</li>
+  <li>Variant: ${carVariant}</li>
+  <li>Kilometer Driven: ${kilometerDriven}</li>
+  <li>Register City: ${registerCity}</li>
+  <li>Transmission: ${transmission}</li>
+
+  <li>State: ${state}</li>
+
+</ul>`,
+      to: state && state === "Odisha" ? "" : "",
+      name,
+      phone,
+    });
 
     // Create a new Insurancedocument
     const newSellYourCar = new SellYourCar({
@@ -81,36 +109,6 @@ export async function POST(req: NextRequest) {
 
     // Save the document to the database
     const finalData = await newSellYourCar.save();
-
-
-        const sendEMail = await sendEmail({
-          subject: `Truevalue - Sell Your Car ${carModel}  Request from ${name}`,
-          text: `<p>Truevalue - Sell Your Car Enquiry Request,</p>
-<p>You received an enquiry from:</p>
-<ul>
-  <li>Name: ${name}</li>
-  <li>Phone: ${phone}</li>
-  <li>Email: ${email}</li>
-
-  <li>Address: ${address}</li>
-  <li>City: ${city}</li>
-  <li>Model: ${carModel}</li>
-  <li>Brand: ${brandName}</li>
-  <li>Year: ${makeYear}</li>
-  <li>Fuel: ${fuelType}</li>
-  <li>Ownership: ${ownerShip}</li>
-  <li>Variant: ${carVariant}</li>
-  <li>Kilometer Driven: ${kilometerDriven}</li>
-  <li>Register City: ${registerCity}</li>
-  <li>Transmission: ${transmission}</li>
-
-  <li>State: ${state}</li>
-
-</ul>`,
-          to: state && state === "Odisha" ? "" : "",
-          name,
-          phone,
-        });
 
     // Return a success response
     return new NextResponse(

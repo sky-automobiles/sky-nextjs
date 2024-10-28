@@ -12,14 +12,8 @@ connectDB();
 export async function POST(req: NextRequest) {
   try {
     // Parse request body
-    const {
-      name,
-      email,
-      designation,
-      phone,
-      experience,
-      state,
-    } = await req.json();
+    const { name, email, designation, phone, experience, state } =
+      await req.json();
 
     // Validate required fields
     if (!name || !phone || !email || !designation || !experience || !state) {
@@ -32,6 +26,26 @@ export async function POST(req: NextRequest) {
     // Get current date and time
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
+
+    const sendEMail = await sendEmail({
+      subject: `Career ${designation}  Request from ${name}`,
+      text: `<p>Insurance Enquiry Request,</p>
+<p>You received an enquiry from:</p>
+<ul>
+  <li>Name: ${name}</li>
+  <li>Phone: ${phone}</li>
+  <li>Email: ${email}</li>
+  <li>Designation: ${designation}</li>
+  <li>Experience: ${experience}</li>
+
+  <li>State: ${state}</li>
+
+
+</ul>`,
+      to: state && state === "Odisha" ? "" : "",
+      name,
+      phone,
+    });
 
     // Create a new Career document
     const career = new Career({
@@ -47,26 +61,6 @@ export async function POST(req: NextRequest) {
 
     // Save the document to the database
     await career.save();
-
-         const sendEMail = await sendEmail({
-           subject: `Career ${designation}  Request from ${name}`,
-           text: `<p>Insurance Enquiry Request,</p>
-<p>You received an enquiry from:</p>
-<ul>
-  <li>Name: ${name}</li>
-  <li>Phone: ${phone}</li>
-  <li>Email: ${email}</li>
-  <li>Designation: ${designation}</li>
-  <li>Experience: ${experience}</li>
-
-  <li>State: ${state}</li>
-
-
-</ul>`,
-           to: state && state === "Odisha" ? "" : "",
-           name,
-           phone,
-         });
 
     // Return a success response
     return new NextResponse(

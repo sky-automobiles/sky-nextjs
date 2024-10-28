@@ -28,21 +28,6 @@ export async function POST(req: NextRequest) {
     const time = moment().format("HH:mm:ss");
 
     // Create a new Insurancedocument
-
-    const newBuyACar = new BuyACar({
-      name,
-      phone,
-      email,
-      outlet,
-      state,
-      model,
-      carNumber,
-      date,
-      time,
-    });
-    // Save the document to the database
-    await newBuyACar.save();
-
     const sendEMail = await sendEmail({
       subject: `Truevalue - Buy Car ${model}  Request from ${name}`,
       text: `<p>Truevalue - Buy Car Enquiry Request,</p>
@@ -61,6 +46,20 @@ export async function POST(req: NextRequest) {
       name,
       phone,
     });
+
+    const newBuyACar = new BuyACar({
+      name,
+      phone,
+      email,
+      outlet,
+      state,
+      model,
+      carNumber,
+      date,
+      time,
+    });
+    // Save the document to the database
+    await newBuyACar.save();
 
     // Return a success response
     return new NextResponse(

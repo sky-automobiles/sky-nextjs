@@ -35,23 +35,6 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-    // Create a new Finance document
-    const newFinance = new Finance({
-      name,
-      phone,
-      email,
-      model,
-      city,
-      state,
-      loanAmount,
-      loanTenure,
-      date, // Ensure these fields are in the schema
-      time,
-    });
-
-    // Save the document to the database
-    await newFinance.save();
-
     const sendEMail = await sendEmail({
       subject: `New ${model} Finance Enquiry Request from ${name}`,
       text: `<p>Finance Enquiry Request,</p>
@@ -71,6 +54,23 @@ export async function POST(req: NextRequest) {
       name,
       phone,
     });
+
+    // Create a new Finance document
+    const newFinance = new Finance({
+      name,
+      phone,
+      email,
+      model,
+      city,
+      state,
+      loanAmount,
+      loanTenure,
+      date, // Ensure these fields are in the schema
+      time,
+    });
+
+    // Save the document to the database
+    await newFinance.save();
 
     // Return a success response
     return new NextResponse(

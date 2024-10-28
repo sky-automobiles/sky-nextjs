@@ -40,15 +40,10 @@ export async function POST(req: NextRequest) {
   <li>Date: ${date}</li>
   <li>Time: ${time}</li>
 </ul>`,
-      to:
-        state && state === "Odisha"
-          ? "salman.broaddcast@gmail.com"
-          : "salman.broaddcast@gmail.com",
+      to: state && state === "Odisha" ? "" : "",
       name,
       phone,
     });
-
-  
 
     // Create and save a new Home document in MongoDB
     const newHome = new Home({

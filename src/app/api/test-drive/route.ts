@@ -44,24 +44,8 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-    // Create a new Finance document
-    const newEnquiry = new TestDrive({
-      name,
-      phone,
-      email,
-      model,
-      state,
-      outlet,
-      channel,
-      date, // Ensure these fields are in the schema
-      time,
-    });
-
-    // Save the document to the database
-    await newEnquiry.save();
-
-    const sendEMail = await sendEmail({
     
+    const sendEMail = await sendEmail({
       subject: `New ${model} Test Drive Enquiry Request from ${name}`,
       text: `<p>Test Drive Enquiry,</p>
 <p>You received an enquiry from:</p>
@@ -80,6 +64,23 @@ export async function POST(req: NextRequest) {
       name,
       phone,
     });
+    
+    // Create a new Finance document
+    const newEnquiry = new TestDrive({
+      name,
+      phone,
+      email,
+      model,
+      state,
+      outlet,
+      channel,
+      date, // Ensure these fields are in the schema
+      time,
+    });
+
+    // Save the document to the database
+    await newEnquiry.save();
+
 
     // Return a success response
     return new NextResponse(
