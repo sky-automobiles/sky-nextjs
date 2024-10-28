@@ -30,7 +30,7 @@ export const sendEmail = async ({ subject, to, text, phone }: any) => {
       html: `${text}`,
     };
 
-    await transporter.sendMail(mailOptions, (error, info) => {
+     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error("Error sending email:", error);
         return { status: false, message: "Failed to send email" };
@@ -38,7 +38,7 @@ export const sendEmail = async ({ subject, to, text, phone }: any) => {
       console.log("Email sent:", info.response);
       return { status: true, message: "Email sent successfully" };
     });
-    return { status: true, message: "Email sent successfully" };
+    // return { status: true, message: "Email sent successfully" };
   } catch (err: any) {
     console.error("Error sending email:", err);
     throw new Error(err.message);

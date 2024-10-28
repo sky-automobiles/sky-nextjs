@@ -26,18 +26,6 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-    // Create and save a new Home document in MongoDB
-    const newHome = new Home({
-      name,
-      phone,
-      email,
-      lookingFor,
-      state,
-      date,
-      time,
-    });
-    await newHome.save();
-
     // Send the email
     const sendEMail = await sendEmail({
       subject: `${lookingFor} Enquiry Request from ${name}`,
@@ -60,17 +48,19 @@ export async function POST(req: NextRequest) {
       phone,
     });
 
-    // Check email response
-    if (!sendEMail.status) {
-      return new NextResponse(
-        JSON.stringify({
-          message:
-            "Home enquiry details submitted successfully but email not sent",
-          status: true,
-        }),
-        { status: 201 }
-      );
-    }
+  
+
+    // Create and save a new Home document in MongoDB
+    const newHome = new Home({
+      name,
+      phone,
+      email,
+      lookingFor,
+      state,
+      date,
+      time,
+    });
+    await newHome.save();
 
     // Return success response
     return new NextResponse(
