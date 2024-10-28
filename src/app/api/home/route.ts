@@ -12,14 +12,7 @@ connectDB();
 export async function POST(req: NextRequest) {
   try {
     // Parse request body
-    const {
-      name,
-      phone,
-      email,
-      lookingFor,
-
-      state,
-    } = await req.json();
+    const { name, phone, email, lookingFor, state } = await req.json();
 
     // Validate required fields
     if (!name || !phone || !email || !lookingFor || !state) {
@@ -33,20 +26,19 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-    // Create a new Finance document
+    // Create and save a new Home document in MongoDB
     const newHome = new Home({
       name,
       phone,
       email,
       lookingFor,
       state,
-      date, // Ensure these fields are in the schema
+      date,
       time,
     });
-
-    // Save the document to the database
     await newHome.save();
 
+    // Send the email
     const sendEMail = await sendEmail({
       subject: `${lookingFor} Enquiry Request from ${name}`,
       text: `<p>${lookingFor} Enquiry Request,</p>
@@ -55,29 +47,32 @@ export async function POST(req: NextRequest) {
   <li>Name: ${name}</li>
   <li>Phone: ${phone}</li>
   <li>Email: ${email}</li>
-
   <li>Looking For: ${lookingFor}</li>
   <li>State: ${state}</li>
   <li>Date: ${date}</li>
   <li>Time: ${time}</li>
-
 </ul>`,
-      to: state && state === "Odisha" ? "" : "",
+      to:
+        state && state === "Odisha"
+          ? "salman.broaddcast@gmail.com"
+          : "salman.broaddcast@gmail.com",
       name,
       phone,
     });
 
-    if (!sendEMail) {
+    // Check email response
+    if (!sendEMail.status) {
       return new NextResponse(
         JSON.stringify({
-          message: "Home enquiry details submitted successfully but email not sent",
+          message:
+            "Home enquiry details submitted successfully but email not sent",
           status: true,
         }),
         { status: 201 }
       );
     }
 
-    // Return a success response
+    // Return success response
     return new NextResponse(
       JSON.stringify({
         message: "Home enquiry details submitted successfully",
