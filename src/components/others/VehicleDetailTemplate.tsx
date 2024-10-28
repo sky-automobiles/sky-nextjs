@@ -5,14 +5,14 @@ import Header from "@/components/others/Header";
 import VehicleDetailsSlider from "@/components/others/VehicleDetailsSlider";
 import { cgOutlets, models, odOutlets } from "@/constants";
 import { useAppContext } from "@/context";
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { BsFuelPump } from "react-icons/bs";
 import { GiSpeedometer } from "react-icons/gi";
 import { PiEngine } from "react-icons/pi";
 import ModalTestDrive from "../home/ModalTestDrive";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { FaSpinner } from "react-icons/fa";
 
 interface FormData {
@@ -29,6 +29,7 @@ interface VehiceProps {
 const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
   const { selectedState } = useAppContext();
   const router = useRouter();
+  const pathname = usePathname();
 
   const data = models[index];
   const [selectedColor, setSelectedColor] = useState<number>(0);
@@ -117,6 +118,18 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
     // }
     setLoading(false);
   };
+
+  useEffect(() => {
+    if (selectedState !== "Chhattisgarh" && pathname !== data?.linkOD) {
+      // window.location.href = "/outlets/odisha-outlets";
+      router.push(data?.linkOD);
+      // console.log(pathname)
+    } else if (selectedState !== "Odisha" && pathname !== data?.linkCG) {
+      // window.location.href = "/outlets/chhattisgarh-outlets";
+      router.push(data?.linkCG);
+      // console.log(pathname)
+    }
+  }, [selectedState]);
 
   if (!data) return null;
 

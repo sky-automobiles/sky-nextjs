@@ -4,12 +4,15 @@ import Header from "@/components/others/Header";
 import { odOutlets } from "@/constants";
 import { useAppContext } from "@/context";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { usePathname,useRouter } from "next/navigation";
 
 const OdishaOutlets: React.FC = () => {
   const [filter, setFilter] = useState<string>("All");
   const { selectedState } = useAppContext();
+  const pathname = usePathname();
+  const router = useRouter();
 
   // Convert Set to array to avoid TypeScript iteration issue
   const uniqueChannels = ["All", "Arena", "Nexa", "True Value"];
@@ -22,10 +25,21 @@ const OdishaOutlets: React.FC = () => {
   const filteredLocations = odOutlets.flatMap((category) =>
     category.locations.filter((location) => {
       const isChannelMatch = filter === "All" || location.channel === filter;
-
       return isChannelMatch;
     })
   );
+
+  useEffect(() => {
+    if (
+      selectedState !== "Odisha" &&
+      pathname !== "/outlets/chhattisgarh-outlets"
+    ) {
+      // window.location.href = "/outlets/chhattisgarh-outlets";
+      router.push("/outlets/chhattisgarh-outlets");
+      // console.log(pathname);
+    }
+  }, [selectedState]);
+
   return (
     <div>
       <Header />
