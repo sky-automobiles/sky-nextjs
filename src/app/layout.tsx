@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 import { AppWrapper } from "@/context";
 import ModalSelectState from "@/components/others/ModalSelectState";
 import ModalConf from "@/components/others/ModalConf";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-N3C9GWZJ" />
       <body className={inter.className}>
         <AppWrapper>
           {children}
