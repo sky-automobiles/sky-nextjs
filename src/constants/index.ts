@@ -7,7 +7,7 @@ export const models = [
   {
     name: " Maruti ALTO K10",
     subName: "ALTO K10",
-    offersAmount: 56100,
+    offersAmount: 61100,
     offersAdditionalDec: "",
     link: "/arena/alto-k10-on-road-price",
     linkCG: "/arena/alto-k10-on-road-price-in-raipur",
@@ -169,7 +169,7 @@ export const models = [
       {
         title: "5 Reasons to Buy the 2024 Maruti Suzuki Alto K10",
         desc: "The 2024 Maruti Suzuki Alto K10 is a standout choice in the entry-level hatchback segment, appealing to first-time car buyers and urban commuters alike. Here are five compelling reasons to consider the Alto K10 for your next vehicle.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Alto-K10",
         author: "Sky Automobiles",
       },
@@ -180,7 +180,7 @@ export const models = [
   {
     name: "Maruti Swift",
     subName: "Swift",
-    offersAmount: 38100,
+    offersAmount: 53100,
     offersAdditionalDec: "",
     link: "/arena/swift-on-road-price",
     linkCG: "/arena/swift-on-road-price-in-raipur",
@@ -373,7 +373,7 @@ export const models = [
         title:
           "5 Reasons to Buy the 2024 Maruti Suzuki Swift Over Other Hatchbacks",
         desc: "The 2024 Maruti Suzuki Swift has made a significant impact in the hatchback segment, offering a blend of style, efficiency, and advanced features. Here are five compelling reasons why you should consider the new Swift over its competitors.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Swift-Over-Other-Hatchbacks",
         author: "Sky Automobiles",
       },
@@ -383,7 +383,7 @@ export const models = [
   {
     name: "Maruti Brezza",
     subName: "Brezza",
-    offersAmount: 25000,
+    offersAmount: 30000,
     offersAdditionalDec: "",
     link: "/arena/brezza-on-road-price",
     linkCG: "/arena/brezza-on-road-price-in-raipur",
@@ -589,7 +589,7 @@ export const models = [
         title:
           "5 Reasons to Buy the 2024 Maruti Suzuki Brezza Over Other Subcompact SUVs",
         desc: "The 2024 Maruti Suzuki Brezza has emerged as a strong contender in the subcompact SUV market, combining style, safety, and practicality. Here are five compelling reasons to choose the Brezza over its competitors.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Brezza-Over-Other-Subcompact-SUVs",
         author: "Sky Automobiles",
       },
@@ -599,7 +599,7 @@ export const models = [
   {
     name: "Maruti Dzire",
     subName: "Dzire",
-    offersAmount: 30000,
+    offersAmount: 35000,
     offersAdditionalDec: "",
     link: "/arena/dzire-on-road-price",
     linkCG: "/arena/dzire-on-road-price-in-raipur",
@@ -778,7 +778,7 @@ export const models = [
   {
     name: "Maruti S-Presso",
     subName: "S-Presso",
-    offersAmount: 56100,
+    offersAmount: 61100,
     offersAdditionalDec: "",
     link: "/arena/spresso-on-road-price",
     linkCG: "/arena/spresso-on-road-price-in-raipur",
@@ -929,7 +929,7 @@ export const models = [
   {
     name: "Maruti WagonR",
     subName: "WagonR",
-    offersAmount: 58100,
+    offersAmount: 48100,
     offersAdditionalDec: "",
     link: "/arena/wagon-r-on-road-price",
     linkCG: "/arena/wagon-r-on-road-price-in-raipur",
@@ -1121,7 +1121,7 @@ export const models = [
         title:
           "5 Reasons to Buy the 2024 Maruti Suzuki Wagon R Over Other Hatchbacks",
         desc: "The 2024 Maruti Suzuki Wagon R continues to be a popular choice in the hatchback segment, offering a perfect blend of practicality, efficiency, and modern features. Here are five compelling reasons to consider the Wagon R over its competitors.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Wagon-R-Over-Other-Hatchbacks",
         author: "Sky Automobiles",
       },
@@ -1296,7 +1296,7 @@ export const models = [
   {
     name: "Maruti Celerio",
     subName: "Celerio",
-    offersAmount: 53100,
+    offersAmount: 58100,
     offersAdditionalDec: "",
     link: "/arena/celerio-on-road-price",
     linkCG: "/arena/celerio-on-road-price-in-raipur",
@@ -1443,7 +1443,7 @@ export const models = [
       {
         title: "5 Reasons to Buy the 2024 Maruti Suzuki Celerio",
         desc: "The 2024 Maruti Suzuki Celerio is a compact hatchback that has garnered attention for its blend of efficiency, comfort, and modern features. Here are five compelling reasons to consider the Celerio for your next vehicle purchase.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Celerio",
         author: "Sky Automobiles",
       },
@@ -1615,8 +1615,8 @@ export const models = [
     name: "Maruti Invicto",
     subName: "Invicto",
     description: "The League of Extraordinary",
-    offersAmount: 0,
-    offersAdditionalDec: "",
+    offersAmount: 25000,
+    offersAdditionalDec: "+ MSSF Offer (Worth Rs. 100,000)",
     link: "/nexa/invicto-on-road-price",
     linkCG: "/nexa/invicto-on-road-price-in-raipur",
     linkOD: "/nexa/invicto-on-road-price-in-bhubaneswar",
@@ -1749,7 +1749,7 @@ export const models = [
     name: "Maruti Jimny",
     subName: "Jimny",
     description: "Crafted for Purity of Function",
-    offersAmount: 100000,
+    offersAmount: 80000,
     offersAdditionalDec: "+ 1.5 Lakh MSSF Offer",
     link: "/nexa/jimny-on-road-price",
     linkCG: "/nexa/jimny-on-road-price-in-raipur",
@@ -1905,7 +1905,7 @@ export const models = [
     name: "Maruti Fronx",
     subName: "Fronx",
     description: "Created to Inspire Style and Performance.",
-    offersAmount: 45000,
+    offersAmount: 50000,
     offersAdditionalDec: "+ Velocity Kit worth 43K ",
     link: "/nexa/fronx-on-road-price",
     linkCG: "/nexa/fronx-on-road-price-in-raipur",
@@ -2088,7 +2088,7 @@ export const models = [
       {
         title: "5 Reasons to Buy the 2024 Maruti Suzuki Fronx",
         desc: "The 2024 Maruti Suzuki Fronx has emerged as a compelling choice in the compact SUV segment, combining modern design, efficiency, and advanced features. Here are five reasons why the Fronx deserves your attention.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Fronx",
         author: "Sky Automobiles",
       },
@@ -2100,7 +2100,8 @@ export const models = [
     subName: "Grand Vitara",
     description: "The League of Extraordinary",
     offersAmount: 108100,
-    offersAdditionalDec: "+ Royal Platinum EW",
+    offersAdditionalDec:
+      "+ Dominance Kit worth 52699 + MSSF Offer (Worth Rs. 30k)",
     link: "/nexa/grand-vitara-on-road-price",
     linkCG: "/nexa/grand-vitara-on-road-price-in-raipur",
     linkOD: "/nexa/grand-vitara-on-road-price-in-bhubaneswar",
@@ -2309,14 +2310,14 @@ export const models = [
         title:
           "5 Reasons to Buy the 2024 Maruti Suzuki Grand Vitara Strong Hybrid",
         desc: "The 2024 Maruti Suzuki Grand Vitara Strong Hybrid is making waves in the compact SUV segment, offering a unique combination of performance, efficiency, and advanced features. Here are five compelling reasons to consider this hybrid model over its competitors.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Grand-Vitara-Strong-Hybrid",
         author: "Sky Automobiles",
       },
       {
         title: "Fuel Efficiency of Grand Vitara Strong Hybrid Compared",
         desc: "The 2024 Maruti Suzuki Grand Vitara Strong Hybrid stands out in the compact SUV segment, particularly due to its impressive fuel efficiency. Here’s how its fuel efficiency compares to other SUVs in the same category.",
-      
+
         link: "/blogs/Fuel-Efficiency-of-Grand-Vitara-Strong-Hybrid-Compared",
         author: "Sky Automobiles",
       },
@@ -2329,7 +2330,7 @@ export const models = [
     name: "Maruti XL6",
     subName: "XL6",
     description: "Created to Inspire Indulgence.",
-    offersAmount: 40000,
+    offersAmount: 45000,
     offersAdditionalDec: "",
     link: "/nexa/xl6-on-road-price",
     linkCG: "/nexa/xl6-on-road-price-in-raipur",
@@ -2489,7 +2490,7 @@ export const models = [
     name: "Maruti Ciaz",
     subName: "Ciaz",
     description: "Created To Inspire Elegance",
-    offersAmount: 48000,
+    offersAmount: 58000,
     offersAdditionalDec: "",
     link: "/nexa/ciaz-on-road-price",
     linkCG: "/nexa/ciaz-on-road-price-in-raipur",
@@ -2664,8 +2665,8 @@ export const models = [
     name: "Maruti Baleno",
     subName: "Baleno",
     description: "Created to Inspire The Bold and Intelligent",
-    offersAmount: 57100,
-    offersAdditionalDec: "",
+    offersAmount: 22100,
+    offersAdditionalDec: "+ Regal Kit worth 60526",
     link: "/nexa/baleno-on-road-price",
     linkCG: "/nexa/baleno-on-road-price-in-raipur",
     linkOD: "/nexa/baleno-on-road-price-in-bhubaneswar",
@@ -2789,7 +2790,7 @@ export const models = [
       {
         title: "5 Reasons to Buy the 2024 Maruti Suzuki Baleno",
         desc: "The 2024 Maruti Suzuki Baleno continues to be a popular choice in the premium hatchback segment, offering a blend of style, performance, and advanced features. Here are five compelling reasons to consider the Baleno for your next vehicle purchase.",
-      
+
         link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Baleno",
         author: "Sky Automobiles",
       },
@@ -2801,7 +2802,7 @@ export const models = [
     name: "Maruti Ignis",
     subName: "Ignis",
     description: "Created to Inspire The Toughness in You.",
-    offersAmount: 58100,
+    offersAmount: 758100,
     offersAdditionalDec: "+ Radiance Kit Worth 3K",
     link: "/nexa/ignis-on-road-price",
     linkCG: "/nexa/ignis-on-road-price-in-raipur",
