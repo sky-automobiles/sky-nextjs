@@ -2802,7 +2802,7 @@ export const models = [
     name: "Maruti Ignis",
     subName: "Ignis",
     description: "Created to Inspire The Toughness in You.",
-    offersAmount: 758100,
+    offersAmount: 78100,
     offersAdditionalDec: "+ Radiance Kit Worth 3K",
     link: "/nexa/ignis-on-road-price",
     linkCG: "/nexa/ignis-on-road-price-in-raipur",
