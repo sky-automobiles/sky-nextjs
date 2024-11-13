@@ -609,33 +609,32 @@ export const models = [
       {
         img: "/images/car/arena/dzire/bluishblack.webp",
         colorCode: "#2d3137",
-        colName: "Black",
+        colName: "Bluish Black",
       },
       {
         img: "/images/car/arena/dzire/white.webp",
         colorCode: "#ffffff",
-        colName: "Arctic White",
+        colName: "Pearl Arctic White",
       },
       {
         img: "/images/car/arena/dzire/magmagrey.webp",
-        colorCode: "#8d2c34",
-        colName: "Gallant Red",
+        colorCode: "#8F867E",
+        colName: "Magma Gray",
       },
       {
         img: "/images/car/arena/dzire/alluringblue.webp",
-
         colorCode: "#293d6c",
-        colName: "Magma Grey",
+        colName: "Alluring Blue",
       },
       {
         img: "/images/car/arena/dzire/nutmegbrown.webp",
         colorCode: "#524134",
-        colName: "Sherwood Brown",
+        colName: "Nutmeg Brown",
       },
       {
         img: "/images/car/arena/dzire/splendidsilver.webp",
         colorCode: "#7c8488",
-        colName: "Silky Silver",
+        colName: "Splendid Silver",
       },
     ],
 
