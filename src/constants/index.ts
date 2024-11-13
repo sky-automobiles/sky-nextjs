@@ -12,7 +12,7 @@ export const models = [
     link: "/arena/alto-k10-on-road-price",
     linkCG: "/arena/alto-k10-on-road-price-in-raipur",
     linkOD: "/arena/alto-k10-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/arena/altok10/altok-10-metallic-sizzling-red1.png",
@@ -185,7 +185,7 @@ export const models = [
     link: "/arena/swift-on-road-price",
     linkCG: "/arena/swift-on-road-price-in-raipur",
     linkOD: "/arena/swift-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/arena/swift/new-swift-sizzling-red-with-midnight-black-roof.png",
@@ -388,7 +388,7 @@ export const models = [
     link: "/arena/brezza-on-road-price",
     linkCG: "/arena/brezza-on-road-price-in-raipur",
     linkOD: "/arena/brezza-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/arena/brezza/brave_khaki.webp",
@@ -604,81 +604,41 @@ export const models = [
     link: "/arena/dzire-on-road-price",
     linkCG: "/arena/dzire-on-road-price-in-raipur",
     linkOD: "/arena/dzire-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
-        img: "/images/car/arena/dzire/dzire-oxford-blue.png",
-        colorCode: "#293d6c",
-        colName: "Oxford Blue",
+        img: "/images/car/arena/dzire/bluishblack.webp",
+        colorCode: "#2d3137",
+        colName: "Black",
       },
       {
-        img: "/images/car/arena/dzire/dzire-artic-white.png",
+        img: "/images/car/arena/dzire/white.webp",
         colorCode: "#ffffff",
         colName: "Arctic White",
       },
       {
-        img: "/images/car/arena/dzire/dzire-phoenix-red.png",
+        img: "/images/car/arena/dzire/magmagrey.webp",
         colorCode: "#8d2c34",
         colName: "Gallant Red",
       },
       {
-        img: "/images/car/arena/dzire/dzire-magma-grey.png",
-        colorCode: "#2d3137",
+        img: "/images/car/arena/dzire/alluringblue.webp",
+
+        colorCode: "#293d6c",
         colName: "Magma Grey",
       },
       {
-        img: "/images/car/arena/dzire/dzire-sherwood-brown.png",
+        img: "/images/car/arena/dzire/nutmegbrown.webp",
         colorCode: "#524134",
         colName: "Sherwood Brown",
       },
       {
-        img: "/images/car/arena/dzire/dzire-splendid-sliver.png",
+        img: "/images/car/arena/dzire/splendidsilver.webp",
         colorCode: "#7c8488",
         colName: "Silky Silver",
       },
     ],
-    // colors: [
-    //   {
-    //     img: "/images/car/arena/dzire/silky_silver.webp",
-    //     colorCode: "#C0C0C0",
-    //     colName: "Silky Silver",
-    //   },
-    //   {
-    //     img: "/images/car/arena/dzire/space_silver.webp",
-    //     colorCode: "#BEBEBE",
-    //     colName: "Space Silver",
-    //   },
-    //   {
-    //     img: "/images/car/arena/dzire/premium_silver.webp",
-    //     colorCode: "#D3D3D3",
-    //     colName: "Premium Silver",
-    //   },
-    //   {
-    //     img: "/images/car/arena/dzire/phoenix_red.webp",
-    //     colorCode: "#C8102E",
-    //     colName: "Phoenix Red",
-    //   },
-    //   {
-    //     img: "/images/car/arena/dzire/serene_blue.webp",
-    //     colorCode: "#003C6C",
-    //     colName: "Serene Blue",
-    //   },
-    //   {
-    //     img: "/images/car/arena/dzire/arctic_white.webp",
-    //     colorCode: "#F7F7F7",
-    //     colName: "Arctic White",
-    //   },
-    //   {
-    //     img: "/images/car/arena/dzire/midnight_black.webp",
-    //     colorCode: "#000000",
-    //     colName: "Midnight Black",
-    //   },
-    //   {
-    //     img: "/images/car/arena/dzire/sangria_red.webp",
-    //     colorCode: "#C8102E",
-    //     colName: "Sangria Red",
-    //   },
-    // ],
+
     keySpecifications: [
       { label: "Fuel Tank Capacity", value: "37 Litres" },
       { label: "Seating Capacity", value: "5" },
@@ -698,23 +658,23 @@ export const models = [
 
     exterior: [
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/exterior/exterior_web_01.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/whats-new-section/dzire_electric_sunroof.webp",
         title: "Auto-Foldable ORVMs",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/exterior/exterior_web_02.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/whats-new-section/front-grill-shot.webp",
         title: " Premium Single Aperture Grille For Striking Appearance",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/exterior/exterior_web_04.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/whats-new-section/6_airbags.webp",
         title: "  Fog Lamps With Bold Chrome Accents",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/exterior/exterior_web_03.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/whats-new-section/360-deg-camera.webp",
         title: "Precision-Cut Two-Tone Alloy Wheels",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/exterior/exterior_web_05.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/whats-new-section/amt_gear.webp",
         title: "LED Projector Headlamps & DRLs",
       },
       // {
@@ -724,23 +684,27 @@ export const models = [
     ],
     interior: [
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/interior/interior_web_01.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/feature-videos-section/headlamps_drl.webp",
         title: "Premium Trims with Champagne Accents",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/interior/interior_web_04.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/feature-videos-section/anteena.webp",
         title: "Exclusive Wood Finish With Natural Gloss Effect",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/interior/interior_web_02.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/feature-videos-section/orvm.webp",
         title: "Rear AC Vent",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/interior/interior_web_05.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/feature-videos-section/automatic_climate_control.webp",
         title: "Rear Armrest with Cupholder",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2022/interior/interior_web_03.webp",
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/feature-videos-section/rear-ac-vent.webp",
+        title: "Coloured Multi-Information Display",
+      },
+      {
+        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/dzire-launch-2024/feature-videos-section/dual-tone-interior.webp",
         title: "Coloured Multi-Information Display",
       },
       // {
@@ -750,28 +714,33 @@ export const models = [
     ],
     carDetails: [
       { label: "Engine", value: "1197 cc" },
-      { label: "Mileage", value: "23.26 kmpl" },
+      { label: "Mileage", value: "33.73 kmpl" },
       { label: "Power", value: "66.7 kW @ 6000 rpm" },
     ],
     variants: [
-      { variant: "DZIRE LXI", price: 656500, transmission: "Manual" },
-      { variant: "DZIRE VXI", price: 749250, transmission: "Manual" },
-      { variant: "DZIRE VXI AMT", price: 799250, transmission: "Automatic" },
-      { variant: "DZIRE ZXI", price: 817250, transmission: "Manual" },
-      { variant: "DZIRE ZXI AMT", price: 867250, transmission: "Automatic" },
-      { variant: "DZIRE ZXI +", price: 888750, transmission: "Manual" },
-      { variant: "DZIRE ZXI + AMT", price: 938750, transmission: "Automatic" },
+      { variant: "DZIRE LXI", price: 679500, transmission: "Manual" },
+      { variant: "DZIRE VXI", price: 779250, transmission: "Manual" },
+      { variant: "DZIRE VXI AMT", price: 824000, transmission: "Automatic" },
+      { variant: "DZIRE ZXI", price: 889000, transmission: "Manual" },
+      { variant: "DZIRE ZXI AMT", price: 934000, transmission: "Automatic" },
+      { variant: "DZIRE ZXI +", price: 969000, transmission: "Manual" },
+      { variant: "DZIRE ZXI + AMT", price: 1014000, transmission: "Automatic" },
       {
-        variant: "DZIRE TOUR S (O)(Petrol)",
-        price: 656000,
+        variant: "DZIRE VXI(CNG)",
+        price: 874000,
+        transmission: "Manual",
+      },
+      {
+        variant: "DZIRE ZXI(CNG)",
+        price: 984000,
         transmission: "Manual",
       },
     ],
     exploreMore: [4, 5, 6],
-    thumbnail: "/thumbnail/dzire.webp",
-    priceRange: "₹ 6.80 - 9.50 Lakh *",
+    thumbnail: "/thumbnail/bluishblack.png",
+    priceRange: "₹ 6.79 - 10.14 Lakh *",
     brochure:
-      "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Dzire_6_Pages_Vertical_Web_Brochure_Updated_with_S_CNG.pdf",
+      "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Dzire-Product-Brochure.pdf",
   },
 
   //4- Maruti S-Presso
@@ -783,7 +752,7 @@ export const models = [
     link: "/arena/spresso-on-road-price",
     linkCG: "/arena/spresso-on-road-price-in-raipur",
     linkOD: "/arena/spresso-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/arena/spresso/s-presso-pearl-starry-blue.png",
@@ -934,7 +903,7 @@ export const models = [
     link: "/arena/wagon-r-on-road-price",
     linkCG: "/arena/wagon-r-on-road-price-in-raipur",
     linkOD: "/arena/wagon-r-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/arena/wagonr/wagonr-poolside-blue.png",
@@ -1301,7 +1270,7 @@ export const models = [
     link: "/arena/celerio-on-road-price",
     linkCG: "/arena/celerio-on-road-price-in-raipur",
     linkOD: "/arena/celerio-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/arena/celerio/celerio-artic-white.png",
@@ -1403,10 +1372,6 @@ export const models = [
         img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/celerio-launch-2022/interior/interior_web_03.webp",
         title: "Energetic & Spacious Cabin",
       },
-      // {
-      //   img: "",
-      //   title: "",
-      // },
     ],
     carDetails: [
       { label: "Engine", value: "998 cc" },
@@ -1458,7 +1423,7 @@ export const models = [
     link: "/arena/eeco-on-road-price",
     linkCG: "/arena/eeco-on-road-price-in-raipur",
     linkOD: "/arena/eeco-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/arena/eeco/eeco-cerulean-blue.png",
@@ -1620,7 +1585,7 @@ export const models = [
     link: "/nexa/invicto-on-road-price",
     linkCG: "/nexa/invicto-on-road-price-in-raipur",
     linkOD: "/nexa/invicto-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/invicto/Blue_810 x 411.webp",
@@ -1754,7 +1719,7 @@ export const models = [
     link: "/nexa/jimny-on-road-price",
     linkCG: "/nexa/jimny-on-road-price-in-raipur",
     linkOD: "/nexa/jimny-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/jimny/jimny-bluish-black.png",
@@ -1910,7 +1875,7 @@ export const models = [
     link: "/nexa/fronx-on-road-price",
     linkCG: "/nexa/fronx-on-road-price-in-raipur",
     linkOD: "/nexa/fronx-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/fronx/FRONX-Color-1500x700-NEXA_Blue.webp",
@@ -2105,7 +2070,7 @@ export const models = [
     link: "/nexa/grand-vitara-on-road-price",
     linkCG: "/nexa/grand-vitara-on-road-price-in-raipur",
     linkOD: "/nexa/grand-vitara-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/grand-vitara/Nexa_blue.webp",
@@ -2335,7 +2300,7 @@ export const models = [
     link: "/nexa/xl6-on-road-price",
     linkCG: "/nexa/xl6-on-road-price-in-raipur",
     linkOD: "/nexa/xl6-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/xl6/Brand-page-car_Nexa-Blue.webp",
@@ -2495,7 +2460,7 @@ export const models = [
     link: "/nexa/ciaz-on-road-price",
     linkCG: "/nexa/ciaz-on-road-price-in-raipur",
     linkOD: "/nexa/ciaz-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/ciaz/5.webp",
@@ -2670,7 +2635,7 @@ export const models = [
     link: "/nexa/baleno-on-road-price",
     linkCG: "/nexa/baleno-on-road-price-in-raipur",
     linkOD: "/nexa/baleno-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/baleno/CelestialBlue.webp",
@@ -2807,7 +2772,7 @@ export const models = [
     link: "/nexa/ignis-on-road-price",
     linkCG: "/nexa/ignis-on-road-price-in-raipur",
     linkOD: "/nexa/ignis-on-road-price-in-bhubaneswar",
-    offerValidTill: "Sep 30, 2024",
+    offerValidTill: "Nov 30, 2024",
     colors: [
       {
         img: "/images/car/nexa/ignis/brandpage-car-nexa-blue.webp",
