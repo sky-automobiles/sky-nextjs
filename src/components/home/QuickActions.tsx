@@ -162,7 +162,7 @@ const QuickActions: React.FC<QuickActionsProps> = ({ isHeading }) => {
               </p>
 
               <a
-                href="tel:+91 9156822218"
+                href="tel:+91 6262325001"
                 target="_blank"
                 rel="noreferrer"
                 className={`px-2 md:px-4 text-center py-2 mx-auto mt-4 text-sm border rounded-lg group-hover:border-white hover:bg-white  md:mx-0  ${
