@@ -40,7 +40,10 @@ export async function POST(req: NextRequest) {
   <li>Date: ${date}</li>
   <li>Time: ${time}</li>
 </ul>`,
-      to: state && state === "Odisha" ? "" : "",
+      to:
+        state && state === "Odisha"
+          ? "skycuttack@gmail.com"
+          : "skycuttack@gmail.com",
       name,
       phone,
     });

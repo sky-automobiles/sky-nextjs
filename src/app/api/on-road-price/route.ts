@@ -37,9 +37,9 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-        const sendEMail = await sendEmail({
-          subject: `New ${model} Car Enquiry Request from ${name}`,
-          text: `<p>New ${model} Car Enquiry Request</p>
+    const sendEMail = await sendEmail({
+      subject: `New ${model} Car Enquiry Request from ${name}`,
+      text: `<p>New ${model} Car Enquiry Request</p>
 <p>You received an enquiry from:</p>
 <ul>
   <li>Name: ${name}</li>
@@ -51,11 +51,18 @@ export async function POST(req: NextRequest) {
   <li>Outlet: ${outlet}</li>
   <li>Channel: ${channel}</li>
 </ul>`,
-          to: state && state === "Odisha" ? "" : "",
-          name,
-          phone,
-        });
-    
+      to:
+        state && state === "Odisha" && channel === "Nexa"
+          ? "Nexa.qualitymanager@gmail.com"
+          : state && state !== "Odisha" && channel === "Nexa"
+          ? "nexaquality@skyautomobiles.in"
+          : state && state === "Odisha" && channel === "Arena"
+          ? "skycuttack@gmail.com"
+          : "mahobasales5001@gmail.com",
+      name,
+      phone,
+    });
+
     // Create a new Finance document
     const newEnquiry = new OnRoadPrice({
       name,
@@ -72,7 +79,6 @@ export async function POST(req: NextRequest) {
 
     // Save the document to the database
     await newEnquiry.save();
-
 
     // Return a success response
     return new NextResponse(
