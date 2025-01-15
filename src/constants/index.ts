@@ -12,7 +12,7 @@ export const models = [
     link: "/arena/alto-k10-on-road-price",
     linkCG: "/arena/alto-k10-on-road-price-in-raipur",
     linkOD: "/arena/alto-k10-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/altok10/altok-10-metallic-sizzling-red1.png",
@@ -185,7 +185,7 @@ export const models = [
     link: "/arena/swift-on-road-price",
     linkCG: "/arena/swift-on-road-price-in-raipur",
     linkOD: "/arena/swift-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/swift/new-swift-sizzling-red-with-midnight-black-roof.png",
@@ -388,7 +388,7 @@ export const models = [
     link: "/arena/brezza-on-road-price",
     linkCG: "/arena/brezza-on-road-price-in-raipur",
     linkOD: "/arena/brezza-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/brezza/brave_khaki.webp",
@@ -604,7 +604,7 @@ export const models = [
     link: "/arena/dzire-on-road-price",
     linkCG: "/arena/dzire-on-road-price-in-raipur",
     linkOD: "/arena/dzire-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/dzire/bluishblack.webp",
@@ -751,7 +751,7 @@ export const models = [
     link: "/arena/spresso-on-road-price",
     linkCG: "/arena/spresso-on-road-price-in-raipur",
     linkOD: "/arena/spresso-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/spresso/s-presso-pearl-starry-blue.png",
@@ -902,7 +902,7 @@ export const models = [
     link: "/arena/wagon-r-on-road-price",
     linkCG: "/arena/wagon-r-on-road-price-in-raipur",
     linkOD: "/arena/wagon-r-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/wagonr/wagonr-poolside-blue.png",
@@ -1265,11 +1265,11 @@ export const models = [
     name: "Maruti Celerio",
     subName: "Celerio",
     offersAmount: 53100,
-    offersAdditionalDec: "",
+    offersAdditionalDec:  "",
     link: "/arena/celerio-on-road-price",
     linkCG: "/arena/celerio-on-road-price-in-raipur",
     linkOD: "/arena/celerio-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/celerio/celerio-artic-white.png",
@@ -1418,11 +1418,11 @@ export const models = [
     name: "Maruti Eeco",
     subName: "Eeco",
     offersAmount: 38100,
-    offersAdditionalDec: "",
+    offersAdditionalDec:  "",
     link: "/arena/eeco-on-road-price",
     linkCG: "/arena/eeco-on-road-price-in-raipur",
     linkOD: "/arena/eeco-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/arena/eeco/eeco-cerulean-blue.png",
@@ -1584,7 +1584,7 @@ export const models = [
     link: "/nexa/invicto-on-road-price",
     linkCG: "/nexa/invicto-on-road-price-in-raipur",
     linkOD: "/nexa/invicto-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/invicto/Blue_810 x 411.webp",
@@ -1629,56 +1629,62 @@ export const models = [
       { label: "Gearbox", value: "6-Speed/Auto" },
     ],
     exterior: [
+     
       {
-        img: "https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/extr-img-3-jpg.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/Extr-img-4+webp.webp",
         title: "",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/extr-img-5-webp.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/Extr-img-2+jpg.webp",
         title: "",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/extr-img-4-webp.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/Extr-img-5+webp.webp",
+        title: "",
+      },
+     
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/int-img-5+webp.webp",
         title: "",
       },
       {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/extr-img-2-jpg.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/Extr-img-3+jpg.webp",
         title: "",
       },
+
+      
+     
     ],
     interior: [
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/intr-img-2-jpg.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/intr-img-3+jpg.webp",
         title: "",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/intr-img-1-jpg.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/intr-img-2+jpg.webp",
         title: "",
       },
       {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/int-img-4-webp.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/int-img-8+webp.webp",
         title: "",
       },
       {
-        img: "https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/int-img-5-webp.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/int-img-6+webp.webp",
         title: "",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/int-img-6-webp.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/int-img-4+webp.webp",
         title: "",
       },
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/int-img-7-webp.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/intr-img-1+jpg.webp",
         title: "",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/int-img-8-webp.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/invicto/int-img-7+webp.webp",
         title: "",
       },
-      {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/discoveropulence/intr-img-3-jpg.webp",
-        title: "",
-      },
+     
     ],
     carDetails: [
       { label: "Engine", value: "1987 cc" },
@@ -1718,7 +1724,7 @@ export const models = [
     link: "/nexa/jimny-on-road-price",
     linkCG: "/nexa/jimny-on-road-price-in-raipur",
     linkOD: "/nexa/jimny-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/jimny/jimny-bluish-black.png",
@@ -1775,49 +1781,49 @@ export const models = [
     ],
     exterior: [
       {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/clamshell-bonnet.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/clamshell-bonnet.webp",
         title: "Clamshell Bonnet",
       },
       {
-        img: "https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/1000x500-ar_sn_nexa_jimny_optimized-bumper_v2.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/1000x500-ar_sn_nexa_jimny_optimized-bumper_v2.webp",
         title: "Optimized Bumpers",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/practical-drip-rail.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/practical-drip-rail.webp",
         title: "Practical Drip Rail",
       },
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/1000x500-ar_ab_jimny_led_headlamp_with_washer_02-copy.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/1000x500-ar_ab_jimny_led_headlamp_with_washer_02-copy.webp",
         title: "LED Headlamps with Washer",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/alloy.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/alloy.webp",
         title: "All Alloy Wheels",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/5-slot-chrome-plated-grille.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/5-slot-chrome-plated-grille.webp",
         title: "Gunmetal Grey Grille with Chrome Plating",
       },
     ],
     interior: [
       {
-        img: "https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/1000x500-ar_pk_nexa_jimny_interior_kv_v-1.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/1000x500-ar_pk_nexa_jimny_interior_kv_v-1.webp",
         title: "Sporty Cabin with Scratch-Resistant Surfaces",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/1000x500-ar_pk_nexa_jimny_intuitively-designed-controls_v-2.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/1000x500-ar_pk_nexa_jimny_intuitively-designed-controls_v-2.webp",
         title: "Intuitively Designed Controls",
       },
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/comfortable-seat-design.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/comfortable-seat-design.webp",
         title: "Comfortable Seat Design",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/professional-utility-kit.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/professional-utility-kit.webp",
         title: " Professional Utility Kit",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/1000x500-ar-am-jimny-ywd-smart-play-pro-shot-v1-copy.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/interior/1000x500-ar-am-jimny-ywd-smart-play-pro-shot-v1-copy.webp",
         title: "SmartPlay Pro+",
       },
     ],
@@ -1874,7 +1880,7 @@ export const models = [
     link: "/nexa/fronx-on-road-price",
     linkCG: "/nexa/fronx-on-road-price-in-raipur",
     linkOD: "/nexa/fronx-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/fronx/FRONX-Color-1500x700-NEXA_Blue.webp",
@@ -1945,29 +1951,29 @@ export const models = [
     ],
     exterior: [
       {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-dashboard.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-dashboard.webp",
         title: "Dual Tone Plush Interiors",
       },
       {
-        img: "https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-360_screen.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-360_screen.webp",
         title: "360° Panoramic View",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-head_up_display.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-head_up_display.webp",
         title: "Head-Up Display",
       },
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-wireless-changing.webp",
-        title: "Wireless Changing",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-wireless-changing.webp",
+        title: "Wireless Charging",
       },
     ],
     interior: [
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-9inch_touch_screen.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-9inch_touch_screen.webp",
         title: "Advanced Dashboard",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-paddle_shifters.webp",
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/slideshow/TECHNOLOGY-1000x500-PADDLE_SHIFTERS.webp",
         title: "Paddle Shifters",
       },
     ],
@@ -2069,7 +2075,7 @@ export const models = [
     link: "/nexa/grand-vitara-on-road-price",
     linkCG: "/nexa/grand-vitara-on-road-price-in-raipur",
     linkOD: "/nexa/grand-vitara-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/grand-vitara/Nexa_blue.webp",
@@ -2299,7 +2305,7 @@ export const models = [
     link: "/nexa/xl6-on-road-price",
     linkCG: "/nexa/xl6-on-road-price-in-raipur",
     linkOD: "/nexa/xl6-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/xl6/Brand-page-car_Nexa-Blue.webp",
@@ -2393,19 +2399,19 @@ export const models = [
     ],
     interior: [
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img4.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img4.webp",
         title: "Ventilated Seats",
       },
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img1.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img1.webp",
         title: "360 View Camera",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img2.webpp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img2.webp",
         title: "6-Speed AT with Paddle Shifters",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img3.webp",
+        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img3.webp",
         title: "Tyre Pressure Monitoring System",
       },
     ],
@@ -2459,7 +2465,7 @@ export const models = [
     link: "/nexa/ciaz-on-road-price",
     linkCG: "/nexa/ciaz-on-road-price-in-raipur",
     linkOD: "/nexa/ciaz-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill:  "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/ciaz/5.webp",
@@ -2634,7 +2640,7 @@ export const models = [
     link: "/nexa/baleno-on-road-price",
     linkCG: "/nexa/baleno-on-road-price-in-raipur",
     linkOD: "/nexa/baleno-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/baleno/CelestialBlue.webp",
@@ -2771,7 +2777,7 @@ export const models = [
     link: "/nexa/ignis-on-road-price",
     linkCG: "/nexa/ignis-on-road-price-in-raipur",
     linkOD: "/nexa/ignis-on-road-price-in-bhubaneswar",
-    offerValidTill: "Nov 30, 2024",
+    offerValidTill: "Jan 31, 2025",
     colors: [
       {
         img: "/images/car/nexa/ignis/brandpage-car-nexa-blue.webp",

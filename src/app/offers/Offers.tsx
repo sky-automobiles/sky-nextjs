@@ -161,7 +161,7 @@ const Offers = () => {
           </div>
           {filteredAndSortedData?.length > 0 && (
             <p className="pt-1 text-sm cont">
-              Terms and Conditions Apply. These offers are valid till 31th of
+              Terms and Conditions Apply. These offers are valid till 31st of
               Jan 2025. Above offers include consumer, exchange, institutional,
               and rural offers.
             </p>
