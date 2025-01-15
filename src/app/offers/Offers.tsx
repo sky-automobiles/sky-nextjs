@@ -116,8 +116,8 @@ const Offers = () => {
                       >
                         <span className="text-sm font-medium text-gray-900">
                           Save upto
-                        </span>{" "}
-                           ₹* {isNaN(offer.offersAmount) ? "0" : offer.offersAmount.toLocaleString()} 
+                        </span>{" "}    {/*  ₹* {isNaN(offer.offersAmount) ? "0" : offer.offersAmount.toLocaleString()} */} 
+                          ₹* {isNaN(offer.offersAmount) ? "0" : offer.offersAmount.toLocaleString("en-IN")}  {/* ₹* {offer.offersAmount}*/}
                       </p>
                       <p className="text-sm mb-2 ">
                         {offer.offersAdditionalDec}
