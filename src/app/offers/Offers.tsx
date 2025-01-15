@@ -56,7 +56,7 @@ const Offers = () => {
             >
               Offers
             </span>{" "}
-            2024
+            2025
           </h4>
           <p className=" text-primaryGray text-center md:mb-3">
             Discover unbeatable deals on Maruti Suzuki Arena & Nexa models.
@@ -161,8 +161,8 @@ const Offers = () => {
           </div>
           {filteredAndSortedData?.length > 0 && (
             <p className="pt-1 text-sm cont">
-              Terms and Conditions Apply. These offers are valid till 16th of
-              Sep 2024. Above offers include consumer, exchange, institutional,
+              Terms and Conditions Apply. These offers are valid till 31th of
+              Jan 2025. Above offers include consumer, exchange, institutional,
               and rural offers.
             </p>
           )}
