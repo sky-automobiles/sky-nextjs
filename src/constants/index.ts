@@ -7,7 +7,7 @@ export const models = [
   {
     name: " Maruti ALTO K10",
     subName: "ALTO K10",
-    offersAmount: 53100,
+    offersAmount:53100,
     offersAdditionalDec: "",
     link: "/arena/alto-k10-on-road-price",
     linkCG: "/arena/alto-k10-on-road-price-in-raipur",
