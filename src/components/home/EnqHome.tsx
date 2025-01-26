@@ -172,6 +172,7 @@ const EnqHome: React.FC = () => {
                 <option value="Eeco">Eeco</option>
               </optgroup>
               <optgroup label="Nexa" className="text-sm text-primaryGray">
+              <option value="Invicto">e-Vitara</option>
                 <option value="Invicto">Invicto</option>
                 <option value="Fronx">Fronx</option>
                 <option value="Jimny">Jimny</option>
