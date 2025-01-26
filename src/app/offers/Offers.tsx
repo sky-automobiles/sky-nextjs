@@ -18,11 +18,11 @@ const Offers = () => {
   const filteredAndSortedData = models
     ?.filter(
       (vehicle) =>
-        vehicle.offersAmount > 0 &&
+        (vehicle.offersAmount as number) > 0 &&
         (vehicle.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
           vehicle.offersAmount.toString().includes(searchQuery))
     )
-    .sort((a, b) => b.offersAmount - a.offersAmount);
+    .sort((a, b) => (b.offersAmount as number )- (a.offersAmount as number));
 
   return (
     <div>
@@ -117,7 +117,7 @@ const Offers = () => {
                         <span className="text-sm font-medium text-gray-900">
                           Save upto
                         </span>{" "}    {/*  ₹* {isNaN(offer.offersAmount) ? "0" : offer.offersAmount.toLocaleString()} */} 
-                        ₹ <span className="font-medium">{isNaN(offer.offersAmount) ? "0" : offer.offersAmount.toLocaleString("en-IN")}</span><span className="font-bold">*</span>  {/* ₹* {offer.offersAmount}*/}
+                        ₹ <span className="font-medium">{isNaN(offer.offersAmount as number) ? "0" : offer.offersAmount.toLocaleString("en-IN")}</span><span className="font-bold">*</span>  {/* ₹* {offer.offersAmount}*/}
                       </p>
                       <p className="text-sm mb-2 ">
                         {offer.offersAdditionalDec}
