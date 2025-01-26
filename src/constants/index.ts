@@ -1574,7 +1574,160 @@ export const models = [
     brochure:
       "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Eeco-Passenger-BRAND-Leaflet.pdf",
   },
-  // Invicto - 9
+
+// Maruti eVitara - 9
+
+  {
+    name: "Maruti eVitara",
+    subName: "eVitara",
+    description: "Created to Spark Your eMagination.",
+    offersAmount:"N/A",
+    offersAdditionalDec: "",
+    link: "/nexa/eVitara-on-road-price",
+    linkCG: "/nexa/eVitara-on-road-price-in-raipur",
+    linkOD: "/nexa/eVitara-on-road-price-in-bhubaneswar",
+    offerValidTill: "",
+    colors: [
+      {
+        img: "/images/car/nexa/eVitara/Background.png",
+        colorCode: "#183F66",
+        colName: "NEXA Blue (Celestial)",
+        
+      },
+      {
+        img: "/images/car/nexa/eVitara/opulent-red-blish-black-roof.png",
+        colorCode: "red",
+        colName: "Opulent Red with Bluish Black Roof",
+        
+      },
+  
+      {
+        img: "/images/car/nexa/eVitara/gradenur-grey.png",
+        colorCode: "grey",
+        colName: "Grandeur Grey",
+        
+      },
+      
+  
+  
+      {
+        img: "/images/car/nexa/eVitara/Splended-silver (2).png",
+        colorCode: "#AFB3B8",
+        colName: "Splended Silver",
+      },
+      
+      {
+        img: "/images/car/nexa/eVitara/Background (6).png",
+        colorCode: "#EEEFF0",
+        colName: " Arctic White",
+      },
+      {
+        img: "/images/car/nexa/eVitara/Background (4).png",
+        colorCode: "#171717",
+        colName: "Bluish Black",
+      },
+      
+     
+  
+  
+    ],
+    // keySpecifications: [
+    //   { label: "Fuel Tank Capacity", value: "32 Litres" },
+    //   { label: "Seating Capacity", value: "5" },
+    //   { label: "Length", value: "3700 mm" },
+    //   { label: "Width", value: "1690 mm" },
+    //   { label: "Height", value: "1595 mm" },
+    //   { label: "Front Suspension", value: "Independent, McPherson Strut" },
+    //   { label: "Rear Suspension", value: "Torsion Beam" },
+    //   { label: "Fuel Type", value: "Petrol" },
+    //   { label: "No. of Cylinders", value: "4" },
+    //   { label: "Max Torque", value: "113 Nm @ 4200 rpm" },
+    //   { label: "Transmission Type", value: "Manual/Automatic" },
+    //   { label: "Body Type", value: "Hatchback" },
+    //   { label: "Wheel Base", value: "2435 mm" },
+    //   { label: "Gearbox", value: "5-Speed/Auto" },
+    // ],
+    exterior: [
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/POLYHEDRAL-MUSCULAR-STANCE.avif",
+        title: "Polyhyderal Muscular Stance",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/FUTURISTIC-FRONT-FASCIA.avif",
+        title: "Futuristic Front Fascia",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/R18-AERODYNAMIC-ALLOYS-.avif",
+        title: "R18 Aerodynamic Alloys",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/NEXTR%C3%88-3-POINT-MATRIX-LED-DRLs-.avif",
+        title: "NEXTrè 3-Point Matrix LED DRLs",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/NEXTR%C3%88-3-POINT-MATRIX-REAR-LAMPS-.avif",
+        title: "NEXTrè 3-Point Matrix Rear Lamps",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/SCULPTED-3D-APPEARANCE.avif",
+        title: "Sculpted 3D Appearance",
+      },
+    ],
+    interior: [
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/AMBIENT-LIGHTING-WITH-MULTI-COLOUR-ILLUMINATION.avif",
+        title: "Ambient Lighting With Multi Colour Illumination",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/26.avif",
+        title: "26.04 cm Multi Information Display",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/Twindeck-Floating-Console-with-Shift-by-Wire-_-New.avif",
+        title: "Twindeck Floating Console With Shift By Wire",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/DIGITAL-COCKPIT-EXPERIENCE.avif",
+        title: "Digital Cockpit Experience",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/SUNROOF-WITH-FIXED-GLASS.avif",
+        title: "Sunroof With Fixed Glass",
+      },
+      {
+        img: "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/WIRELESS-CHARGER.avif",
+        title: "Wireless Charger",
+      },
+    ],
+    carDetails: [
+       { label: "Pure Electric", value: "platform" },
+       { label: "Range", value: "500km" },
+       { label: "Battery", value: "61kWh" },
+      
+    ],
+    variants: [
+      {variant:"eVitara",price:"N/A", transmission:"Automatic" }
+      // { variant: "ALPHA DT AGS (P)", price: 820000, transmission: "Automatic" },
+      // { variant: "ALPHA AGS (P)", price: 806000, transmission: "Automatic" },
+      // { variant: "ZETA DT AGS (P)", price: 755000, transmission: "Automatic" },
+      // { variant: "ZETA AGS (P)", price: 741000, transmission: "Automatic" },
+      // { variant: "DELTA AGS (P)", price: 683000, transmission: "Automatic" },
+      // { variant: "ALPHA DT MT (P)", price: 775000, transmission: "Manual" },
+      // { variant: "ALPHA MT (P)", price: 761000, transmission: "Manual" },
+      // { variant: "ZETA DT MT (P)", price: 710000, transmission: "Manual" },
+      // { variant: "ZETA MT (P)", price: 696000, transmission: "Manual" },
+      // { variant: "DELTA MT (P)", price: 638000, transmission: "Manual" },
+      // { variant: "SIGMA MT (P)", price: 584000, transmission: "Manual" },
+    ],
+    exploreMore: [9, 10, 11],
+    thumbnail: "/images/car/nexa/eVitara/Evitara.png",
+    priceRange: "₹ N/A *",
+    brochure:
+       "",
+  },
+
+  
+  // Invicto - 10
   {
     name: "Maruti Invicto",
     subName: "Invicto",
@@ -2910,6 +3063,12 @@ export const models = [
     brochure:
       "https://nexaprod4.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/ignis-brochure.pdf",
   },
+
+ // eVitara - 17
+ 
+
+
+
 ];
 
 export const cgOutlets = [

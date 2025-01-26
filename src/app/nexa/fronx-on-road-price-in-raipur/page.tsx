@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Fronx: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={11} />
+      <VehicleDetailTemplate index={12} />
     </div>
   );
 };

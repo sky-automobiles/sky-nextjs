@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const GrandVitara: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={12} />
+      <VehicleDetailTemplate index={13} />
     </div>
   );
 };

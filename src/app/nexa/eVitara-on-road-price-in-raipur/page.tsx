@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     "Check out the luxurious NEXA Ciaz sedan in Raipur. Discover its on-road price, premium features, and exclusive offers at NEXA Sky Automobiles Maruti Suzuki Raipur.",
 };
-const Ciaz: React.FC = () => {
+const eVitara: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={15} />
+      <VehicleDetailTemplate index={9} />
     </div>
   );
 };
 
-export default Ciaz;
+export default eVitara;
