@@ -1719,7 +1719,7 @@ export const models = [
       // { variant: "DELTA MT (P)", price: 638000, transmission: "Manual" },
       // { variant: "SIGMA MT (P)", price: 584000, transmission: "Manual" },
     ],
-    exploreMore: [9, 10, 11],
+    exploreMore: [10, 11, 12],
     thumbnail: "/images/car/nexa/eVitara/Evitara.png",
     priceRange: "₹ N/A *",
     brochure:
@@ -1861,13 +1861,13 @@ export const models = [
         transmission: "Automatic",
       },
     ],
-    exploreMore: [10, 11, 12],
+    exploreMore: [11, 12, 13],
     thumbnail: "/thumbnail/invicto-main-thubmnail-no-bg.webp",
     priceRange: "₹ 25.305 - 29.015 Lakh *",
     brochure:
       "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/invicto-brochure_invicto-pdf.pdf",
   },
-  // Maruti Jimny -10
+  // Maruti Jimny -11
   {
     name: "Maruti Jimny",
     subName: "Jimny",
@@ -2017,13 +2017,13 @@ export const models = [
         transmission: "Manual",
       },
     ],
-    exploreMore: [11, 12, 13],
+    exploreMore: [12, 13, 14],
     thumbnail: "/thumbnail/Jimny.webp",
     priceRange: "₹ 12.74 - 14.95 Lakh*",
     brochure:
       "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/jimny_brochure.pdf#element_submenu",
   },
-  // Maruti Fronx - 11
+  // Maruti Fronx - 12
   {
     name: "Maruti Fronx",
     subName: "Fronx",
@@ -2202,7 +2202,7 @@ export const models = [
       { variant: "CNG (MT) DELTA", price: 932500, transmission: "Manual" },
       { variant: "CNG (MT) SIGMA", price: 846500, transmission: "Manual" },
     ],
-    exploreMore: [12, 13, 14],
+    exploreMore: [13, 14, 15],
     thumbnail: "/thumbnail/Fronx.webp",
     priceRange: "₹ 7.515 - 13.035 Lakh *",
     brochure:
@@ -2217,7 +2217,7 @@ export const models = [
       },
     ],
   },
-  // Maruti GV -12
+  // Maruti GV -13
   {
     name: "Maruti Grand Vitara",
     subName: "Grand Vitara",
@@ -2423,7 +2423,7 @@ export const models = [
       { variant: "ZETA CNG (MT)", price: 1496000, transmission: "Manual" },
       { variant: "DELTA CNG (MT)", price: 1315000, transmission: "Manual" },
     ],
-    exploreMore: [13, 14, 15],
+    exploreMore: [14, 15, 16],
     thumbnail: "/thumbnail/GV.webp",
     priceRange: "₹ 10.99- 20.09 Lakh *",
     brochure:
@@ -2447,7 +2447,7 @@ export const models = [
     ],
   },
 
-  // XL6 - 13
+  // XL6 - 14
 
   {
     name: "Maruti XL6",
@@ -2600,14 +2600,14 @@ export const models = [
       { variant: "ZETA (1.5 P MT)", price: 1161000, transmission: "Manual" },
       { variant: "ZETA CNG (MT)", price: 1256000, transmission: "Manual" },
     ],
-    exploreMore: [14, 15, 16],
+    exploreMore: [15, 16, 17],
     thumbnail: "/thumbnail/XL6.webp",
     priceRange: "₹ 12.56 - 14.77 Lakh *",
     brochure:
       "https://nexaprod3.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/xl6-brochure-for-digital.pdf",
   },
 
-  // Ciaz - 14
+  // Ciaz - 15
 
   {
     name: "Maruti Ciaz",
@@ -2775,14 +2775,14 @@ export const models = [
       { variant: "DELTA (1.5 P MT)", price: 1000000, transmission: "Manual" },
       { variant: "SIGMA (1.5 P MT)", price: 940000, transmission: "Manual" },
     ],
-    exploreMore: [15, 16, 9],
+    exploreMore: [16, 17, 9],
     thumbnail: "/thumbnail/Ciaz.webp",
     priceRange: "₹ 9.40 - 12.45 Lakh *",
     brochure:
       "https://www.nexaexperience.com/-/media/feature/nexawebsiteherobanner/brochure/all_new_ciaz_brochure.pdf",
   },
 
-  // Baleno - 15
+  // Baleno - 16
 
   {
     name: "Maruti Baleno",
@@ -2904,7 +2904,7 @@ export const models = [
       { variant: "ZETA (CNG) MT", price: 933000, transmission: "Manual" },
       { variant: "DELTA (CNG) MT", price: 840000, transmission: "Manual" },
     ],
-    exploreMore: [16, 9, 10],
+    exploreMore: [17, 9, 10],
     thumbnail: "/thumbnail/Baleno.webp",
     priceRange: "₹ 6.66 - 9.83 Lakh *",
     brochure:
@@ -2920,7 +2920,7 @@ export const models = [
     ],
   },
 
-  // Ignis - 16
+  // Ignis - 17
   {
     name: "Maruti Ignis",
     subName: "Ignis",

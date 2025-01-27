@@ -145,6 +145,13 @@ const Footer: React.FC = () => {
                 selectedState={selectedState}
                 links={[
                   {
+                    label: "e-Vitara",
+                    href: "/nexa/eVitara-on-road-price-in-bhubaneswar",
+                    hrefOD: "/nexa/eVitara-on-road-price-in-raipur",
+                  },
+
+
+                  {
                     label: "Invicto",
                     href: "/nexa/invicto-on-road-price-in-bhubaneswar",
                     hrefOD: "/nexa/invicto-on-road-price-in-raipur",
