@@ -305,7 +305,7 @@ const Header = () => {
               </div>
               <div
                 className={`grid w-full grid-cols-4 text-black  max-h-[70vh] xl:overflow-hidden ${
-                  selectedTab === 0 ? "xl:grid-cols-5" : "xl:grid-cols-4"
+                  selectedTab === 0 ? "xl:grid-cols-5" : "xl:grid-cols-5"
                 } `}
               >
                 {selectedTab === 0 &&
