@@ -2304,38 +2304,46 @@ export const models = [
     ],
     exterior: [
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-exterior-1.webp",
+        img: "/images/car/nexa/grand-vitara/front-left-side-47.avif",
         title: "Bold Front Grille",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-exterior-2.webp",
-        title: "LED Headlamps",
+        img: "/images/car/nexa/grand-vitara/door-view-of-driver-seat-51.avif",
+        title: "Door-view",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-exterior-3.webp",
+        img: "/images/car/nexa/grand-vitara/grille-97.avif",
+        title: "Grille",
+      },
+      {
+        img: "/images/car/nexa/grand-vitara/wheel-42.avif",
         title: "Stylish Alloy Wheels",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-exterior-4.webp",
+        img: "/images/car/nexa/grand-vitara/sun-roof-moon-roof-81.avif",
         title: "Panoramic Sunroof",
       },
     ],
     interior: [
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-interior-1.webp",
+        img: "/images/car/nexa/grand-vitara/dashboard-59.avif",
         title: "Luxurious Cabin",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-interior-2.webp",
+        img: "/images/car/nexa/grand-vitara/interior-image-207.webp",
         title: "Advanced Infotainment System",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-interior-3.webp",
+        img: "/images/car/nexa/grand-vitara/wireless-charging-pad-206.avif",
         title: "Comfortable Leather Seats",
       },
       {
-        img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/grand-vitara-interior-4.webp",
-        title: "Generous Boot Space",
+        img: "/images/car/nexa/grand-vitara/rear-air-vents-86.avif",
+        title: "ac-vents",
+      },
+      {
+        img: "/images/car/nexa/grand-vitara/front-armrest-185.avif",
+        title: "Front Armrest",
       },
     ],
     carDetails: [
@@ -2535,41 +2543,41 @@ export const models = [
     ],
     exterior: [
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/features/1170x521-roof-end-spoiler.webp?la=en&hash=FC5541B242B9B55E652AABB610447ABC",
+        img: "/images/car/nexa/xl6/1170x521-roof-end-spoiler.ac029c6c59028c43a775.webp",
         title: "Backdoor Spoiler",
       },
       {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/features/1170x521--orvm.webp?la=en&hash=F7F609454200F93A557BAC04F24C9405",
+        img: "/images/car/nexa/xl6/1170x521--ORVM.d6ef7c4cf6eea705df2c.webp",
         title: "Auto ORVMs",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/features/1170x521-uv-cut-glass.webp?la=en&hash=0F9AC20129A563E134848517385CE332",
+        img: "/images/car/nexa/xl6/1170x521-UV-cut-glass.5fa942fd6178e619dfbe.webp",
         title: "UV Cut Glass",
       },
       {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/features/1170x521-fog-light.webp?la=en&hash=E174B5DC82C324CB84C002B786A94CCF",
+        img: "/images/car/nexa/xl6/1170x521-fog-light.19e3214c1923c110a78d.webp",
         title: "LED Fog Lights",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/xl6/features/1170x521-cabin-foot-almp.webp?la=en&hash=7CD8FA972E6FEC3E64558A85169BA5F9",
+        img: "/images/car/nexa/xl6/1170x521-cabin-foot-lamp.2f42eae8e5aa6cc2d024.webp",
         title: "Footlamp Illumination",
       },
     ],
     interior: [
       {
-        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img4.webp",
+        img: "/images/car/nexa/xl6/Ventilated-seats.webp",
         title: "Ventilated Seats",
       },
       {
-        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img1.webp",
+        img: "/images/car/nexa/xl6/camera360.webp",
         title: "360 View Camera",
       },
       {
-        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img2.webp",
+        img: "/images/car/nexa/xl6/paddle-swifter.webp",
         title: "6-Speed AT with Paddle Shifters",
       },
       {
-        img: "https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/xl6/brand-highlights/img3.webp",
+        img: "/images/car/nexa/xl6/tyre-pressure.webp",
         title: "Tyre Pressure Monitoring System",
       },
     ],
@@ -2854,43 +2862,66 @@ export const models = [
     ],
     exterior: [
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/features/boot-space.webp?la=en&hash=5B55CB470D73DFB2CD9D91EF1921E706",
+        img: "/images/car/nexa/baleno/front-view-118.avif",
+        title: " Baleno Front View",
+      },
+      {
+        img: "/images/car/nexa/baleno/rear-view-119.webp",
+        title: "Maruti Baleno Rear view",
+      },
+      {
+        img: "/images/car/nexa/baleno/headlight-43.webp",
+        title: "Maruti Baleno Headlight",
+      },
+      {
+        img: "/images/car/nexa/baleno/taillight-44.webp",
+        title: "Maruti Baleno Taillight",
+      },
+     {
+      img:"/images/car/nexa/baleno/wheel-42.webp",
+      title:"Maruti Baleno Wheel",
+     }
+    ],
+
+
+    interior: [
+
+      {
+        img: "/images/car/nexa/baleno/Boot-space.webp",
         title: "Boot Space with 60:40 Rear Split",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/features/anti-pinch.webp?la=en&hash=bc1qre8jdw2azrg6tf49wmp652w00xltddxmpk98xp",
+        img: "/images/car/nexa/baleno/Anti-pinch.webp",
         title: "Anti-Pinch Window",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/features/uv-cut-glasses_new.webp?la=en&hash=C28C74E6BBC12A1908F231256D10D637",
+        img: "/images/car/nexa/baleno/UV-cut-Glasses_new.webp",
         title: "UV Cut Glass",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/features/bottle-holder.webp?la=en&hash=C7CC76BEDF0483EE82AD872C77F155BA",
+        img: "/images/car/nexa/baleno/bottle-holder.webp",
         title: "Bottle Holder",
       },
-    ],
-    interior: [
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/newbranddetails/img3.webp",
+        img: "/images/car/nexa/baleno/technology-1080x420-HUD.webp",
         title: "HEAD UP DISPLAY",
       },
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/newbranddetails/img1.webp",
+        img: "/images/car/nexa/baleno/technology-1080x420-360-CAMERA-VIEW.webp",
         title: "360 VIEW CAMERA",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/newbranddetails/img4.webp",
+        img: "/images/car/nexa/baleno/technology-1080x420-apple-carplay.webp",
         title: "22.86 CM HD SMARTPLAY PRO+",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/newbranddetails/img5.webp",
+        img: "/images/car/nexa/baleno/technology-1080x420-suzuki-connect.webp",
         title: "NEXT GENERATION SUZUKI CONNECT",
       },
-      {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/newbranddetails/img2.webp",
-        title: "6 AIRBAGS",
-      },
+      // {
+      //   img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/newbranddetails/img2.webp",
+      //   title: "6 AIRBAGS",
+      // },
     ],
     carDetails: [
       { label: "Engine", value: "1197 cc" },
@@ -3006,41 +3037,47 @@ export const models = [
     ],
     exterior: [
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/ignis/feature-1170x521-split-seat-new-webp.webp?la=en&hash=039F52B0BF703E3E1C43F55093FB2FC5",
+        img: "/images/car/nexa/ignis/grille-97.webp",
+        title: "Grill",
+      },
+
+
+      {
+        img: "/images/car/nexa/ignis/Feature-1170x521-split-seat new webp.webp",
         title: "60:40 SPLIT SEAT",
       },
       {
-        img: "https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/ignis/feature-1170x521-orvm-webp.webp?la=en&hash=B8E4F5481148E213CC69B351F8EEB1C0",
+        img: "/images/car/nexa/ignis/Feature-1170x521-ORVM webp.webp",
         title: "AUTO ORVM",
       },
       {
-        img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/features/tilt.webp?la=en&hash=85A1D1E8616F3483A8B667EED998FCD1",
+        img: "/images/car/nexa/ignis/tilt.webp",
         title: "TILT STEERING",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/technology/tech.webp",
+        img: "/images/car/nexa/ignis/tech.webp",
         title: "AGS",
       },
     ],
     interior: [
       {
-        img: "https://nexaprod3.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/features/slda.webp?la=en&hash=A8AFEF85DF2A195EA9FD68A10414A841",
+        img: "/images/car/nexa/ignis/SLDA.webp",
         title: "SMARTPLAY STUDIO",
       },
       {
-        img: "https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/ignis/steer-mount-control-webp.webp?la=en&hash=C9B99EB8B601041D04941473C7F3C383",
+        img: "/images/car/nexa/ignis/steer-mount-control webp.webp",
         title: "Steering Control",
       },
       {
-        img: "https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/features/push-start-stop.webp?la=en&hash=982D8CEF56E42A5AFB58DDCAB94E8AD6",
+        img: "/images/car/nexa/ignis/push-start-stop.webp",
         title: "Push Start Stop Button",
       },
       {
-        img: "https://nexaprod6.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/features/mid.webp?la=en&hash=C8D20EC20F5DC97DC24A07B68231D37E",
+        img: "/images/car/nexa/ignis/MID.webp",
         title: "MID WITH TFT SCREEN",
       },
       {
-        img: "https://nexaprod1.azureedge.net/-/media/feature/nexawebsitecarbrand/ignis/features/auto-ac.webp?la=en&hash=628B93E1800485F7D594AC7AAE6DCEFA",
+        img: "/images/car/nexa/ignis/auto-AC.webp",
         title: "AUTOMATIC CLIMATE CONTROL",
       },
     ],
