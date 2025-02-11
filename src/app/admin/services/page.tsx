@@ -143,7 +143,7 @@ const Services = () => {
       header: "Address",
       size: 170,
     }),
-    columnHelper.accessor("city", {
+    columnHelper.accessor("state", {
       header: "City",
       size: 120,
     }),

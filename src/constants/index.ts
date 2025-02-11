@@ -3,6 +3,182 @@
 // const { PiEngine } = require("react-icons/pi");
 
 export const models = [
+
+  // {
+  //   name: " Maruti ALTO 800",
+  //   subName: "ALTO 800",
+  //   //offersAmount:53100,
+  //   offersAdditionalDec: "",
+  //   link: "/arena/alto-800-on-road-price",
+  //   linkCG: "/arena/alto-800-on-road-price-in-raipur",
+  //   linkOD: "/arena/alto-800-on-road-price-bhubaneswar",
+  //   offerValidTill: "Jan 31, 2025",
+  //   colors: [
+  //     {
+  //       img: "https://imgd.aeplcdn.com/600x337/n/8f5uesa_1463333.jpg?q=80",
+  //       colorCode: "#d51716",
+  //       colName: "Metallic Sizzling Red",
+  //     },
+  //     {
+  //       img: "https://imgd.aeplcdn.com/600x337/n/u1puesa_1463330.jpg?q=80",
+  //       colorCode: "#797a83",
+  //       colName: "Metallic Granite Grey",
+  //     },
+  //     // {
+  //     //   img: "/images/car/arena/altok10/altok-10-premium-earth-gold.png",
+  //     //   colorCode: "#5e4923",
+  //     //   colName: "Premium Earth Gold",
+  //     // },
+  //     {
+  //       img: "https://imgd.aeplcdn.com/600x337/n/2k6uesa_1463329.jpg?q=80",
+  //       colorCode: "#9b9aa0",
+  //       colName: "Metallic Silky Silver",
+  //     },
+  //     {
+  //       img: "https://imgd.aeplcdn.com/600x337/n/vjruesa_1463332.jpg?q=80",
+  //       colorCode: "#2249b5",
+  //       colName: "Metallic Speedy Blue",
+  //     },
+  //     {
+  //       img: "https://imgd.aeplcdn.com/600x337/n/6gouesa_1463328.jpg?q=80",
+  //       colorCode: "#e4e4e6",
+  //       colName: "Solid White",
+  //     },
+  //     {
+  //       img: "https://imgd.aeplcdn.com/600x337/n/xpquesa_1463331.jpg?q=80",
+  //       colorCode: "#A3D977",
+  //       colName: "Mojito Green",
+  //     },
+  //   ],
+  //   keySpecifications: [
+  //     { label: "Fuel Tank Capacity", value: "35 Litres" },
+  //     { label: "Seating Capacity", value: "4, 5" },
+  //     { label: "Length", value: "3445 mm" },
+  //     { label: "Width", value: "1515 mm" },
+  //     { label: "Height", value: "1475 mm" },
+  //     {
+  //       label: "Front Suspension",
+  //       value: "MacPherson Strut with Coil Spring",
+  //     },
+  //     { label: "Rear Suspension", value: "3-Link Rigid Axle with Coil Spring" },
+  //     { label: "Fuel Type", value: "Petrol, CNG" },
+  //     { label: "No. of Cylinders", value: "3" },
+  //     { label: "Max Torque", value: "69Nm@3500rpm" },
+  //     { label: "Transmission Type", value: "Manual" },
+  //     { label: "Body Type", value: "Hatchback" },
+  //     { label: "Wheel Base", value: " 2360 mm" },
+  //     { label: "Gearbox", value: "5-Speed" },
+  //   ],
+
+  //   exterior: [
+  //     {
+  //       img: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Alto-800/10327/1687348176706/front-left-side-47.jpg",
+  //       title: "Alto-800 Front Left Side",
+  //     },
+  //     {
+  //       img: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Alto-800/10327/1687348176706/side-view-(left)-90.jpg",
+  //       title: "Alto-800 Side View(Left)",
+  //     },
+  //     {
+  //       img: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Alto-800/10327/1687348176706/rear-view-119.jpg",
+  //       title: " Rear View",
+  //     },
+  //     // {
+  //     //   img: "/images/car/arena/altok10/exterior_web_04.webp",
+  //     //   title: "13''(33.02cm) Wheels with Honeycomb-Themed Covers",
+  //     // },
+  //     {
+  //       img: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Alto-800/10327/1687348176706/exterior-image-165.jpg",
+  //       title: "Reverse Parking Sensors",
+  //     },
+  //     // {
+  //     //   img: "",
+  //     //   title: "",
+  //     // },
+  //   ],
+  //   interior: [
+  //     {
+  //       img: "https://stimg.cardekho.com/images/expert-review/maruti-alto-800/1556072863411/original/Maruti-Alto-800-0.jpg?tr=w-320?imwidth=930",
+  //       title: "Dual Front airbags",
+  //     },
+  //     {
+  //       img: "https://stimg.cardekho.com/images/expert-review/maruti-alto-800/1556073297833/original/Maruti-Alto-800-0.jpg?tr=w-320?imwidth=930",
+  //       title: "Mobile Dock",
+  //     },
+  //     {
+  //       img: "/images/car/arena/altok10/Interior_web_3.webp",
+  //       title: "infotainment System main menu",
+  //     },
+  //     {
+  //       img: "/images/car/arena/altok10/High_web_05.webp",
+  //       title: "Auto Gear Shift Technology",
+  //     },
+  //     // {
+  //     //   img: "https://marutisuzukiarenaprodcdn.azureedge.net/-/media/images/maruti/marutisuzuki/car/car-detail/topgun-launch-2022/highlights/highlight_web_05.webp",
+  //     //   title: "1st in Segment 4 Speakers",
+  //     // },
+  //     // {
+  //     //   img: "",
+  //     //   title: "",
+  //     // },
+  //   ],
+  //   carDetails: [
+  //     {
+  //       // icon: <GiSpeedometer className="text-4xl" />,
+  //       label: "Engine",
+  //       value: "796 cc",
+  //     },
+  //     {
+  //       // icon: <BsFuelPump className="text-4xl" />,
+  //       label: "Mileage",
+  //       value: "22.05 kmpl",
+  //     },
+  //     {
+  //       // icon: <PiEngine className="text-4xl" />,
+  //       label: "Power",
+  //       value: "47.3 bhp @ 6000 rpm",
+  //     },
+  //   ],
+  //   variants: [
+  //     { variant: "ALTO 800 STD  5MT", price: 399000, transmission: "Manual" },
+  //     { variant: "ALTO 800 LXI  5MT", price: 483500, transmission: "Manual" },
+  //     { variant: "ALTO 800 VXI  5MT", price: 499500, transmission: "Manual" },
+  //     {
+  //       variant: "ALTO K10 VXI  ",
+  //       price: 551000,
+  //       transmission: "Automatic",
+  //     },
+  //     {
+  //       variant: "ALTO K10 VXI+ 1L 5MT",
+  //       price: 535000,
+  //       transmission: "Manual",
+  //     },
+  //     {
+  //       variant: "ALTO K10 VXI+ 1L AGS",
+  //       price: 580000,
+  //       transmission: "Automatic",
+  //     },
+  //   ],
+
+  //   exploreMore: [1, 2, 3],
+  //   thumbnail: "/thumbnail/altoK10.webp",
+  //   priceRange: `₹7.49L - ₹15.49L *`,
+  //   brochure:
+  //     "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf",
+  //   // blogs: [
+  //   //   {
+  //   //     title: "5 Reasons to Buy the 2024 Maruti Suzuki Alto K10",
+  //   //     desc: "The 2024 Maruti Suzuki Alto K10 is a standout choice in the entry-level hatchback segment, appealing to first-time car buyers and urban commuters alike. Here are five compelling reasons to consider the Alto K10 for your next vehicle.",
+
+  //   //     link: "/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Alto-K10",
+  //   //     author: "Sky Automobiles",
+  //   //   },
+  //   // ],
+  // },
+
+
+
+
   //0- Maruti ALTO K10
   {
     name: " Maruti ALTO K10",
