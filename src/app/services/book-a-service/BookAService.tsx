@@ -259,15 +259,20 @@ const BookAService: React.FC = () => {
                   Model*
                 </option>
                 <optgroup label="Arena" className="text-sm text-primaryGray">
+                  <option value="Maruti 800">Maruti 800</option>
+                  <option value="Alto 800">Alto 800</option>
+                  <option value="A-Star">A-Star</option>
                   <option value="Alto k10">Alto K10</option>
                   <option value="Wagon R">Wagon R</option>
                   <option value="Celerio">Celerio</option>
+                  <option value="Ritz">Ritz</option>
                   <option value="Epic swift 2024">Epic Swift 2024</option>
                   <option value="Swift">Swift</option>
                   <option value="Dzire">Dzire</option>
                   <option value="S-presso">S-Presso</option>
                   <option value="Ertiga">Ertiga</option>
                   <option value="Brezza">Brezza</option>
+                  <option value="Omni">Omni</option>
                   <option value="Eeco">Eeco</option>
                 </optgroup>
                 <optgroup label="Nexa" className="text-sm text-primaryGray">
@@ -279,6 +284,7 @@ const BookAService: React.FC = () => {
                   <option value="Baleno">Baleno</option>
                   <option value="Ignis">Ignis</option>
                   <option value="XL6">XL6</option>
+                  <option value="S-Cross">S-Cross</option>
                   <option value="Other">Other</option>
                 </optgroup>
               </select>
