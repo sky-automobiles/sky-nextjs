@@ -337,7 +337,7 @@ export const models = [
     ],
 
     exploreMore: [1, 2, 3],
-    thumbnail: "https://www.marutisuzuki.com/js/arenabrandjs/threesixtyjs/img/red_black_dual_tone/suzuki_Alto-k10_ext_360_red_black_dual_tone_v-1_7.webp",
+    thumbnail: "/thumbnail/altoK10.webp",
     priceRange: `₹7.49L - ₹15.49L *`,
     brochure:
       "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf",
@@ -917,7 +917,7 @@ export const models = [
       },
     ],
     exploreMore: [4, 5, 6],
-    thumbnail: "https://www.marutisuzuki.com/images/dzire_/images/threesixty/blue/suzuki_swift_ext_360_oragne_v-1_7.webp",
+    thumbnail: "/thumbnail/bluishblack.png",
     priceRange: "₹ 6.79 - 10.14 Lakh *",
     brochure:
       "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Dzire-Product-Brochure.pdf",
