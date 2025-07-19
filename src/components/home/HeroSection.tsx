@@ -62,7 +62,7 @@ const HeroSection = () => {
             <SwiperSlide className="">
               <div className="hidden sm:block w-full">
                 <Image
-                  src="https://www.marutisuzuki.com/images/images/blue/suzuki_banner_ext_oragne_v-1_10.webp"
+                  src="/images/other/main_page_strong_hybrid.webp"
                   alt=""
                   height={600}
                   width={1366}
