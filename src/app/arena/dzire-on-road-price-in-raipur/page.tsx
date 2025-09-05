@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Dzire: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={3} />
+      <VehicleDetailTemplate index={4} />
     </div>
   );
 };

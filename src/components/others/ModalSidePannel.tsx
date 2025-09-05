@@ -100,7 +100,7 @@ const ModalSidePannel = ({
           )}
           {openShowVehicle === 2 && (
             <div className="grid grid-cols-2 mt-2  pl-6 mb-4 sm:grid-cols-3 bg-gray-50 rounded-lg">
-              {models.slice(0, 9).map((slide, index) => (
+              {models.slice(0, 10).map((slide, index) => (
                 <Link
                   // onClick={() => setIsVehicle(false)}
                   onClick={() => setShowSidePanel(false)}
@@ -152,7 +152,7 @@ const ModalSidePannel = ({
           )}
           {openShowVehicle === 3 && (
             <div className="grid grid-cols-2 mt-2   pl-6 mb-4 sm:grid-cols-3 bg-gray-50 rounded-lg">
-              {models.slice(9).map((slide, index) => (
+              {models.slice(10).map((slide, index) => (
                 <Link
                   onClick={() => setShowSidePanel(false)}
                   key={index}

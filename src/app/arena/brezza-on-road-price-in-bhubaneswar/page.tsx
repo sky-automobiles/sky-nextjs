@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Brezza: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={2} />
+      <VehicleDetailTemplate index={3} />
     </div>
   );
 };

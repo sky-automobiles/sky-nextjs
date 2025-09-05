@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const eVitara: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={9} />
+      <VehicleDetailTemplate index={10} />
     </div>
   );
 };

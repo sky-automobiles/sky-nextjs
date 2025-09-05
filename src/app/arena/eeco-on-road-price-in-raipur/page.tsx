@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Ecco: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={8} />
+      <VehicleDetailTemplate index={9} />
     </div>
   );
 };

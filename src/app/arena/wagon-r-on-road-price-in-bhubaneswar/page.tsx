@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const WagonR: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={5} />
+      <VehicleDetailTemplate index={6} />
     </div>
   );
 };

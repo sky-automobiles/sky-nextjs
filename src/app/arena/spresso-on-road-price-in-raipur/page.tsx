@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Spresso: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={4} />
+      <VehicleDetailTemplate index={5} />
     </div>
   );
 };

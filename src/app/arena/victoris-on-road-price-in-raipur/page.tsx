@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Swift: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={2} />
+      <VehicleDetailTemplate index={0} />
     </div>
   );
 };
