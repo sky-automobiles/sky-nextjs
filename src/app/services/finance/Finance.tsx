@@ -213,26 +213,27 @@ const Finance: React.FC = () => {
                   onChange={(e) => setIndex(+e.target.value)}
                 >
                   <optgroup label="Arena" className="text-sm text-primaryGray">
-                    <option value="0">Alto K10</option>
-                    <option value="1">Swift</option>
-                    <option value="2">Brezza</option>
-                    <option value="3">Dzire</option>
-                    <option value="4">S-Presso</option>
-                    <option value="5">Wagon R</option>
-                    <option value="6">Ertiga</option>
-                    <option value="7">Celerio</option>
-                    <option value="8">Eeco</option>
+                     <option value="0">VICTORIS</option>
+                    <option value="1">Alto K10</option>
+                    <option value="2">Swift</option>
+                    <option value="3">Brezza</option>
+                    <option value="4">Dzire</option>
+                    <option value="5">S-Presso</option>
+                    <option value="6">Wagon R</option>
+                    <option value="7">Ertiga</option>
+                    <option value="8">Celerio</option>
+                    <option value="9">Eeco</option>
                   </optgroup>
                   <optgroup label="Nexa" className="text-sm text-primaryGray">
-                  <option value="9">e-Vitara</option>
-                    <option value="10">Invicto</option>
-                    <option value="11">Jimny</option>
-                    <option value="12">Fronx</option>
-                    <option value="13">Grand Vitara</option>
-                    <option value="14">XL6</option>
-                    <option value="15">Ciaz</option>
-                    <option value="16">Baleno</option>
-                    <option value="17">Ignis</option>
+                  <option value="10">e-Vitara</option>
+                    <option value="11">Invicto</option>
+                    <option value="12">Jimny</option>
+                    <option value="13">Fronx</option>
+                    <option value="14">Grand Vitara</option>
+                    <option value="15">XL6</option>
+                    <option value="16">Ciaz</option>
+                    <option value="17">Baleno</option>
+                    <option value="18">Ignis</option>
                   </optgroup>
                 </select>
               </div>
