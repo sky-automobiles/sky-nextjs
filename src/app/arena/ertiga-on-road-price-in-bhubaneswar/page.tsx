@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Ertiga: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={6} />
+      <VehicleDetailTemplate index={7} />
     </div>
   );
 };

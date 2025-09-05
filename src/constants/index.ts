@@ -3,6 +3,212 @@
 // const { PiEngine } = require("react-icons/pi");
 
 export const models = [
+  //0- Maruti victoris
+  {
+    name: ' Maruti VICTORIS',
+    subName: 'VICTORIS',
+    offersAmount: 0,
+    offersAdditionalDec: '',
+    link: '/arena/victoris-on-road-price',
+    linkCG: '/arena/victoris-on-road-price-in-raipur',
+    linkOD: '/arena/victoris-on-road-price-in-bhubaneswar',
+    offerValidTill: 'Jan 31, 2025',
+ colors: [
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download.png',
+    colorCode: '#1B3F8B', // Eternal Blue (dark blue)
+    colName: 'Eternal Blue + Black Roof',
+  },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(2).png',
+    colorCode: '#A0A4A8', // Splendid Silver (dual tone)
+    colName: 'Splendid Silver + Black Roof',
+  },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(3).png',
+    colorCode: '#A8AAAD', // Splendid Silver (monotone)
+    colName: 'Splendid Silver',
+  },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(4).png',
+    colorCode: '#C91F27', // Sizzling Red (dual tone)
+    colName: 'Sizzling Red + Black Roof',
+  },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(5).png',
+    colorCode: '#D72B3F', // Sizzling Red
+    colName: 'Sizzling Red',
+  },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(6).png',
+    colorCode: '#F8F9F9', // Solid White (aka Arctic White)
+    colName: 'Solid White',
+  },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(8).png',
+    colorCode: '#F8F9F9', // Solid White duplicate (you may remove one)
+    colName: 'Solid White',
+  },
+  {
+    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(7).png',
+    colorCode: '#0A0A0A', // Bluish Black
+    colName: 'Bluish Black',
+  },
+],
+
+    keySpecifications: [
+      {
+        label: 'Fuel Tank Capacity',
+        value: '45 L (Petrol); 55 L (CNG, water-equivalent)',
+      },
+      { label: 'Seating Capacity', value: '5' },
+      { label: 'Length', value: '4,360 mm' },
+      { label: 'Width', value: '1,795 mm' },
+      { label: 'Height', value: '1,655 mm' },
+      { label: 'Wheelbase', value: '2,600 mm' },
+      { label: 'Front Suspension', value: 'MacPherson Strut with Coil Spring' },
+      { label: 'Rear Suspension', value: 'Torsion Beam with Coil Spring' },
+      { label: 'Fuel Type', value: 'Petrol / Strong Hybrid / Petrol + CNG' },
+      {
+        label: 'Engine Options',
+        value:
+          '1.5 L K15C Mild-Hybrid petrol; Strong Hybrid (1.5 L petrol + electric motor); Petrol + CNG',
+      },
+      {
+        label: 'Max Power',
+        value: 'Petrol: ~103 PS; Hybrid: ~92 PS; CNG: ~88 PS',
+      },
+      {
+        label: 'Max Torque',
+        value: 'Petrol: ~139 Nm; Hybrid: ~122 Nm; CNG: ~121 Nm',
+      },
+      {
+        label: 'Transmission Type',
+        value: '5-Speed Manual / 6-Speed Automatic / e-CVT (Hybrid)',
+      },
+      {
+        label: 'No. of Cylinders',
+        value: '4 (Petrol & CNG), 3 (Strong Hybrid)',
+      },
+      {
+        label: 'Drivetrain',
+        value: 'FWD; AWD (AllGrip Select with 4×4 modes, on Petrol AT)',
+      },
+      {
+        label: 'Mileage',
+        value:
+          'Petrol MT: ~21.18 km/l • Petrol AT: ~21.06 km/l • AWD AT: ~19.07 km/l • CNG: ~27.02 km/kg • Strong Hybrid: ~28.65 km/l',
+      },
+      { label: 'Body Type', value: 'Compact/Midsize SUV' },
+    ],
+
+    exterior: [
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:d86f22ee-c205-4548-b276-416217f3a27f/as/Desktop-Wrap-around-design.jpg',
+        title: 'Honeycomb Grille',
+      },
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:2bb0c9c5-82cd-48c6-87af-21fedf9c2ce8/as/Desktop-Bold-cut-LED-DRLs-and-Headlamps.jpg',
+        title: 'Peppy Headlamps',
+      },
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:3669bada-c0d8-49ec-bd7f-b7829a2de19c/as/Desktop-Segmented-Rear-LED-Tail-Lamps.jpg',
+        title: 'Trendy Rear Combination Lamps',
+      },
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:c7e44898-2687-4d72-a63b-4d23000abf83/as/Desktop-R17-Alloy-Wheels.jpg',
+        title: "13''(33.02cm) Wheels with Honeycomb-Themed Covers",
+      },
+      // {
+      //   img: '/images/car/arena/altok10/exterior_web_05.webp',
+      //   title: 'Reverse Parking Sensors',
+      // },
+      // {
+      //   img: "",
+      //   title: "",
+      // },
+    ],
+    interior: [
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:3884ba73-886c-462c-a7c4-06b6f49c7c30/as/Desktop-Dual-Tone-Interior---Seat.jpg',
+        title: 'Lively and Spacious Interior',
+      },
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:4d63d730-bb9d-4466-b4dc-ce3c1b49c444/as/Desktop-Panoramic-Sunroof.jpg',
+        title: 'Smartplay Studio with Smartphone Navigation',
+      },
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:e95c892c-ab85-4326-800e-44e8a38ae73c/as/Desktop-64-Color-Ambient-Lighting.jpg',
+        title: 'Steering-Mounted Audio and Voice Control',
+      },
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:80c0f5df-897b-45d1-87c4-e91eb53a8ace/as/Desktop-3-Layered-Dashboard.jpg',
+        title: 'Auto Gear Shift Technology',
+      },
+      {
+        img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:d0e2f309-d9aa-4772-b62b-76a606334db1/as/Desktop-10-25-Digital-MID.jpg',
+        title: '1st in Segment 4 Speakers',
+      },
+      // {
+      //   img: "",
+      //   title: "",
+      // },
+    ],
+    carDetails: [
+      {
+        // icon: <GiSpeedometer className="text-4xl" />,
+        label: 'Engine',
+        value: 'K15C Smart Hybrid',
+      },
+      {
+        // icon: <BsFuelPump className="text-4xl" />,
+        label: 'Mileage',
+        value: '28.65 kmpl',
+      },
+      {
+        // icon: <PiEngine className="text-4xl" />,
+        label: 'Power',
+        value: '75.8 kW (103.06 Ps) @ 6000 rpm',
+      },
+    ],
+    variants: [
+      {
+        variant: 'Victoris LXI 1.5 MT',
+        price: 'coming-soon',
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Victoris VXI 1.5 MT',
+        price: 'coming-soon',
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Victoris VXI 1.5 AT',
+        price: 'coming-soon',
+        transmission: 'Automatic (6-AT)',
+      },
+      {
+        variant: 'Victoris ZXI 1.5 MT',
+        price: 'coming-soon',
+        transmission: 'Manual',
+      },
+    ],
+
+    exploreMore: [1, 2, 3],
+    thumbnail: '/thumbnail/victoris.png',
+    priceRange: `COMING-SOON *`,
+    brochure:
+      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf',
+    // blogs: [
+    //   {
+    //     title: '5 Reasons to Buy the 2024 Maruti Suzuki Alto K10',
+    //     desc: 'The 2024 Maruti Suzuki Alto K10 is a standout choice in the entry-level hatchback segment, appealing to first-time car buyers and urban commuters alike. Here are five compelling reasons to consider the Alto K10 for your next vehicle.',
+
+    //     link: '/blogs/5-Reasons-to-Buy-the-2024-Maruti-Suzuki-Alto-K10',
+    //     author: 'Sky Automobiles',
+    //   },
+    // ],
+  },
   //0- Maruti ALTO K10
   {
     name: ' Maruti ALTO K10',
@@ -160,7 +366,7 @@ export const models = [
       },
     ],
 
-    exploreMore: [1, 2, 3],
+    exploreMore: [2, 3, 4],
     thumbnail: '/thumbnail/altoK10.webp',
     priceRange: `₹7.49L - ₹15.49L *`,
     brochure:
@@ -379,7 +585,7 @@ export const models = [
       },
     ],
 
-    exploreMore: [2, 3, 4],
+    exploreMore: [3, 4, 5],
     thumbnail: '/thumbnail/swift02.webp',
     priceRange: `₹ 6.49-9.64 Lakhs *`,
     brochure:
@@ -621,7 +827,7 @@ export const models = [
         transmission: 'Automatic',
       },
     ],
-    exploreMore: [3, 4, 5],
+    exploreMore: [4, 5, 6],
     thumbnail: '/thumbnail/brezza-page.webp',
     priceRange: `₹ 8.54 - 14.14 Lakh *`,
     brochure:
@@ -782,7 +988,7 @@ export const models = [
         transmission: 'Manual',
       },
     ],
-    exploreMore: [4, 5, 6],
+    exploreMore: [5, 6, 7],
     thumbnail: '/thumbnail/bluishblack.png',
     priceRange: '₹ 6.79 - 10.14 Lakh *',
     brochure:
@@ -933,7 +1139,7 @@ export const models = [
         transmission: 'Automatic',
       },
     ],
-    exploreMore: [5, 6, 7],
+    exploreMore: [6, 7, 8],
     thumbnail: '/thumbnail/spresso.webp',
     priceRange: '₹ 4.27 - 5.90 Lakh *',
     brochure:
@@ -1126,7 +1332,7 @@ export const models = [
         transmission: 'Automatic',
       },
     ],
-    exploreMore: [6, 7, 8],
+    exploreMore: [7, 8, 9],
     thumbnail: '/thumbnail/wagnor.webp',
     priceRange: '₹ 5.54 - 7.14 Lakh *',
     brochure:
@@ -1320,7 +1526,7 @@ export const models = [
         transmission: 'Manual',
       },
     ],
-    exploreMore: [7, 8, 0],
+    exploreMore: [8, 9, 0],
     thumbnail: '/thumbnail/ertiga.webp',
     priceRange: '₹ 9.11 - 11.12 Lakh *',
     brochure:
@@ -1411,10 +1617,6 @@ export const models = [
         img: '/images/car/arena/celerio/exterior_web_03.webp',
         title: 'Electrically-Foldable ORVMs with Turn Indicators​',
       },
-      // {
-      //   img: "",
-      //   title: "",
-      // },
     ],
     interior: [
       {
@@ -1445,47 +1647,47 @@ export const models = [
     ],
     variants: [
       {
-    variant: 'NEW CELERIO LXI - 6 ABS',
-    price: 564000,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'NEW CELERIO VXI -6 ABS',
-    price: 599500,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'NEW CELERIO VXI-CNG -6 ABS',
-    price: 689500,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'NEW CELERIO VXI-AGS - 6 ABS',
-    price: 649500,
-    transmission: 'Automatic',
-  },
-  {
-    variant: 'NEW CELERIO ZXI -6 ABS',
-    price: 639000,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'NEW CELERIO ZXI-AGS - 6 ABS',
-    price: 689000,
-    transmission: 'Automatic',
-  },
-  {
-    variant: 'NEW CELERIO ZXI+ -6 ABS',
-    price: 687000,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'NEW CELERIO ZXI+-AGS -6 ABS',
-    price: 737000,
-    transmission: 'Automatic',
-  },
+        variant: 'NEW CELERIO LXI - 6 ABS',
+        price: 564000,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW CELERIO VXI -6 ABS',
+        price: 599500,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW CELERIO VXI-CNG -6 ABS',
+        price: 689500,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW CELERIO VXI-AGS - 6 ABS',
+        price: 649500,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'NEW CELERIO ZXI -6 ABS',
+        price: 639000,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW CELERIO ZXI-AGS - 6 ABS',
+        price: 689000,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'NEW CELERIO ZXI+ -6 ABS',
+        price: 687000,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW CELERIO ZXI+-AGS -6 ABS',
+        price: 737000,
+        transmission: 'Automatic',
+      },
     ],
-    exploreMore: [8, 0, 1],
+    exploreMore: [0, 1, 2],
     thumbnail: '/thumbnail/celerio.webp',
     priceRange: '₹ 5.64 - 7.37 Lakh *',
     brochure:
@@ -3271,8 +3473,6 @@ export const models = [
     brochure:
       'https://nexaprod4.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/ignis-brochure.pdf',
   },
-
-  // eVitara - 17
 ];
 
 export const cgOutlets = [

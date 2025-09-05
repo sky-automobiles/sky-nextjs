@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Invicto: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={10} />
+      <VehicleDetailTemplate index={11} />
     </div>
   );
 };

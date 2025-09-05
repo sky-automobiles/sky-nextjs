@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Baleno: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={16} />
+      <VehicleDetailTemplate index={17} />
     </div>
   );
 };

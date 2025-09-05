@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const Celerio: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={7} />
+      <VehicleDetailTemplate index={8} />
     </div>
   );
 };

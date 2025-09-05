@@ -4,7 +4,7 @@ import VehicleDetailTemplate from "@/components/others/VehicleDetailTemplate";
 const eVitara = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={9} />
+      <VehicleDetailTemplate index={10} />
     </div>
   )
 }

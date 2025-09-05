@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const AltoK10: React.FC = () => {
   return (
     <div>
-      <VehicleDetailTemplate index={0} />
+      <VehicleDetailTemplate index={1} />
     </div>
   );
 };

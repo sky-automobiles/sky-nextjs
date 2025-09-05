@@ -26,9 +26,9 @@ const RangeSlider: React.FC<SlideProps> = ({ selected }) => {
   // Determine the slide data based on the selected prop
   const filteredModels =
     selected === "Nexa"
-      ? models.slice(9)
+      ? models.slice(10)
       : selected === "Arena"
-      ? models.slice(0, 9)
+      ? models.slice(0, 10)
       : models;
 
   // Reset Swiper slide to 0 whenever `selected` changes
