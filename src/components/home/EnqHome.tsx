@@ -160,6 +160,7 @@ const EnqHome: React.FC = () => {
                 I&apos;m looking for*
               </option>
               <optgroup label="Arena" className="text-sm text-primaryGray">
+                <option value="Victoris">Victoris</option>
                 <option value="Alto k10">Alto K10</option>
                 <option value="Wagon R">Wagon R</option>
                 <option value="Celerio">Celerio</option>

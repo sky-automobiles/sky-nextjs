@@ -38,7 +38,8 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.3.0",
     "react-slider": "^2.0.6",
-    "swiper": "^11.1.10"
+    "swiper": "^11.1.10",
+    "tridi": "^2.0.3"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
