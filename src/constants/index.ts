@@ -15,42 +15,42 @@ export const models = [
     offerValidTill: 'Jan 31, 2025',
  colors: [
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download.png',
-    colorCode: '#1B3F8B', // Eternal Blue (dark blue)
+    img: 'https://www.varunmaruti.com/uploads/products/colors/eternal-blue-with-btuish-black-rooff.png',
+    colorCode: '#24475b', // Eternal Blue (dark blue)
     colName: 'Eternal Blue + Black Roof',
   },
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(2).png',
+    img: 'https://www.varunmaruti.com/uploads/products/colors/splendid-silver-with-bluish-black-rooff.png',
     colorCode: '#A0A4A8', // Splendid Silver (dual tone)
     colName: 'Splendid Silver + Black Roof',
   },
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(3).png',
+    img: 'https://www.varunmaruti.com/uploads/products/colors/splendid-silverr.png',
     colorCode: '#A8AAAD', // Splendid Silver (monotone)
     colName: 'Splendid Silver',
   },
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(4).png',
+    img: 'https://www.varunmaruti.com/uploads/products/colors/sizzling-red-with-bluish-black-rof.png',
     colorCode: '#C91F27', // Sizzling Red (dual tone)
     colName: 'Sizzling Red + Black Roof',
   },
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(5).png',
+    img: 'https://www.varunmaruti.com/uploads/products/colors/sizzling-redd.png',
     colorCode: '#D72B3F', // Sizzling Red
     colName: 'Sizzling Red',
   },
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(6).png',
-    colorCode: '#F8F9F9', // Solid White (aka Arctic White)
-    colName: 'Solid White',
+    img: 'https://www.varunmaruti.com/uploads/products/colors/mystic-greenn.png',
+    colorCode: '#233b47', 
+    colName: 'Mystic Green',
   },
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(8).png',
-    colorCode: '#F8F9F9', // Solid White duplicate (you may remove one)
-    colName: 'Solid White',
+    img: 'https://www.varunmaruti.com/uploads/products/colors/pearl-arctic-white.png',
+    colorCode: '#F8F9F9', 
+    colName: 'Pearl Arctic White',
   },
   {
-    img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Arena/cars/victoris/download+(7).png',
+    img: 'https://www.varunmaruti.com/uploads/products/colors/bluish-blackk.png',
     colorCode: '#0A0A0A', // Bluish Black
     colName: 'Bluish Black',
   },
@@ -197,8 +197,7 @@ export const models = [
     exploreMore: [1, 2, 3],
     thumbnail: '/thumbnail/victoris.png',
     priceRange: `COMING-SOON *`,
-    brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf',
+    //brochure:'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf',
     // blogs: [
     //   {
     //     title: '5 Reasons to Buy the 2024 Maruti Suzuki Alto K10',
