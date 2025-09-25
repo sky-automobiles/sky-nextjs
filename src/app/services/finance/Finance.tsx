@@ -480,6 +480,7 @@ const Finance: React.FC = () => {
               }`}
             >
               <option value="">Select Model</option>
+               <option value="Victoris">Victoris</option>
               <option value="Alto K10">Alto K10</option>
               <option value="Swift">Swift</option>
               <option value="Brezza">Brezza</option>
@@ -489,6 +490,7 @@ const Finance: React.FC = () => {
               <option value="Ertiga">Ertiga</option>
               <option value="Celerio">Celerio</option>
               <option value="Eeco">Eeco</option>
+              <option value="e-Vitara">e-Vitara</option>
               <option value="Jimny">Jimny</option>
               <option value="Fronx">Fronx</option>
               <option value="Invicto">Invicto</option>
