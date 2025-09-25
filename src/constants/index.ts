@@ -13,48 +13,48 @@ export const models = [
     linkCG: '/arena/victoris-on-road-price-in-raipur',
     linkOD: '/arena/victoris-on-road-price-in-bhubaneswar',
     offerValidTill: 'Jan 31, 2025',
- colors: [
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/eternal-blue-with-btuish-black-rooff.png',
-    colorCode: '#24475b', // Eternal Blue (dark blue)
-    colName: 'Eternal Blue + Black Roof',
-  },
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/splendid-silver-with-bluish-black-rooff.png',
-    colorCode: '#A0A4A8', // Splendid Silver (dual tone)
-    colName: 'Splendid Silver + Black Roof',
-  },
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/splendid-silverr.png',
-    colorCode: '#A8AAAD', // Splendid Silver (monotone)
-    colName: 'Splendid Silver',
-  },
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/sizzling-red-with-bluish-black-rof.png',
-    colorCode: '#C91F27', // Sizzling Red (dual tone)
-    colName: 'Sizzling Red + Black Roof',
-  },
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/sizzling-redd.png',
-    colorCode: '#D72B3F', // Sizzling Red
-    colName: 'Sizzling Red',
-  },
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/mystic-greenn.png',
-    colorCode: '#233b47', 
-    colName: 'Mystic Green',
-  },
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/pearl-arctic-white.png',
-    colorCode: '#F8F9F9', 
-    colName: 'Pearl Arctic White',
-  },
-  {
-    img: 'https://www.varunmaruti.com/uploads/products/colors/bluish-blackk.png',
-    colorCode: '#0A0A0A', // Bluish Black
-    colName: 'Bluish Black',
-  },
-],
+    colors: [
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/eternal-blue-with-btuish-black-rooff.png',
+        colorCode: '#24475b', // Eternal Blue (dark blue)
+        colName: 'Eternal Blue + Black Roof',
+      },
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/splendid-silver-with-bluish-black-rooff.png',
+        colorCode: '#A0A4A8', // Splendid Silver (dual tone)
+        colName: 'Splendid Silver + Black Roof',
+      },
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/splendid-silverr.png',
+        colorCode: '#A8AAAD', // Splendid Silver (monotone)
+        colName: 'Splendid Silver',
+      },
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/sizzling-red-with-bluish-black-rof.png',
+        colorCode: '#C91F27', // Sizzling Red (dual tone)
+        colName: 'Sizzling Red + Black Roof',
+      },
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/sizzling-redd.png',
+        colorCode: '#D72B3F', // Sizzling Red
+        colName: 'Sizzling Red',
+      },
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/mystic-greenn.png',
+        colorCode: '#233b47',
+        colName: 'Mystic Green',
+      },
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/pearl-arctic-white.png',
+        colorCode: '#F8F9F9',
+        colName: 'Pearl Arctic White',
+      },
+      {
+        img: 'https://www.varunmaruti.com/uploads/products/colors/bluish-blackk.png',
+        colorCode: '#0A0A0A', // Bluish Black
+        colName: 'Bluish Black',
+      },
+    ],
 
     keySpecifications: [
       {
@@ -173,30 +173,175 @@ export const models = [
     ],
     variants: [
       {
-        variant: 'Victoris LXI 1.5 MT',
-        price: 'coming-soon',
+        variant: 'MARUTI VICTORIS LXI 1.5L 5MT',
+        price: 1049900,
         transmission: 'Manual',
       },
       {
-        variant: 'Victoris VXI 1.5 MT',
-        price: 'coming-soon',
+        variant: 'MARUTI VICTORIS LXI CNG 1.5L 5MT',
+        price: 1149899,
         transmission: 'Manual',
       },
       {
-        variant: 'Victoris VXI 1.5 AT',
-        price: 'coming-soon',
-        transmission: 'Automatic (6-AT)',
+        variant: 'MARUTI VICTORIS VXI 1.5L 5MT',
+        price: 1179900,
+        transmission: 'Manual',
       },
       {
-        variant: 'Victoris ZXI 1.5 MT',
-        price: 'coming-soon',
+        variant: 'MARUTI VICTORIS VXI CNG 1.5L 5MT',
+        price: 1279900,
         transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS VXI 1.5L 6AT',
+        price: 1335900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI 1.5L 5MT',
+        price: 1356900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI 1.5L 5MT-D/T',
+        price: 1372300,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) 1.5L 5MT',
+        price: 1423900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) 1.5L 5MT-D/T',
+        price: 1439300,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI 1.5L 6AT',
+        price: 1528300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) 1.5L 6AT',
+        price: 1563900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) 1.5L 6AT-D/T',
+        price: 1579300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI CNG 1.5L 5MT',
+        price: 1456900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+ 1.5L 5MT',
+        price: 1539300,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+ 1.5L 5MT-D/T',
+        price: 1523900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+ 1.5L 6AT',
+        price: 1714900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+ 1.5L 6AT-D/T',
+        price: 1730300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) 1.5L 5MT',
+        price: 1597301,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) 1.5L 5MT-D/T',
+        price: 1581901,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) 1.5L 6AT',
+        price: 1792300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) 1.5L 6AT-D/T',
+        price: 1776900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) 4WD 1.5L 6AT',
+        price: 1879300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) 4WD 1.5L 6AT-D/T',
+        price: 1892300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) 4WD 1.5L 5MT',
+        price: 1819300,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI STRONG HYBRID 1.5L ECVT',
+        price: 1999300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI STRONG HYBRID 1.5L ECVT',
+        price: 1939300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI STRONG HYBRID 1.5L ECVT',
+        price: 1979300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) STRONG HYBRID 1.5L ECVT',
+        price: 1833900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) STRONG HYBRID 1.5L ECVT',
+        price: 1854900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) STRONG HYBRID 1.5L ECVT',
+        price: 1946900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI(O) STRONG HYBRID 1.5L ECVT',
+        price: 1962300,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) STRONG HYBRID 1.5L',
+        price: 1999800,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI VICTORIS ZXI+(O) STRONG HYBRID 1.5L',
+        price: 1999800,
+        transmission: 'Automatic',
       },
     ],
 
     exploreMore: [1, 2, 3],
     thumbnail: '/thumbnail/victoris.png',
-    priceRange: `COMING-SOON *`,
+    priceRange: `₹10.50L - ₹19.98L*`,
     //brochure:'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf',
     // blogs: [
     //   {
@@ -212,7 +357,7 @@ export const models = [
   {
     name: ' Maruti ALTO K10',
     subName: 'ALTO K10',
-    offersAmount: 53100,
+    offersAmount: 77500,
     offersAdditionalDec: '',
     link: '/arena/alto-k10-on-road-price',
     linkCG: '/arena/alto-k10-on-road-price-in-raipur',
@@ -345,29 +490,39 @@ export const models = [
       },
     ],
     variants: [
-      { variant: 'ALTO K10 STD 1L 5MT', price: 399000, transmission: 'Manual' },
-      { variant: 'ALTO K10 LXI 1L 5MT', price: 483500, transmission: 'Manual' },
-      { variant: 'ALTO K10 VXI 1L 5MT', price: 499500, transmission: 'Manual' },
+      { variant: 'ALTO K10 STD 1L 5MT', price: 369900, transmission: 'Manual' },
+      { variant: 'ALTO K10 LXI 1L 5MT', price: 399900, transmission: 'Manual' },
+      {
+        variant: 'ALTO K10 LXI 1L 5MT CNG',
+        price: 481900,
+        transmission: 'Manual',
+      },
+      { variant: 'ALTO K10 VXI 1L 5MT', price: 449901, transmission: 'Manual' },
+      {
+        variant: 'ALTO K10 VXI 1L 5MT CNG',
+        price: 531900,
+        transmission: 'Manual',
+      },
       {
         variant: 'ALTO K10 VXI 1L AGS',
-        price: 551000,
+        price: 494900,
         transmission: 'Automatic',
       },
       {
         variant: 'ALTO K10 VXI+ 1L 5MT',
-        price: 535000,
+        price: 499900,
         transmission: 'Manual',
       },
       {
         variant: 'ALTO K10 VXI+ 1L AGS',
-        price: 580000,
+        price: 535700,
         transmission: 'Automatic',
       },
     ],
 
     exploreMore: [2, 3, 4],
     thumbnail: '/thumbnail/altoK10.webp',
-    priceRange: `₹7.49L - ₹15.49L *`,
+    priceRange: `₹3.69L - ₹5.35L *`,
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf',
     blogs: [
@@ -385,7 +540,7 @@ export const models = [
   {
     name: 'Maruti Swift',
     subName: 'Swift',
-    offersAmount: 48100,
+    offersAmount: 77500,
     offersAdditionalDec: '',
     link: '/arena/swift-on-road-price',
     linkCG: '/arena/swift-on-road-price-in-raipur',
@@ -524,69 +679,69 @@ export const models = [
       },
     ],
     variants: [
-      { variant: 'EPIC NEW SWIFT LXI', price: 649000, transmission: 'Manual' },
-      { variant: 'EPIC NEW SWIFT VXI', price: 729500, transmission: 'Manual' },
+      { variant: 'EPIC NEW SWIFT LXI', price: 578900, transmission: 'Manual' },
+      { variant: 'EPIC NEW SWIFT VXI', price: 658900, transmission: 'Manual' },
       {
-        variant: 'EPIC NEW SWIFT VXI (O)',
-        price: 756500,
+        variant: 'EPIC NEW SWIFT VXI AGS',
+        price: 703900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'EPIC NEW SWIFT VXI CNG',
+        price: 744900,
         transmission: 'Manual',
       },
       {
-        variant: 'EPIC NEW SWIFT VXI AGS',
-        price: 779500,
-        transmission: 'Automatic',
+        variant: 'EPIC NEW SWIFT VXI (O)',
+        price: 684900,
+        transmission: 'Manual',
       },
       {
         variant: 'EPIC NEW SWIFT VXI (O) AGS',
-        price: 806500,
+        price: 729900,
         transmission: 'Automatic',
       },
-      { variant: 'EPIC NEW SWIFT ZXI', price: 829500, transmission: 'Manual' },
+      {
+        variant: 'EPIC NEW SWIFT VXI (O) CNG',
+        price: 770900,
+        transmission: 'Manual',
+      },
+      { variant: 'EPIC NEW SWIFT ZXI', price: 752900, transmission: 'Manual' },
+      {
+        variant: 'EPIC NEW SWIFT ZXI CNG',
+        price: 838900,
+        transmission: 'Manual',
+      },
       {
         variant: 'EPIC NEW SWIFT ZXI AGS',
-        price: 879500,
+        price: 797899,
         transmission: 'Automatic',
       },
       {
         variant: 'EPIC NEW SWIFT ZXI +',
-        price: 899500,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'EPIC NEW SWIFT ZXI + DUAL',
-        price: 914500,
+        price: 819901,
         transmission: 'Manual',
       },
       {
         variant: 'EPIC NEW SWIFT ZXI + AGS',
-        price: 949500,
+        price: 864900,
         transmission: 'Automatic',
       },
       {
-        variant: 'EPIC NEW SWIFT ZXI + AGS- DUAL',
-        price: 964500,
+        variant: 'EPIC NEW SWIFT ZXI + DUAL',
+        price: 834900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'EPIC NEW SWIFT ZXI + AGS DUAL',
+        price: 879900,
         transmission: 'Automatic',
-      },
-      {
-        variant: 'EPIC NEW SWIFT VXI-CNG',
-        price: 819500,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'EPIC NEW SWIFT VXI (O)-CNG',
-        price: 846500,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'EPIC NEW SWIFT ZXI-CNG',
-        price: 919500,
-        transmission: 'Manual',
       },
     ],
 
     exploreMore: [3, 4, 5],
     thumbnail: '/thumbnail/swift02.webp',
-    priceRange: `₹ 6.49-9.64 Lakhs *`,
+    priceRange: `₹ 5.78-8.79 Lakhs *`,
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Vertical_Brochure_NEW.pdf',
     blogs: [
@@ -604,7 +759,7 @@ export const models = [
   {
     name: 'Maruti Brezza',
     subName: 'Brezza',
-    offersAmount: 35000,
+    offersAmount: 45000,
     offersAdditionalDec: '',
     link: '/arena/brezza-on-road-price',
     linkCG: '/arena/brezza-on-road-price-in-raipur',
@@ -752,83 +907,70 @@ export const models = [
       },
     ],
     variants: [
-      { variant: 'BREZZA LXI - 2 ABS', price: 854000, transmission: 'Manual' },
+      { variant: 'BREZZA LXI', price: 825900, transmission: 'Manual' },
+      { variant: 'BREZZA LXI CNG', price: 916900, transmission: 'Manual' },
+      { variant: 'BREZZA VXI', price: 925900, transmission: 'Manual' },
+      { variant: 'BREZZA VXI CNG', price: 1016900, transmission: 'Manual' },
       {
-        variant: 'BREZZA LXI-CNG - 2 ABS',
-        price: 949000,
-        transmission: 'Manual',
-      },
-      { variant: 'BREZZA LXI - 6 ABS', price: 869000, transmission: 'Manual' },
-      {
-        variant: 'BREZZA LXI-CNG - 6 ABS',
-        price: 964000,
-        transmission: 'Manual',
-      },
-      { variant: 'BREZZA VXI - 6 ABS', price: 975000, transmission: 'Manual' },
-      {
-        variant: 'BREZZA VXI-CNG - 6 ABS',
-        price: 1070000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID VXI AMT - 6 ABS',
-        price: 1115000,
+        variant: 'BREZZA SMART HYBRID VXI AMT',
+        price: 1059900,
         transmission: 'Automatic',
       },
       {
-        variant: 'BREZZA SMART HYBRID ZXI - 6 ABS',
-        price: 1126000,
+        variant: 'BREZZA SMART HYBRID ZXI',
+        price: 1039900,
         transmission: 'Manual',
       },
       {
-        variant: 'BREZZA SMART HYBRID ZXI-CNG - 6 ABS',
-        price: 1221000,
+        variant: 'BREZZA SMART HYBRID ZXI CNG',
+        price: 1134900,
         transmission: 'Manual',
       },
       {
-        variant: 'BREZZA SMART HYBRID ZXI D/T - 6 ABS',
-        price: 1142000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI D/T-CNG - 6 ABS',
-        price: 1237000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI AMT - 6 ABS',
-        price: 1266000,
+        variant: 'BREZZA SMART HYBRID ZXI AMT',
+        price: 1174900,
         transmission: 'Automatic',
       },
       {
-        variant: 'BREZZA SMART HYBRID ZXI AMT D/T - 6 ABS',
-        price: 1282000,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI+ - 6 ABS',
-        price: 1258000,
+        variant: 'BREZZA SMART HYBRID ZXI D/T',
+        price: 1055300,
         transmission: 'Manual',
       },
       {
-        variant: 'BREZZA SMART HYBRID ZXI+ D/T - 6 ABS',
-        price: 1274000,
+        variant: 'BREZZA SMART HYBRID ZXI D/T CNG',
+        price: 1146300,
         transmission: 'Manual',
       },
       {
-        variant: 'BREZZA SMART HYBRID ZXI+ AMT - 6 ABS',
-        price: 1398000,
+        variant: 'BREZZA SMART HYBRID ZXI AMT D/T',
+        price: 1190300,
         transmission: 'Automatic',
       },
       {
-        variant: 'BREZZA SMART HYBRID ZXI+ AMT D/T - 6 ABS',
-        price: 1414000,
+        variant: 'BREZZA SMART HYBRID ZXI+',
+        price: 1159900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA SMART HYBRID ZXI+ D/T',
+        price: 1166300,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA SMART HYBRID ZXI+ AMT',
+        price: 1285900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'BREZZA SMART HYBRID ZXI+ AMT D/T',
+        price: 1301300,
         transmission: 'Automatic',
       },
     ],
+
     exploreMore: [4, 5, 6],
     thumbnail: '/thumbnail/brezza-page.webp',
-    priceRange: `₹ 8.54 - 14.14 Lakh *`,
+    priceRange: `₹ 8.25 - 13.01 Lakh *`,
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/9299_S_Brezza_6_Page_CNG_Brochure.pdf',
     blogs: [
@@ -969,27 +1111,50 @@ export const models = [
       { label: 'Power', value: '66.7 kW @ 6000 rpm' },
     ],
     variants: [
-      { variant: 'DZIRE LXI', price: 679500, transmission: 'Manual' },
-      { variant: 'DZIRE VXI', price: 779250, transmission: 'Manual' },
-      { variant: 'DZIRE VXI AMT', price: 824000, transmission: 'Automatic' },
-      { variant: 'DZIRE ZXI', price: 889000, transmission: 'Manual' },
-      { variant: 'DZIRE ZXI AMT', price: 934000, transmission: 'Automatic' },
-      { variant: 'DZIRE ZXI +', price: 969000, transmission: 'Manual' },
-      { variant: 'DZIRE ZXI + AMT', price: 1014000, transmission: 'Automatic' },
       {
-        variant: 'DZIRE VXI(CNG)',
-        price: 874000,
+        variant: 'MARUTI DZIRE TOUR -S',
+        price: 623800,
         transmission: 'Manual',
       },
       {
-        variant: 'DZIRE ZXI(CNG)',
-        price: 984000,
+        variant: 'MARUTI DZIRE TOUR -S - CNG',
+        price: 709800,
         transmission: 'Manual',
+      },
+      { variant: 'MARUTI DZIRE LXI', price: 625600, transmission: 'Manual' },
+      { variant: 'MARUTI DZIRE VXI', price: 717100, transmission: 'Manual' },
+      {
+        variant: 'MARUTI DZIRE VXI AGS',
+        price: 762100,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'MARUTI DZIRE VXI-CNG',
+        price: 803100,
+        transmission: 'Manual',
+      },
+      { variant: 'MARUTI DZIRE ZXI', price: 817700, transmission: 'Manual' },
+      {
+        variant: 'MARUTI DZIRE ZXI-CNG',
+        price: 903700,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'MARUTI DZIRE ZXI AGS',
+        price: 862700,
+        transmission: 'Automatic',
+      },
+      { variant: 'MARUTI DZIRE ZXI +', price: 886300, transmission: 'Manual' },
+      {
+        variant: 'MARUTI DZIRE ZXI + AGS',
+        price: 931300,
+        transmission: 'Automatic',
       },
     ],
+
     exploreMore: [5, 6, 7],
     thumbnail: '/thumbnail/bluishblack.png',
-    priceRange: '₹ 6.79 - 10.14 Lakh *',
+    priceRange: '₹ 6.23 - 9.31 Lakh *',
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Dzire-Product-Brochure.pdf',
   },
@@ -999,7 +1164,7 @@ export const models = [
     name: 'Maruti S-Presso',
     subName: 'S-Presso',
     offersAmount: 53100,
-    offersAdditionalDec: '',
+    offersAdditionalDec: '67500',
     link: '/arena/spresso-on-road-price',
     linkCG: '/arena/spresso-on-road-price-in-raipur',
     linkOD: '/arena/spresso-on-road-price-in-bhubaneswar',
@@ -1140,7 +1305,7 @@ export const models = [
     ],
     exploreMore: [6, 7, 8],
     thumbnail: '/thumbnail/spresso.webp',
-    priceRange: '₹ 4.27 - 5.90 Lakh *',
+    priceRange: '₹ 3.49 - 5.24 Lakh *',
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/SpressoBrochure_Spresso_6_pager_brochure_Red_car_A4_Digital_new.pdf',
   },
@@ -1149,7 +1314,7 @@ export const models = [
   {
     name: 'Maruti WagonR',
     subName: 'WagonR',
-    offersAmount: 48100,
+    offersAmount: 77500,
     offersAdditionalDec: '',
     link: '/arena/wagon-r-on-road-price',
     linkCG: '/arena/wagon-r-on-road-price-in-raipur',
@@ -1281,59 +1446,70 @@ export const models = [
 
     variants: [
       {
-        variant: 'NEW WAGONR TOUR LXI 1.0 L',
-        price: 551500,
+        variant: 'NEW WAGONR TOUR LXI 1.0 L - 6 ABS',
+        price: 498900,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW WAGONR LXI 1.0 L',
-        price: 554500,
+        variant: 'NEW WAGONR LXI 1.0 L 6 ABS',
+        price: 498900,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW WAGONR VXI 1.0 L',
-        price: 599500,
+        variant: 'NEW WAGONR LXI 1.0 L-CNG 6 ABS',
+        price: 588900,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW WAGONR VXI AGS 1.0 L',
-        price: 644500,
+        variant: 'NEW WAGONR VXI 1.0 L 6 ABS',
+        price: 551900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW WAGONR VXI 1.0 L-CNG 6 ABS',
+        price: 641900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW WAGONR VXI AGS 1.0 L 6 ABS',
+        price: 596900,
         transmission: 'Automatic',
       },
       {
-        variant: 'NEW WAGONR ZXI 1.2 L',
-        price: 628000,
+        variant: 'NEW WAGONR ZXI 1.2 L 6 ABS',
+        price: 595900,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW WAGONR ZXI 1.2 L',
-        price: 673000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'NEW WAGONR ZXI+ 1.2 L',
-        price: 675500,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'NEW WAGONR ZXI+ AGS 1.2L',
-        price: 720500,
+        variant: 'NEW WAGONR ZXI AGS 1.2 L 6 ABS',
+        price: 640900,
         transmission: 'Automatic',
       },
       {
-        variant: 'NEW WAGONR ZXI + D/T 1.2L',
-        price: 687500,
+        variant: 'NEW WAGONR ZXI+ 1.2 L 6 ABS',
+        price: 626000,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW WAGONR ZXI+AGS D/T 1.2L',
-        price: 732500,
+        variant: 'NEW WAGONR ZXI+ AGS 1.2 L 6 ABS',
+        price: 683900,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'NEW WAGONR ZXI + D/T 1.2 L 6 ABS',
+        price: 637000,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW WAGONR ZXI+ AGS D/T 1.2 L 6 ABS',
+        price: 694900,
         transmission: 'Automatic',
       },
     ],
+
     exploreMore: [7, 8, 9],
     thumbnail: '/thumbnail/wagnor.webp',
-    priceRange: '₹ 5.54 - 7.14 Lakh *',
+    priceRange: '₹ 4.98 - 6.94 Lakh *',
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/WagonR%20MMC%20Brochure_NEW_1.pdf',
     blogs: [
@@ -1470,64 +1646,65 @@ export const models = [
     ],
     variants: [
       {
-        variant: 'ERTIGA SMART HYBRID LXI(O) 1.5L',
-        price: 911500,
+        variant: 'NEW ERTIGA SMART HYBRID LXI(O) 1.5L',
+        price: 880000,
         transmission: 'Manual',
       },
       {
-        variant: 'ERTIGA SMART HYBRID VXI (O) 1.5L',
-        price: 1020500,
+        variant: 'NEW ERTIGA SMART HYBRID VXI(O) 1.5L',
+        price: 985300,
         transmission: 'Manual',
       },
       {
-        variant: 'ERTIGA SMART HYBRID VXI (O) 1.5L-CNG',
-        price: 1115500,
+        variant: 'NEW ERTIGA SMART HYBRID VXI(O) 1.5L-CNG',
+        price: 1076300,
         transmission: 'Manual',
       },
       {
-        variant: 'ERTIGA SMART HYBRID VXI AMT 1.5L',
-        price: 1160500,
+        variant: 'NEW ERTIGA SMART HYBRID VXI AMT 1.5L',
+        price: 1120300,
         transmission: 'Automatic',
       },
       {
-        variant: 'ERTIGA SMART HYBRID ZXI (O) 1.5L',
-        price: 1130500,
+        variant: 'NEW ERTIGA SMART HYBRID ZXI 1.5L',
+        price: 1091500,
         transmission: 'Manual',
       },
       {
-        variant: 'ERTIGA SMART HYBRID ZXI (O) 1.5L-CNG',
-        price: 1225499,
+        variant: 'NEW ERTIGA SMART HYBRID ZXI(O) 1.5L-CNG',
+        price: 1182500,
         transmission: 'Manual',
       },
       {
-        variant: 'ERTIGA SMART HYBRID ZXI AMT 1.5L',
-        price: 1270500,
+        variant: 'NEW ERTIGA SMART HYBRID ZXI AMT 1.5L',
+        price: 1226499,
         transmission: 'Automatic',
       },
       {
-        variant: 'ERTIGA SMART HYBRID ZXI+ 1.5L',
-        price: 1200500,
+        variant: 'NEW ERTIGA SMART HYBRID ZXI+ 1.5L',
+        price: 1159101,
         transmission: 'Manual',
       },
       {
-        variant: 'ERTIGA SMART HYBRID ZXI+AMT 1.5L',
-        price: 1340500,
+        variant: 'NEW ERTIGA SMART HYBRID ZXI+ AMT 1.5L',
+        price: 1294100,
         transmission: 'Automatic',
       },
       {
-        variant: 'ERTIGA TOUR M 1.5L',
-        price: 1017500,
+        variant: 'NEW ERTIGA TOUR M 1.5L',
+        price: 982400,
         transmission: 'Manual',
       },
       {
-        variant: 'ERTIGA TOUR M 1.5L-CNG',
-        price: 1112499,
+        variant: 'NEW ERTIGA TOUR M 1.5L-CNG',
+        price: 1073400,
         transmission: 'Manual',
       },
     ],
+
     exploreMore: [8, 9, 0],
     thumbnail: '/thumbnail/ertiga.webp',
-    priceRange: '₹ 9.11 - 11.12 Lakh *',
+    priceRange: '₹ 8.80 - 12.94 Lakh *',
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Updated-Ertiga-Brochure-60Pgs.pdf',
   },
@@ -1535,7 +1712,7 @@ export const models = [
   {
     name: 'Maruti Celerio',
     subName: 'Celerio',
-    offersAmount: 53100,
+    offersAmount: 67500,
     offersAdditionalDec: '',
     link: '/arena/celerio-on-road-price',
     linkCG: '/arena/celerio-on-road-price-in-raipur',
@@ -1647,48 +1824,49 @@ export const models = [
     variants: [
       {
         variant: 'NEW CELERIO LXI - 6 ABS',
-        price: 564000,
+        price: 469900,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW CELERIO VXI -6 ABS',
-        price: 599500,
+        variant: 'NEW CELERIO VXI - 6 ABS',
+        price: 501699,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW CELERIO VXI-CNG -6 ABS',
-        price: 689500,
+        variant: 'NEW CELERIO VXI-CNG - 6 ABS',
+        price: 597900,
         transmission: 'Manual',
       },
       {
         variant: 'NEW CELERIO VXI-AGS - 6 ABS',
-        price: 649500,
+        price: 560900,
         transmission: 'Automatic',
       },
       {
-        variant: 'NEW CELERIO ZXI -6 ABS',
-        price: 639000,
+        variant: 'NEW CELERIO ZXI - 6 ABS',
+        price: 570901,
         transmission: 'Manual',
       },
       {
         variant: 'NEW CELERIO ZXI-AGS - 6 ABS',
-        price: 689000,
+        price: 615900,
         transmission: 'Automatic',
       },
       {
-        variant: 'NEW CELERIO ZXI+ -6 ABS',
-        price: 687000,
+        variant: 'NEW CELERIO ZXI+ - 6 ABS',
+        price: 627900,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW CELERIO ZXI+-AGS -6 ABS',
-        price: 737000,
+        variant: 'NEW CELERIO ZXI+-AGS - 6 ABS',
+        price: 672900,
         transmission: 'Automatic',
       },
     ],
+
     exploreMore: [0, 1, 2],
     thumbnail: '/thumbnail/celerio.webp',
-    priceRange: '₹ 5.64 - 7.37 Lakh *',
+    priceRange: '₹ 4.69 - 6.72 Lakh *',
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/15_Page_Brochure_Celerio_Digital.pdf',
     blogs: [
@@ -1705,7 +1883,7 @@ export const models = [
   {
     name: 'Maruti Eeco',
     subName: 'Eeco',
-    offersAmount: 38100,
+    offersAmount: 47500,
     offersAdditionalDec: '',
     link: '/arena/eeco-on-road-price',
     linkCG: '/arena/eeco-on-road-price-in-raipur',
@@ -1815,50 +1993,71 @@ export const models = [
     ],
     variants: [
       {
-        variant: 'NEW EECO 5 STR STD NON-AC',
-        price: 532000,
+        variant: 'NEW EECO 5 STR STD - 6 ABS',
+        price: 520900,
         transmission: 'Manual',
       },
-      { variant: 'NEW EECO 5 STR AC', price: 568000, transmission: 'Manual' },
       {
-        variant: 'NEW EECO 7 STR NON-AC',
-        price: 561000,
+        variant: 'NEW EECO 5 STR AC - 6 ABS',
+        price: 553800,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW EECO 5 STR AC - CNG - 6 ABS',
+        price: 635800,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW EECO 6 STR NON-AC - 6 ABS',
+        price: 547400,
         transmission: 'Manual',
       },
       {
         variant: 'NEW EECO GARGO NON AC',
-        price: 547000,
+        price: 538800,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW EECO TOUR V 5STR STD',
-        price: 529000,
+        variant: 'NEW EECO STD GARGO - CNG 2STR',
+        price: 660501,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW EECO TOUR V 5STR AC',
-        price: 565000,
+        variant: 'NEW EECO GARGO AC- CNG 2 STR',
+        price: 620799,
         transmission: 'Manual',
       },
       {
-        variant: 'NEW EECO TOUR V 7STR STD',
-        price: 558000,
+        variant: 'NEW EECO TOUR V 5STR STD - 6 ABS',
+        price: 518101,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW EECO TOUR V 5STR AC - 6 ABS',
+        price: 551100,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW EECO TOUR V 5STR AC - 6 ABS -CNG',
+        price: 633100,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'NEW EECO TOUR V 6 STR STD - ABS',
+        price: 545600,
         transmission: 'Manual',
       },
       {
         variant: 'NEW EECO AMBULANCE SHELL',
-        price: 659000,
+        price: 637100,
         transmission: 'Manual',
       },
-      {
-        variant: 'NEW EECO AMBULANCE',
-        price: 832000,
-        transmission: 'Manual',
-      },
+      { variant: 'NEW EECO AMBULANCE', price: 801500, transmission: 'Manual' },
     ],
+
     exploreMore: [1, 2, 3],
     thumbnail: '/thumbnail/Eeco.webp',
-    priceRange: '₹ 5.40 - 6.67 Lakh *',
+    priceRange: '₹ 5.20 - 8.01 Lakh *',
     brochure:
       'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Eeco-Passenger-BRAND-Leaflet.pdf',
   },
@@ -2116,40 +2315,16 @@ export const models = [
       { label: 'Power', value: '112 kW @ 6000 rpm' },
     ],
     variants: [
-      {
-        variant: ' ALPHA+ 7S E-CVT',
-        price: 2931500,
-        transmission: 'Automatic',
-      },
-      {
-        variant: ' ALPHA+ 7S(M) E-CVT',
-        price: 2922000,
-        transmission: 'Automatic',
-      },
-      {
-        variant: ' ZETA+ 8S E-CVT',
-        price: 2565500,
-        transmission: 'Automatic',
-      },
-      {
-        variant: ' ZETA+ 8S(M) E-CVT',
-        price: 2556000,
-        transmission: 'Automatic',
-      },
-      {
-        variant: ' ZETA+ 7S E-CVT',
-        price: 2560500,
-        transmission: 'Automatic',
-      },
-      {
-        variant: ' ZETA+ 7S(M) E-CVT',
-        price: 2551000,
-        transmission: 'Automatic',
-      },
+      { variant: 'ALPHA+ 7S', price: 2830414, transmission: 'Automatic' },
+      { variant: 'ALPHA+ 7S (M)', price: 2821241, transmission: 'Automatic' },
+      { variant: 'ZETA+ 8S', price: 2477034, transmission: 'Automatic' },
+      { variant: 'ZETA+ 8S (M)', price: 2467862, transmission: 'Automatic' },
+      { variant: 'ZETA+ 7S', price: 2472207, transmission: 'Automatic' },
+      { variant: 'ZETA+ 7S (M)', price: 2463034, transmission: 'Automatic' },
     ],
     exploreMore: [11, 12, 13],
     thumbnail: '/thumbnail/invicto-main-thubmnail-no-bg.webp',
-    priceRange: '₹ 25.305 - 29.015 Lakh *',
+    priceRange: '₹ 24.63 - 28.30 Lakh *',
     brochure:
       'https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/invicto-brochure_invicto-pdf.pdf',
   },
@@ -2273,39 +2448,40 @@ export const models = [
     ],
     variants: [
       {
-        variant: ' ALPHA (DT) ALL GRIP PRO 1.5L (4AT)',
-        price: 1496500,
+        variant: 'ALL GRIP PRO 1.5L (4AT) ALPHA (DT)',
+        price: 1444897,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA ALL GRIP PRO 1.5L (4AT)',
-        price: 1480500,
+        variant: 'ALL GRIP PRO 1.5L (4AT) ALPHA',
+        price: 1429448,
         transmission: 'Automatic',
       },
       {
-        variant: 'ZETA ALL GRIP PRO 1.5L (4AT)',
-        price: 1385500,
+        variant: 'ALL GRIP PRO 1.5L (4AT) ZETA',
+        price: 1337724,
         transmission: 'Automatic',
       },
       {
-        variant: ' ALPHA (DT) ALL GRIP PRO 1.5L (MT)',
-        price: 1486500,
+        variant: 'ALL GRIP PRO 1.5L (MT) ALPHA (DT)',
+        price: 1338690,
         transmission: 'Manual',
       },
       {
-        variant: 'ALPHA ALL GRIP PRO 1.5L (MT)',
-        price: 1370500,
+        variant: 'ALL GRIP PRO 1.5L (MT) ALPHA',
+        price: 1323241,
         transmission: 'Manual',
       },
       {
-        variant: 'ZETA ALL GRIP PRO 1.5L (MT)',
-        price: 1275500,
+        variant: 'ALL GRIP PRO 1.5L (MT) ZETA',
+        price: 1231517,
         transmission: 'Manual',
       },
     ],
+
     exploreMore: [12, 13, 14],
     thumbnail: '/thumbnail/Jimny.webp',
-    priceRange: '₹ 12.74 - 14.95 Lakh*',
+    priceRange: '₹ 12.31 - 14.44 Lakh*',
     brochure:
       'https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/jimny_brochure.pdf#element_submenu',
   },
@@ -2423,74 +2599,52 @@ export const models = [
     ],
     variants: [
       {
-        variant: 'ALPHA (DT) 1.0L (6AT) Smart Hybrid',
-        price: 1310500,
+        variant: '1.0L TURBO (6AT) Smart Hybrid ALPHA (DT)',
+        price: 1198752,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA 1.0L Smart Hybrid ',
-        price: 1294500,
+        variant: '1.0L TURBO (6AT) Smart Hybrid ALPHA',
+        price: 1184116,
         transmission: 'Automatic',
       },
       {
-        variant: ' ZETA 1.0L Smart Hybrid',
-        price: 1202500,
-        transmission: 'Automatic',
-      },
-      // 1.0L (MT) Smart Hybrid
-      {
-        variant: 'ALPHA (DT) 1.0L (MT) Smart Hybrid',
-        price: 1170500,
+        variant: '1.0L TURBO (6AT) Smart Hybrid ZETA',
+        price: 1099961,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA 1.0L (MT) Smart Hybrid ',
-        price: 1154500,
+        variant: '1.0L TURBO (MT) Smart Hybrid ALPHA (DT)',
+        price: 1070690,
         transmission: 'Manual',
       },
       {
-        variant: ' ZETA 1.0L (MT) Smart Hybrid',
-        price: 1062500,
+        variant: '1.0L TURBO (MT) Smart Hybrid ALPHA',
+        price: 1056054,
         transmission: 'Manual',
       },
       {
-        variant: ' DELTA+ 1.0L (MT) Smart Hybrid',
-        price: 979500,
+        variant: '1.0L TURBO (MT) Smart Hybrid ZETA',
+        price: 971899,
         transmission: 'Manual',
       },
 
-      // 1.0L (AGS)
-      // {
-      //   variant: "DLETA+ (O) 1.0L (AGS)",
-      //   price: 934500,
-      //   transmission: "Automatic",
-      // },
       {
-        variant: 'DLETA+ 1.0L (AGS)',
-        price: 934500,
+        variant: '1.2L (AGS) DELTA+',
+        price: 854814,
         transmission: 'Automatic',
       },
-      {
-        variant: 'DLETA 1.0L (AGS)',
-        price: 894500,
-        transmission: 'Automatic',
-      },
-      // 1.2L (MT)
-      // {
-      //   variant: " DELTA+ (O) 1.2L (MT)",
-      //   price: 893000,
-      //   transmission: "Manual",
-      // },
-      { variant: '  DELTA+ 1.2L (MT)', price: 884500, transmission: 'Manual' },
-      { variant: ' DELTA 1.2L (MT)', price: 844500, transmission: 'Manual' },
-      { variant: '  SIGMA 1.2L (MT)', price: 758500, transmission: 'Manual' },
-      //CNG (MT)
-      { variant: 'CNG (MT) DELTA', price: 939500, transmission: 'Manual' },
-      { variant: 'CNG (MT) SIGMA', price: 853500, transmission: 'Manual' },
+      { variant: '1.2L (AGS) DELTA', price: 818225, transmission: 'Automatic' },
+      { variant: '1.2L (MT) DELTA+', price: 809078, transmission: 'Manual' },
+      { variant: '1.2L (MT) DELTA', price: 772488, transmission: 'Manual' },
+      { variant: '1.2L (MT) SIGMA', price: 693822, transmission: 'Manual' },
+
+      { variant: 'CNG (MT) DELTA', price: 859388, transmission: 'Manual' },
+      { variant: 'CNG (MT) SIGMA', price: 780721, transmission: 'Manual' },
     ],
     exploreMore: [13, 14, 15],
     thumbnail: '/thumbnail/Fronx.webp',
-    priceRange: '₹ 7.515 - 13.035 Lakh *',
+    priceRange: '₹ 6.93 - 11.98 Lakh *',
     brochure:
       'https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/fronx-brochure.pdf#element_submenu',
     blogs: [
@@ -2633,182 +2787,192 @@ export const models = [
     ],
     variants: [
       {
-        variant: 'ALPHA+ (o) (DT) Hybrid (Ecvt)',
-        price: 2068000,
+        variant: 'Hybrid (E-CVT) ALPHA+ (O) DT',
+        price: 2024616,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA+ (o) Hybrid (Ecvt)',
-        price: 2052000,
+        variant: 'Hybrid (E-CVT) ALPHA+ (O)',
+        price: 2008951,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA+ (DT) Hybrid (Ecvt)',
-        price: 2008000,
+        variant: 'Hybrid (E-CVT) ALPHA+ DT',
+        price: 1965874,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Hybrid (E-CVT) ALPHA+',
+        price: 1950541,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Hybrid (E-CVT) ZETA+ (O) DT',
+        price: 1895384,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Hybrid (E-CVT) ZETA+ (O)',
+        price: 1879720,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Hybrid (E-CVT) ZETA+ (DT)',
+        price: 1836643,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Hybrid (E-CVT) ZETA+',
+        price: 1820979,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Hybrid (E-CVT) DELTA+',
+        price: 1636357,
+        transmission: 'Automatic',
+      },
+
+      {
+        variant: 'All Grip 4WD (AT) ALPHA (O) DT',
+        price: 1911724,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'All Grip 4WD (AT) ALPHA (O)',
+        price: 1896276,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'All Grip 4WD (AT) ALPHA DT',
+        price: 1853793,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'All Grip 4WD (AT) ALPHA',
+        price: 1838344,
         transmission: 'Automatic',
       },
 
       {
-        variant: 'ALPHA+ Hybrid (Ecvt)',
-        price: 1992000,
+        variant: 'Smart Hybrid (AT) ALPHA (O) DT',
+        price: 1766897,
         transmission: 'Automatic',
       },
       {
-        variant: 'ZETA+ (o) (DT) Hybrid (Ecvt)',
-        price: 1936000,
+        variant: 'Smart Hybrid (AT) ALPHA (O)',
+        price: 1751488,
         transmission: 'Automatic',
       },
       {
-        variant: 'ZETA+ (O) Hybrid (Ecvt)',
-        price: 1920000,
+        variant: 'Smart Hybrid (AT) ALPHA DT',
+        price: 1709606,
         transmission: 'Automatic',
       },
       {
-        variant: 'ZETA+ (DT) Hybrid (Ecvt)',
-        price: 1876000,
-        transmission: 'Automatic',
-      },
-
-      {
-        variant: 'ZETA+ Hybrid (Ecvt)',
-        price: 1860000,
-        transmission: 'Automatic',
-      },
-
-      {
-        variant: 'DELTA+  Hybrid (Ecvt)',
-        price: 1699000,
-        transmission: 'Automatic',
-      },
-
-      // Smart Hybrid (AT)
-      {
-        variant: 'ALPHA (O) DT  Smart Hybrid (AT)',
-        price: 1830000,
+        variant: 'Smart Hybrid (AT) ALPHA',
+        price: 1693517,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA (DT) Smart Hybrid (AT)',
-        price: 1770000,
+        variant: 'Smart Hybrid (AT) ZETA (O) DT',
+        price: 1624956,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA (o) Smart Hybrid (AT)',
-        price: 1813999,
+        variant: 'Smart Hybrid (AT) ZETA (O)',
+        price: 1609867,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA  Smart Hybrid (AT)',
-        price: 1754000,
+        variant: 'Smart Hybrid (AT) ZETA DT',
+        price: 1557034,
         transmission: 'Automatic',
       },
       {
-        variant: 'ZETA (O) DT  Smart Hybrid (AT)',
-        price: 1683001,
+        variant: 'Smart Hybrid (AT) ZETA',
+        price: 1544906,
         transmission: 'Automatic',
       },
       {
-        variant: 'ZETA (O) Smart Hybrid (AT)',
-        price: 1667000,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'ZETA (DT)  Smart Hybrid (AT)',
-        price: 1623000,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'ZETA  Smart Hybrid (AT)',
-        price: 1607000,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'DELTA  Smart Hybrid (AT)',
-        price: 1393001,
+        variant: 'Smart Hybrid (AT) DELTA',
+        price: 1434966,
         transmission: 'Automatic',
       },
 
-      // All Grip (MT)
       {
-        variant: 'ALPHA (DT)  All Grip (MT)',
-        price: 1717500,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'ALPHA  All Grip (MT)',
-        price: 1701500,
-        transmission: 'Automatic',
-      },
-      // Smart Hybrid (MT)
-      {
-        variant: 'ALPHA (O) DT Smart Hybrid (MT)',
-        price: 1690000,
+        variant: 'All Grip 4WD (MT) ALPHA (O) DT',
+        price: 1646276,
         transmission: 'Manual',
       },
       {
-        variant: 'ALPHA (O)  Smart Hybrid (MT)',
-        price: 1674000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'ALPHA (DT) Smart Hybrid (MT)',
-        price: 1630000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'ALPHA  Smart Hybrid (MT)',
-        price: 1613999,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'ZETA (O) DT Smart Hybrid (MT)',
-        price: 1543000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'ZETA (O)  Smart Hybrid (MT)',
-        price: 1526999,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'ZETA (DT) Smart Hybrid (MT)',
-        price: 1483001,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'ZETA  Smart Hybrid (MT)',
-        price: 1467000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'DELTA  Smart Hybrid (MT)',
-        price: 1253000,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'SIGMA  Smart Hybrid (MT)',
-        price: 1142000,
-        transmission: 'Manual',
-      },
-      //All Grip 4WD(MT)
-      {
-        variant: 'ALPHA (DT) All Grip 4WD(MT)',
-        price: 1717500,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'ALPHA All Grip 4WD(MT)',
-        price: 1701500,
+        variant: 'All Grip 4WD (MT) ALPHA (O)',
+        price: 1642828,
         transmission: 'Manual',
       },
 
-      { variant: 'ZETA(DT) CNG (MT)', price: 1578000, transmission: 'Manual' },
-      { variant: 'ZETA CNG (MT)', price: 1562000, transmission: 'Manual' },
-      { variant: 'DELTA CNG (MT)', price: 1348000, transmission: 'Manual' },
+      {
+        variant: 'Smart Hybrid (MT) ALPHA (O) DT',
+        price: 1614724,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) ALPHA (O)',
+        price: 1616276,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) ALPHA DT',
+        price: 1601276,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) ALPHA',
+        price: 1558344,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) ZETA (O) DT',
+        price: 1474384,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) ZETA (O)',
+        price: 1447343,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) ZETA DT',
+        price: 1416419,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) ZETA',
+        price: 1416393,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) DELTA',
+        price: 1173622,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'Smart Hybrid (MT) SIGMA',
+        price: 1120621,
+        transmission: 'Manual',
+      },
+
+      {
+        variant: 'CNG (MT) ZETA (O) DT',
+        price: 1474344,
+        transmission: 'Manual',
+      },
+      { variant: 'CNG (MT) ZETA', price: 1308138, transmission: 'Manual' },
+      { variant: 'CNG (MT) DELTA', price: 1301537, transmission: 'Manual' },
     ],
+
     exploreMore: [14, 15, 16],
     thumbnail: '/thumbnail/GV.webp',
-    priceRange: '₹ 10.99- 20.09 Lakh *',
+    priceRange: '₹ 11.02- 20.24 Lakh *',
     brochure:
       'https://nexaprod5.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/grand_vitara-brochure.pdf',
     blogs: [
@@ -2958,34 +3122,40 @@ export const models = [
     ],
     variants: [
       {
-        variant: 'ALPHA+(D) (1.5 P AT)',
-        price: 1499500,
+        variant: 'XL6 1.5P AT ALPHA+ (D)',
+        price: 1447793,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA+ (1.5 P AT)',
-        price: 1483500,
+        variant: 'XL6 1.5P AT ALPHA+',
+        price: 1432345,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA (1.5 P AT)',
-        price: 1433500,
+        variant: 'XL6 1.5P AT ALPHA',
+        price: 1384069,
         transmission: 'Automatic',
       },
-      { variant: 'ZETA (1.5 P AT)', price: 1333500, transmission: 'Automatic' },
       {
-        variant: 'ALPHA+(D) (1.5 P MT)',
-        price: 1359500,
+        variant: 'XL6 1.5P AT ZETA',
+        price: 1287517,
+        transmission: 'Automatic',
+      },
+
+      {
+        variant: 'XL6 1.5P MT ALPHA+ (D)',
+        price: 1312621,
         transmission: 'Manual',
       },
-      { variant: 'ALPHA+ (1.5 P MT)', price: 1343500, transmission: 'Manual' },
-      { variant: 'ALPHA (1.5 P MT)', price: 1293500, transmission: 'Manual' },
-      { variant: 'ZETA (1.5 P MT)', price: 1193500, transmission: 'Manual' },
-      { variant: 'ZETA CNG (MT)', price: 1288500, transmission: 'Manual' },
+      { variant: 'XL6 1.5P MT ALPHA+', price: 1297172, transmission: 'Manual' },
+      { variant: 'XL6 1.5P MT ALPHA', price: 1248897, transmission: 'Manual' },
+      { variant: 'XL6 1.5P MT ZETA', price: 1152345, transmission: 'Manual' },
+
+      { variant: 'XL6 CNG (MT) ZETA', price: 1244069, transmission: 'Manual' },
     ],
     exploreMore: [15, 16, 17],
     thumbnail: '/thumbnail/XL6.webp',
-    priceRange: '₹ 12.56 - 14.77 Lakh *',
+    priceRange: '₹ 11.52 - 14.47 Lakh *',
     brochure:
       'https://nexaprod3.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/xl6-brochure-for-digital.pdf',
   },
@@ -3133,34 +3303,39 @@ export const models = [
     ],
     variants: [
       {
-        variant: 'ALPHA DT (1.5 P AT)',
-        price: 1247000,
+        variant: 'Ciaz 1.5P AT ALPHA DT',
+        price: 1204000,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA (1.5 P AT)',
-        price: 1231000,
-        transmission: 'Automatic',
-      },
-      { variant: 'ZETA (1.5 P AT)', price: 1151500, transmission: 'Automatic' },
-      {
-        variant: 'DELTA (1.5 P AT)',
-        price: 1110000,
+        variant: 'Ciaz 1.5P AT ALPHA',
+        price: 1188552,
         transmission: 'Automatic',
       },
       {
-        variant: 'ALPHA DT (1.5 P MT)',
-        price: 1137000,
+        variant: 'Ciaz 1.5P AT ZETA',
+        price: 1111793,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Ciaz 1.5P AT DELTA',
+        price: 1072690,
+        transmission: 'Automatic',
+      },
+
+      {
+        variant: 'Ciaz 1.5P MT ALPHA DT',
+        price: 1097793,
         transmission: 'Manual',
       },
-      { variant: 'ALPHA (1.5 P MT)', price: 1121000, transmission: 'Manual' },
-      { variant: 'ZETA (1.5 P MT)', price: 1041500, transmission: 'Manual' },
-      { variant: 'DELTA (1.5 P MT)', price: 999500, transmission: 'Manual' },
-      { variant: 'SIGMA (1.5 P MT)', price: 941500, transmission: 'Manual' },
+      { variant: 'Ciaz 1.5P MT ALPHA', price: 1082345, transmission: 'Manual' },
+      { variant: 'Ciaz 1.5P MT ZETA', price: 1005586, transmission: 'Manual' },
+      { variant: 'Ciaz 1.5P MT DELTA', price: 965034, transmission: 'Manual' },
+      { variant: 'Ciaz 1.5P MT SIGMA', price: 909034, transmission: 'Manual' },
     ],
     exploreMore: [16, 17, 9],
     thumbnail: '/thumbnail/Ciaz.webp',
-    priceRange: '₹ 9.40 - 12.45 Lakh *',
+    priceRange: '₹ 9.09 - 12.04 Lakh *',
     brochure:
       'https://www.nexaexperience.com/-/media/feature/nexawebsiteherobanner/brochure/all_new_ciaz_brochure.pdf',
   },
@@ -3297,20 +3472,34 @@ export const models = [
       { label: 'Power', value: '77.5 kW @ 6000 rpm' },
     ],
     variants: [
-      { variant: 'ALPHA (P) AGS', price: 996000, transmission: 'Automatic' },
-      { variant: 'ZETA (P) AGS', price: 901000, transmission: 'Automatic' },
-      { variant: 'DELTA (P) AGS', price: 808000, transmission: 'Automatic' },
-      // { variant: "SIGMA (P) AGS", price: 666000, transmission: "Automatic" },
-      { variant: 'ALPHA (P) MT', price: 946000, transmission: 'Manual' },
-      { variant: 'ZETA (P) MT', price: 851000, transmission: 'Manual' },
-      { variant: 'DELTA (P) MT', price: 758000, transmission: 'Manual' },
-      { variant: 'SIGMA (P) MT', price: 674000, transmission: 'Manual' },
-      { variant: 'ZETA (CNG) MT', price: 941000, transmission: 'Manual' },
-      { variant: 'DELTA (CNG) MT', price: 848000, transmission: 'Manual' },
+      {
+        variant: 'Baleno P AGS ALPHA',
+        price: 911070,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Baleno P AGS ZETA',
+        price: 824171,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Baleno P AGS DELTA',
+        price: 739101,
+        transmission: 'Automatic',
+      },
+
+      { variant: 'Baleno P MT ALPHA', price: 865333, transmission: 'Manual' },
+      { variant: 'Baleno P MT ZETA', price: 778434, transmission: 'Manual' },
+      { variant: 'Baleno P MT DELTA', price: 693364, transmission: 'Manual' },
+      { variant: 'Baleno P MT SIGMA', price: 616527, transmission: 'Manual' },
+
+      { variant: 'Baleno CNG MT ZETA', price: 860760, transmission: 'Manual' },
+      { variant: 'Baleno CNG MT DELTA', price: 775690, transmission: 'Manual' },
     ],
+
     exploreMore: [17, 9, 10],
     thumbnail: '/thumbnail/Baleno.webp',
-    priceRange: '₹ 6.66 - 9.83 Lakh *',
+    priceRange: '₹ 6.16 - 9.11 Lakh *',
     brochure:
       'https://nexaprod1.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/the-new-age-baleno-brochure.pdf',
     blogs: [
@@ -3454,21 +3643,38 @@ export const models = [
       { label: 'Power', value: '61 kW @ 6000 rpm' },
     ],
     variants: [
-      { variant: 'ALPHA DT AGS (P)', price: 826000, transmission: 'Automatic' },
-      { variant: 'ALPHA AGS (P)', price: 812000, transmission: 'Automatic' },
-      { variant: 'ZETA DT AGS (P)', price: 761000, transmission: 'Automatic' },
-      { variant: 'ZETA AGS (P)', price: 747000, transmission: 'Automatic' },
-      { variant: 'DELTA AGS (P)', price: 689000, transmission: 'Automatic' },
-      { variant: 'ALPHA DT MT (P)', price: 776000, transmission: 'Manual' },
-      { variant: 'ALPHA MT (P)', price: 762000, transmission: 'Manual' },
-      { variant: 'ZETA DT MT (P)', price: 711000, transmission: 'Manual' },
-      { variant: 'ZETA MT (P)', price: 697000, transmission: 'Manual' },
-      { variant: 'DELTA MT (P)', price: 639000, transmission: 'Manual' },
-      { variant: 'SIGMA MT (P)', price: 585000, transmission: 'Manual' },
+      {
+        variant: 'Ignis P AGS ALPHA DT',
+        price: 755566,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Ignis P AGS ALPHA',
+        price: 742760,
+        transmission: 'Automatic',
+      },
+      {
+        variant: 'Ignis P AGS ZETA DT',
+        price: 696109,
+        transmission: 'Automatic',
+      },
+      { variant: 'Ignis P AGS ZETA', price: 683302, transmission: 'Automatic' },
+      {
+        variant: 'Ignis P AGS DELTA',
+        price: 630248,
+        transmission: 'Automatic',
+      },
+
+      { variant: 'Ignis P MT ALPHA DT', price: 709829, transmission: 'Manual' },
+      { variant: 'Ignis P MT ALPHA', price: 697023, transmission: 'Manual' },
+      { variant: 'Ignis P MT ZETA DT', price: 650372, transmission: 'Manual' },
+      { variant: 'Ignis P MT ZETA', price: 637566, transmission: 'Manual' },
+      { variant: 'Ignis P MT DELTA', price: 584512, transmission: 'Manual' },
+      { variant: 'Ignis P MT SIGMA', price: 535116, transmission: 'Manual' },
     ],
     exploreMore: [9, 10, 11],
     thumbnail: '/thumbnail/Ignis.webp',
-    priceRange: '₹ 5.84 - 8.20 Lakh *',
+    priceRange: '₹ 5.35 - 7.55 Lakh *',
     brochure:
       'https://nexaprod4.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/ignis-brochure.pdf',
   },
