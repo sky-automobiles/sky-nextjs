@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <Head>
+      <head>
         <Script
           src='https://www.googletagmanager.com/gtag/js?id=AW-17597052359'
           strategy='afterInteractive'
@@ -98,7 +98,7 @@ export default function RootLayout({
             `,
           }}
         ></script>
-      </Head>
+      </head>
 
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}{' '}
