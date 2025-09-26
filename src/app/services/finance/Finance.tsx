@@ -1,20 +1,20 @@
-"use client";
+'use client';
 import React, {
   ChangeEvent,
   FormEvent,
   useCallback,
   useEffect,
   useState,
-} from "react";
-import Footer from "@/components/others/Footer";
-import Header from "@/components/others/Header";
-import { models } from "@/constants";
-import toast from "react-hot-toast";
-import EMISlider from "./EMISlider";
-import { useAppContext } from "@/context";
-import { useRouter } from "next/navigation";
-import { FaSpinner } from "react-icons/fa";
-import Image from "next/image";
+} from 'react';
+import Footer from '@/components/others/Footer';
+import Header from '@/components/others/Header';
+import { models } from '@/constants';
+import toast from 'react-hot-toast';
+import EMISlider from './EMISlider';
+import { useAppContext } from '@/context';
+import { useRouter } from 'next/navigation';
+import { FaSpinner } from 'react-icons/fa';
+import Image from 'next/image';
 
 interface FormData {
   name: string;
@@ -28,11 +28,11 @@ interface FormData {
 
 const Finance: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
-    phone: "",
-    email: "",
-    model: "",
-    city: "",
+    name: '',
+    phone: '',
+    email: '',
+    model: '',
+    city: '',
     loanAmount: 0,
     loanTenure: 0,
   });
@@ -97,15 +97,15 @@ const Finance: React.FC = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     setLoading(true);
     event.preventDefault();
-    console.log("Form Data:", { ...formData, state: selectedState });
+    console.log('Form Data:', { ...formData, state: selectedState });
 
     // toast.success("Thank You for contacting us. We will get back to you soon!");
     try {
       // Send the POST request
-      const response = await fetch("/api/finance", {
-        method: "POST",
+      const response = await fetch('/api/finance', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ ...formData, state: selectedState }),
       });
@@ -121,119 +121,119 @@ const Finance: React.FC = () => {
       // Handle the response based on the data
       if (data.status === true) {
         toast.success(
-          "Thank you for contacting us. We will get back to you soon!"
+          'Thank you for contacting us. We will get back to you soon!'
         );
         //  window.location.href = "/thank-you";
-        router.push("/thank-you");
+        router.push('/thank-you');
       } else {
-        toast.error("Failed to send request. Please try again later.");
+        toast.error('Failed to send request. Please try again later.');
       }
     } catch (error) {
-      toast.error("Failed to send request. Please try again later.");
-      console.error("Error sending request:", error);
+      toast.error('Failed to send request. Please try again later.');
+      console.error('Error sending request:', error);
     } finally {
       setLoading(false);
     }
 
     // Reset the form after submission
     setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      model: "",
-      city: "",
+      name: '',
+      phone: '',
+      email: '',
+      model: '',
+      city: '',
       loanAmount: 0,
       loanTenure: 0,
     });
   };
 
   return (
-    <div className="min-h-screen">
+    <div className='min-h-screen'>
       <Header />
-      <div className=" min-h-40 bg-primaryGray   ">
+      <div className=' min-h-40 bg-primaryGray   '>
         <Image
           height={1080}
           width={1920}
-          src="/images/other/finance_banner.webp"
-          alt="Sky Automobiles Finance Banner"
-          className="object-cover w-full h-full  max-h-[50vh] hidden sm:block"
+          src='/images/other/finance_banner.webp'
+          alt='Sky Automobiles Finance Banner'
+          className='object-cover w-full h-full  max-h-[50vh] hidden sm:block'
         />
         <Image
           height={1920}
           width={500}
-          src="/images/other/finance_mobile.webp"
-          alt="Sky Automobiles Finance Banner"
-          className="object-cover w-full h-full  min-h-[50vh]  sm:hidden"
+          src='/images/other/finance_mobile.webp'
+          alt='Sky Automobiles Finance Banner'
+          className='object-cover w-full h-full  min-h-[50vh]  sm:hidden'
         />
       </div>
 
       <div
-        id="emi-calculator"
-        className="container min-h-[50vh] py-16 mx-auto xl:max-w-7xl lg:py-20 px-2"
+        id='emi-calculator'
+        className='container min-h-[50vh] py-16 mx-auto xl:max-w-7xl lg:py-20 px-2'
       >
-        <div className="mb-16 lg:mb-24 mt-8">
-          <h4 className="text-3xl font-bold text-primaryGray mb-3 md:mb-6 text-center">
+        <div className='mb-16 lg:mb-24 mt-8'>
+          <h4 className='text-3xl font-bold text-primaryGray mb-3 md:mb-6 text-center'>
             <span
               className={` ${
-                selectedState === "Odisha"
-                  ? "text-primaryBlue"
-                  : "text-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'text-primaryBlue'
+                  : 'text-primaryRed'
               }`}
             >
-              EMI{" "}
-            </span>{" "}
+              EMI{' '}
+            </span>{' '}
             Calculator
           </h4>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="flex flex-col items-center">
-              <h5 className="mb-2 text-xl font-semibold">{data?.subName}</h5>
+          <div className='grid sm:grid-cols-2 gap-4'>
+            <div className='flex flex-col items-center'>
+              <h5 className='mb-2 text-xl font-semibold'>{data?.subName}</h5>
               <p>
-                Start from{" "}
+                Start from{' '}
                 <span
                   className={` font-bold ${
-                    selectedState === "Odisha"
-                      ? "text-primaryBlue"
-                      : "text-primaryRed"
+                    selectedState === 'Odisha'
+                      ? 'text-primaryBlue'
+                      : 'text-primaryRed'
                   }`}
                 >
                   {data?.variants[0].price}
                 </span>
               </p>
-              <div className="flex items-center gap-2">
-                <span className="text-primaryGray">Select the Model</span>
+              <div className='flex items-center gap-2'>
+                <span className='text-primaryGray'>Select the Model</span>
                 <select
                   className={`w-min p-2 bg-transparent border-b-2  focus:outline-none mb-4 ${
-                    selectedState === "Odisha"
-                      ? "border-b-primaryBlue"
-                      : "border-b-primaryRed"
+                    selectedState === 'Odisha'
+                      ? 'border-b-primaryBlue'
+                      : 'border-b-primaryRed'
                   }`}
-                  name="index"
+                  name='index'
                   required
                   value={index}
                   onChange={(e) => setIndex(+e.target.value)}
                 >
-                  <optgroup label="Arena" className="text-sm text-primaryGray">
-                     <option value="0">VICTORIS</option>
-                    <option value="1">Alto K10</option>
-                    <option value="2">Swift</option>
-                    <option value="3">Brezza</option>
-                    <option value="4">Dzire</option>
-                    <option value="5">S-Presso</option>
-                    <option value="6">Wagon R</option>
-                    <option value="7">Ertiga</option>
-                    <option value="8">Celerio</option>
-                    <option value="9">Eeco</option>
+                  <optgroup label='Arena' className='text-sm text-primaryGray'>
+                    <option value='0'>VICTORIS</option>
+                    <option value='1'>Alto K10</option>
+                    <option value='2'>Swift</option>
+                    <option value='3'>Brezza</option>
+                    <option value='4'>Dzire</option>
+                    <option value='5'>S-Presso</option>
+                    <option value='6'>Wagon R</option>
+                    <option value='7'>Ertiga</option>
+                    <option value='8'>Celerio</option>
+                    <option value='9'>Eeco</option>
                   </optgroup>
-                  <optgroup label="Nexa" className="text-sm text-primaryGray">
-                  <option value="10">e-Vitara</option>
-                    <option value="11">Invicto</option>
-                    <option value="12">Jimny</option>
-                    <option value="13">Fronx</option>
-                    <option value="14">Grand Vitara</option>
-                    <option value="15">XL6</option>
-                    <option value="16">Ciaz</option>
-                    <option value="17">Baleno</option>
-                    <option value="18">Ignis</option>
+                  <optgroup label='Nexa' className='text-sm text-primaryGray'>
+                    <option value='10'>e-Vitara</option>
+                    <option value='11'>Invicto</option>
+                    <option value='12'>Jimny</option>
+                    <option value='13'>Fronx</option>
+                    <option value='14'>Grand Vitara</option>
+                    <option value='15'>XL6</option>
+                    <option value='16'>Ciaz</option>
+                    <option value='17'>Baleno</option>
+                    <option value='18'>Ignis</option>
                   </optgroup>
                 </select>
               </div>
@@ -243,17 +243,17 @@ const Finance: React.FC = () => {
                   src={data?.colors[selectedColor].img}
                   alt={data?.colors[selectedColor].colName}
                 />
-                <h5 className="mb-5 text-xl font-medium text-center">
+                <h5 className='mb-5 text-xl font-medium text-center'>
                   {data?.colors[selectedColor].colName}
                 </h5>
-                <div className="flex flex-wrap justify-center gap-3">
+                <div className='flex flex-wrap justify-center gap-3'>
                   {data?.colors.map((color, index) => (
                     <div
                       key={index}
                       onClick={() => handleClickColor(index)}
                       className={`w-6 h-6 rounded-full cursor-pointer border flex justify-center items-center text-white ${
                         selectedColor === index &&
-                        "shadow shadow-gray-500 border-2 animate-bounce"
+                        'shadow shadow-gray-500 border-2 animate-bounce'
                       }`}
                       style={{ backgroundColor: color.colorCode }}
                     >
@@ -263,20 +263,20 @@ const Finance: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="">
-              <div className="mb-3">
-                <div className="flex items-end justify-between mb-2">
-                  <div className="text-xl font-semibold">Loan Amount</div>
+            <div className=''>
+              <div className='mb-3'>
+                <div className='flex items-end justify-between mb-2'>
+                  <div className='text-xl font-semibold'>Loan Amount</div>
                   <div
                     className={` text-white pr-3 py-1 w-36 text-right rounded-lg ${
-                      selectedState === "Odisha"
-                        ? "bg-primaryBlue"
-                        : "bg-primaryRed"
+                      selectedState === 'Odisha'
+                        ? 'bg-primaryBlue'
+                        : 'bg-primaryRed'
                     }`}
                   >
-                    <span className="pr-2 text-sm font-light">₹</span>
-                    <span className="font-bold">{value1}</span>
-                    <span className="pl-2 text-sm font-normal">Lakhs</span>
+                    <span className='pr-2 text-sm font-light'>₹</span>
+                    <span className='font-bold'>{value1}</span>
+                    <span className='pl-2 text-sm font-normal'>Lakhs</span>
                   </div>
                 </div>
 
@@ -290,18 +290,18 @@ const Finance: React.FC = () => {
                 />
               </div>
 
-              <div className="mb-3">
-                <div className="flex items-end justify-between mb-2">
-                  <div className="text-xl font-semibold">Interest Rate</div>
+              <div className='mb-3'>
+                <div className='flex items-end justify-between mb-2'>
+                  <div className='text-xl font-semibold'>Interest Rate</div>
                   <div
                     className={` text-white pr-3 py-1 w-36 text-right rounded-lg ${
-                      selectedState === "Odisha"
-                        ? "bg-primaryBlue"
-                        : "bg-primaryRed"
+                      selectedState === 'Odisha'
+                        ? 'bg-primaryBlue'
+                        : 'bg-primaryRed'
                     }`}
                   >
-                    <span className="font-bold">{value2}</span>
-                    <span className="pl-2 text-sm font-normal">%</span>
+                    <span className='font-bold'>{value2}</span>
+                    <span className='pl-2 text-sm font-normal'>%</span>
                   </div>
                 </div>
                 <EMISlider
@@ -314,18 +314,18 @@ const Finance: React.FC = () => {
                 />
               </div>
 
-              <div className="mb-3">
-                <div className="flex items-end justify-between mb-2">
-                  <div className="text-xl font-semibold">Tenure</div>
+              <div className='mb-3'>
+                <div className='flex items-end justify-between mb-2'>
+                  <div className='text-xl font-semibold'>Tenure</div>
                   <div
                     className={` text-white pr-3 py-1 w-36 text-right rounded-lg ${
-                      selectedState === "Odisha"
-                        ? "bg-primaryBlue"
-                        : "bg-primaryRed"
+                      selectedState === 'Odisha'
+                        ? 'bg-primaryBlue'
+                        : 'bg-primaryRed'
                     }`}
                   >
-                    <span className="font-bold">{value3}</span>
-                    <span className="pl-2 text-sm font-normal">Years</span>
+                    <span className='font-bold'>{value3}</span>
+                    <span className='pl-2 text-sm font-normal'>Years</span>
                   </div>
                 </div>
                 <EMISlider
@@ -341,49 +341,49 @@ const Finance: React.FC = () => {
                 />
               </div>
 
-              <div className="mt-8">
-                <div className="flex flex-col mb-2 lg:mb-6">
-                  <span className="text-lg font-semibold">
+              <div className='mt-8'>
+                <div className='flex flex-col mb-2 lg:mb-6'>
+                  <span className='text-lg font-semibold'>
                     EMI you’ll pay every month
                   </span>
                   <span
                     className={`font-bold text-2xl  ${
-                      selectedState === "Odisha"
-                        ? "text-primaryBlue"
-                        : "text-primaryRed"
+                      selectedState === 'Odisha'
+                        ? 'text-primaryBlue'
+                        : 'text-primaryRed'
                     }`}
                   >
                     ₹ {emi.toFixed()}
                   </span>
                 </div>
 
-                <div className="flex justify-between gap-2 lg:gap-4 ">
-                  <div className="flex justify-center items-center shadow-md min-h-20 min-w-20 rounded-lg flex-col p-6 w-full ">
-                    <span className="text-base font-light text-gray-500">
+                <div className='flex justify-between gap-2 lg:gap-4 '>
+                  <div className='flex justify-center items-center shadow-md min-h-20 min-w-20 rounded-lg flex-col p-6 w-full '>
+                    <span className='text-base font-light text-gray-500'>
                       Principal Amount
                     </span>
-                    <h6 className="font-bold text-lg text-primaryGray">
+                    <h6 className='font-bold text-lg text-primaryGray'>
                       ₹ {principalAmount.toFixed()}
                     </h6>
                   </div>
-                  <div className="flex justify-center items-center shadow-md min-h-20 min-w-20 rounded-lg flex-col p-6 w-full ">
-                    <span className="text-base font-light text-gray-500">
+                  <div className='flex justify-center items-center shadow-md min-h-20 min-w-20 rounded-lg flex-col p-6 w-full '>
+                    <span className='text-base font-light text-gray-500'>
                       Total Interest
                     </span>
-                    <h6 className="font-bold text-lg text-primaryGray">
+                    <h6 className='font-bold text-lg text-primaryGray'>
                       ₹ {totalInterest.toFixed()}
                     </h6>
                   </div>
-                  <div className="flex justify-center items-center shadow-md min-h-20 min-w-20 rounded-lg flex-col p-6 w-full ">
-                    <span className="text-base font-light text-gray-500">
+                  <div className='flex justify-center items-center shadow-md min-h-20 min-w-20 rounded-lg flex-col p-6 w-full '>
+                    <span className='text-base font-light text-gray-500'>
                       Total Amount
                     </span>
-                    <h6 className="font-bold text-lg text-primaryGray">
+                    <h6 className='font-bold text-lg text-primaryGray'>
                       ₹ {totalAmount.toFixed()}
                     </h6>
                   </div>
                 </div>
-                <p className="text-xs text-gray-500 mt-4">
+                <p className='text-xs text-gray-500 mt-4'>
                   Note:drag the slider to change the values
                 </p>
               </div>
@@ -391,167 +391,167 @@ const Finance: React.FC = () => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-2">
-          <h4 className="text-3xl font-bold text-primaryGray mb-3 md:mb-6 text-center">
-            Get a{" "}
+        <form onSubmit={handleSubmit} className='p-2'>
+          <h4 className='text-3xl font-bold text-primaryGray mb-3 md:mb-6 text-center'>
+            Get a{' '}
             <span
               className={` ${
-                selectedState === "Odisha"
-                  ? "text-primaryBlue"
-                  : "text-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'text-primaryBlue'
+                  : 'text-primaryRed'
               }`}
             >
-              {" "}
-              Call{" "}
-            </span>{" "}
+              {' '}
+              Call{' '}
+            </span>{' '}
             back
           </h4>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mb-6">
+          <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mb-6'>
             <input
-              type="text"
-              placeholder="Name*"
-              name="name"
+              type='text'
+              placeholder='Name*'
+              name='name'
               value={formData.name}
               onChange={handleChange}
               required
-              pattern="[A-Za-z0-9-._, ]{3,50}"
+              pattern='[A-Za-z0-9-._, ]{3,50}'
               minLength={3}
               maxLength={50}
-              title="Only alphabets are allowed with minimum 3 and maximum 50 characters"
+              title='Only alphabets are allowed with minimum 3 and maximum 50 characters'
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
-                selectedState === "Odisha"
-                  ? "border-b-primaryBlue"
-                  : "border-b-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'border-b-primaryBlue'
+                  : 'border-b-primaryRed'
               }`}
             />
 
             <input
-              type="tel"
-              placeholder="Phone*"
-              name="phone"
+              type='tel'
+              placeholder='Phone*'
+              name='phone'
               value={formData.phone}
               onChange={handleChange}
               required
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
-                selectedState === "Odisha"
-                  ? "border-b-primaryBlue"
-                  : "border-b-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'border-b-primaryBlue'
+                  : 'border-b-primaryRed'
               }`}
             />
 
             <input
-              type="email"
-              placeholder="Email*"
-              name="email"
-              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
-              title="Enter a valid email address"
+              type='email'
+              placeholder='Email*'
+              name='email'
+              pattern='^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$'
+              title='Enter a valid email address'
               value={formData.email}
               onChange={handleChange}
               required
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
-                selectedState === "Odisha"
-                  ? "border-b-primaryBlue"
-                  : "border-b-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'border-b-primaryBlue'
+                  : 'border-b-primaryRed'
               }`}
             />
 
             <input
-              type="text"
-              placeholder="City*"
-              name="city"
+              type='text'
+              placeholder='City*'
+              name='city'
               value={formData.city}
               onChange={handleChange}
               required
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
-                selectedState === "Odisha"
-                  ? "border-b-primaryBlue"
-                  : "border-b-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'border-b-primaryBlue'
+                  : 'border-b-primaryRed'
               }`}
             />
             <select
-              name="model"
+              name='model'
               value={formData.model}
               onChange={handleChange}
               required
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
-                selectedState === "Odisha"
-                  ? "border-b-primaryBlue"
-                  : "border-b-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'border-b-primaryBlue'
+                  : 'border-b-primaryRed'
               }`}
             >
-              <option value="">Select Model</option>
-               <option value="Victoris">Victoris</option>
-              <option value="Alto K10">Alto K10</option>
-              <option value="Swift">Swift</option>
-              <option value="Brezza">Brezza</option>
-              <option value="Dzire">Dzire</option>
-              <option value="S-Presso">S-Presso</option>
-              <option value="Wagon R">Wagon R</option>
-              <option value="Ertiga">Ertiga</option>
-              <option value="Celerio">Celerio</option>
-              <option value="Eeco">Eeco</option>
-              <option value="e-Vitara">e-Vitara</option>
-              <option value="Jimny">Jimny</option>
-              <option value="Fronx">Fronx</option>
-              <option value="Invicto">Invicto</option>
-              <option value="Grand Vitara">Grand Vitara</option>
-              <option value="XL6">XL6</option>
-              <option value="Ciaz">Ciaz</option>
-              <option value="Baleno">Baleno</option>
-              <option value="Ignis">Ignis</option>
+              <option value=''>Select Model</option>
+              <option value='Victoris'>Victoris</option>
+              <option value='Alto K10'>Alto K10</option>
+              <option value='Swift'>Swift</option>
+              <option value='Brezza'>Brezza</option>
+              <option value='Dzire'>Dzire</option>
+              <option value='S-Presso'>S-Presso</option>
+              <option value='Wagon R'>Wagon R</option>
+              <option value='Ertiga'>Ertiga</option>
+              <option value='Celerio'>Celerio</option>
+              <option value='Eeco'>Eeco</option>
+              <option value='e-Vitara'>e-Vitara</option>
+              <option value='Jimny'>Jimny</option>
+              <option value='Fronx'>Fronx</option>
+              <option value='Invicto'>Invicto</option>
+              <option value='Grand Vitara'>Grand Vitara</option>
+              <option value='XL6'>XL6</option>
+              <option value='Ciaz'>Ciaz</option>
+              <option value='Baleno'>Baleno</option>
+              <option value='Ignis'>Ignis</option>
             </select>
 
             <input
-              type="number"
-              placeholder="Loan Amount*"
+              type='number'
+              placeholder='Loan Amount*'
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
-                selectedState === "Odisha"
-                  ? "border-b-primaryBlue"
-                  : "border-b-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'border-b-primaryBlue'
+                  : 'border-b-primaryRed'
               }`}
-              name="loanAmount"
-              value={formData.loanAmount ? formData.loanAmount : ""}
+              name='loanAmount'
+              value={formData.loanAmount ? formData.loanAmount : ''}
               onChange={handleChange}
               required
               min={100000}
               max={10000000}
               step={1000}
-              title="Loan Amount should be between 100000 and 10000000"
+              title='Loan Amount should be between 100000 and 10000000'
             />
 
             <input
-              type="number"
-              placeholder="Loan Tenure (in years)*"
+              type='number'
+              placeholder='Loan Tenure (in years)*'
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
-                selectedState === "Odisha"
-                  ? "border-b-primaryBlue"
-                  : "border-b-primaryRed"
+                selectedState === 'Odisha'
+                  ? 'border-b-primaryBlue'
+                  : 'border-b-primaryRed'
               }`}
-              name="loanTenure"
-              value={formData.loanTenure ? formData.loanTenure : ""}
+              name='loanTenure'
+              value={formData.loanTenure ? formData.loanTenure : ''}
               onChange={handleChange}
               required
               min={1}
               max={30}
               step={1}
-              pattern="[0-9]{1,2}"
-              title="Loan Tenure should be between 1 and 30"
+              pattern='[0-9]{1,2}'
+              title='Loan Tenure should be between 1 and 30'
             />
           </div>
           <button
-            type="submit"
+            type='submit'
             disabled={loading}
-            className=" mt-4 text-center bg-primaryRed rounded-sm py-2 text-white px-6 lg:px-10"
+            className=' mt-4 text-center bg-primaryRed rounded-sm py-2 text-white px-6 lg:px-10'
           >
             {loading ? (
-              <div className="flex items-center justify-center gap-2">
-                <FaSpinner className="animate-spin" /> Submitting
+              <div className='flex items-center justify-center gap-2'>
+                <FaSpinner className='animate-spin' /> Submitting
               </div>
             ) : (
-              "Submit"
+              'Submit'
             )}
           </button>
-          <p className="mt-6 text-xs text-gray-500">
+          <p className='mt-6 text-xs text-gray-500'>
             *Disclaimer: By clicking &apos;Submit&apos;, I am explicitly
             soliciting a call and message via whatsapp or any other medium from
             us.
