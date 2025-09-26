@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang='en'>
       <Head>
         {/* Google Tag Manager (Head) */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){
@@ -42,7 +42,7 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-MWWMDX99');
             `,
           }}
-        ></script>
+        ></script> */}
 
         {/* this is added by skyautomobile tutu */}
 
@@ -78,7 +78,8 @@ export default function RootLayout({
       </Head>
 
       <body className={inter.className}>
-        {/* Google Tag Manager (noscript) */}  {/* this is added by skyautomobile tutu */}
+        {/* Google Tag Manager (noscript) */}{' '}
+        {/* this is added by skyautomobile tutu */}
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-5L2MX9GG'
@@ -88,17 +89,15 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-
         {/* Google Tag Manager (Body) */}
-        <noscript>
+        {/* <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-MWWMDX99'
             height='0'
             width='0'
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
-        </noscript>
-
+        </noscript> */}
         <AppWrapper>
           {children}
           <ModalSelectState />
