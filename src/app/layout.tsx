@@ -26,6 +26,18 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <Head>
+        <Script
+          src='https://www.googletagmanager.com/gtag/js?id=AW-17597052359'
+          strategy='afterInteractive'
+        />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17597052359');
+          `}
+        </Script>
         {/* Google Tag Manager (Head) */}
         {/* <script
           dangerouslySetInnerHTML={{
@@ -45,8 +57,8 @@ export default function RootLayout({
         ></script> */}
 
         {/* this is added by skyautomobile tutu */}
-    {/* Google Tag Manager */}
-        <Script id="gtm-script" strategy="afterInteractive">
+        {/* Google Tag Manager */}
+        <Script id='gtm-script' strategy='afterInteractive'>
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -56,8 +68,6 @@ export default function RootLayout({
           `}
         </Script>
         {/* End Google Tag Manager */}
-
-
 
         {/* <script
           dangerouslySetInnerHTML={{
@@ -93,10 +103,6 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}{' '}
         {/* this is added by skyautomobile tutu */}
-
-
-
-
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-5L2MX9GG'
