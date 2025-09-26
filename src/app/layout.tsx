@@ -1,20 +1,21 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { Toaster } from "react-hot-toast";
-import { AppWrapper } from "@/context";
-import ModalSelectState from "@/components/others/ModalSelectState";
-import ModalConf from "@/components/others/ModalConf";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import Head from "next/head";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { Toaster } from 'react-hot-toast';
+import { AppWrapper } from '@/context';
+import ModalSelectState from '@/components/others/ModalSelectState';
+import ModalConf from '@/components/others/ModalConf';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
+import Head from 'next/head';
+import Script from 'next/script';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title:
-    "Sky Automobiles Maruti Suzuki  Bhubaneswar , Raipur | Authorized Maruti Suzuki Dealer",
+    'Sky Automobiles Maruti Suzuki  Bhubaneswar , Raipur | Authorized Maruti Suzuki Dealer',
   description:
-    "Welcome to Sky Automobiles Maruti Suzuki, Bhubaneswar’s, Raipur’s trusted Maruti Suzuki dealer. Explore the latest models, book a test drive, and avail exclusive offers on Maruti Suzuki cars. Visit us for unparalleled sales and after-sales services.",
+    'Welcome to Sky Automobiles Maruti Suzuki, Bhubaneswar’s, Raipur’s trusted Maruti Suzuki dealer. Explore the latest models, book a test drive, and avail exclusive offers on Maruti Suzuki cars. Visit us for unparalleled sales and after-sales services.',
 };
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <Head>
         {/* Google Tag Manager (Head) */}
         <script
@@ -39,6 +40,20 @@ export default function RootLayout({
                 j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
                 f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','GTM-MWWMDX99');
+            `,
+          }}
+        ></script>
+
+        {/* this is added by skyautomobile tutu */}
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5L2MX9GG');
             `,
           }}
         ></script>
@@ -63,13 +78,24 @@ export default function RootLayout({
       </Head>
 
       <body className={inter.className}>
+        {/* Google Tag Manager (noscript) */}  {/* this is added by skyautomobile tutu */}
+        <noscript>
+          <iframe
+            src='https://www.googletagmanager.com/ns.html?id=GTM-5L2MX9GG'
+            height='0'
+            width='0'
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+
         {/* Google Tag Manager (Body) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-MWWMDX99"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
+            src='https://www.googletagmanager.com/ns.html?id=GTM-MWWMDX99'
+            height='0'
+            width='0'
+            style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
 
@@ -82,7 +108,7 @@ export default function RootLayout({
       </body>
 
       {/* Google Analytics */}
-      <GoogleAnalytics gaId="G-NMN4BGDYFF" />
+      <GoogleAnalytics gaId='G-NMN4BGDYFF' />
     </html>
   );
 }
