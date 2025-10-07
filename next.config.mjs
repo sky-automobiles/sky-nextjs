@@ -1,14 +1,9 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {};
-
-// export default nextConfig;
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)", // apply to all routes
+        source: "/(.*)",
         headers: [
           {
             key: "Strict-Transport-Security",
@@ -16,11 +11,19 @@ const nextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;",
+            value: `
+              default-src 'self';
+              img-src 'self' https: data:;
+              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://www.googletagmanager.com https://www.google-analytics.com;
+              style-src 'self' 'unsafe-inline' https:;
+              font-src 'self' https: data:;
+              frame-src 'self' https://www.google.com https://maps.google.com;
+              connect-src 'self' https://maps.googleapis.com https://www.google-analytics.com;
+            `.replace(/\n/g, " "),
           },
           {
             key: "X-Frame-Options",
-            value: "SAMEORIGIN",
+            value: "ALLOW-FROM https://www.google.com",
           },
           {
             key: "X-Content-Type-Options",
@@ -32,7 +35,7 @@ const nextConfig = {
           },
           {
             key: "Permissions-Policy",
-            value: "geolocation=(), microphone=(), camera=()",
+            value: "geolocation=(self), microphone=(), camera=()",
           },
         ],
       },
