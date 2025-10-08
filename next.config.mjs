@@ -13,12 +13,13 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: `
               default-src 'self';
-              img-src 'self' https: data:;
-              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://www.googletagmanager.com https://www.google-analytics.com;
+              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com;
+              connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com https://maps.googleapis.com;
+              img-src 'self' data: https: blob:;
               style-src 'self' 'unsafe-inline' https:;
               font-src 'self' https: data:;
               frame-src 'self' https://www.google.com https://maps.google.com;
-              connect-src 'self' https://maps.googleapis.com https://www.google-analytics.com;
+              object-src 'none';
             `.replace(/\n/g, ' '),
           },
           {
