@@ -17,7 +17,7 @@ const OurChannels = () => {
             NEXA
           </div>
         </div>
-        <div className="text-3xl  text-center   h-40  text-white font-medium  lg:text-4xl bg-[url(https://marutisuzukitruevaluecdn2.azureedge.net/assets/TRV/images/sell/rkr-img.webp)] bg-cover bg-center bg-secondaryGray3 lg:h-52 md:rounded-r-xl overflow-hidden rounded-lg md:rounded-none ">
+        <div className="text-3xl  text-center   h-40  text-white font-medium  lg:text-4xl bg-[url(https://az-ci-afde-prd-trv-01-b9eaeyarc5gjahfd.z01.azurefd.net/-/media/feature/truevalue/content-section/garage1-img.jpg?modified=20210111132358)] bg-cover bg-center bg-secondaryGray3 lg:h-52 md:rounded-r-xl overflow-hidden rounded-lg md:rounded-none ">
           <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50 cursor-pointer backdrop-blur-sm hover:backdrop-blur-0 ">
             TrueValue
           </div>
