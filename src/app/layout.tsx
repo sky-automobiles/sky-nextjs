@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from 'react-hot-toast';
 import { AppWrapper } from '@/context';
 import ModalSelectState from '@/components/others/ModalSelectState';
-import ModalConf from '@/components/others/ModalConf';
+// import ModalConf from '@/components/others/ModalConf';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import Head from 'next/head';
 import Script from 'next/script';
@@ -124,7 +124,7 @@ export default function RootLayout({
         <AppWrapper>
           {children}
           <ModalSelectState />
-          <ModalConf />
+          {/* <ModalConf /> */}
         </AppWrapper>
         <Toaster />
       </body>
