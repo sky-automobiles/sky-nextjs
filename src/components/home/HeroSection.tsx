@@ -19,36 +19,54 @@ const HeroSection = () => {
   const { selectedState } = useAppContext();
 
   const slides = [
-     {
-      desktop: '/images/slider/other/sky_automobiles.webp',
+    {
+      desktop: '/images/other/banner1.jpg',
       mobile: '/images/other/main_strong_hybrid_mobile.webp',
       alt: 'Strong Hybrid',
-      link:"/arena/victoris-on-road-price-in-raipur"
+      link: '/offers',
     },
     {
-      desktop: '/images/other/main_page_strong_hybrid.webp',
-      mobile: '/images/other/main_strong_hybrid_mobile.webp',
-      alt: 'Strong Hybrid',
-      link:""
-    },
-    {
-      desktop: '/images/other/main_page_fronx.webp',
+      desktop: '/images/other/banner2.jpg',
       mobile: '/images/other/main_fronx_mobile.webp',
-      alt: 'Fronx',
-      link:"/nexa/fronx-on-road-price-in-bhubaneswar"
+      alt: 'diwali',
+      link: '',
     },
     {
-      desktop: '/images/other/main_page_swift.webp',
-      mobile: '/images/other/main_swift_mobile.webp',
-      alt: 'Swift',
-      link:"/arena/swift-on-road-price-in-bhubaneswar"
-    },
-    {
-      desktop: '/images/other/main_page_scng.webp',
+      desktop: '/images/other/banner3.jpg',
       mobile: '/images/other/main_scng_mobile.webp',
-      alt: 'CNG Model',
-      link:""
+      alt: 'diwali',
+      link: '',
     },
+    {
+      desktop: '/images/slider/other/sky_automobiles.webp',
+      mobile: '/images/other/main_swift_mobile.webp',
+      alt: 'Strong Hybrid',
+      link: '/arena/victoris-on-road-price-in-raipur',
+    },
+    // {
+    //   desktop: '/images/other/main_page_strong_hybrid.webp',
+    //   mobile: '/images/other/main_strong_hybrid_mobile.webp',
+    //   alt: 'Strong Hybrid',
+    //   link:""
+    // },
+    // {
+    //   desktop: '/images/other/main_page_fronx.webp',
+    //   mobile: '/images/other/main_fronx_mobile.webp',
+    //   alt: 'Fronx',
+    //   link:"/nexa/fronx-on-road-price-in-bhubaneswar"
+    // },
+    // {
+    //   desktop: '/images/other/main_page_swift.webp',
+    //   mobile: '/images/other/main_swift_mobile.webp',
+    //   alt: 'Swift',
+    //   link:"/arena/swift-on-road-price-in-bhubaneswar"
+    // },
+    // {
+    //   desktop: '/images/other/main_page_scng.webp',
+    //   mobile: '/images/other/main_scng_mobile.webp',
+    //   alt: 'CNG Model',
+    //   link:""
+    // },
   ];
 
   return (
@@ -96,24 +114,28 @@ const HeroSection = () => {
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
                 <div className='hidden sm:block w-full'>
-                 <Link href={slide.link}> <Image
-                    src={slide.desktop}
-                    alt={slide.alt}
-                    width={1366}
-                    height={600}
-                    className='object-cover w-full'
-                    priority={index === 0}
-                  /></Link>
+                  <Link href={slide.link}>
+                    {' '}
+                    <Image
+                      src={slide.desktop}
+                      alt={slide.alt}
+                      width={1366}
+                      height={600}
+                      className='object-cover w-full'
+                      priority={index === 0}
+                    />
+                  </Link>
                 </div>
                 <div className='sm:hidden w-full'>
-                   <Link href={slide.link}>
-                  <Image
-                    src={slide.mobile}
-                    alt={slide.alt}
-                    width={425}
-                    height={547}
-                    className='object-cover w-full'
-                  /></Link>
+                  <Link href={slide.link}>
+                    <Image
+                      src={slide.mobile}
+                      alt={slide.alt}
+                      width={425}
+                      height={547}
+                      className='object-cover w-full'
+                    />
+                  </Link>
                 </div>
               </SwiperSlide>
             ))}
