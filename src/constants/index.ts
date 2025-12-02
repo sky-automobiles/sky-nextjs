@@ -357,7 +357,7 @@ export const models = [
   {
     name: ' Maruti ALTO K10',
     subName: 'ALTO K10',
-    offersAmount: 57500,
+    offersAmount: 52500,
     offersAdditionalDec: '',
     link: '/arena/alto-k10-on-road-price',
     linkCG: '/arena/alto-k10-on-road-price-in-raipur',
@@ -540,7 +540,7 @@ export const models = [
   {
     name: 'Maruti Swift',
     subName: 'Swift',
-    offersAmount: 52500,
+    offersAmount: 52100,
     offersAdditionalDec: '',
     link: '/arena/swift-on-road-price',
     linkCG: '/arena/swift-on-road-price-in-raipur',
@@ -759,7 +759,7 @@ export const models = [
   {
     name: 'Maruti Brezza',
     subName: 'Brezza',
-    offersAmount: 30000,
+    offersAmount: 0,
     offersAdditionalDec: '',
     link: '/arena/brezza-on-road-price',
     linkCG: '/arena/brezza-on-road-price-in-raipur',
@@ -1163,7 +1163,7 @@ export const models = [
   {
     name: 'Maruti S-Presso',
     subName: 'S-Presso',
-    offersAmount: 57500,
+    offersAmount: 52500,
     offersAdditionalDec: '67500',
     link: '/arena/spresso-on-road-price',
     linkCG: '/arena/spresso-on-road-price-in-raipur',
@@ -1314,7 +1314,7 @@ export const models = [
   {
     name: 'Maruti WagonR',
     subName: 'WagonR',
-    offersAmount: 62500,
+    offersAmount: 63100,
     offersAdditionalDec: '',
     link: '/arena/wagon-r-on-road-price',
     linkCG: '/arena/wagon-r-on-road-price-in-raipur',
@@ -1527,7 +1527,7 @@ export const models = [
   {
     name: 'Maruti Ertiga',
     subName: 'Ertiga',
-    offersAmount: 0,
+    offersAmount: 10000,
     offersAdditionalDec: '',
     link: '/arena/ertiga-on-road-price',
     linkCG: '/arena/ertiga-on-road-price-in-raipur',
@@ -1883,7 +1883,7 @@ export const models = [
   {
     name: 'Maruti Eeco',
     subName: 'Eeco',
-    offersAmount: 47500,
+    offersAmount: 47100,
     offersAdditionalDec: '',
     link: '/arena/eeco-on-road-price',
     linkCG: '/arena/eeco-on-road-price-in-raipur',
