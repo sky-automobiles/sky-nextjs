@@ -8,6 +8,7 @@ import ModalSelectState from '@/components/others/ModalSelectState';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import Head from 'next/head';
 import Script from 'next/script';
+import Callbutton from '../components/home/CallButton'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -124,8 +125,10 @@ export default function RootLayout({
         <AppWrapper>
           {children}
           <ModalSelectState />
+          <Callbutton/>
           {/* <ModalConf /> */}
         </AppWrapper>
+      
         <Toaster />
       </body>
 
