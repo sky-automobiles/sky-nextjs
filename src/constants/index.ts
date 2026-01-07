@@ -540,7 +540,7 @@ export const models = [
   {
     name: 'Maruti Swift',
     subName: 'Swift',
-    offersAmount: 40000,
+    offersAmount: 45000,
     offersAdditionalDec: '',
     link: '/arena/swift-on-road-price',
     linkCG: '/arena/swift-on-road-price-in-raipur',
