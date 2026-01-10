@@ -1,19 +1,39 @@
 import mongoose from "mongoose";
 
-export const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI!);
-    const db = mongoose.connection;
-    db.on("connected", () => {
-      console.log("Connected to the database");
-    });
-    db.on("error", console.error.bind(console, "connection error:"));
-    db.once("error", (err) => {
-      console.log("Error connecting to the database: ", err);
-      process.exit(1);
-    });
-    console.log("Connected to the database");
-  } catch (error) {
-    console.log("Error connecting to the database: ", error);
+const MONGODB_URI = process.env.MONGODB_URI as string;
+
+if (!MONGODB_URI) {
+  throw new Error("Please define MONGODB_URI in .env");
+}
+
+// Global cache (prevents multiple connections in Next.js)
+let cached = (global as any).mongoose;
+
+if (!cached) {
+  cached = (global as any).mongoose = {
+    conn: null,
+    promise: null,
+  };
+}
+
+export async function connectDB() {
+  // Reuse existing connection
+  if (cached.conn) {
+    return cached.conn;
   }
-};
+
+  // Create connection only once
+  if (!cached.promise) {
+    cached.promise = mongoose
+      .connect(MONGODB_URI, {
+        bufferCommands: false,
+      })
+      .then((mongoose) => {
+        console.log("Connected to the database");
+        return mongoose;
+      });
+  }
+
+  cached.conn = await cached.promise;
+  return cached.conn;
+}
