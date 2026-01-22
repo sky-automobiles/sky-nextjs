@@ -108,7 +108,7 @@ const WhyChooseUs: React.FC = () => {
             >
               <CountUp
                 start={0}
-                end={40}
+                end={50}
                 duration={10}
                 suffix="+ "
                 className="text-3xl lg:text-4xl lg:font-bold pb-2"
