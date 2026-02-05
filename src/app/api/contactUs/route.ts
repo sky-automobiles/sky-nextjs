@@ -7,10 +7,11 @@ import "moment-timezone";
 import { NextResponse, NextRequest } from "next/server";
 
 moment.tz.setDefault("Asia/Kolkata");
-connectDB();
+
 
 export async function POST(req: NextRequest) {
   try {
+    await connectDB();
     // Parse request body
     const { name, phone, email, subject, message, state } = await req.json();
 
@@ -26,9 +27,9 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-       const sendEMail = await sendEmail({
-         subject: `Contact Us Enquiry Request from ${name}`,
-         text: `<p>Insurance Enquiry Request,</p>
+    const sendEMail = await sendEmail({
+      subject: `Contact Us Enquiry Request from ${name}`,
+      text: `<p>Insurance Enquiry Request,</p>
 <p>You received an enquiry from:</p>
 <ul>
   <li>Name: ${name}</li>
@@ -39,11 +40,11 @@ export async function POST(req: NextRequest) {
   <li>State: ${state}</li>
 
 </ul>`,
-         to: state && state === "Odisha" ? "" : "",
-         name,
-         phone,
-       });
-       
+      to: state && state === "Odisha" ? "" : "",
+      name,
+      phone,
+    });
+
     // Create a new Contact Us document
     const contactUs = new ContactUs({
       name,
@@ -59,7 +60,7 @@ export async function POST(req: NextRequest) {
     // Save the document to the database
     await contactUs.save();
 
- 
+
 
     // Return a success response
     return new NextResponse(

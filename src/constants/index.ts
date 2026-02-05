@@ -7,7 +7,7 @@ export const models = [
   {
     name: ' Maruti VICTORIS',
     subName: 'VICTORIS',
-    offersAmount: 0,
+    offersAmount: 90000,
     offersAdditionalDec: '',
     link: '/arena/victoris-on-road-price',
     linkCG: '/arena/victoris-on-road-price-in-raipur',
@@ -759,7 +759,7 @@ export const models = [
   {
     name: 'Maruti Brezza',
     subName: 'Brezza',
-    offersAmount: 30000,
+    offersAmount: 50000,
     offersAdditionalDec: '',
     link: '/arena/brezza-on-road-price',
     linkCG: '/arena/brezza-on-road-price-in-raipur',

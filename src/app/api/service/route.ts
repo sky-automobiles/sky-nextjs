@@ -8,10 +8,11 @@ import Mailgen from "mailgen";
 import { sendEmail } from "@/helpers/mailer";
 
 moment.tz.setDefault("Asia/Kolkata");
-connectDB();
+
 
 export async function POST(req: NextRequest) {
   try {
+    await connectDB();
     // Parse request body
     const {
       name,
@@ -49,9 +50,9 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-       const sendEMail = await sendEmail({
-         subject: `New Service Request from ${name}`,
-         text: `<p>Service Request from ,</p>
+    const sendEMail = await sendEmail({
+      subject: `New Service Request from ${name}`,
+      text: `<p>Service Request from ,</p>
 <p>You received an enquiry from:</p>
 <ul>
   <li>Name: ${name}</li>
@@ -66,13 +67,13 @@ export async function POST(req: NextRequest) {
   <li>Service Date: ${serviceDate}</li>
 
 </ul>`,
-         to:
-           state && state === "Odisha"
-             ? "smr.odisha@skyautomobiles.in"
-             : "marketing@skyautomobiles.in",
-         name,
-         phone,
-       });
+      to:
+        state && state === "Odisha"
+          ? "smr.odisha@skyautomobiles.in"
+          : "marketing@skyautomobiles.in",
+      name,
+      phone,
+    });
 
 
     // Create a new Servicedocument
@@ -94,7 +95,7 @@ export async function POST(req: NextRequest) {
     // Save the document to the database
     await newService.save();
 
- 
+
 
     // Return a success response
     return new NextResponse(

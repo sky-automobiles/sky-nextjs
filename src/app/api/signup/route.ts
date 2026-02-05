@@ -3,10 +3,11 @@ import Admin from "@/models/modelAdmin";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 
-connectDB();
+
 
 export async function POST(req: NextRequest) {
   try {
+    await connectDB();
     const reqBody = await req.json();
     const { phone } = reqBody;
     console.log(reqBody);

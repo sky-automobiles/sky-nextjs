@@ -7,10 +7,11 @@ import "moment-timezone";
 import { NextResponse, NextRequest } from "next/server";
 
 moment.tz.setDefault("Asia/Kolkata");
-connectDB();
+
 
 export async function POST(req: NextRequest) {
   try {
+    await connectDB();
     // Parse request body
     const { name, phone, email, model, outlet, state } = await req.json();
 
@@ -44,7 +45,7 @@ export async function POST(req: NextRequest) {
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");
 
-    
+
     const sendEMail = await sendEmail({
       subject: `New ${model} Test Drive Enquiry Request from ${name}`,
       text: `<p>Test Drive Enquiry,</p>
@@ -64,7 +65,7 @@ export async function POST(req: NextRequest) {
       name,
       phone,
     });
-    
+
     // Create a new Finance document
     const newEnquiry = new TestDrive({
       name,
