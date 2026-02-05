@@ -7,10 +7,10 @@ import "moment-timezone";
 import { NextResponse, NextRequest } from "next/server";
 
 moment.tz.setDefault("Asia/Kolkata");
-connectDB();
+ 
 
 export async function POST(req: NextRequest) {
-  try {
+  try {await connectDB();
     // Parse request body
     const { name, phone, email, model, outlet, variant, state, channel } =
       await req.json();
