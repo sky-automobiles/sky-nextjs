@@ -7,7 +7,7 @@ export const models = [
   {
     name: ' Maruti VICTORIS',
     subName: 'VICTORIS',
-    offersAmount: 90000,
+    offersAmount: 100000,
     offersAdditionalDec: '',
     link: '/arena/victoris-on-road-price',
     linkCG: '/arena/victoris-on-road-price-in-raipur',
@@ -759,7 +759,7 @@ export const models = [
   {
     name: 'Maruti Brezza',
     subName: 'Brezza',
-    offersAmount: 50000,
+    offersAmount: 70000,
     offersAdditionalDec: '',
     link: '/arena/brezza-on-road-price',
     linkCG: '/arena/brezza-on-road-price-in-raipur',
@@ -2068,7 +2068,7 @@ export const models = [
     name: 'Maruti eVitara',
     subName: 'eVitara',
     description: 'Created to Spark Your eMagination.',
-    offersAmount: 'N/A',
+    offersAmount: '0',
     offersAdditionalDec: '',
     link: '/nexa/eVitara-on-road-price',
     linkCG: '/nexa/eVitara-on-road-price-in-raipur',
@@ -2179,11 +2179,11 @@ export const models = [
     ],
     carDetails: [
       { label: 'Pure Electric', value: 'platform' },
-      { label: 'Range', value: '500km' },
+      { label: 'Range', value: '543 km*' },
       { label: 'Battery', value: '61kWh' },
     ],
     variants: [
-      { variant: 'eVitara', price: 'N/A', transmission: 'Automatic' },
+      { variant: 'eVitara', price: '10,99,000', transmission: 'Automatic' },
       // { variant: "ALPHA DT AGS (P)", price: 820000, transmission: "Automatic" },
       // { variant: "ALPHA AGS (P)", price: 806000, transmission: "Automatic" },
       // { variant: "ZETA DT AGS (P)", price: 755000, transmission: "Automatic" },
@@ -2198,7 +2198,7 @@ export const models = [
     ],
     exploreMore: [10, 11, 12],
     thumbnail: '/images/car/nexa/eVitara/Evitara.png',
-    priceRange: '₹ N/A *',
+    priceRange: '₹10.99L *',
     brochure: '',
   },
 
