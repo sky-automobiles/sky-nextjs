@@ -13,7 +13,7 @@ const Offers = () => {
   // State to handle search input
   const [searchQuery, setSearchQuery] = useState('');
   const { selectedState } = useAppContext();
-
+const currentYear = new Date().getFullYear();
   // Filtered data based on search input
   const filteredAndSortedData = models
     ?.filter(
@@ -79,7 +79,7 @@ const Offers = () => {
             >
               Offers
             </span>{' '}
-            2025
+            {currentYear}
           </h4>
           <p className='text-primaryGray text-center md:mb-3'>
             Discover unbeatable deals on Maruti Suzuki Arena & Nexa models.
