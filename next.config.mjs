@@ -35,6 +35,7 @@ const nextConfig = {
       https://googleads.g.doubleclick.net
       https://www.clarity.ms
       https://scripts.clarity.ms
+      https://n.clarity.ms
       https://connect.facebook.net;
 
     img-src 'self' data: blob: https:;
