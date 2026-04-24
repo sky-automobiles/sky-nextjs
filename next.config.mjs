@@ -20,6 +20,7 @@ const nextConfig = {
       https://www.google.com
       https://connect.facebook.net
       https://www.clarity.ms
+      https://scripts.clarity.ms
       https://googleads.g.doubleclick.net
       https://www.googleadservices.com;
 
@@ -29,15 +30,15 @@ const nextConfig = {
       https://*.googletagmanager.com
       https://maps.googleapis.com
       https://www.google.com
+      https://www.google.co.in
       https://www.googleadservices.com
       https://googleads.g.doubleclick.net
       https://www.clarity.ms
+      https://scripts.clarity.ms
       https://connect.facebook.net;
 
     img-src 'self' data: blob: https:;
-
     style-src 'self' 'unsafe-inline' https:;
-
     font-src 'self' https: data:;
 
     frame-src 'self'
