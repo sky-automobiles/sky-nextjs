@@ -4,32 +4,39 @@ import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-connectDB();
-
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(request: NextRequest) {
   try {
     await connectDB();
-    const reqBody = await req.json();
+
+    const reqBody = await request.json();
     const { email, password } = reqBody;
+
     if (!email || !password) {
       return NextResponse.json(
-        { message: "Reqired fields are missing" },
+        { message: "Required fields are missing" },
         { status: 400 }
       );
     }
 
-    //check if user exists
-    let userData = await Admin.findOne({ email, isDeleted: false });
+    // Check user
+    const userData = await Admin.findOne({
+      email,
+      isDeleted: false,
+    });
 
     if (!userData) {
       return NextResponse.json(
-        { message: "Invalid credentials " },
+        { message: "Invalid credentials" },
         { status: 400 }
       );
     }
 
-    //check if password is correct
-    const validPassword = await bcrypt.compare(password, userData.password);
+    // Check password
+    const validPassword = await bcrypt.compare(
+      password,
+      userData.password
+    );
+
     if (!validPassword) {
       return NextResponse.json(
         { message: "Invalid credentials" },
@@ -37,41 +44,47 @@ export async function POST(req: NextRequest, res: NextResponse) {
       );
     }
 
-    //create token data
+    // Create token
     const tokenData = {
       id: userData._id,
-      //   username: userData.username,
-      //   email: userData.email,
     };
 
-    //create token
-    const token = await jwt.sign(tokenData, process.env.JWT_SECRET!, {
-      expiresIn: "1d",
+    const token = jwt.sign(
+      tokenData,
+      process.env.JWT_SECRET as string,
+      { expiresIn: "1d" }
+    );
+
+    // ✅ Create response
+    const response = NextResponse.json({
+      status: "success",
+      data: userData,
+      isAdmin: true,
+      message: "Login successful",
     });
 
-    const expireDuration = new Date(Date.now() + 12 * 60 * 60 * 1000);
-    const cookieString = `token=${token}; expires = ${expireDuration}; path=/;`;
+    // ✅ Set cookies (CORRECT WAY)
+    response.cookies.set("token", token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "strict",
+      expires: new Date(Date.now() + 12 * 60 * 60 * 1000),
+      path: "/",
+    });
 
-    const newHeader = new Headers(res.headers);
-    newHeader.set("set-cookie", cookieString);
+    response.cookies.set("isAdmin", "true", {
+      secure: true,
+      sameSite: "strict",
+      expires: new Date(Date.now() + 12 * 60 * 60 * 1000),
+      path: "/",
+    });
 
-    const cookieString3 = `isAdmin=${true}; expires = ${expireDuration}; path=/;`;
-    newHeader.append("set-cookie", cookieString3);
-
-    return NextResponse.json(
-      {
-        status: "success",
-        data: userData,
-        isAdmin: true,
-        message: "Login successful",
-      },
-      {
-        status: 200,
-        headers: newHeader,
-      }
-    );
+    return response;
   } catch (err: any) {
     console.error(err.message);
-    return NextResponse.json({ message: err.message }, { status: 500 });
+    return NextResponse.json(
+      { message: err.message },
+      { status: 500 }
+    );
   }
 }
