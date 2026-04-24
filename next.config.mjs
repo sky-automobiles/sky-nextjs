@@ -12,15 +12,41 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy',
             value: `
-              default-src 'self';
-              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com;
-              connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com https://maps.googleapis.com;
-              img-src 'self' data: https: blob:;
-              style-src 'self' 'unsafe-inline' https:;
-              font-src 'self' https: data:;
-              frame-src 'self' https://www.google.com https://maps.google.com;
-              object-src 'none';
-            `.replace(/\n/g, ' '),
+    default-src 'self';
+
+    script-src 'self' 'unsafe-inline' 'unsafe-eval'
+      https://www.googletagmanager.com
+      https://www.google-analytics.com
+      https://www.google.com
+      https://connect.facebook.net
+      https://www.clarity.ms
+      https://googleads.g.doubleclick.net
+      https://www.googleadservices.com;
+
+    connect-src 'self'
+      https://www.google-analytics.com
+      https://*.google-analytics.com
+      https://*.googletagmanager.com
+      https://maps.googleapis.com
+      https://www.google.com
+      https://www.googleadservices.com
+      https://googleads.g.doubleclick.net
+      https://www.clarity.ms
+      https://connect.facebook.net;
+
+    img-src 'self' data: blob: https:;
+
+    style-src 'self' 'unsafe-inline' https:;
+
+    font-src 'self' https: data:;
+
+    frame-src 'self'
+      https://www.google.com
+      https://maps.google.com
+      https://www.googletagmanager.com;
+
+    object-src 'none';
+  `.replace(/\n/g, ' '),
           },
           {
             key: 'X-Frame-Options',
