@@ -1,5 +1,21 @@
+
+const isDev = process.env.NODE_ENV === 'development';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.broaddcast.com/',
+      },
+    ],
+  },
+
+
+
+
   async headers() {
     return [
       {
@@ -14,7 +30,8 @@ const nextConfig = {
             value: `
     default-src 'self';
 
-    script-src 'self' 'unsafe-inline' 
+    script-src 'self' 'unsafe-inline'  
+     ${isDev ? "'unsafe-eval'" : ''}
       https://www.googletagmanager.com
       https://www.google-analytics.com
       https://www.google.com
@@ -50,10 +67,7 @@ const nextConfig = {
     object-src 'none';
   `.replace(/\n/g, ' '),
           },
-          {
-            key: 'X-Frame-Options',
-            value: 'ALLOW-FROM https://www.google.com',
-          },
+
           {
             key: 'X-Content-Type-Options',
             value: 'nosniff',

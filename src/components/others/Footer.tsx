@@ -233,7 +233,7 @@ const Footer: React.FC = () => {
           </div>
           <div className='flex flex-col items-center justify-between pt-4 mt-8 border-t border-secondaryGray2 md:flex-row text-secondaryGray3 lg:pt-4'>
             <p className='text-xs'>
-              © 2024 Sky Automobiles All Rights Reserved.
+              © 2026 Sky Automobiles All Rights Reserved.
             </p>
             <div className='flex items-center gap-2 text-xs lg:gap-4'>
               Powered by
@@ -244,7 +244,7 @@ const Footer: React.FC = () => {
                 className='text-white'
               >
                 <img
-                  src='https://www.broaddcast.com/assets/images/logo-white.svg'
+                  src='/images/logo-white.svg'
                   alt='Broaddcast'
                   className='h-8 -ml-2'
                 />

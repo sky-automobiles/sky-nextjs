@@ -303,7 +303,7 @@ const EnqTable = ({
             className="text-white"
           >
             <img
-              src="https://www.broaddcast.com/assets/images/BroaddCast-Logo.svg"
+              src="/images/logo-white.svg"
               alt="Broaddcast"
               className="h-8 -ml-2"
             />

@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from 'react-hot-toast';
 import { AppWrapper } from '@/context';
 import ModalSelectState from '@/components/others/ModalSelectState';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import Script from 'next/script';
 import Callbutton from '../components/home/CallButton';
 
@@ -23,11 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body className={inter.className}>
-
         {/* ✅ Microsoft Clarity */}
-        <Script id="clarity" strategy="afterInteractive">
+        <Script id='clarity' strategy='afterInteractive'>
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -37,28 +36,17 @@ export default function RootLayout({
 
         {/* ✅ Google Ads / gtag */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17597052359"
-          strategy="afterInteractive"
+          src='https://www.googletagmanager.com/gtag/js?id=AW-17597052359'
+          strategy='afterInteractive'
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id='gtag-init' strategy='afterInteractive'>
           {`window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17597052359');`}
         </Script>
-
-        {/* ✅ Google Tag Manager */}
-        {/* <Script id="gtm" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-            f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-5L2MX9GG');`}
-        </Script> */}
-
         {/* ✅ Facebook Pixel (FIXED) */}
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        <Script id='facebook-pixel' strategy='afterInteractive'>
           {`!function(f,b,e,v,n,t,s){
             if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -70,16 +58,16 @@ export default function RootLayout({
             fbq('init', '1508432989868278');
             fbq('track', 'PageView');`}
         </Script>
-
+        <GoogleTagManager gtmId='GTM-5L2MX9GG' />
         {/* ✅ GTM noscript */}
-        <noscript>
+        {/* <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5L2MX9GG"
-            height="0"
-            width="0"
+            src='https://www.googletagmanager.com/ns.html?id=GTM-5L2MX9GG'
+            height='0'
+            width='0'
             style={{ display: 'none', visibility: 'hidden' }}
           />
-        </noscript>
+        </noscript> */}
 
         <AppWrapper>
           {children}
@@ -90,8 +78,7 @@ export default function RootLayout({
         <Toaster />
 
         {/* ✅ Google Analytics */}
-        <GoogleAnalytics gaId="G-NMN4BGDYFF" />
-
+        <GoogleAnalytics gaId='G-NMN4BGDYFF' />
       </body>
     </html>
   );
