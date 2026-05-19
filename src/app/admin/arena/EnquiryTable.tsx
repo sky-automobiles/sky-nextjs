@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
 import {
   MaterialReactTable,
   useMaterialReactTable,
-} from "material-react-table";
-import { Box, Button, Select } from "@mui/material";
-import FileDownloadIcon from "@mui/icons-material/FileDownload";
-import { mkConfig, generateCsv, download } from "export-to-csv";
+} from 'material-react-table';
+import { Box, Button, Select } from '@mui/material';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import { mkConfig, generateCsv, download } from 'export-to-csv';
 
-import { FiRefreshCcw, FiSearch } from "react-icons/fi";
-import { useDataContext } from "@/context/index2";
-import { ImSpinner } from "react-icons/im";
-import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import { FiRefreshCcw, FiSearch } from 'react-icons/fi';
+import { useDataContext } from '@/context/index2';
+import { ImSpinner } from 'react-icons/im';
+import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
 const EnqTable = ({
   data,
@@ -44,8 +44,8 @@ const EnqTable = ({
   };
 
   const csvConfig = mkConfig({
-    fieldSeparator: ",",
-    decimalSeparator: ".",
+    fieldSeparator: ',',
+    decimalSeparator: '.',
     useKeysAsHeaders: true,
   });
   // useEffect(() => {
@@ -83,8 +83,8 @@ const EnqTable = ({
   };
 
   useEffect(() => {
-    if (rangeValue !== "Between") {
-      setDateRange({ startDate: "", endDate: "" });
+    if (rangeValue !== 'Between') {
+      setDateRange({ startDate: '', endDate: '' });
     }
   }, [rangeValue]);
 
@@ -102,7 +102,7 @@ const EnqTable = ({
     enableStickyFooter: true,
     enablePagination: true,
     initialState: {
-      density: "compact",
+      density: 'compact',
       pagination: {
         pageIndex: 0, // Set the default page index
         pageSize: 15, // Set the default number of rows per page
@@ -112,15 +112,15 @@ const EnqTable = ({
     //   showProgressBars: loading,
     // },
     // enableRowSelection: true,
-    columnFilterDisplayMode: "popover",
-    paginationDisplayMode: "pages",
-    positionToolbarAlertBanner: "bottom",
+    columnFilterDisplayMode: 'popover',
+    paginationDisplayMode: 'pages',
+    positionToolbarAlertBanner: 'bottom',
     //  enableDensityToggle: false,
-    muiTableContainerProps: { sx: { minHeight: "69vh", maxHeight: "70vh" } },
+    muiTableContainerProps: { sx: { minHeight: '69vh', maxHeight: '70vh' } },
     muiTableBodyCellProps: {
       sx: (theme) => ({
         backgroundColor:
-          theme.palette.mode === "dark"
+          theme.palette.mode === 'dark'
             ? theme.palette.grey[900]
             : theme.palette.grey[50],
       }),
@@ -128,12 +128,12 @@ const EnqTable = ({
     renderTopToolbarCustomActions: () => (
       <Box
         sx={{
-          display: "flex",
-          gap: "16px",
+          display: 'flex',
+          gap: '16px',
           //   padding: "8px",
-          flexWrap: "wrap",
-          marginTop: "8px",
-          marginBottom: "4px",
+          flexWrap: 'wrap',
+          marginTop: '8px',
+          marginBottom: '4px',
         }}
       >
         {/* <Button
@@ -160,60 +160,60 @@ const EnqTable = ({
           // onChange={handleChangeDateRange}
           value={rangeValue}
           onChange={(e) => setRangeValue(e.target.value)}
-          className="h-9 p-1 border-none foucs:outline-none"
-          variant="outlined"
-          style={{ color: "#303a9b", borderColor: "#303a9b" }}
+          className='h-9 p-1 border-none foucs:outline-none'
+          variant='outlined'
+          style={{ color: '#303a9b', borderColor: '#303a9b' }}
         >
           {/* <option value="">All Enquiries</option> */}
-          <option value="allData">All Data</option>
-          <option value="today">Today</option>
-          <option value="yesterday">Yesterday</option>
-          <option value="thisMonth">This Month</option>
-          <option value="lastMonth">Last Month</option>
-          <option value="last3Months">Last 3 Months</option>
-          <option value="last6Months">Last 6 Months</option>
-          <option value="last12Months">Last 12 Months</option>
-          <option value="Between">Between Dates</option>
-        </Select>{" "}
-        {rangeValue === "Between" && (
-          <form onSubmit={handleSubmit} className="flex gap-2">
-            <div className="relative">
+          <option value='allData'>All Data</option>
+          <option value='today'>Today</option>
+          <option value='yesterday'>Yesterday</option>
+          <option value='thisMonth'>This Month</option>
+          <option value='lastMonth'>Last Month</option>
+          <option value='last3Months'>Last 3 Months</option>
+          <option value='last6Months'>Last 6 Months</option>
+          <option value='last12Months'>Last 12 Months</option>
+          <option value='Between'>Between Dates</option>
+        </Select>{' '}
+        {rangeValue === 'Between' && (
+          <form onSubmit={handleSubmit} className='flex gap-2'>
+            <div className='relative'>
               <input
-                type="date"
-                name="startDate"
+                type='date'
+                name='startDate'
                 value={dateRange.startDate}
                 max={
-                  dateRange.endDate || new Date().toISOString().split("T")[0]
+                  dateRange.endDate || new Date().toISOString().split('T')[0]
                 }
                 required
                 onChange={handleDateChange}
-                className="border rounded-md px-4 py-1.5"
+                className='border rounded-md px-4 py-1.5'
               />
-              <label className="absolute -top-2 left-1 text-xs bg-white px-1 text-gray-400">
+              <label className='absolute -top-2 left-1 text-xs bg-white px-1 text-gray-400'>
                 Start Date
               </label>
             </div>
-            <div className="relative">
+            <div className='relative'>
               <input
-                type="date"
-                name="endDate"
+                type='date'
+                name='endDate'
                 value={dateRange.endDate}
                 required
-                min={dateRange.startDate || ""}
+                min={dateRange.startDate || ''}
                 onChange={handleDateChange}
-                className="border rounded-md px-4 py-1.5"
+                className='border rounded-md px-4 py-1.5'
               />
-              <label className="absolute -top-2 left-1 text-xs bg-white px-1 text-gray-400">
+              <label className='absolute -top-2 left-1 text-xs bg-white px-1 text-gray-400'>
                 End Date
               </label>
             </div>
             <button
-              type="submit"
+              type='submit'
               onSubmit={(e) => {
                 e.preventDefault();
                 setRefreshing(!refreshing);
               }}
-              className="mr-10 ml-2 flex items-center gap-2 border px-4 py-1 rounded-lg bg-primaryBlue text-white"
+              className='mr-10 ml-2 flex items-center gap-2 border px-4 py-1 rounded-lg bg-primaryBlue text-white'
             >
               <FiSearch /> Search
             </button>
@@ -222,9 +222,9 @@ const EnqTable = ({
         <Button
           //export all data that is currently in the table (ignore pagination, sorting, filtering, etc.)
           onClick={handleRefreshData}
-          startIcon={<FiRefreshCcw className="text-sm" />}
-          variant="outlined"
-          style={{ borderColor: "#303a9b", color: "#303a9b", height: "35px" }}
+          startIcon={<FiRefreshCcw className='text-sm' />}
+          variant='outlined'
+          style={{ borderColor: '#303a9b', color: '#303a9b', height: '35px' }}
         >
           Refresh
         </Button>
@@ -232,8 +232,8 @@ const EnqTable = ({
           //export all data that is currently in the table (ignore pagination, sorting, filtering, etc.)
           onClick={handleExportData}
           startIcon={<FileDownloadIcon />}
-          variant="contained"
-          style={{ backgroundColor: "#303a9b", color: "white", height: "35px" }}
+          variant='contained'
+          style={{ backgroundColor: '#303a9b', color: 'white', height: '35px' }}
         >
           Export
         </Button>
@@ -272,40 +272,41 @@ const EnqTable = ({
   return (
     <Box
       sx={{
-        overflow: "hidden",
-        boxShadow: "none", // Remove shadow from the table
+        overflow: 'hidden',
+        boxShadow: 'none', // Remove shadow from the table
         // borderTop: "1px solid #e1e3e6",
         // borderRight: "0px solid #e1e3e6",
         // borderBottom: "1px solid #e1e3e6",
         // borderLeft: "1px solid #e1e3e6",
         // border: "1px solid #e1e3e6",
-        borderRadius: "4px",
-        position: "relative",
+        borderRadius: '4px',
+        position: 'relative',
       }}
     >
       {loading && (
-        <div className="flex justify-center items-center h-[calc(100%-34px)] gap-3 absolute top-0 left-0 bg-secondaryGray2 w-full z-10 bg-opacity-10 text-primaryBlue rounded-lg ">
-          {" "}
-          <ImSpinner className="animate-spin text-3xl " />{" "}
-          <span className=" text-xl">Loading...</span>
+        <div className='flex justify-center items-center h-[calc(100%-34px)] gap-3 absolute top-0 left-0 bg-secondaryGray2 w-full z-10 bg-opacity-10 text-primaryBlue rounded-lg '>
+          {' '}
+          <ImSpinner className='animate-spin text-3xl ' />{' '}
+          <span className=' text-xl'>Loading...</span>
         </div>
       )}
       <MaterialReactTable table={table} />
 
-      <div className="flex flex-col items-center justify-between  md:flex-row  pt-1">
-        <p className="text-xs">© 2024 Sky Automobiles All Rights Reserved.</p>
-        <div className="flex items-center gap-2 text-xs lg:gap-4">
+      <div className='flex flex-col items-center justify-between  md:flex-row  pt-1'>
+        <p className='text-xs'>© 2024 Sky Automobiles All Rights Reserved.</p>
+        <div className='flex items-center gap-2 text-xs lg:gap-4'>
           Powered by
           <a
-            href="https://www.broaddcast.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-white"
+            href='https://www.broaddcast.com'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-white'
+            aria-label='Broaddcast'
           >
             <img
-              src="/images/logo-white.svg"
-              alt="Broaddcast"
-              className="h-8 -ml-2"
+              src='/images/logo-white.svg'
+              alt='Broaddcast Logo'
+              className='h-8 -ml-2'
             />
           </a>
         </div>

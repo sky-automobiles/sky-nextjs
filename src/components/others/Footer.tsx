@@ -33,8 +33,8 @@ const NavigationLinks: React.FC<{
             selectedState === 'Odisha' && link.hrefOD
               ? link.href
               : selectedState !== 'Odisha' && link.hrefOD
-              ? link.hrefOD
-              : link.href
+                ? link.hrefOD
+                : link.href
           }`}
         >
           {link.label}
@@ -238,14 +238,15 @@ const Footer: React.FC = () => {
             <div className='flex items-center gap-2 text-xs lg:gap-4'>
               Powered by
               <a
-                href='https://www.broaddcast.com/'
+                href='https://www.broaddcast.com'
                 target='_blank'
-                rel='noreferrer'
+                rel='noopener noreferrer'
                 className='text-white'
+                aria-label='Broaddcast'
               >
                 <img
                   src='/images/logo-white.svg'
-                  alt='Broaddcast'
+                  alt='Broaddcast Logo'
                   className='h-8 -ml-2'
                 />
               </a>
