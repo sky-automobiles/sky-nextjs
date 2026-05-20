@@ -8,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.broaddcast.com/',
+        hostname: 'www.broaddcast.com',
       },
     ],
   },
