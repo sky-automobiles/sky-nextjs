@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'Sky Automobiles Maruti Suzuki Bhubaneswar, Raipur | Authorized Dealer',
   description:
     'Explore Maruti Suzuki cars, book test drives, and get best offers.',
+  verification: {
+    google: '2ecODzAucw6IZtOpCzDOjoEQq8ZLb0_L1zdQslYEUX4',
+  },
 };
 
 export default function RootLayout({
