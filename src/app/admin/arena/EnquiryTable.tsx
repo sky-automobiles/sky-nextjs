@@ -297,7 +297,7 @@ const EnqTable = ({
         <div className='flex items-center gap-2 text-xs lg:gap-4'>
           Powered by
           <a
-            href='https://www.broaddcast.com'
+            // href='https://www.broaddcast.com'
             target='_blank'
             rel='noopener noreferrer'
             className='text-white'
