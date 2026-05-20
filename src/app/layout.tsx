@@ -61,16 +61,16 @@ export default function RootLayout({
             fbq('init', '1508432989868278');
             fbq('track', 'PageView');`}
         </Script>
-        <GoogleTagManager gtmId='GTM-5L2MX9GG' />
-        {/* ✅ GTM noscript */}
-        {/* <noscript>
+        <GoogleTagManager gtmId='GTM-N3C9GWZJ' />
+
+        <noscript>
           <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-5L2MX9GG'
+            src='https://www.googletagmanager.com/ns.html?id=GTM-N3C9GWZJ'
             height='0'
             width='0'
             style={{ display: 'none', visibility: 'hidden' }}
           />
-        </noscript> */}
+        </noscript>
 
         <AppWrapper>
           {children}
