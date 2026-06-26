@@ -2,6 +2,7 @@
 // const { GiSpeedometer } = require("react-icons/gi");
 // const { PiEngine } = require("react-icons/pi");
 
+
 export const models = [
   //0- Maruti victoris
   {
@@ -342,7 +343,7 @@ export const models = [
     exploreMore: [1, 2, 3],
     thumbnail: '/thumbnail/victoris.png',
     priceRange: `₹10.50L - ₹19.98L*`,
-    //brochure:'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf',
+    brochure: '/brochures/Arena-Victoris-Brochure.pdf',
     // blogs: [
     //   {
     //     title: '5 Reasons to Buy the 2024 Maruti Suzuki Alto K10',
@@ -524,7 +525,7 @@ export const models = [
     thumbnail: '/thumbnail/altoK10.webp',
     priceRange: `₹3.69L - ₹5.35L *`,
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Alto-Brochure-and-Spec-Sheet.pdf',
+      '/brochures/Arena-Alto-K10-Brochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Alto K10',
@@ -743,7 +744,7 @@ export const models = [
     thumbnail: '/thumbnail/swift02.webp',
     priceRange: `₹ 5.78-8.79 Lakhs *`,
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Vertical_Brochure_NEW.pdf',
+      '/brochures/Swift_SCNG_VerticalBrochure.pdf',
     blogs: [
       {
         title:
@@ -972,7 +973,7 @@ export const models = [
     thumbnail: '/thumbnail/brezza-page.webp',
     priceRange: `₹ 8.25 - 13.01 Lakh *`,
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/9299_S_Brezza_6_Page_CNG_Brochure.pdf',
+      '/brochures/Arena-Brezza-Brochure.pdf',
     blogs: [
       {
         title:
@@ -1156,7 +1157,7 @@ export const models = [
     thumbnail: '/thumbnail/bluishblack.png',
     priceRange: '₹ 6.23 - 9.31 Lakh *',
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Dzire-Product-Brochure.pdf',
+      '/brochures/Arena-Dzire-Brochure.pdf',
   },
 
   //4- Maruti S-Presso
@@ -1307,7 +1308,7 @@ export const models = [
     thumbnail: '/thumbnail/spresso.webp',
     priceRange: '₹ 3.49 - 5.24 Lakh *',
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/SpressoBrochure_Spresso_6_pager_brochure_Red_car_A4_Digital_new.pdf',
+      '/brochures/S-presso-Brochure.pdf',
   },
 
   // Maruti WagonR 5
@@ -1511,7 +1512,7 @@ export const models = [
     thumbnail: '/thumbnail/wagnor.webp',
     priceRange: '₹ 4.98 - 6.94 Lakh *',
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/WagonR%20MMC%20Brochure_NEW_1.pdf',
+      '/brochures/WagonR-Brochurepdf.pdf',
     blogs: [
       {
         title:
@@ -1706,7 +1707,7 @@ export const models = [
     thumbnail: '/thumbnail/ertiga.webp',
     priceRange: '₹ 8.80 - 12.94 Lakh *',
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Updated-Ertiga-Brochure-60Pgs.pdf',
+      '/brochures/Arena-Ertiga-Brochure.pdf',
   },
   // Maruti Celerio -7
   {
@@ -1868,7 +1869,7 @@ export const models = [
     thumbnail: '/thumbnail/celerio.webp',
     priceRange: '₹ 4.69 - 6.72 Lakh *',
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/15_Page_Brochure_Celerio_Digital.pdf',
+      '/brochures/Arena-Celerio-Brochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Celerio',
@@ -2059,7 +2060,7 @@ export const models = [
     thumbnail: '/thumbnail/Eeco.webp',
     priceRange: '₹ 5.20 - 8.01 Lakh *',
     brochure:
-      'https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Eeco-Passenger-BRAND-Leaflet.pdf',
+      '/brochures/EECO-Passenger-Brochure-Arenapdf.pdf',
   },
 
   // Maruti eVitara - 9
@@ -2199,7 +2200,7 @@ export const models = [
     exploreMore: [10, 11, 12],
     thumbnail: '/images/car/nexa/eVitara/Evitara.png',
     priceRange: '₹10.99L *',
-    brochure: '',
+    brochure: '/brochures/nexa/NEXA-eVITARA-Brochure-Desktop.pdf',
   },
 
   // Invicto - 10
@@ -2326,7 +2327,7 @@ export const models = [
     thumbnail: '/thumbnail/invicto-main-thubmnail-no-bg.webp',
     priceRange: '₹ 24.63 - 28.30 Lakh *',
     brochure:
-      'https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/invicto/invicto-brochure_invicto-pdf.pdf',
+      '/brochures/nexa/NEXA-Invicto-Brochure.pdf',
   },
   // Maruti Jimny -11
   {
@@ -2483,7 +2484,7 @@ export const models = [
     thumbnail: '/thumbnail/Jimny.webp',
     priceRange: '₹ 12.31 - 14.44 Lakh*',
     brochure:
-      'https://nexaprod5.azureedge.net/-/media/feature/nexawebsitecarbrand/rocky/jimny_brochure.pdf#element_submenu',
+      '/brochures/nexa/NEXA-Jimny-Brochure.pdf',
   },
   // Maruti Fronx - 12
   {
@@ -2646,7 +2647,7 @@ export const models = [
     thumbnail: '/thumbnail/Fronx.webp',
     priceRange: '₹ 6.93 - 11.98 Lakh *',
     brochure:
-      'https://nexaprod4.azureedge.net/-/media/feature/nexawebsitecarbrand/flash/fronx-brochure.pdf#element_submenu',
+      '/brochures/nexa/NEXA-Fronx-Brochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Fronx',
@@ -2974,7 +2975,7 @@ export const models = [
     thumbnail: '/thumbnail/GV.webp',
     priceRange: '₹ 11.02- 20.24 Lakh *',
     brochure:
-      'https://nexaprod5.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/grand_vitara-brochure.pdf',
+      '/brochures/nexa/NEXA-Grand-Vitara-brochure.pdf',
     blogs: [
       {
         title:
@@ -3157,7 +3158,7 @@ export const models = [
     thumbnail: '/thumbnail/XL6.webp',
     priceRange: '₹ 11.52 - 14.47 Lakh *',
     brochure:
-      'https://nexaprod3.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/xl6-brochure-for-digital.pdf',
+      '/brochures/nexa/NEXA-Xl6-Brochure.pdf',
   },
 
   // Ciaz - 15
@@ -3337,7 +3338,7 @@ export const models = [
     thumbnail: '/thumbnail/Ciaz.webp',
     priceRange: '₹ 9.09 - 12.04 Lakh *',
     brochure:
-      'https://www.nexaexperience.com/-/media/feature/nexawebsiteherobanner/brochure/all_new_ciaz_brochure.pdf',
+      '/brochures/',
   },
 
   // Baleno - 16
@@ -3501,7 +3502,7 @@ export const models = [
     thumbnail: '/thumbnail/Baleno.webp',
     priceRange: '₹ 6.16 - 9.11 Lakh *',
     brochure:
-      'https://nexaprod1.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/the-new-age-baleno-brochure.pdf',
+      '/brochures/nexa/NEXA-Baleno-Brochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Baleno',
@@ -3676,7 +3677,7 @@ export const models = [
     thumbnail: '/thumbnail/Ignis.webp',
     priceRange: '₹ 5.35 - 7.55 Lakh *',
     brochure:
-      'https://nexaprod4.azureedge.net/-/media/feature/nexawebsiteherobanner/brochure/ignis-brochure.pdf',
+      '/brochures/',
   },
 ];
 
