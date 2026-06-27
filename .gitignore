@@ -38,3 +38,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large brochure PDFs (exceed GitHub's 100 MB limit)
+public/brochures/nexa/NEXA-eVITARA-Brochure-Desktop.pdf
