@@ -525,7 +525,7 @@ export const models = [
     thumbnail: '/thumbnail/altoK10.webp',
     priceRange: `₹3.69L - ₹5.35L *`,
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/Arena-Alto-K10-Brochure.pdf',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Arena-Alto-K10-Brochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Alto K10',
@@ -744,7 +744,7 @@ export const models = [
     thumbnail: '/thumbnail/swift02.webp',
     priceRange: `₹ 5.78-8.79 Lakhs *`,
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/Swift_SCNG_VerticalBrochure.pdf',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Swift_SCNG_VerticalBrochure.pdf',
     blogs: [
       {
         title:
@@ -973,7 +973,7 @@ export const models = [
     thumbnail: '/thumbnail/brezza-page.webp',
     priceRange: `₹ 8.25 - 13.01 Lakh *`,
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochure/Brezza_Brochure_Nivya_Automobiles_Anantapur.pdf?updatedAt=1764416234518',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Brezza_Brochure_.pdf',
     blogs: [
       {
         title:
@@ -1157,7 +1157,7 @@ export const models = [
     thumbnail: '/thumbnail/bluishblack.png',
     priceRange: '₹ 6.23 - 9.31 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochure/Dzire_Brochure_Nivya_Automobiles_Anantapur.pdf?updatedAt=1764416234033',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Dzire_Brochure_.pdf',
   },
 
   //4- Maruti S-Presso
@@ -1308,7 +1308,7 @@ export const models = [
     thumbnail: '/thumbnail/spresso.webp',
     priceRange: '₹ 3.49 - 5.24 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochure/S-Presso_Brochure_Nivya_Automobiles_Anantapur.pdf?updatedAt=1764416234941',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/S-presso-Brochure.pdf',
   },
 
   // Maruti WagonR 5
@@ -1512,7 +1512,7 @@ export const models = [
     thumbnail: '/thumbnail/wagnor.webp',
     priceRange: '₹ 4.98 - 6.94 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochure/WagonR_Brochure_Nivya_Automobiles_Anantapur.pdf?updatedAt=1764416233619',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/WagonR_Brochure.pdf',
     blogs: [
       {
         title:
@@ -1707,7 +1707,7 @@ export const models = [
     thumbnail: '/thumbnail/ertiga.webp',
     priceRange: '₹ 8.80 - 12.94 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochure/ErtigaBrochure_Nivya_Automobiles_Anantapur.pdf?updatedAt=1764416234966',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/ErtigaBrochure.pdf',
   },
   // Maruti Celerio -7
   {
@@ -1869,7 +1869,7 @@ export const models = [
     thumbnail: '/thumbnail/celerio.webp',
     priceRange: '₹ 4.69 - 6.72 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochure/Celerio_Brochure_Nivya_Automobiles_Anantapur.pdf?updatedAt=1764416233878',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/ErtigaBrochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Celerio',
@@ -2060,7 +2060,7 @@ export const models = [
     thumbnail: '/thumbnail/Eeco.webp',
     priceRange: '₹ 5.20 - 8.01 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochure/EECO_Brochure_Nivya_Automobiles_Anantapur.pdf?updatedAt=1764416234920',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/ErtigaBrochure.pdf',
   },
 
   // Maruti eVitara - 9
@@ -2327,7 +2327,7 @@ export const models = [
     thumbnail: '/thumbnail/invicto-main-thubmnail-no-bg.webp',
     priceRange: '₹ 24.63 - 28.30 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/NEXA-Invicto-Brochure.pdf?updatedAt=1782553871742',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/ErtigaBrochure.pdf',
   },
   // Maruti Jimny -11
   {
@@ -2484,7 +2484,7 @@ export const models = [
     thumbnail: '/thumbnail/Jimny.webp',
     priceRange: '₹ 12.31 - 14.44 Lakh*',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/NEXA-Jimny-Brochure.pdf?updatedAt=1782553865668',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/NEXA-Jimny-Brochure.pdf',
   },
   // Maruti Fronx - 12
   {
@@ -2647,7 +2647,7 @@ export const models = [
     thumbnail: '/thumbnail/Fronx.webp',
     priceRange: '₹ 6.93 - 11.98 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/NEXA-Fronx-Brochure.pdf?updatedAt=1782553867164',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/NEXA-Fronx-Brochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Fronx',
@@ -2975,7 +2975,7 @@ export const models = [
     thumbnail: '/thumbnail/GV.webp',
     priceRange: '₹ 11.02- 20.24 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/NEXA-Grand-Vitara-brochure.pdf?updatedAt=1782553866670',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/NEXA-Grand-Vitara-brochure.pdf',
     blogs: [
       {
         title:
@@ -3158,7 +3158,7 @@ export const models = [
     thumbnail: '/thumbnail/XL6.webp',
     priceRange: '₹ 11.52 - 14.47 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/NEXA-Xl6-Brochure.pdf?updatedAt=1782553863847',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/NEXA-Xl6-Brochure.pdf',
   },
 
   // Ciaz - 15
@@ -3502,7 +3502,7 @@ export const models = [
     thumbnail: '/thumbnail/Baleno.webp',
     priceRange: '₹ 6.16 - 9.11 Lakh *',
     brochure:
-      'https://ik.imagekit.io/hsukyjske/Nivya-automobiles/brochures/NEXA-Baleno-Brochure.pdf?updatedAt=1782553862261',
+      'https://ik.imagekit.io/echsclffk5/Sky-automobiles/NEXA-Baleno-Brochure.pdf',
     blogs: [
       {
         title: '5 Reasons to Buy the 2024 Maruti Suzuki Baleno',
