@@ -8,7 +8,7 @@ export const models = [
   {
     name: ' Maruti VICTORIS',
     subName: 'VICTORIS',
-    offersAmount: 154979,
+    offersAmount: 184979,
     offersAdditionalDec: '',
     link: '/arena/victoris-on-road-price',
     linkCG: '/arena/victoris-on-road-price-in-raipur',
@@ -541,7 +541,7 @@ export const models = [
   {
     name: 'Maruti Swift',
     subName: 'Swift',
-    offersAmount: 40000,
+    offersAmount: 30000,
     offersAdditionalDec: '',
     link: '/arena/swift-on-road-price',
     linkCG: '/arena/swift-on-road-price-in-raipur',
@@ -760,7 +760,7 @@ export const models = [
   {
     name: 'Maruti Brezza',
     subName: 'Brezza',
-    offersAmount: 60000,
+    offersAmount: 105000,
     offersAdditionalDec: '',
     link: '/arena/brezza-on-road-price',
     linkCG: '/arena/brezza-on-road-price-in-raipur',
@@ -1164,7 +1164,7 @@ export const models = [
   {
     name: 'Maruti S-Presso',
     subName: 'S-Presso',
-    offersAmount: 37100,
+    offersAmount: 27100,
     offersAdditionalDec: '67500',
     link: '/arena/spresso-on-road-price',
     linkCG: '/arena/spresso-on-road-price-in-raipur',
@@ -1713,7 +1713,7 @@ export const models = [
   {
     name: 'Maruti Celerio',
     subName: 'Celerio',
-    offersAmount: 37100,
+    offersAmount: 27100,
     offersAdditionalDec: '',
     link: '/arena/celerio-on-road-price',
     linkCG: '/arena/celerio-on-road-price-in-raipur',
@@ -1884,7 +1884,7 @@ export const models = [
   {
     name: 'Maruti Eeco',
     subName: 'Eeco',
-    offersAmount: 35000,
+    offersAmount: 27100,
     offersAdditionalDec: '',
     link: '/arena/eeco-on-road-price',
     linkCG: '/arena/eeco-on-road-price-in-raipur',
