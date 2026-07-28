@@ -767,56 +767,47 @@ export const models = [
     linkOD: '/arena/brezza-on-road-price-in-bhubaneswar',
     offerValidTill: 'Jan 31, 2025',
     colors: [
-      {
-        img: '/images/car/arena/brezza/brave_khaki.webp',
-        colorCode: '#5D5135',
-        colName: 'Brave Khaki',
-      },
-      {
-        img: '/images/car/arena/brezza/exuberant_blue.webp',
-        colorCode: '#264B9C',
-        colName: 'Exuberant Blue',
-      },
-      {
-        img: '/images/car/arena/brezza/magna_grey.webp',
-        colorCode: '#8D8D8D',
-        colName: 'Magna Grey',
-      },
-      {
-        img: '/images/car/arena/brezza/pearl+_arctic_white_roof.webp',
-        colorCode: '#655A3E',
-        colName: 'Brave Khaki Pearl Artic White',
-      },
-      {
-        img: '/images/car/arena/brezza/pearl_arctic_white.webp',
-        colorCode: '#F7F7F7',
-        colName: 'Pearl Arctic White',
-      },
-      {
-        img: '/images/car/arena/brezza/sizzling_red.webp',
-        colorCode: '#E62924',
-        colName: 'Sizzling Red',
-      },
-      {
-        img: '/images/car/arena/brezza/sizzling_red_black_roof.webp',
-        colorCode: '#C70E1E',
-        colName: 'Sizzling Red Black Roof',
-      },
-      {
-        img: '/images/car/arena/brezza/splendid_silver_black_roof.webp',
-        colorCode: '#B8BBC0',
-        colName: 'Splendid Silver Mid Night Black Roof',
-      },
-      {
-        img: '/images/car/arena/brezza/splendid_silver.webp',
-        colorCode: '#C5C5C5',
-        colName: 'Splendid Silver',
-      },
-      {
-        img: '/images/car/arena/brezza/brezza-black.webp',
-        colorCode: '#000',
-        colName: 'Midnight Black',
-      },
+       {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/magma_gray.png',
+    colorCode: '#6D6D6D',
+    colName: 'Magma Grey',
+  },
+  {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Bluish_Black_4.png',
+    colorCode: '#0B0D16',
+    colName: 'Pearl Midnight Black',
+  },
+  {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Arctic_White.png',
+    colorCode: '#F7F7F7',
+    colName: 'Pearl Arctic White',
+  },
+  {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof.png',
+    colorCode: '#C51D28',
+    colName: 'Sizzling Red with Midnight Black Roof',
+  },
+  {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Arctic_White_with_Bluish_Black_4_Roof.png',
+    colorCode: '#F7F7F7',
+    colName: 'Pearl Arctic White with Midnight Black Roof',
+  },
+  {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Lustrous_Beige_with_Bluish_Black_4_roof.png',
+    colorCode: '#B59C7A',
+    colName: 'Brave Khaki with Midnight Black Roof',
+  },
+  {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Vivacious_Orange.png',
+    colorCode: '#E56A1B',
+    colName: 'Exuberant Blue',
+  },
+  {
+    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Lustrous_Beige.png',
+    colorCode: '#C6C8CC',
+    colName: 'Splendid Silver',
+  }
+    
     ],
     keySpecifications: [
       { label: 'Fuel Tank Capacity', value: '48 Litres' },
@@ -840,24 +831,32 @@ export const models = [
 
     exterior: [
       {
-        img: '/images/car/arena/brezza/exterior_web_01.webp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-headlights.avif',
         title: 'Dual LED Projector Headlamps with LED DRLs',
       },
       {
-        img: '/images/car/arena/brezza/exterior_web_02.webp',
-        title: 'LED Tail Lamp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-sunroof.avif',
+        title: 'LED Tail Lamps',
       },
       {
-        img: '/images/car/arena/brezza/exterior_web_03.webp',
-        title: 'Chrome Accentuated Front Grille',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-alloy-wheel.avif',
+        title: 'Precision-Cut Dual-Tone Alloy Wheels',
       },
       {
-        img: '/images/car/arena/brezza/exterior_web_04.webp',
-        title: 'Shark fin Antenna',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-cladding.avif',
+        title: 'Shark Fin Antenna',
       },
       {
-        img: '/images/car/arena/brezza/exterior_web_05.webp',
-        title: 'Bold Geometric Alloy Wheels',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/bt-Rear---Turbo-Black-Desktop-1.avif',
+        title: 'Bold LED Rear Combination Lamps',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-dual-tone.avif',
+        title: 'Dual-Tone Exterior with Black Roof',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/bt-Grille-2.avif',
+        title: 'Bold Chrome Front Grille',
       },
       // {
       //   img: "",
