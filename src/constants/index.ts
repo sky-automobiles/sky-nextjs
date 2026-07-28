@@ -960,7 +960,7 @@ export const models = [
 ],
 
     exploreMore: [4, 5, 6],
-    thumbnail: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof-removebg-preview.png',
+    thumbnail: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof-removebg-preview.png?updatedAt=1785243817685',
     priceRange: `₹ 7.39 - 11.65 Lakh *`,
     brochure:
       'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Brezza_Brochure_.pdf',
