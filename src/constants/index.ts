@@ -906,71 +906,62 @@ export const models = [
         value: '75.8 kW @ 6000 rpm',
       },
     ],
-    variants: [
-      { variant: 'BREZZA LXI', price: 825900, transmission: 'Manual' },
-      { variant: 'BREZZA LXI CNG', price: 916900, transmission: 'Manual' },
-      { variant: 'BREZZA VXI', price: 925900, transmission: 'Manual' },
-      { variant: 'BREZZA VXI CNG', price: 1016900, transmission: 'Manual' },
-      {
-        variant: 'BREZZA SMART HYBRID VXI AMT',
-        price: 1059900,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI',
-        price: 1039900,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI CNG',
-        price: 1134900,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI AMT',
-        price: 1174900,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI D/T',
-        price: 1055300,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI D/T CNG',
-        price: 1146300,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI AMT D/T',
-        price: 1190300,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI+',
-        price: 1159900,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI+ D/T',
-        price: 1166300,
-        transmission: 'Manual',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI+ AMT',
-        price: 1285900,
-        transmission: 'Automatic',
-      },
-      {
-        variant: 'BREZZA SMART HYBRID ZXI+ AMT D/T',
-        price: 1301300,
-        transmission: 'Automatic',
-      },
-    ],
+ variants: [
+  {
+    variant: 'BREZZA LXI TURBO',
+    price: 739900,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA LXI',
+    price: 829900,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA VXI TURBO',
+    price: 854900,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA VXI',
+    price: 925900,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA LXI CNG',
+    price: 929900,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA VXI CNG',
+    price: 999000,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA ZXI TURBO',
+    price: 999000,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA ZXI',
+    price: 1065500,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA ZXI+ TURBO',
+    price: 1131500,
+    transmission: 'Manual',
+  },
+  {
+    variant: 'BREZZA ZXI CNG',
+    price: 1165500,
+    transmission: 'Manual',
+  },
+],
 
     exploreMore: [4, 5, 6],
     thumbnail: '/thumbnail/brezza-page.webp',
-    priceRange: `₹ 8.25 - 13.01 Lakh *`,
+    priceRange: `₹ 7.39 - 11.65 Lakh *`,
     brochure:
       'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Brezza_Brochure_.pdf',
     blogs: [
