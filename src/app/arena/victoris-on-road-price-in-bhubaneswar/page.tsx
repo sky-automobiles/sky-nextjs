@@ -3,11 +3,11 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Maruti Suzuki Swift On-Road Price Bhubaneswar | Features & Offers",
+  title: "Maruti Suzuki VICTORIS On-Road Price Bhubaneswar | Features & Offers",
   description:
-    "Discover the Maruti Suzuki Swift in Bhubaneswar with on-road prices, features, and exclusive offers. Book a test drive today at Sky Automobiles Maruti Suzuki Bhubaneswar.",
+    "Discover the Maruti Suzuki VICTORIS in Bhubaneswar with on-road prices, features, and exclusive offers. Book a test drive today at Sky Automobiles Maruti Suzuki Bhubaneswar.",
 };
-const Swift: React.FC = () => {
+const Victoris: React.FC = () => {
   return (
     <div>
       <VehicleDetailTemplate index={0} />
@@ -15,4 +15,4 @@ const Swift: React.FC = () => {
   );
 };
 
-export default Swift;
+export default Victoris;

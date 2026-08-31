@@ -27,8 +27,8 @@ const Services = () => {
 
   const columnHelper = createMRTColumnHelper<any>();
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       toast.error("Please login first");
       window.location.href = "/admin/login";
     }
@@ -91,8 +91,8 @@ const Services = () => {
   ]);
 
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       toast.error("Please login first");
       window.location.href = "/admin/login";
     }

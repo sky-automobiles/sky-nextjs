@@ -24,6 +24,16 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+      return new NextResponse(
+        JSON.stringify({
+          error:
+            "Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9",
+        }),
+        { status: 400 }
+      );
+    }
+
     // Get current date and time
     const date = moment().format("YYYY-MM-DD");
     const time = moment().format("HH:mm:ss");

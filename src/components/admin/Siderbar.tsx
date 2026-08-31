@@ -10,6 +10,7 @@ import Cookies from "js-cookie";
 import { HiMiniHome } from "react-icons/hi2";
 import { GiCheckMark } from "react-icons/gi";
 import { FiLogOut } from "react-icons/fi";
+import { FaCarSide } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
@@ -93,6 +94,13 @@ const Sidebar: React.FC<SidebarProps> = ({
             to="/admin/nexa"
             icon={SiSuzuki} // Another icon
             active={pathname === "/admin/nexa"}
+          />
+          <SidebarMenuItem
+            isCollapsed={isCollapsed}
+            text="Test Drive"
+            to="/admin/test-drive"
+            icon={FaCarSide} // Another icon
+            active={pathname === "/admin/test-drive"}
           />
           <SidebarMenuItem
             isCollapsed={isCollapsed}

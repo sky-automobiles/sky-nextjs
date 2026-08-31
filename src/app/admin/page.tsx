@@ -4,8 +4,8 @@ import Cookies from "js-cookie";
 
 const Home = () => {
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       window.location.href = "/admin/login";
     } else window.location.href = "/admin/arena";
   }, []);

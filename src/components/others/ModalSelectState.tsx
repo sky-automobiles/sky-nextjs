@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useAppContext } from "@/context";
 
 const ModalSelectState: React.FC = () => {
   const [isAnimate, setIsAnimate] = useState(false);
+  const pathname = usePathname();
   const { setSelectedState, openSelectState, setOpenSelectState, selectedState } =
     useAppContext();
 
@@ -25,6 +27,10 @@ const ModalSelectState: React.FC = () => {
   };
 
   useEffect(() => {
+    // This is a customer-facing (Odisha/Chhattisgarh) picker; it has no
+    // business showing up on the internal admin dashboard.
+    if (pathname?.startsWith("/admin")) return;
+
     // Ensure this runs only in the browser
     if (typeof window !== "undefined") {
       if (sessionStorage.getItem("openSelectState")) {
@@ -48,6 +54,7 @@ const ModalSelectState: React.FC = () => {
     }
   }, [isAnimate]);
 
+  if (pathname?.startsWith("/admin")) return null;
   if (!openSelectState) return null;
 
   return (

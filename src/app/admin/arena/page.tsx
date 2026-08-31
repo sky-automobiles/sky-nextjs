@@ -14,8 +14,8 @@ const Arena = () => {
   const [dateRange, setDateRange] = useState({ startDate: "", endDate: "" });
 
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       toast.error("Please login first");
       window.location.href = "/admin/login";
     }

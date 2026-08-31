@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { MdLocalOffer, MdLocationOn } from 'react-icons/md';
 import { GiAutoRepair } from 'react-icons/gi';
 import { PiSteeringWheelBold } from 'react-icons/pi';
@@ -13,6 +14,7 @@ const Callbutton: React.FC = () => {
   const [showTestDrive, setShowTestDrive] = useState<boolean>(false);
   const lastScrollY = useRef<number>(0);
   const { selectedState } = useAppContext();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +35,8 @@ const Callbutton: React.FC = () => {
 
   const primaryColor =
     selectedState === 'Odisha' ? 'text-primaryBlue' : 'text-primaryRed';
+
+  if (pathname?.startsWith('/admin')) return null;
 
   return (
     <>

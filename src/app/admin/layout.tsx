@@ -21,8 +21,11 @@ export default function DashboardLayout({
 
   // Use useEffect to update showSidebar only on the client side
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token && pathname !== "/admin/login") {
+    // "token" is httpOnly (by design, so client-side JS can never read it and
+    // steal it via XSS). "isAdmin" is the non-httpOnly cookie the login API
+    // sets alongside it specifically so the client can check login state.
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin && pathname !== "/admin/login") {
       toast.error("Please login first");
       router.push("/admin/login"); // Redirect to "/admin/login";
     }

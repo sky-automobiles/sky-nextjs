@@ -23,8 +23,8 @@ const TrueValue = () => {
   });
 
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       toast.error("Please login first");
       window.location.href = "/admin/login";
     }
@@ -85,8 +85,8 @@ const TrueValue = () => {
   ]);
 
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       toast.error("Please login first");
       window.location.href = "/admin/login";
     }

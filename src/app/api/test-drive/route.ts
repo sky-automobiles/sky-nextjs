@@ -13,9 +13,10 @@ export async function POST(req: NextRequest) {
   try {
     await connectDB();
     // Parse request body
-    const { name, phone, email, model, outlet, state } = await req.json();
+    const { name, phone, email, model, outlet, state, leadFrom } =
+      await req.json();
 
-    console.log(name, phone, email, model, outlet, state);
+    console.log(name, phone, email, model, outlet, state, leadFrom);
     // Validate required fields
     if (!name || !phone || !email || !model || !outlet || !state) {
       return new NextResponse(
@@ -24,9 +25,20 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+      return new NextResponse(
+        JSON.stringify({
+          error:
+            "Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9",
+        }),
+        { status: 400 }
+      );
+    }
+
     let channel = "";
 
     if (
+      model === "VICTORIS" ||
       model === "ALTO K10" ||
       model === "Swift" ||
       model === "Epic swift 2024" ||
@@ -58,6 +70,7 @@ export async function POST(req: NextRequest) {
   <li>Outlet: ${outlet}</li>
   <li>State: ${state}</li>
   <li>Channel: ${channel}</li>
+  <li>Lead From: ${leadFrom || "Test Drive"}</li>
 
 
 </ul>`,
@@ -75,6 +88,7 @@ export async function POST(req: NextRequest) {
       state,
       outlet,
       channel,
+      leadFrom: leadFrom || "Test Drive",
       date, // Ensure these fields are in the schema
       time,
     });
@@ -101,6 +115,7 @@ export async function POST(req: NextRequest) {
 
 export async function GET(req: NextRequest) {
   try {
+    await connectDB();
     const { searchParams } = new URL(req.url);
     const rangeValue = searchParams.get("rangeValue");
     const startDate = searchParams.get("startDate");

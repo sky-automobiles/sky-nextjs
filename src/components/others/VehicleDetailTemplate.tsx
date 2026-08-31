@@ -14,6 +14,18 @@ import ModalTestDrive from '../home/ModalTestDrive';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import { FaSpinner } from 'react-icons/fa';
+import VictorisEnquiryModal, {
+  Requirement,
+} from '../victoris/VictorisEnquiryModal';
+import VictorisEnquirySection from '../victoris/VictorisEnquirySection';
+
+type LockedCtaAction = 'testdrive' | 'price' | 'brochure';
+
+const ACTION_TO_REQUIREMENT: Record<LockedCtaAction, Requirement> = {
+  testdrive: 'Test Drive',
+  price: 'On-Road Price',
+  brochure: 'Brochure',
+};
 
 interface FormData {
   name: string;
@@ -27,7 +39,7 @@ interface VehiceProps {
 }
 
 const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
-  const { selectedState } = useAppContext();
+  const { selectedState, openSelectState } = useAppContext();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -43,6 +55,55 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
   const [selected, setSelected] = useState('Exterior');
   const [loading, setLoading] = useState(false);
   const [showTestDrive, setShowTestDrive] = useState(false);
+
+  const isVictoris = data?.subName === 'VICTORIS';
+  const [showLeadModal, setShowLeadModal] = useState(false);
+  const [pendingAction, setPendingAction] = useState<LockedCtaAction | null>(
+    null
+  );
+  const [leadCaptured, setLeadCaptured] = useState(false);
+
+  useEffect(() => {
+    if (!isVictoris || leadCaptured) return;
+    // Wait for the state-select popup to close first so the two don't stack.
+    if (openSelectState) return;
+
+    const timer = setTimeout(() => {
+      setShowLeadModal(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [isVictoris, leadCaptured, openSelectState]);
+
+  const proceedWithAction = (action: LockedCtaAction) => {
+    if (action === 'testdrive') {
+      setShowTestDrive(true);
+    } else if (action === 'brochure') {
+      window.open(data?.brochure, '_blank', 'noopener,noreferrer');
+    } else if (action === 'price') {
+      document
+        .getElementById('enq-form')
+        ?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleLockedCta = (action: LockedCtaAction) => {
+    if (leadCaptured) {
+      proceedWithAction(action);
+    } else {
+      setPendingAction(action);
+      setShowLeadModal(true);
+    }
+  };
+
+  const handleLeadCaptureSuccess = () => {
+    setLeadCaptured(true);
+    setShowLeadModal(false);
+    if (pendingAction) {
+      proceedWithAction(pendingAction);
+      setPendingAction(null);
+    }
+  };
 
   const handleClickColor = (index: number): void => {
     setSelectedColor(index);
@@ -172,38 +233,70 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
                 ))}
               </div>
               <div className='flex flex-wrap gap-2 mb-6 lg:gap-4'>
-                <a
-                  href={data?.brochure}
-                  target='_blank'
-                  aria-label='View Brochure'
-                  rel='noopener noreferrer'
-                >
+                {isVictoris ? (
                   <button
-                    aria-label='View Brochure'
+                    aria-label='Download Brochure'
+                    onClick={() => handleLockedCta('brochure')}
                     className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:px-4 hover:shadow-lg   ${
                       selectedState === 'Odisha'
                         ? 'hover:bg-primaryBlue'
                         : 'hover:bg-primaryRed '
                     }`}
                   >
-                    View Brochure
+                    Download Brochure
                   </button>
-                </a>
+                ) : (
+                  <a
+                    href={data?.brochure}
+                    target='_blank'
+                    aria-label='View Brochure'
+                    rel='noopener noreferrer'
+                  >
+                    <button
+                      aria-label='View Brochure'
+                      className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:px-4 hover:shadow-lg   ${
+                        selectedState === 'Odisha'
+                          ? 'hover:bg-primaryBlue'
+                          : 'hover:bg-primaryRed '
+                      }`}
+                    >
+                      View Brochure
+                    </button>
+                  </a>
+                )}
 
-                <a
-                  href='#enq-form'
-                  aria-label='  Get On Road Price'
-                  className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:px-4 hover:shadow-lg   ${
-                    selectedState === 'Odisha'
-                      ? 'hover:bg-primaryBlue'
-                      : 'hover:bg-primaryRed '
-                  }`}
-                >
-                  Get On Road Price
-                </a>
+                {isVictoris ? (
+                  <button
+                    aria-label='Check On-Road Price'
+                    onClick={() => handleLockedCta('price')}
+                    className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:px-4 hover:shadow-lg   ${
+                      selectedState === 'Odisha'
+                        ? 'hover:bg-primaryBlue'
+                        : 'hover:bg-primaryRed '
+                    }`}
+                  >
+                    Check On-Road Price
+                  </button>
+                ) : (
+                  <a
+                    href='#enq-form'
+                    aria-label='  Get On Road Price'
+                    className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:px-4 hover:shadow-lg   ${
+                      selectedState === 'Odisha'
+                        ? 'hover:bg-primaryBlue'
+                        : 'hover:bg-primaryRed '
+                    }`}
+                  >
+                    Get On Road Price
+                  </a>
+                )}
                 <button
                   aria-label=' Book Test Drive'
-                  onClick={() => setShowTestDrive(true)}
+                  onClick={() =>
+                    isVictoris
+                      ? handleLockedCta('testdrive')
+                      : setShowTestDrive(true)
+                  }
                   className={`px-2 py-2 mt-2 text-sm duration-500 bg-transparent border rounded-md md:px-4 hover:shadow-lg   ${
                     selectedState === 'Odisha'
                       ? 'hover:bg-primaryBlue'
@@ -287,8 +380,8 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
                 required
                 minLength={10}
                 maxLength={10}
-                pattern='^[0-9]{10}$'
-                title='Please enter a valid 10-digit phone number'
+                pattern='^[6-9][0-9]{9}$'
+                title='Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9'
                 className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
                   selectedState === 'Odisha'
                     ? 'border-b-primaryBlue'
@@ -550,6 +643,10 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
           </div>
         </div>
       </section>
+      {/* Victoris Enquiry Section */}
+      {isVictoris && (
+        <VictorisEnquirySection onSuccess={handleLeadCaptureSuccess} />
+      )}
       {/* Blogs  */}
       {data && data?.blogs && data?.blogs.length && (
         <section id='blogs-section'>
@@ -687,6 +784,19 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
         model={data?.subName}
         index={index}
       />
+      {isVictoris && (
+        <VictorisEnquiryModal
+          show={showLeadModal}
+          onClose={() => {
+            setShowLeadModal(false);
+            setPendingAction(null);
+          }}
+          onSuccess={handleLeadCaptureSuccess}
+          defaultRequirement={
+            pendingAction ? ACTION_TO_REQUIREMENT[pendingAction] : undefined
+          }
+        />
+      )}
     </div>
   );
 };

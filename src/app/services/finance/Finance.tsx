@@ -432,6 +432,10 @@ const Finance: React.FC = () => {
               value={formData.phone}
               onChange={handleChange}
               required
+              minLength={10}
+              maxLength={10}
+              pattern='^[6-9][0-9]{9}$'
+              title='Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9'
               className={`w-full p-2 bg-transparent border-b-2 appearance-none  focus:outline-none rounded-none ${
                 selectedState === 'Odisha'
                   ? 'border-b-primaryBlue'

@@ -11,8 +11,6 @@ const Others = () => {
   const {
     contactUsData,
     careerData,
-    testDriveData,
-    setTestDriveData,
     setContactUsData,
     setCareerData,
     homeEnqData,
@@ -30,8 +28,8 @@ const Others = () => {
   const columnHelper = createMRTColumnHelper<any>();
 
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       toast.error("Please login first");
       window.location.href = "/admin/login";
     }
@@ -44,10 +42,8 @@ const Others = () => {
           endPoint = "home";
         } else if (selectedTable === "Contact") {
           endPoint = "contactUs";
-        } else if (selectedTable === "Career") {
-          endPoint = "career";
         } else {
-          endPoint = "test-drive";
+          endPoint = "career";
         }
         if (rangeValue === "") {
           response = await fetch(`/api/${endPoint}?rangeValue=allData`);
@@ -71,12 +67,8 @@ const Others = () => {
           setContactUsData(result);
         } else if (selectedTable === "Home") {
           setHomeEnqData(result);
-        
-        } else if (selectedTable === "Career") {
+        } else {
           setCareerData(result);
-        }
-         else {
-          setTestDriveData(result);
         }
         // Update state with the fetched data
         setLoading(false);
@@ -99,8 +91,8 @@ const Others = () => {
   ]);
 
   useEffect(() => {
-    const token = Cookies.get("token");
-    if (!token) {
+    const isAdmin = Cookies.get("isAdmin");
+    if (!isAdmin) {
       toast.error("Please login first");
       window.location.href = "/admin/login";
     }
@@ -194,44 +186,6 @@ const Others = () => {
     //   size: 220,
     // }),
   ];
-  //Test Drive
-  const columns3 = [
-    columnHelper.accessor("date", {
-      header: "Date",
-      size: 40,
-    }),
-    columnHelper.accessor("time", {
-      header: "Time",
-      size: 120,
-    }),
-    columnHelper.accessor("name", {
-      header: "Name",
-      size: 120,
-    }),
-    columnHelper.accessor("phone", {
-      header: "Phone Number",
-      size: 120,
-    }),
-    columnHelper.accessor("email", {
-      header: "Email",
-      size: 120,
-    }),
-    columnHelper.accessor("model", {
-      header: "Model",
-      size: 120,
-    }),
-    columnHelper.accessor("channel", {
-      header: "Channel",
-      size: 80,
-    }),
-    columnHelper.accessor("outlet", {
-      header: "Outlet",
-      size: 300,
-    }),
-    columnHelper.accessor("state", {
-      header: "State",
-    }),
-  ];
   //Home
   const columns4 = [
     columnHelper.accessor("date", {
@@ -284,16 +238,6 @@ const Others = () => {
               Homepage
             </button>{" "}
             <button
-              onClick={() => setSelectedTable("Test Drive")}
-              className={`  px-4 py-1.5 rounded text-sm min-w-28 ${
-                selectedTable === "Test Drive"
-                  ? "bg-primaryBlue text-white"
-                  : "border border-primaryBlue"
-              }`}
-            >
-              Test Drive
-            </button>{" "}
-            <button
               onClick={() => setSelectedTable("Contact")}
               className={`  px-4 py-1.5 rounded text-sm min-w-28 ${
                 selectedTable === "Contact"
@@ -321,26 +265,21 @@ const Others = () => {
               ? contactUsData
               : selectedTable === "Career"
               ? careerData
-              : selectedTable === "Test Drive"?
-              testDriveData: homeEnqData
+              : homeEnqData
           }
           columns={
             selectedTable === "Contact"
               ? columns
               : selectedTable === "Career"
-              ? columns2 
-              : selectedTable === 'Home'?
-              columns4:
-              columns3
+              ? columns2
+              : columns4
           }
           fileName={
             selectedTable === "Contact"
               ? "Contact-us Enquiries"
               : selectedTable === "Career"
               ? "Career Enquiries"
-
-              : selectedTable === "Test Drive"?
-               "Test-Drive Enquiries":" Homepage Enquiries"
+              : "Homepage Enquiries"
           }
           rangeValue={rangeValue}
           setRangeValue={setRangeValue}
