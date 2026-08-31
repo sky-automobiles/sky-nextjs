@@ -1,5 +1,6 @@
 import { connectDB } from "@/dbConfig/dbConfig";
 import Admin from "@/models/modelAdmin";
+import { isAuthenticated } from "@/helpers/auth";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 
@@ -7,6 +8,11 @@ import bcrypt from "bcryptjs";
 
 export async function POST(req: NextRequest) {
   try {
+    // Only an already-logged-in admin can create another admin account —
+    // this previously had no auth check at all.
+    if (!isAuthenticated(req)) {
+      return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+    }
     await connectDB();
     const reqBody = await req.json();
     const { phone } = reqBody;

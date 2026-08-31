@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { isAuthenticated } from "@/helpers/auth";
 import { sendEmail } from "@/helpers/mailer";
 import OnRoadPrice from "@/models/onRoadPriceModel";
 
@@ -39,6 +40,13 @@ export async function POST(req: NextRequest) {
           error:
             "Please enter a valid 10-digit mobile number starting with 6, 7, 8, or 9",
         }),
+        { status: 400 }
+      );
+    }
+
+    if (channel !== "Arena" && channel !== "Nexa") {
+      return new NextResponse(
+        JSON.stringify({ error: "Invalid channel" }),
         { status: 400 }
       );
     }
@@ -108,6 +116,13 @@ export async function POST(req: NextRequest) {
 
 export async function GET(req: NextRequest) {
   try {
+    if (!isAuthenticated(req)) {
+      return new NextResponse(
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401 }
+      );
+    }
+    await connectDB();
     const { searchParams } = new URL(req.url);
     const rangeValue = searchParams.get("rangeValue");
     const startDate = searchParams.get("startDate");

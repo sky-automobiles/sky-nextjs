@@ -29,14 +29,15 @@ const Sidebar: React.FC<SidebarProps> = ({
 
     const router = useRouter();
 
-  const handleLogout = () => {
-    Cookies.remove("token");
+  const handleLogout = async () => {
+    // "token" is httpOnly, so client-side Cookies.remove can't clear it —
+    // only the server can.
+    await fetch("/api/logout", { method: "POST" });
     Cookies.remove("driverId");
     Cookies.remove("isAdmin");
 
     toast.success("Logout Successfully");
-    // window.location.href = "/admin/login";
-     router.push("/admin/login");
+    router.push("/admin/login");
   };
   return (
     <div

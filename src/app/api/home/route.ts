@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { isAuthenticated } from "@/helpers/auth";
 import { sendEmail } from "@/helpers/mailer";
 import Home from "@/models/homeModel";
 
@@ -76,6 +77,9 @@ export async function POST(req: NextRequest) {
 
 export async function GET(req: NextRequest) {
   try {
+    if (!isAuthenticated(req)) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
     await connectDB(); // ✅ connect inside request
 
     const { searchParams } = new URL(req.url);

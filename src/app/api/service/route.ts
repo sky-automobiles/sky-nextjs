@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { isAuthenticated } from "@/helpers/auth";
 import Service from "@/models/serviceModel";
 
 import moment from "moment";
@@ -125,6 +126,13 @@ export async function POST(req: NextRequest) {
 
 export async function GET(req: NextRequest) {
   try {
+    if (!isAuthenticated(req)) {
+      return new NextResponse(
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401 }
+      );
+    }
+    await connectDB();
     const { searchParams } = new URL(req.url);
     const rangeValue = searchParams.get("rangeValue");
     const startDate = searchParams.get("startDate");

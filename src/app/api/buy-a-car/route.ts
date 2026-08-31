@@ -1,5 +1,6 @@
 import { connectDB } from "@/dbConfig/dbConfig";
 import { sendEmail } from "@/helpers/mailer";
+import { isAuthenticated } from "@/helpers/auth";
 import BuyACar from "@/models/buyACarModel";
 
 import moment from "moment";
@@ -7,16 +8,16 @@ import "moment-timezone";
 import { NextResponse, NextRequest } from "next/server";
 
 moment.tz.setDefault("Asia/Kolkata");
-connectDB();
 
 export async function POST(req: NextRequest) {
   try {
+    await connectDB();
     // Parse request body
     const { name, phone, email, outlet, state, model, carNumber } =
       await req.json();
 
     // Validate required fields
-    if (!name || !phone || !state || !outlet || !model || !carNumber) {
+    if (!name || !phone || !email || !state || !outlet || !model || !carNumber) {
       return new NextResponse(
         JSON.stringify({ error: "Please fill all the fields" }),
         { status: 400 }
@@ -89,6 +90,13 @@ export async function POST(req: NextRequest) {
 
 export async function GET(req: NextRequest) {
   try {
+    if (!isAuthenticated(req)) {
+      return new NextResponse(
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401 }
+      );
+    }
+    await connectDB();
     const { searchParams } = new URL(req.url);
     const rangeValue = searchParams.get("rangeValue");
     const startDate = searchParams.get("startDate");

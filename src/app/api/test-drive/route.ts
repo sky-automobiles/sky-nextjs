@@ -1,4 +1,5 @@
 import { connectDB } from "@/dbConfig/dbConfig";
+import { isAuthenticated } from "@/helpers/auth";
 import { sendEmail } from "@/helpers/mailer";
 import TestDrive from "@/models/testDriveModel";
 
@@ -115,6 +116,12 @@ export async function POST(req: NextRequest) {
 
 export async function GET(req: NextRequest) {
   try {
+    if (!isAuthenticated(req)) {
+      return new NextResponse(
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401 }
+      );
+    }
     await connectDB();
     const { searchParams } = new URL(req.url);
     const rangeValue = searchParams.get("rangeValue");
