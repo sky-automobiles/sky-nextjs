@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 import { FaFacebookF, FaLinkedin } from 'react-icons/fa';
@@ -55,9 +56,12 @@ const Footer: React.FC = () => {
         <div className='max-w-screen-xl px-4 pt-10 mx-auto sm:px-6 lg:px-8'>
           <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
             <div>
-              <img
+              <Image
                 src='/images/other/logo-white.png'
+                width={225}
+                height={68}
                 className='h-14 mx-auto md:mx-0 md:-ml-4'
+                style={{ width: 'auto' }}
                 alt='logo'
               />
               <p className='md:max-w-xs mt-4 text-sm text-secondaryGray4 text-center md:text-left'>
@@ -95,8 +99,8 @@ const Footer: React.FC = () => {
                 links={[
                   {
                     label: 'Victoris',
-                    href: '/arena/alto-k10-on-road-price-in-bhubaneswar',
-                    hrefOD: '/arena/victoris-on-road-price-in-bhubaneswar',
+                    href: '/arena/victoris-on-road-price-in-bhubaneswar',
+                    hrefOD: '/arena/victoris-on-road-price-in-raipur',
                   },
                   {
                     label: 'Alto K10',
@@ -121,7 +125,7 @@ const Footer: React.FC = () => {
                   {
                     label: 'S-Presso',
                     href: '/arena/spresso-on-road-price-in-bhubaneswar',
-                    hrefOD: '',
+                    hrefOD: '/arena/spresso-on-road-price-in-raipur',
                   },
                   {
                     label: 'Wagon R',
@@ -244,10 +248,13 @@ const Footer: React.FC = () => {
                 className='text-white'
                 aria-label='Broaddcast'
               >
-                <img
+                <Image
                   src='/images/logo-white.svg'
                   alt='Broaddcast Logo'
+                  width={49}
+                  height={17}
                   className='h-8 -ml-2'
+                  style={{ width: 'auto' }}
                 />
               </a>
             </div>

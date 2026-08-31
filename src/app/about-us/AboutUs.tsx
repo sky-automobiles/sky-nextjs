@@ -1,5 +1,6 @@
 "use client";
 import { useAppContext } from "@/context";
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
@@ -8,10 +9,13 @@ const AboutUs = () => {
   return (
     <div>
       <div className=" min-h-40 bg-primaryGray  ">
-        <img
+        <Image
           src="/images/other/banner automobile.jpg"
           alt=""
+          width={1920}
+          height={1080}
           className="w-full object-cover max-h-[80vh]  object-bottom"
+          style={{ width: '100%', height: 'auto' }}
         />
         {/* <div className="h-full min-h-[40vh] flex justify-center items-center text-gray-400 text-3xl ">
           Required Banner Image

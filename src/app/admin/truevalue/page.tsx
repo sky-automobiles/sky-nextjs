@@ -82,6 +82,7 @@ const TrueValue = () => {
     rangeValue,
     dateRange.endDate,
     dateRange.startDate,
+    showSell,
   ]);
 
   useEffect(() => {
@@ -214,7 +215,7 @@ const TrueValue = () => {
           <h5 className="text-xl my-4 text-primaryBlue uppercase">
             Truevalue Enquiries - {showSell ? "Sell A Car" : "Buy A Car"}
           </h5>
-          {/* <div className="flex gap-2">
+          <div className="flex gap-2">
             <button
               onClick={() => setShowSell(false)}
               className={`  px-4 py-1.5 rounded text-sm border min-w-36 ${
@@ -231,7 +232,7 @@ const TrueValue = () => {
             >
               Sell A Car
             </button>
-          </div> */}
+          </div>
         </div>
 
         <EnqTable

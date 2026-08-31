@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -61,11 +62,13 @@ const VehicleDetailsSlider: React.FC<VehicleDetailsSliderProps> = ({
         {images.map((image, index) => (
           <SwiperSlide key={index}>
             <div className="max-h-[60vh]">
-              <img
+              <Image
                 src={image.img}
                 alt={image.title}
-                loading="lazy"
+                width={800}
+                height={600}
                 className="mb-6 lg:rounded-lg"
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
           </SwiperSlide>
@@ -105,11 +108,13 @@ const VehicleDetailsSlider: React.FC<VehicleDetailsSliderProps> = ({
         {images.map((image, index) => (
           <SwiperSlide key={index}>
             <div className="">
-              <img
+              <Image
                 src={image.img}
                 alt={`Thumbnail ${index + 1}`}
-                loading="lazy"
+                width={80}
+                height={40}
                 className="h-10 rounded-lg"
+                style={{ height: '2.5rem', width: 'auto' }}
               />
             </div>
           </SwiperSlide>

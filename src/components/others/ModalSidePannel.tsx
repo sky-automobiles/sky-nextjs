@@ -2,6 +2,7 @@
 import { models } from "@/constants";
 import { useAppContext } from "@/context";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 
@@ -116,10 +117,11 @@ const ModalSidePannel = ({
                         : "hover:bg-primaryRed"
                     }  hover:text-white`}
                   >
-                    <img
+                    <Image
                       src={slide.thumbnail}
                       alt={slide.subName}
-                      loading="lazy"
+                      width={450}
+                      height={300}
                       className=" mb-2   w-auto mx-auto  "
                     />
 
@@ -167,10 +169,11 @@ const ModalSidePannel = ({
                         : "hover:bg-primaryRed"
                     }  hover:text-white`}
                   >
-                    <img
+                    <Image
                       src={slide.thumbnail}
                       alt={slide.subName}
-                      loading="lazy"
+                      width={450}
+                      height={300}
                       className=" mb-2   w-auto mx-auto  "
                     />
 

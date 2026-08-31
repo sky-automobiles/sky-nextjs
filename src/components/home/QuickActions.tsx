@@ -207,7 +207,7 @@ const QuickActions: React.FC<QuickActionsProps> = ({ isHeading }) => {
                       ? "hover:text-primaryBlue"
                       : "hover:text-primaryRed"
                   }`}
-                  aria-label="TrueValue - Buy A Car Now"
+                  aria-label="TrueValue - Sell A Car Now"
                 >
                    Sell Your Car Now
                 </button>{" "}

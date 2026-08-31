@@ -12,6 +12,7 @@ import { FiRefreshCcw, FiSearch } from 'react-icons/fi';
 import { useDataContext } from '@/context/index2';
 import { ImSpinner } from 'react-icons/im';
 import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const EnqTable = ({
   data,
@@ -293,20 +294,23 @@ const EnqTable = ({
       <MaterialReactTable table={table} />
 
       <div className='flex flex-col items-center justify-between  md:flex-row  pt-1'>
-        <p className='text-xs'>© 2024 Sky Automobiles All Rights Reserved.</p>
+        <p className='text-xs'>© {new Date().getFullYear()} Sky Automobiles All Rights Reserved.</p>
         <div className='flex items-center gap-2 text-xs lg:gap-4'>
           Powered by
           <a
-            // href='https://www.broaddcast.com'
+             href='https://www.broaddcast.com'
             target='_blank'
             rel='noopener noreferrer'
             className='text-white'
             aria-label='Broaddcast'
           >
-            <img
+            <Image
               src='/images/logo-white.svg'
               alt='Broaddcast Logo'
+              width={49}
+              height={17}
               className='h-8 -ml-2'
+              style={{ width: 'auto' }}
             />
           </a>
         </div>

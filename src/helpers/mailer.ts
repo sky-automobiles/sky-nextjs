@@ -12,16 +12,13 @@ export const sendEmail = async ({ subject, to, text, phone }: any) => {
       },
     });
 
-    transporter.verify(function (error, success) {
-      if (error) {
-        console.error("Error connecting to email server:", error);
-        return {
-          status: false,
-          message: "Failed to connect to email server",
-        };
-      }
+    try {
+      await transporter.verify();
       console.log("Server is ready to send emails");
-    });
+    } catch (error) {
+      console.error("Error connecting to email server:", error);
+      return { status: false, message: "Failed to connect to email server" };
+    }
 
     const mailOptions = {
       from: `Sky Automibiles <${process.env.GMAIL_USER}>`,
@@ -30,15 +27,14 @@ export const sendEmail = async ({ subject, to, text, phone }: any) => {
       html: `${text}`,
     };
 
-     transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.error("Error sending email:", error);
-        return { status: false, message: "Failed to send email" };
-      }
+    try {
+      const info = await transporter.sendMail(mailOptions);
       console.log("Email sent:", info.response);
       return { status: true, message: "Email sent successfully" };
-    });
-    // return { status: true, message: "Email sent successfully" };
+    } catch (error) {
+      console.error("Error sending email:", error);
+      return { status: false, message: "Failed to send email" };
+    }
   } catch (err: any) {
     console.error("Error sending email:", err);
     throw new Error(err.message);

@@ -80,10 +80,14 @@ const Login: React.FC = () => {
             alt="Login illustration"
             className="absolute top-0 left-0 m-2" 
           />*/}
-          <img
+          <Image
             src="https://www.truid.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftruid-usecases.90d0a50f.gif&w=828&q=75"
             alt="Login illustration"
+            width={828}
+            height={828}
+            unoptimized
             className="h-3/4"
+            style={{ width: 'auto' }}
           />
         </div>
 

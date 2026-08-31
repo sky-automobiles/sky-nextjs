@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useAppContext } from "@/context";
 import { models } from "@/constants";
+import Image from "next/image";
 
 interface SlideProps {
   selected: string;
@@ -96,12 +97,15 @@ const RangeSlider: React.FC<SlideProps> = ({ selected }) => {
                     : "hover:bg-primaryRed"
                 }`}
               >
-                <img
+                <Image
                   src={slide.thumbnail}
                   alt={slide.subName}
+                  width={450}
+                  height={300}
                   className={`scale-x-[-1] mb-4 px-2 lg:px-0  mx-auto ${
                     selected === "Nexa" ? "max-w-[290px]" : "max-w-[350px]"
                   }`}
+                  style={{ width: '100%', height: 'auto' }}
                 />
                 <h5 className="text-xl font-bold text-center uppercase group-hover:text-white lg:text-2xl lg:font-extrabold">
                   {slide.subName}

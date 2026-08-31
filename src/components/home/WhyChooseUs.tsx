@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import CountUp from "react-countup";
 
 const WhyChooseUs: React.FC = () => {
@@ -98,9 +99,11 @@ const WhyChooseUs: React.FC = () => {
             </p>
           </div>
           <div className="text-center">
-            <img
+            <Image
               src="/icons/network.svg"
               alt=" Expansive Network"
+              width={50}
+              height={50}
               className="mx-auto mb-4"
             />
             <h3

@@ -239,7 +239,7 @@ const ModalTestDrive: React.FC<ModalTestDriveProps> = ({
               </select>
             )}
 
-            {index ? (
+            {typeof index === 'number' ? (
               <select
                 name='outlet'
                 className={`w-full p-2 bg-transparent border-b-2   focus:outline-none ${
@@ -254,19 +254,19 @@ const ModalTestDrive: React.FC<ModalTestDriveProps> = ({
                 <option value='' disabled>
                   Select Outlet
                 </option>
-                {selectedState !== 'Odisha' && index < 9
+                {selectedState !== 'Odisha' && index < 10
                   ? cgOutlets[0].locations.map((outlet, i) => (
                       <option key={i} value={outlet.name}>
                         {outlet.name}
                       </option>
                     ))
-                  : selectedState !== 'Odisha' && index > 8
+                  : selectedState !== 'Odisha' && index > 9
                   ? cgOutlets[1].locations.map((outlet, i) => (
                       <option key={i} value={outlet.name}>
                         {outlet.name}
                       </option>
                     ))
-                  : selectedState === 'Odisha' && index > 8
+                  : selectedState === 'Odisha' && index > 9
                   ? odOutlets[1].locations.map((outlet, i) => (
                       <option key={i} value={outlet.name}>
                         {outlet.name}
@@ -313,7 +313,7 @@ const ModalTestDrive: React.FC<ModalTestDriveProps> = ({
                         {outlet.name}
                       </option>
                     ))}
-                    {odOutlets[0].locations.map((outlet, i) => (
+                    {odOutlets[1].locations.map((outlet, i) => (
                       <option key={i} value={outlet.name}>
                         {outlet.name}
                       </option>

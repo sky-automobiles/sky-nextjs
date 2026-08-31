@@ -239,9 +239,12 @@ const Finance: React.FC = () => {
               </div>
 
               <div>
-                <img
+                <Image
                   src={data?.colors[selectedColor].img}
                   alt={data?.colors[selectedColor].colName}
+                  width={600}
+                  height={400}
+                  style={{ width: '100%', height: 'auto' }}
                 />
                 <h5 className='mb-5 text-xl font-medium text-center'>
                   {data?.colors[selectedColor].colName}

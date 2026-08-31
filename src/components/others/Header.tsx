@@ -324,10 +324,11 @@ const Header = () => {
                             : "hover:bg-primaryRed"
                         }  hover:text-white`}
                       >
-                        <img
+                        <Image
                           src={slide.thumbnail}
                           alt={slide.subName}
-                          loading="lazy"
+                          width={450}
+                          height={300}
                           className=" mb-4  h-32 w-auto mx-auto  "
                         />
 
@@ -355,10 +356,11 @@ const Header = () => {
                       >
                         <div className="">
                           {" "}
-                          <img
+                          <Image
                             src={slide.thumbnail}
                             alt={slide.subName}
-                            loading="lazy"
+                            width={450}
+                            height={300}
                             className=" mb-4 px-2 h-36 w-auto mx-auto "
                           />
                         </div>
@@ -394,7 +396,7 @@ const Header = () => {
                     </Link>
                   </button> */}
                     <button
-                      aria-label="Buy Your Car Now"
+                      aria-label="Sell Your Car Now"
                       className={`flex items-center justify-between px-4 py-3 text-sm cursor-pointer min-w-28 rounded-full xl:w-full max-w-md ${
                         selectedState === "Odisha"
                           ? "hover:text-white hover:bg-primaryBlue text-primaryBlue border border-primaryBlue  "

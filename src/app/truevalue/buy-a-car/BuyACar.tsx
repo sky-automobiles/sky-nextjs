@@ -10,6 +10,7 @@ import { FaGear } from "react-icons/fa6";
 // import { GiGearStickPattern, GiTrafficLightsGreen } from "react-icons/gi";
 import { HiMiniMapPin } from "react-icons/hi2";
 import ModalBuyACar from "./ModalBuyACar";
+import Image from "next/image";
 
 // Sample car data
 const carData = [
@@ -213,10 +214,13 @@ const BuyACar: React.FC = () => {
                         : "hover:bg-primaryRed hover:text-white"
                     } `}
                   >
-                    <img
+                    <Image
                       src={car.image}
                       alt={car.name}
+                      width={800}
+                      height={600}
                       className="object-cover w-full rounded-lg max-h-[21rem] min-h-80 "
+                      style={{ width: '100%', height: 'auto' }}
                     />
                     <div className={`p-4 lg:py-6 rounded-b-lg  `}>
                       <h3

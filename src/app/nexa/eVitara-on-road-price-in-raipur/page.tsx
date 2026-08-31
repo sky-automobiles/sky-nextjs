@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "NEXA Ciaz On-Road Price Raipur | Luxury Sedan",
+  title: "Maruti Suzuki e-Vitara On-Road Price Raipur | Electric SUV",
   description:
-    "Check out the luxurious NEXA Ciaz sedan in Raipur. Discover its on-road price, premium features, and exclusive offers at NEXA Sky Automobiles Maruti Suzuki Raipur.",
+    "Discover the all-electric Maruti Suzuki e-Vitara in Raipur. Explore its on-road price, features, and exclusive offers at NEXA Sky Automobiles Maruti Suzuki Raipur.",
 };
 const eVitara: React.FC = () => {
   return (

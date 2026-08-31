@@ -119,10 +119,13 @@ const currentYear = new Date().getFullYear();
                         selectedState === 'Odisha' ? offer.linkOD : offer.linkCG
                       }
                     >
-                      <img
+                      <Image
                         src={offer.colors[0]?.img}
                         alt={offer.name}
+                        width={600}
+                        height={400}
                         className='object-cover w-full duration-200 scale-90 md:hover:scale-100 max-h-64 my-auto'
+                        style={{ width: '100%', height: 'auto' }}
                       />
                     </Link>
                   </div>

@@ -12,6 +12,7 @@ import { GiSpeedometer } from 'react-icons/gi';
 import { PiEngine } from 'react-icons/pi';
 import ModalTestDrive from '../home/ModalTestDrive';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
 import { FaSpinner } from 'react-icons/fa';
 import VictorisEnquiryModal, {
@@ -140,7 +141,7 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
           ...formData,
           state: selectedState,
           model: modelName,
-          channel: index > 8 ? 'Nexa' : 'Arena',
+          channel: index > 9 ? 'Nexa' : 'Arena',
         }),
       });
 
@@ -181,16 +182,28 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
   };
 
   useEffect(() => {
-    if (selectedState !== 'Chhattisgarh' && pathname !== data?.linkOD) {
-      // window.location.href = "/outlets/odisha-outlets";
+    // selectedState defaults to "Odisha" in context before the state-select
+    // popup has a chance to read the visitor's actual saved choice from
+    // sessionStorage. Reading it directly here avoids bouncing a visitor who
+    // followed a direct Raipur/Chhattisgarh link to the Bhubaneswar page
+    // before that hydration finishes. Skip the redirect entirely until we
+    // actually know what the visitor picked.
+    const storedState =
+      typeof window !== 'undefined'
+        ? sessionStorage.getItem('selectedState')
+        : null;
+    if (!storedState) return;
+
+    if (storedState !== 'Chhattisgarh' && pathname !== data?.linkOD) {
       router.push(data?.linkOD);
-      // console.log(pathname)
-    } else if (selectedState !== 'Odisha' && pathname !== data?.linkCG) {
-      // window.location.href = "/outlets/chhattisgarh-outlets";
+    } else if (storedState !== 'Odisha' && pathname !== data?.linkCG) {
       router.push(data?.linkCG);
-      // console.log(pathname)
     }
-  }, [selectedState]);
+    // Also re-run when the state-select popup closes (openSelectState flips
+    // to false) — selectedState alone won't change if the visitor picks the
+    // value that was already the default, so this dependency is needed to
+    // catch that case too.
+  }, [selectedState, openSelectState]);
 
   if (!data) return null;
 
@@ -311,9 +324,12 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
               </p>
             </div>
             <div>
-              <img
+              <Image
                 src={data?.colors[selectedColor].img}
                 alt={data?.colors[selectedColor].colName}
+                width={600}
+                height={400}
+                style={{ width: '100%', height: 'auto' }}
               />
               <h5 className='mb-5 text-xl font-medium text-center'>
                 {data?.colors[selectedColor].colName}
@@ -439,19 +455,19 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
                 <option value='' disabled>
                   Select Outlet
                 </option>
-                {selectedState !== 'Odisha' && index < 9
+                {selectedState !== 'Odisha' && index < 10
                   ? cgOutlets[0].locations.map((outlet, i) => (
                       <option key={i} value={outlet.name}>
                         {outlet.name}
                       </option>
                     ))
-                  : selectedState !== 'Odisha' && index > 8
+                  : selectedState !== 'Odisha' && index > 9
                   ? cgOutlets[1].locations.map((outlet, i) => (
                       <option key={i} value={outlet.name}>
                         {outlet.name}
                       </option>
                     ))
-                  : selectedState === 'Odisha' && index > 8
+                  : selectedState === 'Odisha' && index > 9
                   ? odOutlets[1].locations.map((outlet, i) => (
                       <option key={i} value={outlet.name}>
                         {outlet.name}
@@ -728,10 +744,13 @@ const VehicleDetailTemplate: React.FC<VehiceProps> = ({ index }) => {
                     : 'flex'
                 }`}
               >
-                <img
+                <Image
                   src={models?.[vehicle]?.thumbnail}
                   alt={models?.[vehicle]?.subName}
+                  width={400}
+                  height={300}
                   className='my-auto'
+                  style={{ width: '100%', height: 'auto' }}
                 />
                 <div className='p-4 text-center '>
                   {' '}

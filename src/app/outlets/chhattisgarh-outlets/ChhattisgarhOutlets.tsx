@@ -10,7 +10,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 const ChhattisgarhOutlets: React.FC = () => {
   const [filter, setFilter] = useState<string>("All");
-  const { selectedState } = useAppContext();
+  const { selectedState, openSelectState } = useAppContext();
   const pathname = usePathname();
   const router = useRouter();
   // Convert Set to array to avoid TypeScript iteration issue
@@ -30,15 +30,23 @@ const ChhattisgarhOutlets: React.FC = () => {
   );
 
   useEffect(() => {
+    // selectedState defaults to "Odisha" before the state-select popup has
+    // read the visitor's actual saved choice from sessionStorage. Reading it
+    // directly here avoids bouncing a visitor who followed a direct link to
+    // this Chhattisgarh page back to Odisha before that hydration finishes.
+    const storedState =
+      typeof window !== "undefined"
+        ? sessionStorage.getItem("selectedState")
+        : null;
+    if (!storedState) return;
+
     if (
-      selectedState !== "Chhattisgarh" &&
+      storedState !== "Chhattisgarh" &&
       pathname !== "/outlets/odisha-outlets"
     ) {
-      // window.location.href = "/outlets/odisha-outlets";
       router.push("/outlets/odisha-outlets");
-      // console.log(pathname)
     }
-  }, [selectedState]);
+  }, [selectedState, openSelectState]);
 
   return (
     <div>

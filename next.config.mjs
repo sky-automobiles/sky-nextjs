@@ -4,11 +4,41 @@ const isDev = process.env.NODE_ENV === 'development';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 
+  agentRules: false,
+
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'www.broaddcast.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.marutisuzuki.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.varunmaruti.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ik.imagekit.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images-saboomaruti-in.s3.ap-south-1.amazonaws.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.azureedge.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.truid.ai',
       },
     ],
   },
