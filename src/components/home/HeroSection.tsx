@@ -31,18 +31,18 @@ const HeroSection = () => {
     //   alt: 'diwali',
     //   link: '',
     // },
-    // {
-    //   desktop: '/images/other/banner3.jpg',
-    //   mobile: '/images/other/main_scng_mobile.webp',
-    //   alt: 'diwali',
-    //   link: '',
-    // },
-    // {
-    //   desktop: '/images/slider/other/sky_automobiles.webp',
-    //   mobile: '/images/other/main_swift_mobile.webp',
-    //   alt: 'Strong Hybrid',
-    //   link: '/arena/victoris-on-road-price-in-raipur',
-    // },
+    {
+      desktop: '/images/other/nexa_banner.webp',
+      mobile: '/images/other/sky_baleno.webp',
+      alt: 'diwali',
+      link: '/nexa/baleno-on-road-price-in-bhubaneswar',
+    },
+    {
+      desktop: '/images/slider/other/sky_automobiles.webp',
+      mobile: '/images/other/main_swift_mobile.webp',
+      alt: 'Strong Hybrid',
+      link: '/arena/victoris-on-road-price-in-raipur',
+    },
     {
       desktop: '/images/other/main_page_strong_hybrid.webp',
       mobile: '/images/other/main_strong_hybrid_mobile.webp',
