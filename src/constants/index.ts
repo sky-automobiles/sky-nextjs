@@ -8,7 +8,7 @@ export const models = [
   {
     name: ' Maruti VICTORIS',
     subName: 'VICTORIS',
-    offersAmount: 184979,
+    offersAmount: 180000,
     offersAdditionalDec: '',
     link: '/arena/victoris-on-road-price',
     linkCG: '/arena/victoris-on-road-price-in-raipur',
@@ -358,7 +358,7 @@ export const models = [
   {
     name: ' Maruti ALTO K10',
     subName: 'ALTO K10',
-    offersAmount: 42100,
+    offersAmount: 52100,
     offersAdditionalDec: '',
     link: '/arena/alto-k10-on-road-price',
     linkCG: '/arena/alto-k10-on-road-price-in-raipur',
@@ -541,7 +541,7 @@ export const models = [
   {
     name: 'Maruti Swift',
     subName: 'Swift',
-    offersAmount: 25000,
+    offersAmount: 40000,
     offersAdditionalDec: '',
     link: '/arena/swift-on-road-price',
     linkCG: '/arena/swift-on-road-price-in-raipur',
@@ -767,47 +767,47 @@ export const models = [
     linkOD: '/arena/brezza-on-road-price-in-bhubaneswar',
     offerValidTill: 'Jan 31, 2025',
     colors: [
-       {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/magma_gray.png',
-    colorCode: '#6D6D6D',
-    colName: 'Magma Grey',
-  },
-  {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Bluish_Black_4.png',
-    colorCode: '#0B0D16',
-    colName: 'Pearl Midnight Black',
-  },
-  {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Arctic_White.png',
-    colorCode: '#F7F7F7',
-    colName: 'Pearl Arctic White',
-  },
-  {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof.png',
-    colorCode: '#C51D28',
-    colName: 'Sizzling Red with Midnight Black Roof',
-  },
-  {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Arctic_White_with_Bluish_Black_4_Roof.png',
-    colorCode: '#F7F7F7',
-    colName: 'Pearl Arctic White with Midnight Black Roof',
-  },
-  {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Lustrous_Beige_with_Bluish_Black_4_roof.png',
-    colorCode: '#B59C7A',
-    colName: 'Brave Khaki with Midnight Black Roof',
-  },
-  {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Vivacious_Orange.png',
-    colorCode: '#E56A1B',
-    colName: 'Exuberant Blue',
-  },
-  {
-    img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Lustrous_Beige.png',
-    colorCode: '#C6C8CC',
-    colName: 'Splendid Silver',
-  }
-    
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/magma_gray.png',
+        colorCode: '#6D6D6D',
+        colName: 'Magma Grey',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Bluish_Black_4.png',
+        colorCode: '#0B0D16',
+        colName: 'Pearl Midnight Black',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Arctic_White.png',
+        colorCode: '#F7F7F7',
+        colName: 'Pearl Arctic White',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof.png',
+        colorCode: '#C51D28',
+        colName: 'Sizzling Red with Midnight Black Roof',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Arctic_White_with_Bluish_Black_4_Roof.png',
+        colorCode: '#F7F7F7',
+        colName: 'Pearl Arctic White with Midnight Black Roof',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Lustrous_Beige_with_Bluish_Black_4_roof.png',
+        colorCode: '#B59C7A',
+        colName: 'Brave Khaki with Midnight Black Roof',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Vivacious_Orange.png',
+        colorCode: '#E56A1B',
+        colName: 'Exuberant Blue',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Lustrous_Beige.png',
+        colorCode: '#C6C8CC',
+        colName: 'Splendid Silver',
+      }
+
     ],
     keySpecifications: [
       { label: 'Fuel Tank Capacity', value: '48 Litres' },
@@ -906,58 +906,58 @@ export const models = [
         value: '75.8 kW @ 6000 rpm',
       },
     ],
- variants: [
-  {
-    variant: 'BREZZA LXI TURBO',
-    price: 739900,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA LXI',
-    price: 829900,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA VXI TURBO',
-    price: 854900,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA VXI',
-    price: 925900,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA LXI CNG',
-    price: 929900,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA VXI CNG',
-    price: 999000,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA ZXI TURBO',
-    price: 999000,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA ZXI',
-    price: 1065500,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA ZXI+ TURBO',
-    price: 1131500,
-    transmission: 'Manual',
-  },
-  {
-    variant: 'BREZZA ZXI CNG',
-    price: 1165500,
-    transmission: 'Manual',
-  },
-],
+    variants: [
+      {
+        variant: 'BREZZA LXI TURBO',
+        price: 739900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA LXI',
+        price: 829900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA VXI TURBO',
+        price: 854900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA VXI',
+        price: 925900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA LXI CNG',
+        price: 929900,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA VXI CNG',
+        price: 999000,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA ZXI TURBO',
+        price: 999000,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA ZXI',
+        price: 1065500,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA ZXI+ TURBO',
+        price: 1131500,
+        transmission: 'Manual',
+      },
+      {
+        variant: 'BREZZA ZXI CNG',
+        price: 1165500,
+        transmission: 'Manual',
+      },
+    ],
 
     exploreMore: [4, 5, 6],
     thumbnail: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof-removebg-preview.png?updatedAt=1785243817685',
@@ -1154,7 +1154,7 @@ export const models = [
   {
     name: 'Maruti S-Presso',
     subName: 'S-Presso',
-    offersAmount: 27100,
+    offersAmount: 37100,
     offersAdditionalDec: '67500',
     link: '/arena/spresso-on-road-price',
     linkCG: '/arena/spresso-on-road-price-in-raipur',
@@ -1305,7 +1305,7 @@ export const models = [
   {
     name: 'Maruti WagonR',
     subName: 'WagonR',
-    offersAmount: 47100,
+    offersAmount: 52100,
     offersAdditionalDec: '',
     link: '/arena/wagon-r-on-road-price',
     linkCG: '/arena/wagon-r-on-road-price-in-raipur',
@@ -1703,7 +1703,7 @@ export const models = [
   {
     name: 'Maruti Celerio',
     subName: 'Celerio',
-    offersAmount: 27100,
+    offersAmount: 57100,
     offersAdditionalDec: '',
     link: '/arena/celerio-on-road-price',
     linkCG: '/arena/celerio-on-road-price-in-raipur',
@@ -1874,7 +1874,7 @@ export const models = [
   {
     name: 'Maruti Eeco',
     subName: 'Eeco',
-    offersAmount: 27100,
+    offersAmount: 37100,
     offersAdditionalDec: '',
     link: '/arena/eeco-on-road-price',
     linkCG: '/arena/eeco-on-road-price-in-raipur',
@@ -2198,7 +2198,7 @@ export const models = [
     name: 'Maruti Invicto',
     subName: 'Invicto',
     description: 'The League of Extraordinary',
-    offersAmount: 260000,
+    offersAmount: 50000,
     offersAdditionalDec: '+ MSSF Offer (Worth Rs. 100,000)',
     link: '/nexa/invicto-on-road-price',
     linkCG: '/nexa/invicto-on-road-price-in-raipur',
@@ -2324,7 +2324,7 @@ export const models = [
     name: 'Maruti Jimny',
     subName: 'Jimny',
     description: 'Crafted for Purity of Function',
-    offersAmount: 55000,
+    offersAmount: 40000,
     offersAdditionalDec: '+ 1.5 Lakh MSSF Offer',
     link: '/nexa/jimny-on-road-price',
     linkCG: '/nexa/jimny-on-road-price-in-raipur',
@@ -2481,7 +2481,7 @@ export const models = [
     name: 'Maruti Fronx',
     subName: 'Fronx',
     description: 'Created to Inspire Style and Performance.',
-    offersAmount: 25000,
+    offersAmount: 20000,
     offersAdditionalDec: '+ Velocity Kit worth 43K ',
     link: '/nexa/fronx-on-road-price',
     linkCG: '/nexa/fronx-on-road-price-in-raipur',
@@ -2653,7 +2653,7 @@ export const models = [
     name: 'Maruti Grand Vitara',
     subName: 'Grand Vitara',
     description: 'The League of Extraordinary',
-    offersAmount: 195000,
+    offersAmount: 200000,
     offersAdditionalDec: '+ Extended Warranty',
     link: '/nexa/grand-vitara-on-road-price',
     linkCG: '/nexa/grand-vitara-on-road-price-in-raipur',
@@ -2991,7 +2991,7 @@ export const models = [
     name: 'Maruti XL6',
     subName: 'XL6',
     description: 'Created to Inspire Indulgence.',
-    offersAmount: 50000,
+    offersAmount: 75000,
     offersAdditionalDec: '',
     link: '/nexa/xl6-on-road-price',
     linkCG: '/nexa/xl6-on-road-price-in-raipur',
@@ -3345,39 +3345,40 @@ export const models = [
     offerValidTill: 'Jan 31, 2025',
     colors: [
       {
-        img: '/images/car/nexa/baleno/CelestialBlue.webp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Nexa_Blue.png',
         colorCode: '#183f66',
         colName: 'NEXA Blue (Celestial)',
       },
       {
-        img: '/images/car/nexa/baleno/ArticWhite.webp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Arctic_White..png',
         colorCode: '#eeeff0',
         colName: 'Pearl Arctic White',
       },
       {
-        img: '/images/car/nexa/baleno/SplendidSilver.webp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Splendid_Silver.png',
         colorCode: '#afb3bb',
         colName: 'Splendid Silver',
       },
       {
-        img: '/images/car/nexa/baleno/GrandeurGrey.webp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Grandeur_Grey.png',
         colorCode: '#545454',
         colName: 'Grandeur Grey',
       },
       {
-        img: '/images/car/nexa/baleno/OpulantRed.webp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Opulent_Red.png',
         colorCode: '#a31326',
         colName: 'Opulent Red',
       },
+
       {
-        img: '/images/car/nexa/baleno/LuxeBeige.webp',
-        colorCode: '#68482f',
-        colName: 'Luxe Beige',
-      },
-      {
-        img: '/images/car/nexa/baleno/Desktop_BluishBlack_810x411 webp.webp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Bluish_Black.png',
         colorCode: '#393d4c',
         colName: 'Bluish Black',
+      },
+      {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Enigmatic_Teal_Green.png',
+        colorCode: '#069494',
+        colName: 'Enigmatic Teal Green',
       },
     ],
     keySpecifications: [
@@ -3385,73 +3386,60 @@ export const models = [
       { label: 'Seating Capacity', value: '5' },
       { label: 'Length', value: '3990 mm' },
       { label: 'Width', value: '1745 mm' },
-      { label: 'Height', value: '1500 mm' },
-      { label: 'Front Suspension', value: 'Independent, McPherson Strut' },
+      { label: 'Height', value: '1530 mm' },
+      { label: 'Front Suspension', value: 'MacPherson Strut' },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
-      { label: 'Fuel Type', value: 'Petrol/Diesel' },
-      { label: 'No. of Cylinders', value: '4' },
-      { label: 'Max Torque', value: '113 Nm @ 4400 rpm' },
-      { label: 'Transmission Type', value: 'Manual/Automatic' },
+      { label: 'Fuel Type', value: 'Petrol / CNG' },
+      { label: 'No. of Cylinders', value: '3' },
+      { label: 'Max Torque', value: '112.4 Nm @ 4500 rpm' },
+      { label: 'Transmission Type', value: '5MT / 5AMT' },
       { label: 'Body Type', value: 'Hatchback' },
       { label: 'Wheel Base', value: '2520 mm' },
-      { label: 'Gearbox', value: '5-Speed/Auto' },
+      { label: 'Gearbox', value: '5-Speed Manual / 5-Speed AMT' },
     ],
     exterior: [
       {
-        img: '/images/car/nexa/baleno/front-view-118.avif',
-        title: ' Baleno Front View',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/antena.jpg',
+        title: ' Baleno antena',
       },
       {
-        img: '/images/car/nexa/baleno/rear-view-119.webp',
-        title: 'Maruti Baleno Rear view',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/fog_lamp.jpg',
+        title: 'Maruti Baleno Fog lamp',
       },
       {
-        img: '/images/car/nexa/baleno/headlight-43.webp',
-        title: 'Maruti Baleno Headlight',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/next_wavegrill.jpg',
+        title: 'Maruti Baleno Next wavegrill',
       },
       {
-        img: '/images/car/nexa/baleno/taillight-44.webp',
-        title: 'Maruti Baleno Taillight',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/Chrome_fender_garnish.jpg',
+        title: 'Maruti Baleno Chrome fender garnish',
       },
-      {
-        img: '/images/car/nexa/baleno/wheel-42.webp',
-        title: 'Maruti Baleno Wheel',
-      },
+
     ],
 
     interior: [
       {
-        img: '/images/car/nexa/baleno/Boot-space.webp',
-        title: 'Boot Space with 60:40 Rear Split',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/ventilated_seats.jpgp',
+        title: 'Ventilated Seats',
       },
       {
-        img: '/images/car/nexa/baleno/Anti-pinch.webp',
-        title: 'Anti-Pinch Window',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/auto_climate)control.jpg',
+        title: 'Auto Climate Control',
       },
       {
-        img: '/images/car/nexa/baleno/UV-cut-Glasses_new.webp',
-        title: 'UV Cut Glass',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/ac_vents.jpg',
+        title: 'AC Vents',
       },
       {
-        img: '/images/car/nexa/baleno/bottle-holder.webp',
-        title: 'Bottle Holder',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/seat_upholestry.jpg',
+        title: 'Seat Upholestry',
       },
       {
-        img: '/images/car/nexa/baleno/technology-1080x420-HUD.webp',
-        title: 'HEAD UP DISPLAY',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/wireless_charging2.jpg',
+        title: 'Wireless Charging',
       },
-      {
-        img: '/images/car/nexa/baleno/technology-1080x420-360-CAMERA-VIEW.webp',
-        title: '360 VIEW CAMERA',
-      },
-      {
-        img: '/images/car/nexa/baleno/technology-1080x420-apple-carplay.webp',
-        title: '22.86 CM HD SMARTPLAY PRO+',
-      },
-      {
-        img: '/images/car/nexa/baleno/technology-1080x420-suzuki-connect.webp',
-        title: 'NEXT GENERATION SUZUKI CONNECT',
-      },
+
+
       // {
       //   img: "https://nexaprod2.azureedge.net/-/media/feature/nexawebsitecarbrand/baleno/newbranddetails/img2.webp",
       //   title: "6 AIRBAGS",
@@ -3459,37 +3447,36 @@ export const models = [
     ],
     carDetails: [
       { label: 'Engine', value: '1197 cc' },
-      { label: 'Mileage', value: '22.35 kmpl' },
-      { label: 'Power', value: '77.5 kW @ 6000 rpm' },
+      { label: 'Mileage', value: '33.61 km/kg (MT)' },
+      { label: 'Power', value: '61 kW @ 5700 rpm (Petrol) / 51.3 kW @ 5700 rpm (CNG)' },
     ],
     variants: [
       {
-        variant: 'Baleno P AGS ALPHA',
+        variant: 'Sigma MT ',
         price: 911070,
-        transmission: 'Automatic',
+        transmission: 'Manual',
       },
       {
-        variant: 'Baleno P AGS ZETA',
+        variant: 'Delta MT',
         price: 824171,
-        transmission: 'Automatic',
+        transmission: 'Manual',
       },
       {
-        variant: 'Baleno P AGS DELTA',
+        variant: 'Zeta MT',
         price: 739101,
-        transmission: 'Automatic',
+        transmission: 'Manual',
       },
 
-      { variant: 'Baleno P MT ALPHA', price: 865333, transmission: 'Manual' },
-      { variant: 'Baleno P MT ZETA', price: 778434, transmission: 'Manual' },
-      { variant: 'Baleno P MT DELTA', price: 693364, transmission: 'Manual' },
-      { variant: 'Baleno P MT SIGMA', price: 616527, transmission: 'Manual' },
+      { variant: 'Alpha MT ', price: 865333, transmission: 'Manual' },
+      { variant: 'Alpha (O) MT', price: 778434, transmission: 'Manual' },
+      { variant: 'Delta CNG ', price: 693364, transmission: 'Manual' },
+      { variant: 'Zeta CNG MT ', price: 616527, transmission: 'Manual' },
 
-      { variant: 'Baleno CNG MT ZETA', price: 860760, transmission: 'Manual' },
-      { variant: 'Baleno CNG MT DELTA', price: 775690, transmission: 'Manual' },
+      
     ],
 
     exploreMore: [17, 9, 10],
-    thumbnail: '/thumbnail/Baleno.webp',
+    thumbnail: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/colors/Nexa_Blue.png?updatedAt=1788949385959',
     priceRange: '₹ 6.16 - 9.11 Lakh *',
     brochure:
       'https://ik.imagekit.io/echsclffk5/Sky-automobiles/NEXA-Baleno-Brochure.pdf',
