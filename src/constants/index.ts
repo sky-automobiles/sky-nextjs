@@ -3419,7 +3419,7 @@ export const models = [
 
     interior: [
       {
-        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/ventilated_seats.jpgp',
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/ventilated_seats.jpg?updatedAt=1788950196380',
         title: 'Ventilated Seats',
       },
       {
