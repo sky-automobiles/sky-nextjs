@@ -8,7 +8,7 @@ export const models = [
   {
     name: ' Maruti VICTORIS',
     subName: 'VICTORIS',
-    offersAmount: 180000,
+    offersAmount: 185000,
     offersAdditionalDec: '',
     link: '/arena/victoris-on-road-price',
     linkCG: '/arena/victoris-on-road-price-in-raipur',
@@ -767,11 +767,16 @@ export const models = [
     linkOD: '/arena/brezza-on-road-price-in-bhubaneswar',
     offerValidTill: 'Jan 31, 2025',
     colors: [
-      {
-        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/magma_gray.png',
-        colorCode: '#6D6D6D',
-        colName: 'Magma Grey',
+       {
+        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof-removebg-preview.png?updatedAt=1785243817685',
+        colorCode: '#C51D28',
+        colName: 'Sizzling Red with Midnight Black Roof',
       },
+      //  {
+      //   img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/magma_gray.png',
+      //   colorCode: '#6D6D6D',
+      //   colName: 'Magma Grey',
+      // },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Bluish_Black_4.png',
         colorCode: '#0B0D16',
@@ -782,11 +787,7 @@ export const models = [
         colorCode: '#F7F7F7',
         colName: 'Pearl Arctic White',
       },
-      {
-        img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Sizzling_Red_with_Bluish_Black_4roof.png',
-        colorCode: '#C51D28',
-        colName: 'Sizzling Red with Midnight Black Roof',
-      },
+    
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/colors/Pearl_Arctic_White_with_Bluish_Black_4_Roof.png',
         colorCode: '#F7F7F7',
@@ -1703,7 +1704,7 @@ export const models = [
   {
     name: 'Maruti Celerio',
     subName: 'Celerio',
-    offersAmount: 57100,
+    offersAmount: 62100,
     offersAdditionalDec: '',
     link: '/arena/celerio-on-road-price',
     linkCG: '/arena/celerio-on-road-price-in-raipur',
