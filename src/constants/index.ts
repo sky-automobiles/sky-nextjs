@@ -73,15 +73,15 @@ export const models = [
       {
         label: 'Engine Options',
         value:
-          '1.5 L K15C Mild-Hybrid petrol; Strong Hybrid (1.5 L petrol + electric motor); Petrol + CNG',
+          '1.5 L K15C Smart Hybrid petrol (1462 cc); 1.5 L M15D Strong Hybrid (1490 cc, e-CVT); 1.5 L K15C Petrol + CNG (1462 cc)',
       },
       {
         label: 'Max Power',
-        value: 'Petrol: ~103 PS; Hybrid: ~92 PS; CNG: ~88 PS',
+        value: 'Smart Hybrid Petrol: 75.8 kW (103.06 PS) @ 6000 rpm; Strong Hybrid: 68 kW (92.45 PS); CNG mode: 64.6 kW (87.8 PS)',
       },
       {
         label: 'Max Torque',
-        value: 'Petrol: ~139 Nm; Hybrid: ~122 Nm; CNG: ~121 Nm',
+        value: 'Smart Hybrid Petrol: 139 Nm @ 4300 rpm; Strong Hybrid: 122 Nm; CNG mode: 121.5 Nm @ 4200 rpm',
       },
       {
         label: 'Transmission Type',
@@ -98,7 +98,7 @@ export const models = [
       {
         label: 'Mileage',
         value:
-          'Petrol MT: ~21.18 km/l • Petrol AT: ~21.06 km/l • AWD AT: ~19.07 km/l • CNG: ~27.02 km/kg • Strong Hybrid: ~28.65 km/l',
+          'Petrol MT: 21.18 km/l • Petrol AT: 21.06 km/l • AllGrip AT: 19.07 km/l • CNG: 27.02 km/kg • Strong Hybrid: 28.65 km/l',
       },
       { label: 'Body Type', value: 'Compact/Midsize SUV' },
     ],
@@ -106,19 +106,19 @@ export const models = [
     exterior: [
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:d86f22ee-c205-4548-b276-416217f3a27f/as/Desktop-Wrap-around-design.jpg',
-        title: 'Honeycomb Grille',
+        title: 'Wrap-Around Design',
       },
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:2bb0c9c5-82cd-48c6-87af-21fedf9c2ce8/as/Desktop-Bold-cut-LED-DRLs-and-Headlamps.jpg',
-        title: 'Peppy Headlamps',
+        title: 'Bold-Cut LED DRLs and Headlamps',
       },
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:3669bada-c0d8-49ec-bd7f-b7829a2de19c/as/Desktop-Segmented-Rear-LED-Tail-Lamps.jpg',
-        title: 'Trendy Rear Combination Lamps',
+        title: 'Segmented Rear LED Tail Lamps',
       },
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:c7e44898-2687-4d72-a63b-4d23000abf83/as/Desktop-R17-Alloy-Wheels.jpg',
-        title: "13''(33.02cm) Wheels with Honeycomb-Themed Covers",
+        title: 'Aero Cut Alloy Wheels',
       },
       // {
       //   img: '/images/car/arena/altok10/exterior_web_05.webp',
@@ -132,23 +132,23 @@ export const models = [
     interior: [
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:3884ba73-886c-462c-a7c4-06b6f49c7c30/as/Desktop-Dual-Tone-Interior---Seat.jpg',
-        title: 'Lively and Spacious Interior',
+        title: 'Dual Tone Interiors',
       },
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:4d63d730-bb9d-4466-b4dc-ce3c1b49c444/as/Desktop-Panoramic-Sunroof.jpg',
-        title: 'Smartplay Studio with Smartphone Navigation',
+        title: 'Panoramic Sunroof',
       },
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:e95c892c-ab85-4326-800e-44e8a38ae73c/as/Desktop-64-Color-Ambient-Lighting.jpg',
-        title: 'Steering-Mounted Audio and Voice Control',
+        title: '64-Colour Ambient Lighting',
       },
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:80c0f5df-897b-45d1-87c4-e91eb53a8ace/as/Desktop-3-Layered-Dashboard.jpg',
-        title: 'Auto Gear Shift Technology',
+        title: 'Three-Layer Dashboard',
       },
       {
         img: 'https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:d0e2f309-d9aa-4772-b62b-76a606334db1/as/Desktop-10-25-Digital-MID.jpg',
-        title: '1st in Segment 4 Speakers',
+        title: '26.03 cm (10.25") Digital Multi-Information Display',
       },
       // {
       //   img: "",
@@ -402,7 +402,7 @@ export const models = [
       },
     ],
     keySpecifications: [
-      { label: 'Fuel Tank Capacity', value: '55 Litres' },
+      { label: 'Fuel Tank Capacity', value: '27 Litres' },
       { label: 'Seating Capacity', value: '4, 5' },
       { label: 'Length', value: '3530 mm' },
       { label: 'Width', value: '1490 mm' },
@@ -414,8 +414,14 @@ export const models = [
       { label: 'Rear Suspension', value: 'Torsion Beam with Coil Spring' },
       { label: 'Fuel Type', value: 'Petrol, CNG' },
       { label: 'No. of Cylinders', value: '3' },
-      { label: 'Max Torque', value: '82.1Nm@3400rpm' },
-      { label: 'Transmission Type', value: 'Manual' },
+      { label: 'Engine', value: '998 cc, 1.0L K10C Dual Jet, Dual VVT' },
+      { label: 'Max Power', value: '50.4 kW @ 5600 rpm' },
+      { label: 'Max Torque', value: '89 Nm' },
+      { label: 'Transmission Type', value: 'Manual & AGS (Auto Gear Shift)' },
+      {
+        label: 'Mileage',
+        value: 'Petrol MT: 24.39 km/l • Petrol AGS: 24.90 km/l • CNG: 33.40 km/kg',
+      },
       { label: 'Body Type', value: 'Hatchback' },
       { label: 'Wheel Base', value: '2380 mm' },
       { label: 'Gearbox', value: '5-Speed' },
@@ -450,7 +456,7 @@ export const models = [
     interior: [
       {
         img: '/images/car/arena/altok10/Interior_web_1.webp',
-        title: 'Lively and Spacious Interior',
+        title: 'Lively and Smart Interiors',
       },
       {
         img: '/images/car/arena/altok10/Interior_web_2.webp',
@@ -487,7 +493,7 @@ export const models = [
       {
         // icon: <PiEngine className="text-4xl" />,
         label: 'Power',
-        value: '49 kW @ 5500 rpm',
+        value: '50.4 kW @ 5600 rpm',
       },
     ],
     variants: [
@@ -605,10 +611,10 @@ export const models = [
         value: 'MacPherson Strut ',
       },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
-      { label: 'Fuel Type', value: 'Petrol' },
+      { label: 'Fuel Type', value: 'Petrol, Petrol + CNG' },
       { label: 'No. of Cylinders', value: '3' },
       { label: 'Max Torque', value: '111.7 Nm @ 4300 rpm' },
-      { label: 'Transmission Type', value: 'Manual' },
+      { label: 'Transmission Type', value: 'Manual & AGS (Auto Gear Shift)' },
       { label: 'Body Type', value: 'Hatchback' },
       { label: 'Wheel Base', value: '2450 mm' },
       { label: 'Gearbox', value: '5-Speed' },
@@ -617,23 +623,23 @@ export const models = [
     exterior: [
       {
         img: '/images/slider/swift/ex-2.webp',
-        title: '',
+        title: 'Glossy Black Grille',
       },
       {
         img: '/images/slider/swift/ex-3.webp',
-        title: '',
+        title: 'Precision Cut Dual-Tone Alloy Wheels',
       },
       {
         img: '/images/slider/swift/ex-4.webp',
-        title: '',
+        title: 'Smokey Projector Headlamps with LED DRLs',
       },
       {
         img: '/images/slider/swift/ex-5.webp',
-        title: '',
+        title: 'C-Shaped LED Tail Lamps',
       },
       {
         img: '/images/slider/swift/ex-6.webp',
-        title: '',
+        title: 'Electrically Adjustable and Foldable ORVMs',
       },
       // {
       //   img: "",
@@ -643,23 +649,23 @@ export const models = [
     interior: [
       {
         img: '/images/slider/swift/in-1.webp',
-        title: '',
+        title: 'Driver-Oriented Cockpit',
       },
       {
         img: '/images/slider/swift/in-2.webp',
-        title: '',
+        title: 'Steering-Mounted Controls',
       },
       {
         img: '/images/slider/swift/in-4.webp',
-        title: '',
+        title: 'Multi-Information Display',
       },
       {
         img: '/images/slider/swift/in-5.webp',
-        title: '',
+        title: '60:40 Rear Split Seats',
       },
       {
         img: '/images/slider/swift/in-7.webp',
-        title: '',
+        title: 'Auto Climate Control',
       },
     ],
     carDetails: [
@@ -811,7 +817,7 @@ export const models = [
 
     ],
     keySpecifications: [
-      { label: 'Fuel Tank Capacity', value: '48 Litres' },
+      { label: 'Fuel Tank Capacity', value: '48 Litres (Petrol); CNG: 55 L (water equivalent)' },
       { label: 'Seating Capacity', value: '5' },
       { label: 'Length', value: '3995 mm' },
       { label: 'Width', value: '1790 mm' },
@@ -822,42 +828,61 @@ export const models = [
       },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
       { label: 'Fuel Type', value: 'Petrol/CNG' },
-      { label: 'No. of Cylinders', value: '3' },
-      { label: 'Max Torque', value: '136.8 Nm @ 4400 rpm' },
+      {
+        label: 'Engine Options',
+        value:
+          '1.0L K10C DiTC Turbo Boosterjet Smart Hybrid (998 cc); 1.5L K15C Smart Hybrid (1462 cc); 1.5L K15C Petrol + CNG (1462 cc)',
+      },
+      {
+        label: 'Max Power',
+        value:
+          'Turbo: 81 kW (110.12 PS) @ 5500 rpm; K15C: 75.8 kW (103.05 PS) @ 6000 rpm; CNG mode: 64.6 kW (87.8 PS) @ 5500 rpm',
+      },
+      {
+        label: 'Max Torque',
+        value:
+          'Turbo: 170 Nm @ 2000-3500 rpm; K15C: 139 Nm @ 4400 rpm; CNG mode: 121.5 Nm @ 4200 rpm',
+      },
       { label: 'Transmission Type', value: 'Manual & Automatic' },
-      { label: 'Body Type', value: 'SUVS' },
+      { label: 'Body Type', value: 'SUV' },
       { label: 'Wheel Base', value: '2500 mm' },
-      { label: 'Gearbox', value: '-Speed' },
+      { label: 'Gearbox', value: '6-Speed MT / 6-Speed AT' },
+      { label: 'Tyre Size', value: '215/60 R16' },
+      {
+        label: 'Mileage',
+        value:
+          'Turbo LXi/VXi: 20.47 km/l • Turbo ZXi/ZXi+: 19.96 km/l • K15C LXi/VXi MT: 21.09 km/l • K15C ZXi MT: 20.81 km/l • AT: 20.17 km/l • CNG: 26.90 km/kg',
+      },
     ],
 
     exterior: [
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-headlights.avif',
-        title: 'Dual LED Projector Headlamps with LED DRLs',
+        title: 'Dual LED Projector Headlamps with Floating LED DRLs',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-sunroof.avif',
-        title: 'LED Tail Lamps',
+        title: 'Electric Sunroof',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-alloy-wheel.avif',
-        title: 'Precision-Cut Dual-Tone Alloy Wheels',
+        title: 'New Precision-Cut Alloy Wheels',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-cladding.avif',
-        title: 'Shark Fin Antenna',
+        title: 'Rugged Dual-Tone Side Cladding',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/bt-Rear---Turbo-Black-Desktop-1.avif',
-        title: 'Bold LED Rear Combination Lamps',
+        title: 'Turbo Boosterjet Rear Badging',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/TB-dual-tone.avif',
-        title: 'Dual-Tone Exterior with Black Roof',
+        title: 'Striking Dual-Tone Exterior',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/brezza/bt-Grille-2.avif',
-        title: 'Bold Chrome Front Grille',
+        title: 'Bold New Smoke Chrome Front Grille',
       },
       // {
       //   img: "",
@@ -867,11 +892,11 @@ export const models = [
     interior: [
       {
         img: '/images/car/arena/brezza/Interior_web_01.webp',
-        title: 'Interior Ambient Lighting',
+        title: '64-Colour Ambient Lighting',
       },
       {
         img: '/images/car/arena/brezza/Interior_web_02.webp',
-        title: 'Black and Brown Interiors',
+        title: 'Dual-Tone Dark Brown and Black Interiors',
       },
       {
         img: '/images/car/arena/brezza/Interior_web_03.webp',
@@ -894,17 +919,17 @@ export const models = [
       {
         // icon: <GiSpeedometer className="text-4xl" />,
         label: 'Engine',
-        value: '1462 cc',
+        value: '998 cc Turbo / 1462 cc',
       },
       {
         // icon: <BsFuelPump className="text-4xl" />,
         label: 'Mileage',
-        value: '20.15 kmpl',
+        value: 'Up to 21.09 kmpl',
       },
       {
         // icon: <PiEngine className="text-4xl" />,
         label: 'Power',
-        value: '75.8 kW @ 6000 rpm',
+        value: 'Up to 81 kW (110.12 PS) @ 5500 rpm',
       },
     ],
     variants: [
@@ -1024,42 +1049,42 @@ export const models = [
       { label: 'Seating Capacity', value: '5' },
       { label: 'Length', value: '3995 mm' },
       { label: 'Width', value: '1735 mm' },
-      { label: 'Height', value: '1555 mm' },
+      { label: 'Height', value: '1525 mm' },
       { label: 'Front Suspension', value: 'MacPherson Strut' },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
       { label: 'Fuel Type', value: 'Petrol/CNG' },
       { label: 'No. of Cylinders', value: '4' },
-      { label: 'Max Torque', value: '113 Nm @ 4200 rpm' },
+      { label: 'Max Torque', value: '112.4 Nm @ 4500 rpm' },
       { label: 'Transmission Type', value: 'Manual & Automatic' },
       { label: 'Body Type', value: 'Sedan' },
       { label: 'Wheel Base', value: '2450 mm' },
-      { label: 'Gearbox', value: '5-Speed' },
+      { label: 'Gearbox', value: '5-Speed MT / 5-Speed AGS' },
     ],
 
     exterior: [
       {
         img: '/images/car/arena/dzire/Auto-folld-93.avif',
-        title: 'Auto-Foldable ORVMs',
+        title: 'Auto-Foldable ORVMs with Turn Indicators',
       },
       {
         img: '/images/car/arena/dzire/grille-97.avif',
-        title: ' Premium Single Aperture Grille For Striking Appearance',
+        title: 'Bold Front Fascia with Chrome Finish Grille',
       },
       {
         img: '/images/car/arena/dzire/fog-lamp-41.avif',
-        title: '  Fog Lamps With Bold Chrome Accents',
+        title: 'Clarity Vision LED Fog Lamps',
       },
       {
         img: '/images/car/arena/dzire/taillight-44.avif',
-        title: 'Precision-Cut Two-Tone Alloy Wheels',
+        title: '3D Trinity LED Rear Lamps',
       },
       {
         img: '/images/car/arena/dzire/headlight-43.avif',
-        title: 'LED Projector Headlamps & DRLs',
+        title: 'LED Crystal Vision Headlamps',
       },
       {
         img: '/images/car/arena/dzire/antenna-80.avif',
-        title: '',
+        title: 'Shark-Fin Antenna',
       },
       // {
       //   img: "",
@@ -1069,28 +1094,28 @@ export const models = [
     interior: [
       {
         img: '/images/car/arena/dzire/dashboard-59.avif',
-        title: 'Coloured Multi-Information Display',
+        title: 'Dual-Tone Sophisticated Interiors',
       },
       {
         img: '/images/car/arena/dzire/sun-roof-moon-roof-81.avif',
-        title: 'Premium Trims with Champagne Accents',
+        title: 'Electric Sunroof',
       },
       {
         img: '/images/car/arena/dzire/parking-camera-display-136.avif',
-        title: 'Exclusive Wood Finish With Natural Gloss Effect',
+        title: '360° HD View Camera',
       },
       {
         img: '/images/car/arena/dzire/rear-air-vents-86.avif',
-        title: 'Rear AC Vent',
+        title: 'Rear AC Vents',
       },
       {
         img: '/images/car/arena/dzire/wireless-charging-pad-206.avif',
-        title: 'Rear Armrest with Cupholder',
+        title: 'Wireless Charger',
       },
 
       {
         img: '/images/car/arena/dzire/airbags-94.avif',
-        title: 'Coloured Multi-Information Display',
+        title: '6 Airbags as Standard',
       },
       // {
       //   img: "",
@@ -1099,8 +1124,8 @@ export const models = [
     ],
     carDetails: [
       { label: 'Engine', value: '1197 cc' },
-      { label: 'Mileage', value: '33.73 kmpl' },
-      { label: 'Power', value: '66.7 kW @ 6000 rpm' },
+      { label: 'Mileage', value: '25.15 kmpl' },
+      { label: 'Power', value: '61 kW @ 5700 rpm' },
     ],
     variants: [
       {
@@ -1201,18 +1226,18 @@ export const models = [
     keySpecifications: [
       { label: 'Fuel Tank Capacity', value: '27 Litres' },
       { label: 'Seating Capacity', value: '5' },
-      { label: 'Length', value: '3445 mm' },
-      { label: 'Width', value: '1495 mm' },
-      { label: 'Height', value: '1495 mm' },
+      { label: 'Length', value: '3565 mm' },
+      { label: 'Width', value: '1520 mm' },
+      { label: 'Height', value: '1567 mm' },
       { label: 'Front Suspension', value: 'MacPherson Strut' },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
       { label: 'Fuel Type', value: 'Petrol/CNG' },
       { label: 'No. of Cylinders', value: '3' },
-      { label: 'Max Torque', value: '90 Nm @ 3500 rpm' },
-      { label: 'Transmission Type', value: 'Manual' },
+      { label: 'Max Torque', value: '89 Nm @ 3500 rpm' },
+      { label: 'Transmission Type', value: 'Manual & Automatic' },
       { label: 'Body Type', value: 'Hatchback' },
-      { label: 'Wheel Base', value: '2360 mm' },
-      { label: 'Gearbox', value: '5-Speed' },
+      { label: 'Wheel Base', value: '2380 mm' },
+      { label: 'Gearbox', value: '5-Speed MT / 5-Speed AGS' },
     ],
 
     exterior: [
@@ -1238,29 +1263,29 @@ export const models = [
       },
       {
         img: '/images/car/arena/spresso/exterior_web_03.webp',
-        title: "Squarish Wheel Arches with 14'' Tyres",
-      },
-      {
-        img: '/images/car/arena/spresso/exterior_web_04.webp',
         title: 'Electrically Adjustable Body Coloured ORVMs',
       },
       {
-        img: '/images/car/arena/spresso/exterior_web_05.webp',
+        img: '/images/car/arena/spresso/exterior_web_04.webp',
         title: 'SUV-Inspired Bold Front Fascia',
+      },
+      {
+        img: '/images/car/arena/spresso/exterior_web_05.webp',
+        title: "Squarish Wheel Arches with 14'' Tyres",
       },
     ],
     interior: [
       {
         img: '/images/car/arena/spresso/Interior_web_01 (1).webp',
-        title: 'Best-in-its-Class Rear Legroom',
+        title: 'Large Cabin Space and Best-in-Class Rear Legroom',
       },
       {
         img: '/images/car/arena/spresso/Interior_web_02 (1).webp',
-        title: 'Wide and Spacious Boot',
+        title: 'Wide and Spacious 239 L Boot',
       },
       {
         img: '/images/car/arena/spresso/Interior_web_03 (1).webp',
-        title: 'Higher Seating for a Commanding Position',
+        title: 'Dynamic Centre Console with SmartPlay Studio',
       },
       {
         img: '/images/car/arena/spresso/Interior_web_04 (1).webp',
@@ -1277,8 +1302,8 @@ export const models = [
     ],
     carDetails: [
       { label: 'Engine', value: '998 cc' },
-      { label: 'Mileage', value: '21.4 kmpl' },
-      { label: 'Power', value: '50 kW @ 5500 rpm' },
+      { label: 'Mileage', value: '25.30 kmpl' },
+      { label: 'Power', value: '49 kW @ 5500 rpm' },
     ],
     variants: [
       { variant: 'NEW SPRESSO LXI', price: 499500, transmission: 'Manual' },
@@ -1371,17 +1396,20 @@ export const models = [
       { label: 'Rear Suspension', value: 'Torsion Beam' },
       { label: 'Fuel Type', value: 'Petrol/CNG' },
       { label: 'No. of Cylinders', value: '3' },
-      { label: 'Max Torque', value: '90 Nm @ 3500 rpm' },
+      {
+        label: 'Max Torque',
+        value: '91.1 Nm @ 3400 rpm (1.0L) / 113.7 Nm @ 4200 rpm (1.2L)',
+      },
       { label: 'Transmission Type', value: 'Manual & Automatic' },
       { label: 'Body Type', value: 'Hatchback' },
       { label: 'Wheel Base', value: '2435 mm' },
-      { label: 'Gearbox', value: '5-Speed' },
+      { label: 'Gearbox', value: '5-Speed MT / 5-Speed AGS' },
     ],
 
     carDetails: [
       { label: 'Engine', value: '998 cc' },
       { label: 'Mileage', value: '24.35 kmpl' },
-      { label: 'Power', value: '49.0 kW @ 5500 rpm' },
+      { label: 'Power', value: '50.4 kW @ 5600 rpm' },
     ],
     exterior: [
       {
@@ -1416,19 +1444,20 @@ export const models = [
       },
       {
         img: '/images/car/arena/wagonr/Interior_web_2.webp',
-        title: 'Spacious Cabin',
+        title: 'Tall Boy Design and Spacious Cabin',
       },
       {
         img: '/images/car/arena/wagonr/Interior_web_4.webp',
-        title: 'Smartplay Studio with Smartphone Navigation and 4 Speakers',
+        title:
+          '17.78 cm SmartPlay Studio with Smartphone Navigation and 4 Speakers',
       },
       {
         img: '/images/car/arena/wagonr/Interior_web_5.webp',
-        title: 'Modern Grey Melange Fabric',
+        title: 'Steering Mounted Controls',
       },
       {
         img: '/images/car/arena/wagonr/Interior_web_3.webp',
-        title: 'Steering Mounted Controls',
+        title: 'Dual-Tone Interiors',
       },
       // {
       //   img: "",
@@ -1572,11 +1601,11 @@ export const models = [
       { label: 'Rear Suspension', value: 'Torsion Beam' },
       { label: 'Fuel Type', value: 'Petrol/CNG' },
       { label: 'No. of Cylinders', value: '4' },
-      { label: 'Max Torque', value: '138 Nm @ 4400 rpm' },
+      { label: 'Max Torque', value: '139 Nm @ 4300 rpm' },
       { label: 'Transmission Type', value: 'Manual & Automatic' },
       { label: 'Body Type', value: 'MPV' },
       { label: 'Wheel Base', value: '2740 mm' },
-      { label: 'Gearbox', value: '5-Speed' },
+      { label: 'Gearbox', value: '5-Speed MT / 6-Speed AT' },
     ],
 
     exterior: [
@@ -1590,15 +1619,15 @@ export const models = [
       },
       {
         img: '/images/car/arena/ertiga/Ext_web_04.webp',
-        title: '3D Origami Style LED Tail Lamps',
+        title: 'Machined Two-Tone Alloy Wheels',
       },
       {
         img: '/images/car/arena/ertiga/Ext_web_05.webp',
-        title: 'Machined Two-tone Alloy Wheels',
+        title: 'Electrically Adjustable & Foldable ORVMs',
       },
       {
         img: '/images/car/arena/ertiga/Ext_web_03.webp',
-        title: 'Retractable ORVMs',
+        title: '3D Origami Style LED Tail Lamps',
       },
       // {
       //   img: "",
@@ -1616,15 +1645,15 @@ export const models = [
       },
       {
         img: '/images/car/arena/ertiga/Int_web_05.webp',
-        title: 'Air Cooled Twin Cup Holders',
+        title: '2nd Row Roof Mounted AC',
       },
       {
         img: '/images/car/arena/ertiga/Int_web_04.webp',
-        title: '17.78cm SmartPlay Pro',
+        title: 'Air Cooled Twin Cup Holders',
       },
       {
         img: '/images/car/arena/ertiga/Int_web_03.webp',
-        title: '2nd Row roof mounted AC ',
+        title: '17.78 cm SmartPlay Pro with Surround Sense by ARKAMYS',
       },
       // {
       //   img: "",
@@ -1748,20 +1777,20 @@ export const models = [
       },
     ],
     keySpecifications: [
-      { label: 'Fuel Tank Capacity', value: '35 Litres' },
+      { label: 'Fuel Tank Capacity', value: '32 Litres' },
       { label: 'Seating Capacity', value: '5' },
-      { label: 'Length', value: '3495 mm' },
-      { label: 'Width', value: '1495 mm' },
-      { label: 'Height', value: '1565 mm' },
+      { label: 'Length', value: '3695 mm' },
+      { label: 'Width', value: '1655 mm' },
+      { label: 'Height', value: '1555 mm' },
       { label: 'Front Suspension', value: 'MacPherson Strut' },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
       { label: 'Fuel Type', value: 'Petrol/CNG' },
       { label: 'No. of Cylinders', value: '3' },
-      { label: 'Max Torque', value: '89 Nm @ 3500 rpm' },
+      { label: 'Max Torque', value: '91.1 Nm @ 3400 rpm' },
       { label: 'Transmission Type', value: 'Manual & Automatic' },
       { label: 'Body Type', value: 'Hatchback' },
-      { label: 'Wheel Base', value: '2425 mm' },
-      { label: 'Gearbox', value: '5-Speed' },
+      { label: 'Wheel Base', value: '2435 mm' },
+      { label: 'Gearbox', value: '5-Speed MT / 5-Speed AGS' },
     ],
 
     exterior: [
@@ -1775,7 +1804,7 @@ export const models = [
       },
       {
         img: '/images/car/arena/celerio/exterior_web_04.webp',
-        title: 'Radiant Grille With Sharp Chrome assets',
+        title: 'Radiant Grille With Sharp Chrome Accents',
       },
       {
         img: '/images/car/arena/celerio/exterior_web_05.webp',
@@ -1789,7 +1818,7 @@ export const models = [
     interior: [
       {
         img: '/images/car/arena/celerio/Interior_web_01.webp',
-        title: 'Strereoscopic Instrument Cluster',
+        title: 'Stereoscopic Instrument Cluster',
       },
       {
         img: '/images/car/arena/celerio/Interior_web_02.webp',
@@ -1810,8 +1839,8 @@ export const models = [
     ],
     carDetails: [
       { label: 'Engine', value: '998 cc' },
-      { label: 'Mileage', value: '25.24 kmpl' },
-      { label: 'Power', value: '49 kW @ 5500 rpm' },
+      { label: 'Mileage', value: '26.00 kmpl' },
+      { label: 'Power', value: '50.4 kW @ 5600 rpm' },
     ],
     variants: [
       {
@@ -1909,16 +1938,16 @@ export const models = [
       },
     ],
     keySpecifications: [
-      { label: 'Fuel Tank Capacity', value: '40 Litres' },
-      { label: 'Seating Capacity', value: '5/7' },
+      { label: 'Fuel Tank Capacity', value: '32 Litres' },
+      { label: 'Seating Capacity', value: '5/6' },
       { label: 'Length', value: '3675 mm' },
-      { label: 'Width', value: '1495 mm' },
+      { label: 'Width', value: '1475 mm' },
       { label: 'Height', value: '1825 mm' },
       { label: 'Front Suspension', value: 'Independent, McPherson Strut' },
       { label: 'Rear Suspension', value: 'Rigid Axle' },
       { label: 'Fuel Type', value: 'Petrol/CNG' },
       { label: 'No. of Cylinders', value: '4' },
-      { label: 'Max Torque', value: '104.4 Nm @ 3000 rpm' },
+      { label: 'Max Torque', value: '105.5 Nm @ 3000 rpm' },
       { label: 'Transmission Type', value: 'Manual' },
       { label: 'Body Type', value: 'Van' },
       { label: 'Wheel Base', value: '2350 mm' },
@@ -1955,7 +1984,7 @@ export const models = [
     interior: [
       {
         img: '/images/car/arena/eeco/interior_web_01.webp',
-        title: '5 & 7 Seater Options ',
+        title: '5 & 6 Seater Options',
       },
       {
         img: '/images/car/arena/eeco/interior_web_02.webp',
@@ -1979,9 +2008,9 @@ export const models = [
       // },
     ],
     carDetails: [
-      { label: 'Engine', value: '1196 cc' },
-      { label: 'Mileage', value: '19.711 kmpl' },
-      { label: 'Power', value: '59.4 kW @ 6000 rpm' },
+      { label: 'Engine', value: '1197 cc' },
+      { label: 'Mileage', value: '19.71 km/l' },
+      { label: 'Power', value: '60.5 kW @ 6000 rpm' },
     ],
     variants: [
       {
@@ -2059,7 +2088,7 @@ export const models = [
   {
     name: 'Maruti eVitara',
     subName: 'eVitara',
-    description: 'Created to Spark Your eMagination.',
+    description: 'Shaped by aerodynamics. Designed by your imagination.',
     offersAmount: '50000',
     offersAdditionalDec: '',
     link: '/nexa/eVitara-on-road-price',
@@ -2101,26 +2130,26 @@ export const models = [
         colName: 'Bluish Black',
       },
     ],
-    // keySpecifications: [
-    //   { label: "Fuel Tank Capacity", value: "32 Litres" },
-    //   { label: "Seating Capacity", value: "5" },
-    //   { label: "Length", value: "3700 mm" },
-    //   { label: "Width", value: "1690 mm" },
-    //   { label: "Height", value: "1595 mm" },
-    //   { label: "Front Suspension", value: "Independent, McPherson Strut" },
-    //   { label: "Rear Suspension", value: "Torsion Beam" },
-    //   { label: "Fuel Type", value: "Petrol" },
-    //   { label: "No. of Cylinders", value: "4" },
-    //   { label: "Max Torque", value: "113 Nm @ 4200 rpm" },
-    //   { label: "Transmission Type", value: "Manual/Automatic" },
-    //   { label: "Body Type", value: "Hatchback" },
-    //   { label: "Wheel Base", value: "2435 mm" },
-    //   { label: "Gearbox", value: "5-Speed/Auto" },
-    // ],
+    keySpecifications: [
+      { label: 'Battery Capacity', value: '49 kWh / 61 kWh (LFP)' },
+      { label: 'Seating Capacity', value: '5' },
+      { label: 'Length', value: '4275 mm' },
+      { label: 'Width', value: '1800 mm' },
+      { label: 'Height', value: '1640 mm' },
+      { label: 'Front Suspension', value: 'MacPherson Strut' },
+      { label: 'Rear Suspension', value: 'Multi Link' },
+      { label: 'Fuel Type', value: 'Electric' },
+      { label: 'Max Power', value: '105.8 kW (49 kWh) / 128 kW (61 kWh)' },
+      { label: 'Max Torque', value: '193 Nm' },
+      { label: 'Range', value: '440 km (49 kWh) / 543 km (61 kWh)*' },
+      { label: 'Transmission Type', value: 'Single Speed Electric (2WD)' },
+      { label: 'Body Type', value: 'SUV' },
+      { label: 'Wheel Base', value: '2700 mm' },
+    ],
     exterior: [
       {
         img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/POLYHEDRAL-MUSCULAR-STANCE.avif',
-        title: 'Polyhyderal Muscular Stance',
+        title: 'Polyhedral Muscular Stance',
       },
       {
         img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/FUTURISTIC-FRONT-FASCIA.avif',
@@ -2128,7 +2157,7 @@ export const models = [
       },
       {
         img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/R18-AERODYNAMIC-ALLOYS-.avif',
-        title: 'R18 Aerodynamic Alloys',
+        title: '225/55 R18 Alloy Wheels with Aero Garnish',
       },
       {
         img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/NEXTR%C3%88-3-POINT-MATRIX-LED-DRLs-.avif',
@@ -2154,7 +2183,7 @@ export const models = [
       },
       {
         img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/Twindeck-Floating-Console-with-Shift-by-Wire-_-New.avif',
-        title: 'Twindeck Floating Console With Shift By Wire',
+        title: 'Twin Deck Center Console With Storage',
       },
       {
         img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/evitara/Exterior+images/DIGITAL-COCKPIT-EXPERIENCE.avif',
@@ -2171,8 +2200,8 @@ export const models = [
     ],
     carDetails: [
       { label: 'Pure Electric', value: 'platform' },
-      { label: 'Range', value: '543 km*' },
-      { label: 'Battery', value: '61kWh' },
+      { label: 'Range', value: '440 - 543 km*' },
+      { label: 'Battery', value: '49 / 61 kWh' },
     ],
     variants: [
       { variant: 'eVitara', price: '10,99,000', transmission: 'Automatic' },
@@ -2240,13 +2269,13 @@ export const models = [
       { label: 'Height', value: '1795 mm' },
       { label: 'Front Suspension', value: 'Independent, McPherson Strut' },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
-      { label: 'Fuel Type', value: 'Petrol' },
+      { label: 'Fuel Type', value: 'Petrol (Strong Hybrid)' },
       { label: 'No. of Cylinders', value: '4' },
       { label: 'Max Torque', value: '250 Nm @ 2000 rpm' },
-      { label: 'Transmission Type', value: 'Manual/Automatic' },
+      { label: 'Transmission Type', value: 'Automatic' },
       { label: 'Body Type', value: 'SUV' },
       { label: 'Wheel Base', value: '2850 mm' },
-      { label: 'Gearbox', value: '6-Speed/Auto' },
+      { label: 'Gearbox', value: 'e-CVT' },
     ],
     exterior: [
       {
@@ -2324,7 +2353,7 @@ export const models = [
   {
     name: 'Maruti Jimny',
     subName: 'Jimny',
-    description: 'Crafted for Purity of Function',
+    description: 'Where the roads end, your story begins',
     offersAmount: 40000,
     offersAdditionalDec: '+ 1.5 Lakh MSSF Offer',
     link: '/nexa/jimny-on-road-price',
@@ -2375,15 +2404,15 @@ export const models = [
       { label: 'Length', value: '3985 mm' },
       { label: 'Width', value: '1645 mm' },
       { label: 'Height', value: '1720 mm' },
-      { label: 'Front Suspension', value: 'Independent, 3-Link Coil Spring' },
-      { label: 'Rear Suspension', value: 'Rigid Axle, 3-Link Coil Spring' },
+      { label: 'Front Suspension', value: '3-Link Rigid Axle with Coil Spring' },
+      { label: 'Rear Suspension', value: '3-Link Rigid Axle with Coil Spring' },
       { label: 'Fuel Type', value: 'Petrol' },
       { label: 'No. of Cylinders', value: '4' },
       { label: 'Max Torque', value: '134.2 Nm @ 4000 rpm' },
       { label: 'Transmission Type', value: 'Manual/Automatic' },
       { label: 'Body Type', value: 'SUV' },
       { label: 'Wheel Base', value: '2590 mm' },
-      { label: 'Gearbox', value: '5-Speed' },
+      { label: 'Gearbox', value: '5-Speed MT / 4-Speed AT' },
     ],
     exterior: [
       {
@@ -2404,7 +2433,7 @@ export const models = [
       },
       {
         img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/alloy.webp',
-        title: 'All Alloy Wheels',
+        title: 'Alloy Wheels',
       },
       {
         img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/rocky/featuretechnology/exterior/5-slot-chrome-plated-grille.webp',
@@ -2435,7 +2464,7 @@ export const models = [
     ],
     carDetails: [
       { label: 'Engine', value: '1462 cc' },
-      { label: 'Mileage', value: '18-20 kmpl' },
+      { label: 'Mileage', value: '16.39 - 16.94 km/l' },
       { label: 'Power', value: '77.1 kW @ 6000 rpm' },
     ],
     variants: [
@@ -2481,7 +2510,7 @@ export const models = [
   {
     name: 'Maruti Fronx',
     subName: 'Fronx',
-    description: 'Created to Inspire Style and Performance.',
+    description: 'Thrill has a new shape.',
     offersAmount: 15000,
     offersAdditionalDec: '+ Velocity Kit worth 43K ',
     link: '/nexa/fronx-on-road-price',
@@ -2541,20 +2570,20 @@ export const models = [
       },
     ],
     keySpecifications: [
-      { label: 'Fuel Tank Capacity', value: '45 Litres' },
+      { label: 'Fuel Tank Capacity', value: '37 Litres (CNG: 55 L water equivalent)' },
       { label: 'Seating Capacity', value: '5' },
       { label: 'Length', value: '3995 mm' },
       { label: 'Width', value: '1765 mm' },
       { label: 'Height', value: '1550 mm' },
-      { label: 'Front Suspension', value: 'Independent, McPherson Strut' },
+      { label: 'Front Suspension', value: 'MacPherson Strut' },
       { label: 'Rear Suspension', value: 'Torsion Beam' },
-      { label: 'Fuel Type', value: 'Petrol' },
+      { label: 'Fuel Type', value: 'Petrol / CNG' },
       { label: 'No. of Cylinders', value: '4' },
-      { label: 'Max Torque', value: '113 Nm @ 4400 rpm' },
+      { label: 'Max Torque', value: '113 Nm @ 4400 rpm (1.2L) / 147.6 Nm @ 2000-4500 rpm (1.0L Turbo)' },
       { label: 'Transmission Type', value: 'Manual/Automatic' },
       { label: 'Body Type', value: 'SUV' },
       { label: 'Wheel Base', value: '2520 mm' },
-      { label: 'Gearbox', value: '5-Speed/6-Speed' },
+      { label: 'Gearbox', value: '5MT / 5AMT (1.2L), 5MT / 6AT (1.0L Turbo)' },
     ],
     exterior: [
       {
@@ -2577,7 +2606,7 @@ export const models = [
     interior: [
       {
         img: 'https://az-ci-afde-prd-nexa-01-dkcjcehxewgpebhe.z01.azurefd.net/-/media/feature/nexawebsitecarbrand/flash/technology/technology-1000x500-9inch_touch_screen.webp',
-        title: 'Advanced Dashboard',
+        title: 'SmartPlay Pro+ Infotainment System',
       },
       {
         img: 'https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/nexa/fronx/slideshow/TECHNOLOGY-1000x500-PADDLE_SHIFTERS.webp',
@@ -2585,9 +2614,9 @@ export const models = [
       },
     ],
     carDetails: [
-      { label: 'Engine', value: '1197 cc' },
-      { label: 'Mileage', value: '21.79 kmpl' },
-      { label: 'Power', value: '77.5 kW @ 5500 rpm' },
+      { label: 'Engine', value: '1197 cc / 998 cc Turbo' },
+      { label: 'Mileage', value: '21.79 kmpl (MT) / 22.89 kmpl (AMT)' },
+      { label: 'Power', value: '66 kW @ 6000 rpm (1.2L) / 73.6 kW @ 5500 rpm (1.0L Turbo)' },
     ],
     variants: [
       {
@@ -2653,7 +2682,7 @@ export const models = [
   {
     name: 'Maruti Grand Vitara',
     subName: 'Grand Vitara',
-    description: 'The League of Extraordinary',
+    description: 'Expression of Style and Elegance',
     offersAmount: 235000,
     offersAdditionalDec: '+ Extended Warranty',
     link: '/nexa/grand-vitara-on-road-price',
@@ -2718,15 +2747,15 @@ export const models = [
       { label: 'Length', value: '4345 mm' },
       { label: 'Width', value: '1795 mm' },
       { label: 'Height', value: '1645 mm' },
-      { label: 'Front Suspension', value: 'Independent, McPherson Strut' },
-      { label: 'Rear Suspension', value: 'Independent Torsion Beam' },
-      { label: 'Fuel Type', value: 'Petrol' },
+      { label: 'Front Suspension', value: 'MacPherson Strut' },
+      { label: 'Rear Suspension', value: 'Torsion Beam' },
+      { label: 'Fuel Type', value: 'Petrol / Strong Hybrid' },
       { label: 'No. of Cylinders', value: '4' },
-      { label: 'Max Torque', value: '136.8 Nm @ 4400 rpm' },
+      { label: 'Max Torque', value: '139 Nm @ 4300 rpm (Petrol) / 122 Nm @ 3800-4800 rpm (Strong Hybrid engine)' },
       { label: 'Transmission Type', value: 'Manual/Automatic' },
       { label: 'Body Type', value: 'SUV' },
       { label: 'Wheel Base', value: '2600 mm' },
-      { label: 'Gearbox', value: '5-Speed/6-Speed' },
+      { label: 'Gearbox', value: '5MT / 6AT / e-CVT' },
     ],
     exterior: [
       {
@@ -2761,11 +2790,11 @@ export const models = [
       },
       {
         img: '/images/car/nexa/grand-vitara/wireless-charging-pad-206.avif',
-        title: 'Comfortable Leather Seats',
+        title: 'Wireless Charger',
       },
       {
         img: '/images/car/nexa/grand-vitara/rear-air-vents-86.avif',
-        title: 'ac-vents',
+        title: 'Rear AC Vents',
       },
       {
         img: '/images/car/nexa/grand-vitara/front-armrest-185.avif',
@@ -2773,9 +2802,9 @@ export const models = [
       },
     ],
     carDetails: [
-      { label: 'Engine', value: '1462 cc' },
-      { label: 'Mileage', value: '19.38 kmpl' },
-      { label: 'Power', value: '77.5 kW @ 6000 rpm' },
+      { label: 'Engine', value: '1462 cc / 1490 cc (Strong Hybrid)' },
+      { label: 'Mileage', value: 'Up to 27.97 kmpl (Strong Hybrid)' },
+      { label: 'Power', value: '75.8 kW @ 6000 rpm (Petrol) / 85 kW system (Strong Hybrid)' },
     ],
     variants: [
       {
@@ -2991,7 +3020,7 @@ export const models = [
   {
     name: 'Maruti XL6',
     subName: 'XL6',
-    description: 'Created to Inspire Indulgence.',
+    description: 'Step into the world of luxury and pure indulgence.',
     offersAmount: 50000,
     offersAdditionalDec: '',
     link: '/nexa/xl6-on-road-price',
@@ -3054,27 +3083,27 @@ export const models = [
     keySpecifications: [
       { label: 'Fuel Tank Capacity', value: '45 Litres' },
       { label: 'Seating Capacity', value: '6' },
-      { label: 'Length', value: '4450 mm' },
+      { label: 'Length', value: '4485 mm' },
       { label: 'Width', value: '1775 mm' },
-      { label: 'Height', value: '1755 mm' },
-      { label: 'Front Suspension', value: ' Mac Pherson Strut & Coil Spring' },
+      { label: 'Height', value: '1745 mm' },
+      { label: 'Front Suspension', value: 'MacPherson Strut & Coil Spring' },
       { label: 'Rear Suspension', value: 'Torsion Beam Type & Coil Spring' },
-      { label: 'Fuel Type', value: 'Petrol' },
+      { label: 'Fuel Type', value: 'Petrol / CNG' },
       { label: 'No. of Cylinders', value: '4' },
-      { label: 'Max Torque', value: '136.8 Nm @ 4400 rpm' },
+      { label: 'Max Torque', value: '139 Nm @ 4300 rpm' },
       { label: 'Transmission Type', value: 'Manual/Automatic' },
       { label: 'Body Type', value: 'MPV' },
       { label: 'Wheel Base', value: '2740 mm' },
-      { label: 'Gearbox', value: '5-Speed/6-Speed' },
+      { label: 'Gearbox', value: '5MT / 6AT' },
     ],
     exterior: [
       {
         img: '/images/car/nexa/xl6/1170x521-roof-end-spoiler.ac029c6c59028c43a775.webp',
-        title: 'Backdoor Spoiler',
+        title: 'Rear Roof Spoiler',
       },
       {
         img: '/images/car/nexa/xl6/1170x521--ORVM.d6ef7c4cf6eea705df2c.webp',
-        title: 'Auto ORVMs',
+        title: 'Electrically Foldable ORVMs',
       },
       {
         img: '/images/car/nexa/xl6/1170x521-UV-cut-glass.5fa942fd6178e619dfbe.webp',
@@ -3086,7 +3115,7 @@ export const models = [
       },
       {
         img: '/images/car/nexa/xl6/1170x521-cabin-foot-lamp.2f42eae8e5aa6cc2d024.webp',
-        title: 'Footlamp Illumination',
+        title: 'Footwell Illumination',
       },
     ],
     interior: [
@@ -3109,7 +3138,7 @@ export const models = [
     ],
     carDetails: [
       { label: 'Engine', value: '1462 cc' },
-      { label: 'Mileage', value: '20.97 kmpl' },
+      { label: 'Mileage', value: '20.90 kmpl (MT) / 20.27 kmpl (AT)' },
       { label: 'Power', value: '75.8 kW @ 6000 rpm' },
     ],
     variants: [
@@ -3338,7 +3367,7 @@ export const models = [
   {
     name: 'Maruti Baleno',
     subName: 'Baleno',
-    description: 'Created to Inspire The Bold and Intelligent',
+    description: 'Dare to Go Glam',
     offersAmount: 0,
     offersAdditionalDec: '+ Regal Kit worth 60526',
     link: '/nexa/baleno-on-road-price',
@@ -3402,19 +3431,19 @@ export const models = [
     exterior: [
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/antena.jpg',
-        title: ' Baleno antena',
+        title: 'Shark Fin Antenna',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/fog_lamp.jpg',
-        title: 'Maruti Baleno Fog lamp',
+        title: 'LED Fog Lamps',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/next_wavegrill.jpg',
-        title: 'Maruti Baleno Next wavegrill',
+        title: 'Signature NEXWave Grille',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Exterior/Chrome_fender_garnish.jpg',
-        title: 'Maruti Baleno Chrome fender garnish',
+        title: 'Fender Chrome Garnish',
       },
 
     ],
@@ -3426,19 +3455,19 @@ export const models = [
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/auto_climate)control.jpg',
-        title: 'Auto Climate Control',
+        title: 'Digital Air Conditioner',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/ac_vents.jpg',
-        title: 'AC Vents',
+        title: 'Rear AC Vents',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/seat_upholestry.jpg',
-        title: 'Seat Upholestry',
+        title: 'Leatherette Upholstery',
       },
       {
         img: 'https://ik.imagekit.io/echsclffk5/Sky-automobiles/Baleno/Interiors/wireless_charging2.jpg',
-        title: 'Wireless Charging',
+        title: 'Wireless Charging Dock with Active Cooling',
       },
 
 
@@ -3449,7 +3478,7 @@ export const models = [
     ],
     carDetails: [
       { label: 'Engine', value: '1197 cc' },
-      { label: 'Mileage', value: '33.61 km/kg (MT)' },
+      { label: 'Mileage', value: 'Up to 24.77 kmpl (Petrol) / 34.47 km/kg (CNG)' },
       { label: 'Power', value: '61 kW @ 5700 rpm (Petrol) / 51.3 kW @ 5700 rpm (CNG)' },
     ],
     variants: [
