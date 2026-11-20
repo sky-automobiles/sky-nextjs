@@ -3338,7 +3338,7 @@ export const models = [
     name: 'Maruti Baleno',
     subName: 'Baleno',
     description: 'Created to Inspire The Bold and Intelligent',
-    offersAmount: 20000,
+    offersAmount: 0,
     offersAdditionalDec: '+ Regal Kit worth 60526',
     link: '/nexa/baleno-on-road-price',
     linkCG: '/nexa/baleno-on-road-price-in-raipur',
