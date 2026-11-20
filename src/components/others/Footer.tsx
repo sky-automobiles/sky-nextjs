@@ -185,19 +185,9 @@ const Footer: React.FC = () => {
                     hrefOD: '/nexa/xl6-on-road-price-in-raipur',
                   },
                   {
-                    label: 'Ciaz',
-                    href: '/nexa/ciaz-on-road-price-in-bhubaneswar',
-                    hrefOD: '/nexa/ciaz-on-road-price-in-raipur',
-                  },
-                  {
                     label: 'Baleno',
                     href: '/nexa/baleno-on-road-price-in-bhubaneswar',
                     hrefOD: '/nexa/baleno-on-road-price-in-raipur',
-                  },
-                  {
-                    label: 'Ignis',
-                    href: '/nexa/ignis-on-road-price-in-bhubaneswar',
-                    hrefOD: '/nexa/ignis-on-road-price-in-raipur',
                   },
                 ]}
               />

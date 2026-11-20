@@ -25,12 +25,13 @@ const RangeSlider: React.FC<SlideProps> = ({ selected }) => {
   const swiperRef = useRef<any>(null); // Create a reference for Swiper instance
 
   // Determine the slide data based on the selected prop
-  const filteredModels =
+  const filteredModels = (
     selected === "Nexa"
       ? models.slice(10)
       : selected === "Arena"
       ? models.slice(0, 10)
-      : models;
+      : models
+  ).filter((m) => !m.hidden);
 
   // Reset Swiper slide to 0 whenever `selected` changes
   useEffect(() => {

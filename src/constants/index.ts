@@ -2962,7 +2962,7 @@ export const models = [
       { variant: 'CNG (MT) DELTA', price: 1301537, transmission: 'Manual' },
     ],
 
-    exploreMore: [14, 15, 16],
+    exploreMore: [13, 15, 17],
     thumbnail: '/thumbnail/GV.webp',
     priceRange: '₹ 11.02- 20.24 Lakh *',
     brochure:
@@ -3145,7 +3145,7 @@ export const models = [
 
       { variant: 'XL6 CNG (MT) ZETA', price: 1244069, transmission: 'Manual' },
     ],
-    exploreMore: [15, 16, 17],
+    exploreMore: [14, 17, 10],
     thumbnail: '/thumbnail/XL6.webp',
     priceRange: '₹ 11.52 - 14.47 Lakh *',
     brochure:
@@ -3157,6 +3157,7 @@ export const models = [
   {
     name: 'Maruti Ciaz',
     subName: 'Ciaz',
+    hidden: true,
     description: 'Created To Inspire Elegance',
     offersAmount: 30000,
     offersAdditionalDec: '',
@@ -3496,6 +3497,7 @@ export const models = [
   {
     name: 'Maruti Ignis',
     subName: 'Ignis',
+    hidden: true,
     description: 'Created to Inspire The Toughness in You.',
     offersAmount: 42500,
     offersAdditionalDec: '+ Radiance Kit Worth 3K',

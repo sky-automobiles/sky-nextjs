@@ -309,7 +309,7 @@ const Header = () => {
                 } `}
               >
                 {selectedTab === 0 &&
-                  models.slice(0, 10).map((slide, index) => (
+                  models.slice(0, 10).filter((m) => !m.hidden).map((slide, index) => (
                     <Link
                       onClick={() => setIsVehicle(false)}
                       key={index}
@@ -339,7 +339,7 @@ const Header = () => {
                     </Link>
                   ))}
                 {selectedTab === 1 &&
-                  models.slice(10).map((slide, index) => (
+                  models.slice(10).filter((m) => !m.hidden).map((slide, index) => (
                     <Link
                       onClick={() => setIsVehicle(false)}
                       key={index}

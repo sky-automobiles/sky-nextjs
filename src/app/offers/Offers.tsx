@@ -18,6 +18,7 @@ const currentYear = new Date().getFullYear();
   const filteredAndSortedData = models
     ?.filter(
       (vehicle) =>
+        !vehicle.hidden &&
         (vehicle.offersAmount as number) > 0 &&
         (vehicle.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
           vehicle.offersAmount.toString().includes(searchQuery))

@@ -231,9 +231,7 @@ const Finance: React.FC = () => {
                     <option value='13'>Fronx</option>
                     <option value='14'>Grand Vitara</option>
                     <option value='15'>XL6</option>
-                    <option value='16'>Ciaz</option>
                     <option value='17'>Baleno</option>
-                    <option value='18'>Ignis</option>
                   </optgroup>
                 </select>
               </div>
@@ -503,9 +501,7 @@ const Finance: React.FC = () => {
               <option value='Invicto'>Invicto</option>
               <option value='Grand Vitara'>Grand Vitara</option>
               <option value='XL6'>XL6</option>
-              <option value='Ciaz'>Ciaz</option>
               <option value='Baleno'>Baleno</option>
-              <option value='Ignis'>Ignis</option>
             </select>
 
             <input
